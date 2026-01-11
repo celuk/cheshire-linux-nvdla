@@ -41,6 +41,8 @@ else
     echo "Warning: nvdla_runtime not found at ../nvdla/sw/umd/out/apps/runtime/nvdla_runtime/nvdla_runtime"
 fi
 
+cp "/home/shc/temp/testorig.jpg" ./_install;
+
 cd _install;
 mkdir -p dev proc sys etc/init.d;
 #sudo rm -rf dev/console dev/null;
@@ -52,6 +54,8 @@ echo '#!/bin/sh' > ./etc/init.d/rcS
 #echo 'mount -t devtmpfs devtmpfs /dev' >> ./etc/init.d/rcS
 echo 'mount -t proc none /proc' >> ./etc/init.d/rcS
 echo 'mount -t sysfs none /sys' >> ./etc/init.d/rcS
+echo 'echo "Loading OpenDLA kernel module..."' >> ./etc/init.d/rcS
+echo 'insmod /opendla.ko' >> ./etc/init.d/rcS
 echo 'echo " "' >> ./etc/init.d/rcS
 echo 'echo "##################################"' >> ./etc/init.d/rcS
 echo 'echo "#    Cheshire Linux Booted!      #"' >> ./etc/init.d/rcS
