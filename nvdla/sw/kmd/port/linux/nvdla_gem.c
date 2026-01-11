@@ -394,6 +394,7 @@ static const struct file_operations nvdla_drm_fops = {
 	.mmap = nvdla_drm_gem_mmap,
 	.poll = drm_poll,
 	.read = drm_read,
+	.fop_flags = FOP_UNSIGNED_OFFSET,
 #ifdef CONFIG_COMPAT
 	.compat_ioctl = drm_compat_ioctl,
 #endif

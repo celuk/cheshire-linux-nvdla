@@ -46,13 +46,13 @@ cp "/home/shc/Downloads/0_8.jpg" ./_install;
 
 cd _install;
 mkdir -p dev proc sys etc/init.d;
-#sudo rm -rf dev/console dev/null;
+sudo rm -rf dev/console dev/null;
 sudo mknod dev/console c 5 1;
 sudo mknod dev/null c 1 3;
-sudo mknod dev/ttyS0 c 4 64;
+#sudo mknod dev/ttyS0 c 4 64;
 
 echo '#!/bin/sh' > ./etc/init.d/rcS
-#echo 'mount -t devtmpfs devtmpfs /dev' >> ./etc/init.d/rcS
+echo 'mount -t devtmpfs devtmpfs /dev' >> ./etc/init.d/rcS
 echo 'mount -t proc none /proc' >> ./etc/init.d/rcS
 echo 'mount -t sysfs none /sys' >> ./etc/init.d/rcS
 echo 'echo "Loading OpenDLA kernel module..."' >> ./etc/init.d/rcS

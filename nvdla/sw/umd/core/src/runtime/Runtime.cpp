@@ -272,7 +272,7 @@ bool Runtime::load(NvU8 *buf, int instance)
     {
         if ( instance >= getNumDevices() )
         {
-            gLogError << "Out of bounds DLA instance " << instance << " requested." << endl;
+            gLogError << "Out of bounds DLA instance " << instance << " requested. (Max: " << getNumDevices() << ")" << endl;
             ok = false;
             goto done;
         }

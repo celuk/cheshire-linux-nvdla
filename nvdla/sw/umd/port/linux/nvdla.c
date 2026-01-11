@@ -248,6 +248,7 @@ NvDlaOpen(void *session_handle, NvU32 instance, void **device_handle)
 
     pContext->fd = open(NVDLA_DEVICE_NODE, O_RDWR);
     if (pContext->fd < 0) {
+        printf("NvDlaOpen: failed to open path '%s': %s (err=%d)\n", NVDLA_DEVICE_NODE, strerror(errno), errno);
         e = NvDlaError_ResourceError;
         goto fail;
     }
