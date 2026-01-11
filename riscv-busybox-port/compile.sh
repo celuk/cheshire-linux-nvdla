@@ -20,6 +20,14 @@ else
     echo "Warning: lrzsz binaries not found at ../lrzsz/"
 fi
 
+# Copy opendla.ko
+if [ -f "../nvdla/sw/kmd/port/linux/opendla.ko" ]; then
+    echo "Copying opendla.ko..."
+    cp "../nvdla/sw/kmd/port/linux/opendla.ko" ./_install/opendla.ko
+else
+    echo "Warning: opendla.ko not found at ../nvdla/sw/kmd/port/linux/"
+fi
+
 cd _install;
 mkdir -p dev proc sys etc/init.d;
 #sudo rm -rf dev/console dev/null;

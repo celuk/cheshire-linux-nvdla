@@ -1,7 +1,7 @@
 SHELL := /bin/bash
-.PHONY: all opensbi lrzsz busybox linux lineux-ue linux-420
+.PHONY: all opensbi lrzsz nvdla busybox linux
 
-all: opensbi lrzsz busybox linux
+all: opensbi lrzsz nvdla busybox linux
 
 opensbi:
 	pushd riscv-opensbi-port && ./compile.sh && popd
@@ -12,11 +12,8 @@ busybox:
 linux:
 	pushd riscv-linux-port && ./compile.sh && popd
 
-linux-ue:
-	pushd riscv-linux-ue && ./compile.sh && popd
-
-linux-420:
-	pushd riscv-linux-4.20 && ./compile.sh && popd
-
 lrzsz:
 	pushd lrzsz && ./compile.sh && popd
+
+nvdla:
+	pushd nvdla/sw && ./compile.sh && popd
