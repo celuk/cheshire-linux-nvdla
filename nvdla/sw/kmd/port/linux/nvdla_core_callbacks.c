@@ -397,12 +397,11 @@ static int32_t nvdla_probe(struct platform_device *pdev)
 	if (IS_ERR(nvdla_dev->base))
 		return PTR_ERR(nvdla_dev->base);
 
-	res = platform_get_resource(pdev, IORESOURCE_IRQ, 0);
-	if (!res) {
-		dev_err(&pdev->dev, "no irq resource\n");
-		return -EINVAL;
+	nvdla_dev->irq = platform_get_irq(pdev, 0);
+	if (nvdla_dev->irq < 0) {
+		dev_err(&pdev->dev, "failed to get irq\n");
+		return nvdla_dev->irq;
 	}
-	nvdla_dev->irq = res->start;
 
 	err = devm_request_irq(&pdev->dev, nvdla_dev->irq,
 				nvdla_engine_isr, 0,
