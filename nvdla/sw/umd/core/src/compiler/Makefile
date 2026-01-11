@@ -32,7 +32,7 @@ include $(ROOT)/make/macros.mk
 
 BUILDOUT ?= $(ROOT)/out/core/src/compiler
 BUILDDIR := $(BUILDOUT)/$(MODULE)
-LIB := $(BUILDDIR)/$(MODULE).so
+LIB := $(BUILDDIR)/$(MODULE).a
 
 INCLUDES := -I$(ROOT)/external/protobuf-2.6/src
 MODULE_COMPILEFLAGS := -g -fPIC -finline -W -Wall -Wno-multichar -Wno-unused-parameter -Wno-unused-function -Werror-implicit-function-declaration
@@ -46,4 +46,4 @@ include rules.mk
 # the logic to compile and link stuff is in here
 $(LIB): $(ALLMODULE_OBJS)
 	@echo building $(MODULE)  $@
-	$(MODULE_CPP) -shared libprotobuf.a $(ALLMODULE_OBJS) -o $@
+	$(TOOLCHAIN_PREFIX)ar rcs $@ $(ALLMODULE_OBJS)

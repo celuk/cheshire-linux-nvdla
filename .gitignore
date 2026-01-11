@@ -8,3 +8,5 @@
 *.mod.c
 .*.cmd
 .*.swp
+*.a
+*.so

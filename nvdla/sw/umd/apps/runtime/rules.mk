@@ -50,7 +50,7 @@ MODULE_CPPFLAGS := -DNVDLA_UTILS_ERROR_TAG="\"DLA_TEST\""
 MODULE_CFLAGS := -DNVDLA_UTILS_ERROR_TAG="\"DLA_TEST\""
 
 SHARED_LIBS := \
-    $(ROOT)/out/core/src/runtime/libnvdla_runtime/libnvdla_runtime.so
+    $(ROOT)/out/core/src/runtime/libnvdla_runtime/libnvdla_runtime.a
 
 MODULE_SRCS := $(NVDLA_SRC_FILES)
 

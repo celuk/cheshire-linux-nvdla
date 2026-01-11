@@ -14,6 +14,21 @@ cd "$SCRIPT_DIR/kmd"
 
 make KDIR=$KDIR ARCH=$ARCH CROSS_COMPILE=$CROSS_COMPILE -j16
 
+cd "$SCRIPT_DIR"
+if [ ! -d "umd/external/libjpeg-turbo-1.5.3" ]; then
+    echo "Downloading libjpeg-turbo..."
+    wget -q https://sourceforge.net/projects/libjpeg-turbo/files/1.5.3/libjpeg-turbo-1.5.3.tar.gz
+    tar xzf libjpeg-turbo-1.5.3.tar.gz -C umd/external/
+    rm libjpeg-turbo-1.5.3.tar.gz
+fi
+
+cd "$SCRIPT_DIR/umd/external/libjpeg-turbo-1.5.3"
+if [ ! -f "Makefile" ]; then
+    ./configure --host=riscv64-unknown-linux-gnu --disable-shared --enable-static
+fi
+make -j16
+cp .libs/libjpeg.a "$SCRIPT_DIR/umd/external/libjpeg.a"
+
 cd "$SCRIPT_DIR/umd/external/protobuf-2.6"
 find . -name "aclocal.m4" -exec touch {} +
 find . -name "configure" -exec touch {} +
@@ -30,4 +45,4 @@ cd "$SCRIPT_DIR/umd"
 
 rm -rf out/
 
-make TOP=$TOP -j16
+make TOP=$TOP -j16 compiler runtime
