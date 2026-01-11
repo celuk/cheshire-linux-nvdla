@@ -10,9 +10,14 @@ export TOOLCHAIN_PREFIX=$CROSS_COMPILE
 export PATH=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin:$PATH
 export TOP="$SCRIPT_DIR/umd"
 
+# Define DLA_2_CONFIG globally
+export KCFLAGS="-DDLA_2_CONFIG"
+export CFLAGS="-DDLA_2_CONFIG"
+export CXXFLAGS="-DDLA_2_CONFIG"
+
 cd "$SCRIPT_DIR/kmd"
 
-make KDIR=$KDIR ARCH=$ARCH CROSS_COMPILE=$CROSS_COMPILE -j16
+make KDIR=$KDIR ARCH=$ARCH CROSS_COMPILE=$CROSS_COMPILE CFLAGS+="-DDLA_2_CONFIG" CXXFLAGS+="-DDLA_2_CONFIG" -j16
 
 cd "$SCRIPT_DIR"
 if [ ! -d "umd/external/libjpeg-turbo-1.5.3" ]; then
@@ -45,4 +50,4 @@ cd "$SCRIPT_DIR/umd"
 
 rm -rf out/
 
-make TOP=$TOP -j16 compiler runtime
+make TOP=$TOP -j16 compiler runtime CFLAGS+="-DDLA_2_CONFIG" CXXFLAGS+="-DDLA_2_CONFIG"

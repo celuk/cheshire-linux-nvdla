@@ -120,28 +120,28 @@ riscv64-unknown-linux-gnu-gcc: fatal error: no input files
 compilation terminated.
 configure:3582: $? = 1
 configure:3602: checking whether the C compiler works
-configure:3624: riscv64-unknown-linux-gnu-gcc    conftest.c  >&5
+configure:3624: riscv64-unknown-linux-gnu-gcc -DDLA_2_CONFIG   conftest.c  >&5
 configure:3628: $? = 0
 configure:3676: result: yes
 configure:3679: checking for C compiler default output file name
 configure:3681: result: a.out
 configure:3687: checking for suffix of executables
-configure:3694: riscv64-unknown-linux-gnu-gcc -o conftest    conftest.c  >&5
+configure:3694: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG   conftest.c  >&5
 configure:3698: $? = 0
 configure:3720: result: 
 configure:3742: checking whether we are cross compiling
-configure:3750: riscv64-unknown-linux-gnu-gcc -o conftest    conftest.c  >&5
+configure:3750: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG   conftest.c  >&5
 configure:3754: $? = 0
 configure:3761: ./conftest
 ./configure: line 3763: ./conftest: cannot execute binary file: Exec format error
 configure:3765: $? = 126
 configure:3780: result: yes
 configure:3785: checking for suffix of object files
-configure:3807: riscv64-unknown-linux-gnu-gcc -c   conftest.c >&5
+configure:3807: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:3811: $? = 0
 configure:3832: result: o
 configure:3836: checking whether we are using the GNU C compiler
-configure:3855: riscv64-unknown-linux-gnu-gcc -c   conftest.c >&5
+configure:3855: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:3855: $? = 0
 configure:3864: result: yes
 configure:3873: checking whether riscv64-unknown-linux-gnu-gcc accepts -g
@@ -149,7 +149,7 @@ configure:3893: riscv64-unknown-linux-gnu-gcc -c -g  conftest.c >&5
 configure:3893: $? = 0
 configure:3934: result: yes
 configure:3951: checking for riscv64-unknown-linux-gnu-gcc option to accept ISO C89
-configure:4014: riscv64-unknown-linux-gnu-gcc  -c   conftest.c >&5
+configure:4014: riscv64-unknown-linux-gnu-gcc  -c -DDLA_2_CONFIG  conftest.c >&5
 configure:4014: $? = 0
 configure:4027: result: none needed
 configure:4052: checking whether riscv64-unknown-linux-gnu-gcc understands -c and -o together
@@ -194,7 +194,7 @@ riscv64-unknown-linux-gnu-g++: fatal error: no input files
 compilation terminated.
 configure:4429: $? = 1
 configure:4433: checking whether we are using the GNU C++ compiler
-configure:4452: riscv64-unknown-linux-gnu-g++ -c   conftest.cpp >&5
+configure:4452: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:4452: $? = 0
 configure:4461: result: yes
 configure:4470: checking whether riscv64-unknown-linux-gnu-g++ accepts -g
@@ -250,47 +250,47 @@ configure:4881: result: /usr/bin/grep
 configure:4886: checking for egrep
 configure:4948: result: /usr/bin/grep -E
 configure:4953: checking for ANSI C header files
-configure:4973: riscv64-unknown-linux-gnu-g++ -c   conftest.cpp >&5
+configure:4973: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:4973: $? = 0
 configure:5057: result: yes
 configure:5070: checking for sys/types.h
-configure:5070: riscv64-unknown-linux-gnu-g++ -c   conftest.cpp >&5
+configure:5070: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:5070: $? = 0
 configure:5070: result: yes
 configure:5070: checking for sys/stat.h
-configure:5070: riscv64-unknown-linux-gnu-g++ -c   conftest.cpp >&5
+configure:5070: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:5070: $? = 0
 configure:5070: result: yes
 configure:5070: checking for stdlib.h
-configure:5070: riscv64-unknown-linux-gnu-g++ -c   conftest.cpp >&5
+configure:5070: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:5070: $? = 0
 configure:5070: result: yes
 configure:5070: checking for string.h
-configure:5070: riscv64-unknown-linux-gnu-g++ -c   conftest.cpp >&5
+configure:5070: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:5070: $? = 0
 configure:5070: result: yes
 configure:5070: checking for memory.h
-configure:5070: riscv64-unknown-linux-gnu-g++ -c   conftest.cpp >&5
+configure:5070: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:5070: $? = 0
 configure:5070: result: yes
 configure:5070: checking for strings.h
-configure:5070: riscv64-unknown-linux-gnu-g++ -c   conftest.cpp >&5
+configure:5070: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:5070: $? = 0
 configure:5070: result: yes
 configure:5070: checking for inttypes.h
-configure:5070: riscv64-unknown-linux-gnu-g++ -c   conftest.cpp >&5
+configure:5070: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:5070: $? = 0
 configure:5070: result: yes
 configure:5070: checking for stdint.h
-configure:5070: riscv64-unknown-linux-gnu-g++ -c   conftest.cpp >&5
+configure:5070: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:5070: $? = 0
 configure:5070: result: yes
 configure:5070: checking for unistd.h
-configure:5070: riscv64-unknown-linux-gnu-g++ -c   conftest.cpp >&5
+configure:5070: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:5070: $? = 0
 configure:5070: result: yes
 configure:5083: checking minix/config.h usability
-configure:5083: riscv64-unknown-linux-gnu-g++ -c   conftest.cpp >&5
+configure:5083: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 conftest.cpp:54:10: fatal error: minix/config.h: No such file or directory
    54 | #include <minix/config.h>
       |          ^~~~~~~~~~~~~~~~
@@ -385,13 +385,13 @@ configure:5083: result: no
 configure:5083: checking for minix/config.h
 configure:5083: result: no
 configure:5104: checking whether it is safe to define __EXTENSIONS__
-configure:5122: riscv64-unknown-linux-gnu-g++ -c   conftest.cpp >&5
+configure:5122: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:5122: $? = 0
 configure:5129: result: yes
 configure:5158: checking C++ compiler flags...
-configure:5174: result: use default: -O2  -g -DNDEBUG
+configure:5179: result: use user-supplied: -DDLA_2_CONFIG
 configure:5194: checking whether __SUNPRO_CC is declared
-configure:5194: riscv64-unknown-linux-gnu-g++ -c  -g -DNDEBUG  conftest.cpp >&5
+configure:5194: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 conftest.cpp: In function 'int main()':
 conftest.cpp:64:10: error: '__SUNPRO_CC' was not declared in this scope
    64 |   (void) __SUNPRO_CC;
@@ -484,16 +484,9 @@ configure:5685: result: yes
 configure:5697: checking for BSD- or MS-compatible name lister (nm)
 configure:5746: result: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B
 configure:5876: checking the name lister (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B) interface
-configure:5883: riscv64-unknown-linux-gnu-g++ -c  -g -DNDEBUG  conftest.cpp >&5
+configure:5883: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:5886: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B "conftest.o"
 configure:5889: output
-0000000000000059 N .LASF0
-00000000000000ab N .LASF1
-0000000000000000 N .LASF2
-000000000000004b N .LASF3
-0000000000000000 N .Ldebug_abbrev0
-0000000000000000 N .Ldebug_info0
-0000000000000000 N .Ldebug_line0
 0000000000000000 B some_variable
 configure:5896: result: BSD nm
 configure:5899: checking whether ln -s works
@@ -525,7 +518,7 @@ configure:6714: checking for riscv64-unknown-linux-gnu-ar
 configure:6730: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-ar
 configure:6741: result: riscv64-unknown-linux-gnu-ar
 configure:6822: checking for archiver @FILE support
-configure:6839: riscv64-unknown-linux-gnu-g++ -c  -g -DNDEBUG  conftest.cpp >&5
+configure:6839: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:6839: $? = 0
 configure:6842: riscv64-unknown-linux-gnu-ar cru libconftest.a @conftest.lst >&5
 configure:6845: $? = 0
@@ -539,11 +532,11 @@ configure:6982: checking for riscv64-unknown-linux-gnu-ranlib
 configure:6998: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-ranlib
 configure:7009: result: riscv64-unknown-linux-gnu-ranlib
 configure:7151: checking command to parse /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B output from riscv64-unknown-linux-gnu-gcc object
-configure:7271: riscv64-unknown-linux-gnu-g++ -c  -g -DNDEBUG  conftest.cpp >&5
+configure:7271: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:7274: $? = 0
 configure:7278: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B conftest.o \| sed -n -e 's/^.*[ ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[ ][ ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
 configure:7281: $? = 0
-configure:7347: riscv64-unknown-linux-gnu-g++ -o conftest  -g -DNDEBUG   conftest.cpp conftstm.o >&5
+configure:7347: riscv64-unknown-linux-gnu-g++ -o conftest -DDLA_2_CONFIG   conftest.cpp conftstm.o >&5
 configure:7350: $? = 0
 configure:7388: result: ok
 configure:7425: checking for sysroot
@@ -558,26 +551,26 @@ configure:7775: checking if mt is a manifest tool
 configure:7781: mt '-?'
 configure:7789: result: no
 configure:8428: checking for dlfcn.h
-configure:8428: riscv64-unknown-linux-gnu-g++ -c  -g -DNDEBUG  conftest.cpp >&5
+configure:8428: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:8428: $? = 0
 configure:8428: result: yes
 configure:8644: checking for objdir
 configure:8659: result: .libs
 configure:8930: checking if riscv64-unknown-linux-gnu-gcc supports -fno-rtti -fno-exceptions
-configure:8948: riscv64-unknown-linux-gnu-gcc -c   -fno-rtti -fno-exceptions conftest.c >&5
+configure:8948: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  -fno-rtti -fno-exceptions conftest.c >&5
 cc1: warning: command-line option '-fno-rtti' is valid for C++/D/ObjC++ but not for C
 configure:8952: $? = 0
 configure:8965: result: no
 configure:9292: checking for riscv64-unknown-linux-gnu-gcc option to produce PIC
 configure:9299: result: -fPIC -DPIC
 configure:9307: checking if riscv64-unknown-linux-gnu-gcc PIC flag -fPIC -DPIC works
-configure:9325: riscv64-unknown-linux-gnu-gcc -c   -fPIC -DPIC -DPIC conftest.c >&5
+configure:9325: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  -fPIC -DPIC -DPIC conftest.c >&5
 configure:9329: $? = 0
 configure:9342: result: yes
 configure:9371: checking if riscv64-unknown-linux-gnu-gcc static flag -static works
 configure:9399: result: yes
 configure:9414: checking if riscv64-unknown-linux-gnu-gcc supports -c -o file.o
-configure:9435: riscv64-unknown-linux-gnu-gcc -c   -o out/conftest2.o conftest.c >&5
+configure:9435: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  -o out/conftest2.o conftest.c >&5
 configure:9439: $? = 0
 configure:9461: result: yes
 configure:9469: checking if riscv64-unknown-linux-gnu-gcc supports -c -o file.o
@@ -585,7 +578,7 @@ configure:9516: result: yes
 configure:9549: checking whether the riscv64-unknown-linux-gnu-gcc linker (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld) supports shared libraries
 configure:10706: result: yes
 configure:10946: checking dynamic linker characteristics
-configure:11446: riscv64-unknown-linux-gnu-gcc -o conftest    -Wl,-rpath -Wl,/foo conftest.c  >&5
+configure:11446: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG   -Wl,-rpath -Wl,/foo conftest.c  >&5
 configure:11446: $? = 0
 configure:11680: result: GNU/Linux ld.so
 configure:11787: checking how to hardcode library paths into programs
@@ -643,18 +636,18 @@ configure:12791: checking if the linker (/media/shc/0EDEBC4906059163/tools/riscv
 configure:12806: result: yes
 configure:12861: checking whether the riscv64-unknown-linux-gnu-g++ linker (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld) supports shared libraries
 configure:13863: result: yes
-configure:13899: riscv64-unknown-linux-gnu-g++ -c  -g -DNDEBUG  conftest.cpp >&5
+configure:13899: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:13902: $? = 0
 configure:14422: checking for riscv64-unknown-linux-gnu-g++ option to produce PIC
 configure:14429: result: -fPIC -DPIC
 configure:14437: checking if riscv64-unknown-linux-gnu-g++ PIC flag -fPIC -DPIC works
-configure:14455: riscv64-unknown-linux-gnu-g++ -c  -g -DNDEBUG  -fPIC -DPIC -DPIC conftest.cpp >&5
+configure:14455: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  -fPIC -DPIC -DPIC conftest.cpp >&5
 configure:14459: $? = 0
 configure:14472: result: yes
 configure:14495: checking if riscv64-unknown-linux-gnu-g++ static flag -static works
 configure:14523: result: yes
 configure:14535: checking if riscv64-unknown-linux-gnu-g++ supports -c -o file.o
-configure:14556: riscv64-unknown-linux-gnu-g++ -c  -g -DNDEBUG  -o out/conftest2.o conftest.cpp >&5
+configure:14556: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  -o out/conftest2.o conftest.cpp >&5
 configure:14560: $? = 0
 configure:14582: result: yes
 configure:14587: checking if riscv64-unknown-linux-gnu-g++ supports -c -o file.o
@@ -668,7 +661,7 @@ configure:15590: result: immediate
 configure:15653: checking for ANSI C header files
 configure:15757: result: yes
 configure:15768: checking fcntl.h usability
-configure:15768: riscv64-unknown-linux-gnu-g++ -c  -g -DNDEBUG  conftest.cpp >&5
+configure:15768: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:15768: $? = 0
 configure:15768: result: yes
 configure:15768: checking fcntl.h presence
@@ -680,7 +673,7 @@ configure:15768: result: yes
 configure:15768: checking for inttypes.h
 configure:15768: result: yes
 configure:15768: checking limits.h usability
-configure:15768: riscv64-unknown-linux-gnu-g++ -c  -g -DNDEBUG  conftest.cpp >&5
+configure:15768: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:15768: $? = 0
 configure:15768: result: yes
 configure:15768: checking limits.h presence
@@ -698,44 +691,44 @@ configure:15833: result: no
 configure:15842: checking for working strtod
 configure:15893: result: no
 configure:15902: checking for pow
-configure:15902: riscv64-unknown-linux-gnu-g++ -o conftest  -g -DNDEBUG   conftest.cpp  >&5
+configure:15902: riscv64-unknown-linux-gnu-g++ -o conftest -DDLA_2_CONFIG   conftest.cpp  >&5
 conftest.cpp:57:6: warning: declaration of 'char pow()' conflicts with built-in declaration 'double pow(double, double)' [-Wbuiltin-declaration-mismatch]
    57 | char pow ();
       |      ^~~
 configure:15902: $? = 0
 configure:15902: result: yes
 configure:15958: checking for ftruncate
-configure:15958: riscv64-unknown-linux-gnu-g++ -o conftest  -g -DNDEBUG   conftest.cpp  >&5
+configure:15958: riscv64-unknown-linux-gnu-g++ -o conftest -DDLA_2_CONFIG   conftest.cpp  >&5
 configure:15958: $? = 0
 configure:15958: result: yes
 configure:15958: checking for memset
-configure:15958: riscv64-unknown-linux-gnu-g++ -o conftest  -g -DNDEBUG   conftest.cpp  >&5
+configure:15958: riscv64-unknown-linux-gnu-g++ -o conftest -DDLA_2_CONFIG   conftest.cpp  >&5
 conftest.cpp:58:6: warning: declaration of 'char memset()' conflicts with built-in declaration 'void* memset(void*, int, long unsigned int)' [-Wbuiltin-declaration-mismatch]
    58 | char memset ();
       |      ^~~~~~
 configure:15958: $? = 0
 configure:15958: result: yes
 configure:15958: checking for mkdir
-configure:15958: riscv64-unknown-linux-gnu-g++ -o conftest  -g -DNDEBUG   conftest.cpp  >&5
+configure:15958: riscv64-unknown-linux-gnu-g++ -o conftest -DDLA_2_CONFIG   conftest.cpp  >&5
 configure:15958: $? = 0
 configure:15958: result: yes
 configure:15958: checking for strchr
-configure:15958: riscv64-unknown-linux-gnu-g++ -o conftest  -g -DNDEBUG   conftest.cpp  >&5
+configure:15958: riscv64-unknown-linux-gnu-g++ -o conftest -DDLA_2_CONFIG   conftest.cpp  >&5
 conftest.cpp:60:6: warning: declaration of 'char strchr()' conflicts with built-in declaration 'char* strchr(const char*, int)' [-Wbuiltin-declaration-mismatch]
    60 | char strchr ();
       |      ^~~~~~
 configure:15958: $? = 0
 configure:15958: result: yes
 configure:15958: checking for strerror
-configure:15958: riscv64-unknown-linux-gnu-g++ -o conftest  -g -DNDEBUG   conftest.cpp  >&5
+configure:15958: riscv64-unknown-linux-gnu-g++ -o conftest -DDLA_2_CONFIG   conftest.cpp  >&5
 configure:15958: $? = 0
 configure:15958: result: yes
 configure:15958: checking for strtol
-configure:15958: riscv64-unknown-linux-gnu-g++ -o conftest  -g -DNDEBUG   conftest.cpp  >&5
+configure:15958: riscv64-unknown-linux-gnu-g++ -o conftest -DDLA_2_CONFIG   conftest.cpp  >&5
 configure:15958: $? = 0
 configure:15958: result: yes
 configure:15972: checking zlib version
-configure:15992: riscv64-unknown-linux-gnu-g++ -c  -g -DNDEBUG  conftest.cpp >&5
+configure:15992: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 conftest.cpp:41:18: fatal error: zlib.h: No such file or directory
    41 |         #include <zlib.h>
       |                  ^~~~~~~~
@@ -796,7 +789,7 @@ configure: failed program was:
 | }
 configure:16075: result: headers missing or too old (requires 1.2.0.4)
 configure:16297: checking for the pthreads library -lpthreads
-configure:16330: riscv64-unknown-linux-gnu-gcc -o conftest     conftest.c -lpthreads  >&5
+configure:16330: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG    conftest.c -lpthreads  >&5
 /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
 configure:16330: $? = 1
@@ -852,8 +845,8 @@ configure: failed program was:
 | }
 configure:16339: result: no
 configure:16242: checking whether pthreads work without any flags
-configure:16330: riscv64-unknown-linux-gnu-gcc -o conftest     conftest.c   >&5
-/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/cc1tBw4x.o: in function `main':
+configure:16330: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG    conftest.c   >&5
+/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccNylbHy.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `pthread_join'
 /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x5a): undefined reference to `__pthread_register_cancel'
 /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x6a): undefined reference to `pthread_create'
@@ -912,7 +905,7 @@ configure: failed program was:
 | }
 configure:16339: result: no
 configure:16247: checking whether pthreads work with -Kthread
-configure:16330: riscv64-unknown-linux-gnu-gcc -o conftest  -Kthread   conftest.c   >&5
+configure:16330: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG -Kthread   conftest.c   >&5
 riscv64-unknown-linux-gnu-gcc: error: unrecognized command-line option '-Kthread'; did you mean '-pthread'?
 configure:16330: $? = 1
 configure: failed program was:
@@ -967,7 +960,7 @@ configure: failed program was:
 | }
 configure:16339: result: no
 configure:16247: checking whether pthreads work with -kthread
-configure:16330: riscv64-unknown-linux-gnu-gcc -o conftest  -kthread   conftest.c   >&5
+configure:16330: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG -kthread   conftest.c   >&5
 riscv64-unknown-linux-gnu-gcc: error: unrecognized command-line option '-kthread'; did you mean '-pthread'?
 configure:16330: $? = 1
 configure: failed program was:
@@ -1022,7 +1015,7 @@ configure: failed program was:
 | }
 configure:16339: result: no
 configure:16297: checking for the pthreads library -llthread
-configure:16330: riscv64-unknown-linux-gnu-gcc -o conftest     conftest.c -llthread  >&5
+configure:16330: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG    conftest.c -llthread  >&5
 /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: cannot find -llthread
 collect2: error: ld returned 1 exit status
 configure:16330: $? = 1
@@ -1078,26 +1071,26 @@ configure: failed program was:
 | }
 configure:16339: result: no
 configure:16247: checking whether pthreads work with -pthread
-configure:16330: riscv64-unknown-linux-gnu-gcc -o conftest  -pthread   conftest.c   >&5
+configure:16330: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG -pthread   conftest.c   >&5
 configure:16330: $? = 0
 configure:16339: result: yes
 configure:16358: checking for joinable pthread attribute
-configure:16373: riscv64-unknown-linux-gnu-gcc -o conftest  -pthread   conftest.c   >&5
+configure:16373: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG -pthread   conftest.c   >&5
 configure:16373: $? = 0
 configure:16379: result: PTHREAD_CREATE_JOINABLE
 configure:16389: checking if more special flags are required for pthreads
 configure:16396: result: no
 configure:16485: checking whether to check for GCC pthread/shared inconsistencies
-configure:16498: riscv64-unknown-linux-gnu-gcc -o conftest -shared -fPIC -Wl,-z,defs  -pthread   conftest.c   >&5
+configure:16498: riscv64-unknown-linux-gnu-gcc -o conftest -shared -fPIC -Wl,-z,defs -DDLA_2_CONFIG -pthread   conftest.c   >&5
 configure:16498: $? = 0
 configure:16510: result: yes
 configure:16516: checking whether -pthread is sufficient with -shared
-configure:16531: riscv64-unknown-linux-gnu-gcc -o conftest -shared -fPIC -Wl,-z,defs  -pthread   conftest.c   >&5
+configure:16531: riscv64-unknown-linux-gnu-gcc -o conftest -shared -fPIC -Wl,-z,defs -DDLA_2_CONFIG -pthread   conftest.c   >&5
 configure:16531: $? = 0
 configure:16538: result: yes
 configure:16626: checking whether what we have so far is sufficient with -nostdlib
-configure:16644: riscv64-unknown-linux-gnu-gcc -o conftest -nostdlib -shared -fPIC -Wl,-z,defs  -pthread   conftest.c   -lc >&5
-/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccmWeatE.o: in function `main':
+configure:16644: riscv64-unknown-linux-gnu-gcc -o conftest -nostdlib -shared -fPIC -Wl,-z,defs -DDLA_2_CONFIG -pthread   conftest.c   -lc >&5
+/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccUqqCiH.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `pthread_join'
 /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x58): undefined reference to `__pthread_register_cancel'
 /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x64): undefined reference to `pthread_create'
@@ -1156,17 +1149,17 @@ configure: failed program was:
 | }
 configure:16656: result: no
 configure:16661: checking whether -lpthread saves the day
-configure:16677: riscv64-unknown-linux-gnu-gcc -o conftest -nostdlib -shared -fPIC -Wl,-z,defs  -pthread   conftest.c -lpthread   -lc >&5
+configure:16677: riscv64-unknown-linux-gnu-gcc -o conftest -nostdlib -shared -fPIC -Wl,-z,defs -DDLA_2_CONFIG -pthread   conftest.c -lpthread   -lc >&5
 configure:16677: $? = 0
 configure:16686: result: yes
 configure:16726: checking the location of hash_map
-configure:16752: riscv64-unknown-linux-gnu-g++ -c  -g -DNDEBUG  conftest.cpp >&5
+configure:16752: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:16752: $? = 0
-configure:16774: riscv64-unknown-linux-gnu-g++ -c  -g -DNDEBUG  conftest.cpp >&5
+configure:16774: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:16774: $? = 0
 configure:16841: result: <unordered_map>
 configure:16856: checking for library containing sched_yield
-configure:16887: riscv64-unknown-linux-gnu-g++ -o conftest  -g -DNDEBUG   conftest.cpp  >&5
+configure:16887: riscv64-unknown-linux-gnu-g++ -o conftest -DDLA_2_CONFIG   conftest.cpp  >&5
 configure:16887: $? = 0
 configure:16904: result: none required
 configure:17037: checking that generated files are newer than configure
@@ -1197,7 +1190,7 @@ config.status:1373: config.h is unchanged
 config.status:1421: executing depfiles commands
 config.status:1421: executing libtool commands
 configure:19640: === configuring in gtest (/home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest)
-configure:19703: running /bin/sh ./configure --disable-option-checking '--prefix=/usr/local'  '--host=riscv64-unknown-linux-gnu' '--disable-shared' '--enable-static' 'host_alias=riscv64-unknown-linux-gnu' --cache-file=/dev/null --srcdir=.
+configure:19703: running /bin/sh ./configure --disable-option-checking '--prefix=/usr/local'  '--host=riscv64-unknown-linux-gnu' '--disable-shared' '--enable-static' 'host_alias=riscv64-unknown-linux-gnu' 'CFLAGS=-DDLA_2_CONFIG' 'CXXFLAGS=-DDLA_2_CONFIG' --cache-file=/dev/null --srcdir=.
 
 ## ---------------- ##
 ## Cache variables. ##
@@ -1215,14 +1208,14 @@ ac_cv_env_CCC_set=
 ac_cv_env_CCC_value=
 ac_cv_env_CC_set=
 ac_cv_env_CC_value=
-ac_cv_env_CFLAGS_set=
-ac_cv_env_CFLAGS_value=
+ac_cv_env_CFLAGS_set=set
+ac_cv_env_CFLAGS_value=-DDLA_2_CONFIG
 ac_cv_env_CPPFLAGS_set=
 ac_cv_env_CPPFLAGS_value=
 ac_cv_env_CXXCPP_set=
 ac_cv_env_CXXCPP_value=
-ac_cv_env_CXXFLAGS_set=
-ac_cv_env_CXXFLAGS_value=
+ac_cv_env_CXXFLAGS_set=set
+ac_cv_env_CXXFLAGS_value=-DDLA_2_CONFIG
 ac_cv_env_CXX_set=
 ac_cv_env_CXX_value=
 ac_cv_env_LDFLAGS_set=
@@ -1339,12 +1332,12 @@ AUTOMAKE='${SHELL} /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/external
 AWK='gawk'
 CC='riscv64-unknown-linux-gnu-gcc'
 CCDEPMODE='depmode=gcc3'
-CFLAGS=''
+CFLAGS='-DDLA_2_CONFIG'
 CPPFLAGS=''
 CXX='riscv64-unknown-linux-gnu-g++'
 CXXCPP='riscv64-unknown-linux-gnu-g++ -E'
 CXXDEPMODE='depmode=gcc3'
-CXXFLAGS=' -g -DNDEBUG'
+CXXFLAGS='-DDLA_2_CONFIG'
 CYGPATH_W='echo'
 DEFS='-DHAVE_CONFIG_H'
 DEPDIR='.deps'
@@ -1396,7 +1389,7 @@ PACKAGE_URL=''
 PACKAGE_VERSION='2.6.1'
 PATH_SEPARATOR=':'
 POW_LIB=''
-PROTOBUF_OPT_FLAG='-O2'
+PROTOBUF_OPT_FLAG=''
 PROTOC=''
 PTHREAD_CC='riscv64-unknown-linux-gnu-gcc'
 PTHREAD_CFLAGS='-pthread'

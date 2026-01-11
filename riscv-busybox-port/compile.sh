@@ -24,8 +24,21 @@ fi
 if [ -f "../nvdla/sw/kmd/port/linux/opendla.ko" ]; then
     echo "Copying opendla.ko..."
     cp "../nvdla/sw/kmd/port/linux/opendla.ko" ./_install/opendla.ko
+    echo "Stripping opendla.ko..."
+    "${CROSS_COMPILE}strip" --strip-debug ./_install/opendla.ko
 else
     echo "Warning: opendla.ko not found at ../nvdla/sw/kmd/port/linux/"
+fi
+
+# Copy nvdla_runtime
+if [ -f "../nvdla/sw/umd/out/apps/runtime/nvdla_runtime/nvdla_runtime" ]; then
+    echo "Copying nvdla_runtime..."
+    cp "../nvdla/sw/umd/out/apps/runtime/nvdla_runtime/nvdla_runtime" ./_install/bin/nvdla_runtime
+    chmod +x ./_install/bin/nvdla_runtime
+    echo "Stripping nvdla_runtime..."
+    "${CROSS_COMPILE}strip" ./_install/bin/nvdla_runtime
+else
+    echo "Warning: nvdla_runtime not found at ../nvdla/sw/umd/out/apps/runtime/nvdla_runtime/nvdla_runtime"
 fi
 
 cd _install;

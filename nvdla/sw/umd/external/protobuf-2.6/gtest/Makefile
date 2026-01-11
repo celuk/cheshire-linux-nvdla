@@ -481,13 +481,13 @@ AUTOMAKE = ${SHELL} /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/externa
 AWK = gawk
 CC = riscv64-unknown-linux-gnu-gcc
 CCDEPMODE = depmode=gcc3
-CFLAGS = 
+CFLAGS = -DDLA_2_CONFIG
 CPP = riscv64-unknown-linux-gnu-gcc -E
 CPPFLAGS = 
 CXX = riscv64-unknown-linux-gnu-g++
 CXXCPP = riscv64-unknown-linux-gnu-g++ -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS =  -g -DNDEBUG
+CXXFLAGS = -DDLA_2_CONFIG
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
