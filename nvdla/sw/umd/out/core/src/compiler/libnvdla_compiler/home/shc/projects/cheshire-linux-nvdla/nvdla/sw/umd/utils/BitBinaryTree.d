@@ -1,0 +1,36 @@
+/home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/out/core/src/compiler/libnvdla_compiler//home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/utils/BitBinaryTree.o: \
+ /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/utils/BitBinaryTree.c \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/stdc-predef.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0/include/stdbool.h \
+ /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/core/include/dlaerror.h \
+ /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/core/include/dlatypes.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0/include/stdint.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/stdint.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/bits/libc-header-start.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/features.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/sys/cdefs.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/bits/wordsize.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/bits/long-double.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/gnu/stubs.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/gnu/stubs-lp64d.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/bits/types.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/bits/timesize.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/bits/typesizes.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/bits/time64.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/bits/wchar.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/bits/stdint-intn.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/bits/stdint-uintn.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/stdlib.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0/include/stddef.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/bits/floatn.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/bits/floatn-common.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/bits/stdlib-float.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/memory.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/string.h \
+ /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/core/include/nvdla_os_inf.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/dirent.h \
+ /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/bits/dirent.h \
+ /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/core/include/dlaerror.h \
+ /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/core/include/dlatypes.h \
+ /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/core/include/BitBinaryTree.h \
+ /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/core/include/ErrorMacros.h
