@@ -269,12 +269,10 @@ static int32_t nvdla_drm_gem_object_mmap(struct drm_gem_object *dobj,
 static int32_t nvdla_drm_gem_mmap_buf(struct drm_gem_object *obj,
 				struct vm_area_struct *vma)
 {
-	int32_t ret;
-
-	ret = drm_gem_mmap_obj(obj, obj->size, vma);
-	if (ret)
-		return ret;
-
+	/* 
+	 * Removed recursive call to drm_gem_mmap_obj set by updated kernel DRM subsystem.
+	 * The VMA setup handles vm_ops automatically via drm_gem_object_funcs.
+	 */
 	return nvdla_drm_gem_object_mmap(obj, vma);
 }
 
