@@ -1,0 +1,15 @@
+port/linux/../../firmware/scheduler.o
+port/linux/../../firmware/engine.o
+port/linux/../../firmware/bdma.o
+port/linux/../../firmware/conv.o
+port/linux/../../firmware/sdp.o
+port/linux/../../firmware/cdp.o
+port/linux/../../firmware/pdp.o
+port/linux/../../firmware/rubik.o
+port/linux/../../firmware/cache.o
+port/linux/../../firmware/common.o
+port/linux/../../firmware/engine_data.o
+port/linux/../../firmware/engine_isr.o
+port/linux/../../firmware/engine_debug.o
+port/linux/nvdla_core_callbacks.o
+port/linux/nvdla_gem.o

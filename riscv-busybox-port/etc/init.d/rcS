@@ -7,4 +7,4 @@ echo "#    Cheshire Linux Booted!      #"
 echo "##################################"
 echo " "
 echo "Starting shell..."
-exec /bin/sh
+exec setsid cttyhack /bin/sh

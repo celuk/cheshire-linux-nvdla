@@ -32,7 +32,9 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <stdarg.h>
+#include <linux/stdarg.h>
+#include <linux/iosys-map.h>
+#include <linux/types.h>
 
 #include <linux/dma-buf.h>
 #include <linux/dma-mapping.h>
@@ -228,6 +230,7 @@ int32_t dla_data_write(void *driver_context, void *task_data,
 	struct dma_buf *buf;
 	struct nvdla_mem_handle *handles;
 	struct nvdla_task *task = (struct nvdla_task *)task_data;
+	struct iosys_map map;
 
 	handles = task->address_list;
 	buf = dma_buf_get(handles[dst].handle);
@@ -241,18 +244,17 @@ int32_t dla_data_write(void *driver_context, void *task_data,
 	if (ret)
 		goto put_dma_buf;
 
-	ptr = dma_buf_vmap(buf);
-	if (!ptr) {
+	ret = dma_buf_vmap(buf, &map);
+	if (ret) {
 		pr_err("%s: Failed to vmap dma_buf for handle=%d\n", __func__,
 						handles[dst].handle);
-		ret = -ENOMEM;
 		goto end_cpu_access;
 	}
-
+	ptr = map.vaddr;
 
 	memcpy((void *)((uint8_t *)ptr + offset), src, size);
 
-	dma_buf_vunmap(buf, ptr);
+	dma_buf_vunmap(buf, &map);
 
 end_cpu_access:
 	dma_buf_end_cpu_access(buf, DMA_BIDIRECTIONAL);
@@ -272,6 +274,7 @@ int32_t dla_data_read(void *driver_context, void *task_data,
 	struct dma_buf *buf;
 	struct nvdla_mem_handle *handles;
 	struct nvdla_task *task = (struct nvdla_task *)task_data;
+	struct iosys_map map;
 
 	handles = task->address_list;
 
@@ -286,17 +289,17 @@ int32_t dla_data_read(void *driver_context, void *task_data,
 	if (ret)
 		goto put_dma_buf;
 
-	ptr = dma_buf_vmap(buf);
-	if (!ptr) {
+	ret = dma_buf_vmap(buf, &map);
+	if (ret) {
 		pr_err("%s: Failed to vmap dma_buf for handle=%d\n", __func__,
 						handles[src].handle);
-		ret = -ENOMEM;
 		goto end_cpu_access;
 	}
+	ptr = map.vaddr;
 
 	memcpy(dst, (void *)(((uint8_t *)ptr) + offset), size);
 
-	dma_buf_vunmap(buf, ptr);
+	dma_buf_vunmap(buf, &map);
 
 end_cpu_access:
 	dma_buf_end_cpu_access(buf, DMA_BIDIRECTIONAL);
@@ -417,13 +420,11 @@ static int32_t nvdla_probe(struct platform_device *pdev)
 	return err;
 }
 
-static int32_t __exit nvdla_remove(struct platform_device *pdev)
+static void nvdla_remove(struct platform_device *pdev)
 {
 	struct nvdla_device *nvdla_dev = dev_get_drvdata(&pdev->dev);
 
 	nvdla_drm_remove(nvdla_dev);
-
-	return 0;
 }
 
 static struct platform_driver nvdla_driver = {
@@ -440,3 +441,4 @@ module_platform_driver(nvdla_driver);
 MODULE_LICENSE("Dual BSD/GPL");
 MODULE_AUTHOR("NVIDIA");
 MODULE_DESCRIPTION("Nvidia Deep Learning Accelerator driver");
+MODULE_IMPORT_NS("DMA_BUF");

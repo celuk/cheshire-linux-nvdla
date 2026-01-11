@@ -32,11 +32,24 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <linux/types.h>
+#include <linux/slab.h>
+#include <linux/dma-mapping.h>
+#include <linux/mm.h>
+
 #include <drm/drm.h>
-#include <drm/drm_gem_cma_helper.h>
+#include <drm/drm_device.h>
+#include <drm/drm_drv.h>
+#include <drm/drm_file.h>
+#include <drm/drm_ioctl.h>
+#include <drm/drm_prime.h>
+#include <drm/drm_gem_dma_helper.h>
+#include <drm/drm_gem.h>
 
 #include <nvdla_linux.h>
 #include <nvdla_ioctl.h>
+
+static const struct drm_gem_object_funcs nvdla_gem_object_funcs;
 
 #define to_nvdla_obj(x) container_of(x, struct nvdla_gem_object, object)
 
@@ -46,6 +59,11 @@ struct nvdla_gem_object {
 	void *kvaddr;
 	dma_addr_t dma_addr;
 	unsigned long dma_attrs;
+};
+
+static const struct vm_operations_struct nvdla_gem_vm_ops = {
+	.open = drm_gem_vm_open,
+	.close = drm_gem_vm_close,
 };
 
 static int32_t nvdla_fill_task_desc(struct nvdla_ioctl_submit_task *local_task,
@@ -161,6 +179,7 @@ nvdla_gem_create_object(struct drm_device *drm, uint32_t size)
 	dobj = &nobj->object;
 
 	drm_gem_private_object_init(drm, dobj, size);
+	dobj->funcs = &nvdla_gem_object_funcs;
 
 	ret = nvdla_gem_alloc(nobj);
 	if (ret)
@@ -205,7 +224,7 @@ nvdla_gem_create_with_handle(struct drm_file *file_priv,
 	if (ret)
 		goto free_drm_object;
 
-	drm_gem_object_unreference_unlocked(dobj);
+	drm_gem_object_put(dobj);
 
 	return nobj;
 
@@ -236,7 +255,7 @@ static int32_t nvdla_drm_gem_object_mmap(struct drm_gem_object *dobj,
 	struct nvdla_gem_object *nobj = to_nvdla_obj(dobj);
 	struct drm_device *drm = dobj->dev;
 
-	vma->vm_flags &= ~VM_PFNMAP;
+	vm_flags_clear(vma, VM_PFNMAP);
 	vma->vm_pgoff = 0;
 
 	ret = dma_mmap_attrs(drm->dev, vma, nobj->kvaddr, nobj->dma_addr,
@@ -297,16 +316,18 @@ static struct sg_table
 	return sgt;
 }
 
-static void *nvdla_drm_gem_prime_vmap(struct drm_gem_object *obj)
+static int nvdla_drm_gem_prime_vmap(struct drm_gem_object *obj, struct iosys_map *map)
 {
 	struct nvdla_gem_object *nobj = to_nvdla_obj(obj);
 
-	return nobj->kvaddr;
+	iosys_map_set_vaddr(map, nobj->kvaddr);
+
+	return 0;
 }
 
-static void nvdla_drm_gem_prime_vunmap(struct drm_gem_object *obj, void *vaddr)
+static void nvdla_drm_gem_prime_vunmap(struct drm_gem_object *obj, struct iosys_map *map)
 {
-	/* Nothing to do */
+	/* Nothing */
 }
 
 int32_t nvdla_gem_dma_addr(struct drm_device *dev, struct drm_file *file,
@@ -329,7 +350,7 @@ int32_t nvdla_gem_dma_addr(struct drm_device *dev, struct drm_file *file,
 
 	*addr = nobj->dma_addr;
 
-	drm_gem_object_put_unlocked(dobj);
+	drm_gem_object_put(dobj);
 
 	return 0;
 }
@@ -352,17 +373,17 @@ static int32_t nvdla_gem_map_offset(struct drm_device *drm, void *data,
 	args->offset = drm_vma_node_offset_addr(&dobj->vma_node);
 
 out:
-	drm_gem_object_unreference_unlocked(dobj);
+	drm_gem_object_put(dobj);
 
 	return 0;
 }
 
 static int32_t nvdla_gem_destroy(struct drm_device *drm, void *data,
-				struct drm_file *file)
+				 struct drm_file *file)
 {
 	struct nvdla_gem_destroy_args *args = data;
 
-	return drm_gem_dumb_destroy(file, drm, args->handle);
+	return drm_gem_handle_delete(file, args->handle);
 }
 
 static const struct file_operations nvdla_drm_fops = {
@@ -386,22 +407,19 @@ static const struct drm_ioctl_desc nvdla_drm_ioctls[] = {
 	DRM_IOCTL_DEF_DRV(NVDLA_GEM_DESTROY, nvdla_gem_destroy, DRM_RENDER_ALLOW),
 };
 
+static const struct drm_gem_object_funcs nvdla_gem_object_funcs = {
+	.free = nvdla_gem_free_object,
+	.export = drm_gem_prime_export,
+	.get_sg_table = nvdla_drm_gem_prime_get_sg_table,
+	.vmap = nvdla_drm_gem_prime_vmap,
+	.vunmap = nvdla_drm_gem_prime_vunmap,
+	.mmap = nvdla_drm_gem_mmap_buf,
+	.vm_ops = &nvdla_gem_vm_ops,
+};
+
 static struct drm_driver nvdla_drm_driver = {
-	.driver_features = DRIVER_GEM | DRIVER_PRIME | DRIVER_RENDER,
-
-	.gem_vm_ops = &drm_gem_cma_vm_ops,
-
-	.gem_free_object_unlocked = nvdla_gem_free_object,
-
-	.prime_handle_to_fd = drm_gem_prime_handle_to_fd,
-	.prime_fd_to_handle = drm_gem_prime_fd_to_handle,
-	.gem_prime_export = drm_gem_prime_export,
+	.driver_features = DRIVER_GEM | DRIVER_RENDER,
 	.gem_prime_import = drm_gem_prime_import,
-
-	.gem_prime_get_sg_table	= nvdla_drm_gem_prime_get_sg_table,
-	.gem_prime_vmap		= nvdla_drm_gem_prime_vmap,
-	.gem_prime_vunmap	= nvdla_drm_gem_prime_vunmap,
-	.gem_prime_mmap		= nvdla_drm_gem_mmap_buf,
 
 	.ioctls = nvdla_drm_ioctls,
 	.num_ioctls = ARRAY_SIZE(nvdla_drm_ioctls),
@@ -409,7 +427,6 @@ static struct drm_driver nvdla_drm_driver = {
 
 	.name = "nvdla",
 	.desc = "NVDLA driver",
-	.date = "20171017",
 	.major = 0,
 	.minor = 0,
 	.patchlevel = 0,
@@ -417,7 +434,6 @@ static struct drm_driver nvdla_drm_driver = {
 
 int32_t nvdla_drm_probe(struct nvdla_device *nvdla_dev)
 {
-	int32_t dma;
 	int32_t err;
 	struct drm_device *drm;
 	struct drm_driver *driver = &nvdla_drm_driver;
@@ -436,23 +452,26 @@ int32_t nvdla_drm_probe(struct nvdla_device *nvdla_dev)
 	 * TODO Register separate driver for memory and use DT node to
 	 * read memory range
 	 */
+	/*
 	dma = dma_declare_coherent_memory(drm->dev, 0xC0000000, 0xC0000000,
 			0x40000000, DMA_MEMORY_MAP | DMA_MEMORY_EXCLUSIVE);
 	if (!(dma & DMA_MEMORY_MAP)) {
 		err = -ENOMEM;
 		goto unref;
 	}
+	*/
+	pr_warn("NVDLA: dma_declare_coherent_memory disabled\n");
 
 	return 0;
 
 unref:
-	drm_dev_unref(drm);
+	drm_dev_put(drm);
 	return err;
 }
 
 void nvdla_drm_remove(struct nvdla_device *nvdla_dev)
 {
 	drm_dev_unregister(nvdla_dev->drm);
-	dma_release_declared_memory(&nvdla_dev->pdev->dev);
-	drm_dev_unref(nvdla_dev->drm);
+	// dma_release_declared_memory(&nvdla_dev->pdev->dev);
+	drm_dev_put(nvdla_dev->drm);
 }
