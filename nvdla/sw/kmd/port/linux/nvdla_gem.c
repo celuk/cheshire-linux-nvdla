@@ -278,16 +278,11 @@ static int32_t nvdla_drm_gem_mmap_buf(struct drm_gem_object *obj,
 
 static int32_t nvdla_drm_gem_mmap(struct file *filp, struct vm_area_struct *vma)
 {
-	int32_t ret;
-	struct drm_gem_object *obj;
-
-	ret = drm_gem_mmap(filp, vma);
-	if (ret)
-		return ret;
-
-	obj = vma->vm_private_data;
-
-	return nvdla_drm_gem_object_mmap(obj, vma);
+	/* 
+	 * delegated to drm_gem_mmap -> drm_gem_mmap_obj -> nvdla_drm_gem_mmap_buf.
+	 * Do not manualy call nvdla_drm_gem_object_mmap here again.
+	 */
+	return drm_gem_mmap(filp, vma);
 }
 
 static struct sg_table
