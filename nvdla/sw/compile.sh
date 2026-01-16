@@ -5,9 +5,9 @@ SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
 KDIR=$(readlink -f "$SCRIPT_DIR/../../riscv-linux-port")
 
 export ARCH=riscv
-export CROSS_COMPILE=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-
+export CROSS_COMPILE=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-
 export TOOLCHAIN_PREFIX=$CROSS_COMPILE
-export PATH=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin:$PATH
+export PATH=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin:$PATH
 export TOP="$SCRIPT_DIR/umd"
 
 # Define DLA_2_CONFIG globally

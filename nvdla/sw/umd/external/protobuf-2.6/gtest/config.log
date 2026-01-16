@@ -27,7 +27,7 @@ uname -v = #91~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Nov 20 15:20:45 UTC 2
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin
+PATH: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin
 PATH: /usr/local/sbin
 PATH: /usr/local/bin
 PATH: /usr/sbin
@@ -46,7 +46,7 @@ configure:2387: result: /usr/bin/install -c
 configure:2398: checking whether build environment is sane
 configure:2453: result: yes
 configure:2512: checking for riscv64-unknown-linux-gnu-strip
-configure:2528: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-strip
+configure:2528: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-strip
 configure:2539: result: riscv64-unknown-linux-gnu-strip
 configure:2604: checking for a thread-safe mkdir -p
 configure:2643: result: /usr/bin/mkdir -p
@@ -58,7 +58,7 @@ configure:2710: result: yes
 configure:2739: checking whether make supports nested variables
 configure:2756: result: yes
 configure:2891: checking for riscv64-unknown-linux-gnu-gcc
-configure:2907: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-gcc
+configure:2907: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-gcc
 configure:2918: result: riscv64-unknown-linux-gnu-gcc
 configure:3187: checking for C compiler version
 configure:3196: riscv64-unknown-linux-gnu-gcc --version >&5
@@ -71,9 +71,9 @@ configure:3207: $? = 0
 configure:3196: riscv64-unknown-linux-gnu-gcc -v >&5
 Using built-in specs.
 COLLECT_GCC=riscv64-unknown-linux-gnu-gcc
-COLLECT_LTO_WRAPPER=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../libexec/gcc/riscv64-unknown-linux-gnu/10.2.0/lto-wrapper
+COLLECT_LTO_WRAPPER=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../libexec/gcc/riscv64-unknown-linux-gnu/10.2.0/lto-wrapper
 Target: riscv64-unknown-linux-gnu
-Configured with: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/../_install --with-sysroot=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/../_install/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++,fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././riscv-gcc --disable-multilib --with-abi=lp64d --with-arch=rv64imafdc --with-tune=rocket 'CFLAGS_FOR_TARGET=-O2   -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2   -mcmodel=medlow'
+Configured with: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/../_install2 --with-sysroot=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/../_install2/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++,fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././riscv-gcc --disable-multilib --with-abi=lp64d --with-arch=rv64imafdc --with-tune=rocket 'CFLAGS_FOR_TARGET=-O2   -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2   -mcmodel=medlow'
 Thread model: posix
 Supported LTO compression algorithms: zlib
 gcc version 10.2.0 (GCC) 
@@ -132,7 +132,7 @@ configure:3770: result: GNU
 configure:3796: checking dependency style of riscv64-unknown-linux-gnu-gcc
 configure:3907: result: gcc3
 configure:3936: checking for riscv64-unknown-linux-gnu-g++
-configure:3952: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-g++
+configure:3952: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-g++
 configure:3963: result: riscv64-unknown-linux-gnu-g++
 configure:4034: checking for C++ compiler version
 configure:4043: riscv64-unknown-linux-gnu-g++ --version >&5
@@ -145,9 +145,9 @@ configure:4054: $? = 0
 configure:4043: riscv64-unknown-linux-gnu-g++ -v >&5
 Using built-in specs.
 COLLECT_GCC=riscv64-unknown-linux-gnu-g++
-COLLECT_LTO_WRAPPER=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../libexec/gcc/riscv64-unknown-linux-gnu/10.2.0/lto-wrapper
+COLLECT_LTO_WRAPPER=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../libexec/gcc/riscv64-unknown-linux-gnu/10.2.0/lto-wrapper
 Target: riscv64-unknown-linux-gnu
-Configured with: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/../_install --with-sysroot=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/../_install/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++,fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././riscv-gcc --disable-multilib --with-abi=lp64d --with-arch=rv64imafdc --with-tune=rocket 'CFLAGS_FOR_TARGET=-O2   -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2   -mcmodel=medlow'
+Configured with: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/../_install2 --with-sysroot=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/../_install2/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++,fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././riscv-gcc --disable-multilib --with-abi=lp64d --with-arch=rv64imafdc --with-tune=rocket 'CFLAGS_FOR_TARGET=-O2   -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2   -mcmodel=medlow'
 Thread model: posix
 Supported LTO compression algorithms: zlib
 gcc version 10.2.0 (GCC) 
@@ -187,14 +187,14 @@ configure:4685: result: /usr/bin/grep -E
 configure:4690: checking for fgrep
 configure:4752: result: /usr/bin/grep -F
 configure:4787: checking for ld used by riscv64-unknown-linux-gnu-gcc
-configure:4854: result: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld
-configure:4861: checking if the linker (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld) is GNU ld
+configure:4854: result: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld
+configure:4861: checking if the linker (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld) is GNU ld
 configure:4876: result: yes
 configure:4888: checking for BSD- or MS-compatible name lister (nm)
-configure:4937: result: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B
-configure:5067: checking the name lister (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B) interface
+configure:4937: result: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B
+configure:5067: checking the name lister (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B) interface
 configure:5074: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
-configure:5077: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B "conftest.o"
+configure:5077: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B "conftest.o"
 configure:5080: output
 0000000000000000 B some_variable
 configure:5087: result: BSD nm
@@ -210,10 +210,10 @@ configure:5305: checking how to convert x86_64-unknown-linux-gnu file names to r
 configure:5345: result: func_convert_file_noop
 configure:5352: checking how to convert x86_64-unknown-linux-gnu file names to toolchain format
 configure:5372: result: func_convert_file_noop
-configure:5379: checking for /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld option to reload object files
+configure:5379: checking for /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld option to reload object files
 configure:5386: result: -r
 configure:5420: checking for riscv64-unknown-linux-gnu-objdump
-configure:5436: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-objdump
+configure:5436: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-objdump
 configure:5447: result: riscv64-unknown-linux-gnu-objdump
 configure:5519: checking how to recognize dependent libraries
 configure:5717: result: pass_all
@@ -224,7 +224,7 @@ configure:5832: result: no
 configure:5862: checking how to associate runtime and link libraries
 configure:5889: result: printf %s\n
 configure:5906: checking for riscv64-unknown-linux-gnu-ar
-configure:5922: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-ar
+configure:5922: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-ar
 configure:5933: result: riscv64-unknown-linux-gnu-ar
 configure:6014: checking for archiver @FILE support
 configure:6031: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
@@ -238,12 +238,12 @@ configure:6057: result: @
 configure:6075: checking for riscv64-unknown-linux-gnu-strip
 configure:6102: result: riscv64-unknown-linux-gnu-strip
 configure:6174: checking for riscv64-unknown-linux-gnu-ranlib
-configure:6190: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-ranlib
+configure:6190: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-ranlib
 configure:6201: result: riscv64-unknown-linux-gnu-ranlib
-configure:6343: checking command to parse /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B output from riscv64-unknown-linux-gnu-gcc object
+configure:6343: checking command to parse /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B output from riscv64-unknown-linux-gnu-gcc object
 configure:6463: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:6466: $? = 0
-configure:6470: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B conftest.o \| sed -n -e 's/^.*[ ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[ ][ ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
+configure:6470: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B conftest.o \| sed -n -e 's/^.*[ ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[ ][ ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
 configure:6473: $? = 0
 configure:6539: riscv64-unknown-linux-gnu-g++ -o conftest -DDLA_2_CONFIG   conftest.cpp conftstm.o >&5
 configure:6542: $? = 0
@@ -366,7 +366,7 @@ configure:8894: $? = 0
 configure:8916: result: yes
 configure:8924: checking if riscv64-unknown-linux-gnu-gcc supports -c -o file.o
 configure:8971: result: yes
-configure:9004: checking whether the riscv64-unknown-linux-gnu-gcc linker (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld) supports shared libraries
+configure:9004: checking whether the riscv64-unknown-linux-gnu-gcc linker (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld) supports shared libraries
 configure:10161: result: yes
 configure:10401: checking dynamic linker characteristics
 configure:10901: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG   -Wl,-rpath -Wl,/foo conftest.c  >&5
@@ -449,10 +449,10 @@ configure: failed program was:
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
 configure:12172: checking for ld used by riscv64-unknown-linux-gnu-g++
-configure:12239: result: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld
-configure:12246: checking if the linker (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld) is GNU ld
+configure:12239: result: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld
+configure:12246: checking if the linker (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld) is GNU ld
 configure:12261: result: yes
-configure:12316: checking whether the riscv64-unknown-linux-gnu-g++ linker (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld) supports shared libraries
+configure:12316: checking whether the riscv64-unknown-linux-gnu-g++ linker (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld) supports shared libraries
 configure:13318: result: yes
 configure:13354: riscv64-unknown-linux-gnu-g++ -c -DDLA_2_CONFIG  conftest.cpp >&5
 configure:13357: $? = 0
@@ -470,7 +470,7 @@ configure:14015: $? = 0
 configure:14037: result: yes
 configure:14042: checking if riscv64-unknown-linux-gnu-g++ supports -c -o file.o
 configure:14089: result: yes
-configure:14119: checking whether the riscv64-unknown-linux-gnu-g++ linker (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld) supports shared libraries
+configure:14119: checking whether the riscv64-unknown-linux-gnu-g++ linker (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld) supports shared libraries
 configure:14158: result: yes
 configure:14299: checking dynamic linker characteristics
 configure:14967: result: GNU/Linux ld.so
@@ -480,7 +480,7 @@ configure:15115: checking for python
 configure:15146: result: :
 configure:15360: checking for the pthreads library -lpthreads
 configure:15393: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG    conftest.c -lpthreads  >&5
-/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: cannot find -lpthreads
+/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
 configure:15393: $? = 1
 configure: failed program was:
@@ -519,11 +519,11 @@ configure: failed program was:
 configure:15402: result: no
 configure:15305: checking whether pthreads work without any flags
 configure:15393: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG    conftest.c   >&5
-/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/cc90Q7F0.o: in function `main':
+/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccpBeVhL.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `pthread_join'
-/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x5a): undefined reference to `__pthread_register_cancel'
-/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x6a): undefined reference to `pthread_create'
-/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x78): undefined reference to `__pthread_unregister_cancel'
+/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x5a): undefined reference to `__pthread_register_cancel'
+/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x6a): undefined reference to `pthread_create'
+/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x78): undefined reference to `__pthread_unregister_cancel'
 collect2: error: ld returned 1 exit status
 configure:15393: $? = 1
 configure: failed program was:
@@ -638,7 +638,7 @@ configure: failed program was:
 configure:15402: result: no
 configure:15360: checking for the pthreads library -llthread
 configure:15393: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG    conftest.c -llthread  >&5
-/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: cannot find -llthread
+/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: cannot find -llthread
 collect2: error: ld returned 1 exit status
 configure:15393: $? = 1
 configure: failed program was:
@@ -797,9 +797,9 @@ lt_cv_file_magic_test_file=
 lt_cv_ld_reload_flag=-r
 lt_cv_nm_interface='BSD nm'
 lt_cv_objdir=.libs
-lt_cv_path_LD=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld
-lt_cv_path_LDCXX=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld
-lt_cv_path_NM='/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B'
+lt_cv_path_LD=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld
+lt_cv_path_LDCXX=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld
+lt_cv_path_NM='/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B'
 lt_cv_path_mainfest_tool=no
 lt_cv_prog_compiler_c_o=yes
 lt_cv_prog_compiler_c_o_CXX=yes
@@ -870,7 +870,7 @@ INSTALL_DATA='${INSTALL} -m 644'
 INSTALL_PROGRAM='${INSTALL}'
 INSTALL_SCRIPT='${INSTALL}'
 INSTALL_STRIP_PROGRAM='$(install_sh) -c -s'
-LD='/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld'
+LD='/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld'
 LDFLAGS=''
 LIBOBJS=''
 LIBS=''
@@ -881,7 +881,7 @@ LTLIBOBJS=''
 MAKEINFO='${SHELL} /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest/build-aux/missing makeinfo'
 MANIFEST_TOOL=':'
 MKDIR_P='/usr/bin/mkdir -p'
-NM='/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B'
+NM='/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B'
 NMEDIT=''
 OBJDUMP='riscv64-unknown-linux-gnu-objdump'
 OBJEXT='o'

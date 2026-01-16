@@ -27,7 +27,7 @@ uname -v = #91~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Nov 20 15:20:45 UTC 2
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin
+PATH: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin
 PATH: /home/shc/cadence/installs/XCELIUM2403/bin/
 PATH: /home/shc/cadence/installs/XCELIUM2403/tools/bin/64bit/
 PATH: /home/shc/.local/bin
@@ -69,7 +69,7 @@ configure:2734: result: /usr/bin/install -c
 configure:2745: checking whether build environment is sane
 configure:2800: result: yes
 configure:2859: checking for riscv64-unknown-linux-gnu-strip
-configure:2875: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-strip
+configure:2875: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-strip
 configure:2886: result: riscv64-unknown-linux-gnu-strip
 configure:2951: checking for a thread-safe mkdir -p
 configure:2990: result: /usr/bin/mkdir -p
@@ -85,7 +85,7 @@ configure:3259: result: yes
 configure:3286: checking for style of include used by make
 configure:3314: result: GNU
 configure:3345: checking for riscv64-unknown-linux-gnu-gcc
-configure:3361: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-gcc
+configure:3361: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-gcc
 configure:3372: result: riscv64-unknown-linux-gnu-gcc
 configure:3641: checking for C compiler version
 configure:3650: riscv64-unknown-linux-gnu-gcc --version >&5
@@ -98,7 +98,7 @@ configure:3661: $? = 0
 configure:3650: riscv64-unknown-linux-gnu-gcc -v >&5
 Using built-in specs.
 COLLECT_GCC=riscv64-unknown-linux-gnu-gcc
-COLLECT_LTO_WRAPPER=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../libexec/gcc/riscv64-unknown-linux-gnu/10.2.0/lto-wrapper
+COLLECT_LTO_WRAPPER=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../libexec/gcc/riscv64-unknown-linux-gnu/10.2.0/lto-wrapper
 Target: riscv64-unknown-linux-gnu
 Configured with: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/../_install --with-sysroot=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/../_install/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++,fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././riscv-gcc --disable-multilib --with-abi=lp64d --with-arch=rv64imafdc --with-tune=rocket 'CFLAGS_FOR_TARGET=-O2   -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2   -mcmodel=medlow'
 Thread model: posix
@@ -211,7 +211,7 @@ configure:4774: $? = 0
 configure:4763: riscv64-unknown-linux-gnu-gcc -v >&5
 Using built-in specs.
 COLLECT_GCC=riscv64-unknown-linux-gnu-gcc
-COLLECT_LTO_WRAPPER=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../libexec/gcc/riscv64-unknown-linux-gnu/10.2.0/lto-wrapper
+COLLECT_LTO_WRAPPER=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../libexec/gcc/riscv64-unknown-linux-gnu/10.2.0/lto-wrapper
 Target: riscv64-unknown-linux-gnu
 Configured with: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/../_install --with-sysroot=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/../_install/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++,fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././riscv-gcc --disable-multilib --with-abi=lp64d --with-arch=rv64imafdc --with-tune=rocket 'CFLAGS_FOR_TARGET=-O2   -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2   -mcmodel=medlow'
 Thread model: posix
@@ -239,7 +239,7 @@ configure:5031: result: yes
 configure:5050: checking dependency style of riscv64-unknown-linux-gnu-gcc
 configure:5161: result: gcc3
 configure:5182: checking for riscv64-unknown-linux-gnu-ar
-configure:5198: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-ar
+configure:5198: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-ar
 configure:5209: result: riscv64-unknown-linux-gnu-ar
 configure:5279: checking the archiver (riscv64-unknown-linux-gnu-ar) interface
 configure:5295: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
@@ -264,14 +264,14 @@ configure:5855: result: /usr/bin/grep -E
 configure:5860: checking for fgrep
 configure:5922: result: /usr/bin/grep -F
 configure:5957: checking for ld used by riscv64-unknown-linux-gnu-gcc
-configure:6024: result: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld
-configure:6031: checking if the linker (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld) is GNU ld
+configure:6024: result: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld
+configure:6031: checking if the linker (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld) is GNU ld
 configure:6046: result: yes
 configure:6058: checking for BSD- or MS-compatible name lister (nm)
-configure:6112: result: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B
-configure:6242: checking the name lister (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B) interface
+configure:6112: result: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B
+configure:6242: checking the name lister (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B) interface
 configure:6249: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
-configure:6252: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B "conftest.o"
+configure:6252: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B "conftest.o"
 configure:6255: output
 0000000000000019 N .LASF0
 0000000000000000 N .LASF1
@@ -290,10 +290,10 @@ configure:6456: checking how to convert x86_64-unknown-linux-gnu file names to r
 configure:6496: result: func_convert_file_noop
 configure:6503: checking how to convert x86_64-unknown-linux-gnu file names to toolchain format
 configure:6523: result: func_convert_file_noop
-configure:6530: checking for /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld option to reload object files
+configure:6530: checking for /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld option to reload object files
 configure:6537: result: -r
 configure:6571: checking for riscv64-unknown-linux-gnu-objdump
-configure:6587: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-objdump
+configure:6587: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-objdump
 configure:6598: result: riscv64-unknown-linux-gnu-objdump
 configure:6670: checking how to recognize dependent libraries
 configure:6870: result: pass_all
@@ -317,12 +317,12 @@ configure:7209: result: @
 configure:7227: checking for riscv64-unknown-linux-gnu-strip
 configure:7254: result: riscv64-unknown-linux-gnu-strip
 configure:7326: checking for riscv64-unknown-linux-gnu-ranlib
-configure:7342: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-ranlib
+configure:7342: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-ranlib
 configure:7353: result: riscv64-unknown-linux-gnu-ranlib
-configure:7495: checking command to parse /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B output from riscv64-unknown-linux-gnu-gcc object
+configure:7495: checking command to parse /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B output from riscv64-unknown-linux-gnu-gcc object
 configure:7648: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
 configure:7651: $? = 0
-configure:7655: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B conftest.o \| sed -n -e 's/^.*[ ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[ ][ ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
+configure:7655: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B conftest.o \| sed -n -e 's/^.*[ ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[ ][ ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
 configure:7658: $? = 0
 configure:7724: riscv64-unknown-linux-gnu-gcc -o conftest -g -O2   conftest.c conftstm.o >&5
 configure:7727: $? = 0
@@ -407,7 +407,7 @@ configure:10174: $? = 0
 configure:10196: result: yes
 configure:10204: checking if riscv64-unknown-linux-gnu-gcc supports -c -o file.o
 configure:10251: result: yes
-configure:10284: checking whether the riscv64-unknown-linux-gnu-gcc linker (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld) supports shared libraries
+configure:10284: checking whether the riscv64-unknown-linux-gnu-gcc linker (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld) supports shared libraries
 configure:11543: result: yes
 configure:11783: checking dynamic linker characteristics
 configure:12364: riscv64-unknown-linux-gnu-gcc -o conftest -g -O2   -Wl,-rpath -Wl,/foo conftest.c  >&5
@@ -1365,8 +1365,8 @@ lt_cv_file_magic_test_file=
 lt_cv_ld_reload_flag=-r
 lt_cv_nm_interface='BSD nm'
 lt_cv_objdir=.libs
-lt_cv_path_LD=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld
-lt_cv_path_NM='/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B'
+lt_cv_path_LD=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld
+lt_cv_path_NM='/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B'
 lt_cv_path_mainfest_tool=no
 lt_cv_prog_compiler_c_o=yes
 lt_cv_prog_compiler_pic='-fPIC -DPIC'
@@ -1442,7 +1442,7 @@ JAVA_RPM_CONTENTS_2=''
 JNI_CFLAGS=''
 JPEG_LIB_VERSION='62'
 JPEG_LIB_VERSION_DECIMAL='6.2'
-LD='/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld'
+LD='/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld'
 LDFLAGS=''
 LIBOBJS=''
 LIBS=''
@@ -1458,7 +1458,7 @@ MEM_SRCDST_FUNCTIONS='global:  jpeg_mem_dest;  jpeg_mem_src;'
 MKDIR_P='/usr/bin/mkdir -p'
 NAFLAGS=''
 NASM=''
-NM='/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B'
+NM='/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B'
 NMEDIT=''
 OBJDUMP='riscv64-unknown-linux-gnu-objdump'
 OBJEXT='o'
@@ -1616,3 +1616,91 @@ target_alias=''
 #define BUILD "20260111"
 
 configure: exit 0
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by libjpeg-turbo config.status 1.5.3, which was
+generated by GNU Autoconf 2.69.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status config.h
+
+on karpuz
+
+
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by libjpeg-turbo config.status 1.5.3, which was
+generated by GNU Autoconf 2.69.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status jconfig.h
+
+on karpuz
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by libjpeg-turbo config.status 1.5.3, which was
+generated by GNU Autoconf 2.69.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status jconfigint.h
+
+on karpuz
+
+config.status:1180: creating jconfigint.h
+config.status:1180: creating config.h
+config.status:1180: creating jconfig.h
+config.status:1361: jconfigint.h is unchanged
+config.status:1361: config.h is unchanged
+config.status:1361: jconfig.h is unchanged
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by libjpeg-turbo config.status 1.5.3, which was
+generated by GNU Autoconf 2.69.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status pkgscripts/libjpeg.pc
+
+on karpuz
+
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by libjpeg-turbo config.status 1.5.3, which was
+generated by GNU Autoconf 2.69.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status pkgscripts/libturbojpeg.pc
+
+on karpuz
+
+config.status:1180: creating pkgscripts/libjpeg.pc
+config.status:1180: creating pkgscripts/libturbojpeg.pc

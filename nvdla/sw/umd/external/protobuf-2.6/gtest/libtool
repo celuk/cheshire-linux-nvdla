@@ -90,7 +90,7 @@ EGREP="/usr/bin/grep -E"
 FGREP="/usr/bin/grep -F"
 
 # A BSD- or MS-compatible name lister.
-NM="/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/riscv64-unknown-linux-gnu-nm -B"
+NM="/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B"
 
 # Whether we need soft or hard links.
 LN_S="ln -s"
@@ -272,7 +272,7 @@ finish_eval=""
 hardcode_into_libs=yes
 
 # Compile-time system search path for libraries.
-sys_lib_search_path_spec="/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0 /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/lib/gcc /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/lib /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/lib /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/lib "
+sys_lib_search_path_spec="/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/lib/gcc/riscv64-unknown-linux-gnu/10.2.0 /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/lib/gcc /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/lib /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/sysroot/lib /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/sysroot/usr/lib "
 
 # Run-time system search path for libraries.
 sys_lib_dlsearch_path_spec="/lib /usr/lib /usr/lib/x86_64-linux-gnu/libfakeroot /usr/local/lib/i386-linux-gnu /lib/i386-linux-gnu /usr/lib/i386-linux-gnu /usr/local/lib/i686-linux-gnu /lib/i686-linux-gnu /usr/lib/i686-linux-gnu /usr/local/lib /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu /usr/lib64/natinst/nicurl /usr/local/lib/x86_64-linux-gnu /lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu /lib32 /usr/lib32 /libx32 /usr/libx32 /usr/local/lib64 "
@@ -292,7 +292,7 @@ striplib="riscv64-unknown-linux-gnu-strip --strip-unneeded"
 
 
 # The linker used to build libraries.
-LD="/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld"
+LD="/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld"
 
 # How to create reloadable object files.
 reload_flag=" -r"
@@ -10099,7 +10099,7 @@ build_old_libs=`case $build_libtool_libs in yes) echo no;; *) echo yes;; esac`
 # ### BEGIN LIBTOOL TAG CONFIG: CXX
 
 # The linker used to build libraries.
-LD="/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/riscv64-unknown-linux-gnu/bin/ld"
+LD="/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld"
 
 # How to create reloadable object files.
 reload_flag=" -r"
@@ -10230,17 +10230,17 @@ file_list_spec=""
 hardcode_action=immediate
 
 # The directories searched by this compiler when creating a shared library.
-compiler_lib_search_dirs="/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0 /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/lib /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../sysroot/lib /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../sysroot/usr/lib"
+compiler_lib_search_dirs="/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0 /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/lib /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../sysroot/lib /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../sysroot/usr/lib"
 
 # Dependencies to place before and after the objects being linked to
 # create a shared library.
-predep_objects="/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/crti.o /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/crtbeginS.o"
-postdep_objects="/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/crtendS.o /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/crtn.o"
+predep_objects="/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/crti.o /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/crtbeginS.o"
+postdep_objects="/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/crtendS.o /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/crtn.o"
 predeps=""
 postdeps="-lstdc++ -lm -lgcc_s -lc -lgcc_s"
 
 # The library search path used internally by the compiler when linking
 # a shared library.
-compiler_lib_search_path="-L/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0 -L/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc -L/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/lib -L/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../sysroot/lib -L/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/bin/../sysroot/usr/lib"
+compiler_lib_search_path="-L/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0 -L/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc -L/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/lib -L/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../sysroot/lib -L/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../sysroot/usr/lib"
 
 # ### END LIBTOOL TAG CONFIG: CXX

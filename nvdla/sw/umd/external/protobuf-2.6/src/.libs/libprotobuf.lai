@@ -17,7 +17,7 @@ old_library='libprotobuf.a'
 inherited_linker_flags=' -pthread'
 
 # Libraries that this one depends upon.
-dependency_libs=' -lpthread /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/../_install/riscv64-unknown-linux-gnu/lib/libstdc++.la'
+dependency_libs=' -lpthread /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/../_install2/riscv64-unknown-linux-gnu/lib/libstdc++.la'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
