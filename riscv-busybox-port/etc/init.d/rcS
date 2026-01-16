@@ -5,9 +5,7 @@ mount -t sysfs none /sys
 echo "Loading OpenDLA kernel module..."
 insmod /opendla.ko
 echo " "
-echo "##################################"
-echo "#    Cheshire Linux Booted!      #"
-echo "##################################"
+echo logo.txt
 echo " "
 echo "Starting shell..."
 exec setsid cttyhack /bin/sh

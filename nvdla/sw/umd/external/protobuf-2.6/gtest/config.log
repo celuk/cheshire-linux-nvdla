@@ -28,13 +28,36 @@ uname -v = #91~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Nov 20 15:20:45 UTC 2
 /bin/universe          = unknown
 
 PATH: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin
+PATH: /home/shc/cadence/installs/XCELIUM2403/bin/
+PATH: /home/shc/cadence/installs/XCELIUM2403/tools/bin/64bit/
+PATH: /home/shc/.local/bin
+PATH: /tools/Xilinx/Vivado/2022.2/bin
+PATH: /home/shc/.local/bin
+PATH: /home/shc/miniconda3/condabin
+PATH: /home/shc/cadence/installs/XCELIUM2403/bin/
+PATH: /home/shc/cadence/installs/XCELIUM2403/tools/bin/64bit/
+PATH: /home/shc/.local/bin
+PATH: /tools/Xilinx/Vivado/2022.2/bin
+PATH: /home/shc/.local/bin
+PATH: /home/shc/.nix-profile/bin
+PATH: /nix/var/nix/profiles/default/bin
 PATH: /usr/local/sbin
 PATH: /usr/local/bin
 PATH: /usr/sbin
 PATH: /usr/bin
 PATH: /sbin
 PATH: /bin
+PATH: /usr/games
+PATH: /usr/local/games
 PATH: /snap/bin
+PATH: /snap/bin
+PATH: /home/shc/.cache/scalacli/local-repo/bin/scala-cli
+PATH: /home/shc/miniconda3/bin
+PATH: /home/shc/.cargo/bin
+PATH: /home/shc/.cache/scalacli/local-repo/bin/scala-cli
+PATH: /home/shc/.config/Code/User/globalStorage/github.copilot-chat/debugCommand
+PATH: /home/shc/miniconda3/bin
+PATH: /home/shc/.cargo/bin
 
 
 ## ----------- ##
@@ -477,7 +500,10 @@ configure:14967: result: GNU/Linux ld.so
 configure:15020: checking how to hardcode library paths into programs
 configure:15045: result: immediate
 configure:15115: checking for python
-configure:15146: result: :
+configure:15133: found /home/shc/miniconda3/bin/python
+configure:15146: result: /home/shc/miniconda3/bin/python
+configure:15164: /home/shc/miniconda3/bin/python -c import sys # split strings by '.' and convert to numeric. Append some zeros # because we need at least 4 digits for the hex conversion. # map returns an iterator in Python 3.0 and a list in 2.x minver = list(map(int, '2.3'.split('.'))) + [0, 0, 0] minverhex = 0 # xrange is not present in Python 3.0 and range returns an iterator for i in list(range(0, 4)): minverhex = (minverhex << 8) + minver[i] sys.exit(sys.hexversion < minverhex)
+configure:15167: $? = 0
 configure:15360: checking for the pthreads library -lpthreads
 configure:15393: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG    conftest.c -lpthreads  >&5
 /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: cannot find -lpthreads
@@ -519,7 +545,7 @@ configure: failed program was:
 configure:15402: result: no
 configure:15305: checking whether pthreads work without any flags
 configure:15393: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG    conftest.c   >&5
-/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccn2gWEY.o: in function `main':
+/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccAh7eTB.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `pthread_join'
 /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x5a): undefined reference to `__pthread_register_cancel'
 /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x6a): undefined reference to `pthread_create'
@@ -768,7 +794,7 @@ ac_cv_objext=o
 ac_cv_path_EGREP='/usr/bin/grep -E'
 ac_cv_path_FGREP='/usr/bin/grep -F'
 ac_cv_path_GREP=/usr/bin/grep
-ac_cv_path_PYTHON=:
+ac_cv_path_PYTHON=/home/shc/miniconda3/bin/python
 ac_cv_path_SED=/usr/bin/sed
 ac_cv_path_install='/usr/bin/install -c'
 ac_cv_path_mkdir=/usr/bin/mkdir
@@ -864,8 +890,8 @@ FGREP='/usr/bin/grep -F'
 GREP='/usr/bin/grep'
 HAVE_PTHREADS_FALSE='#'
 HAVE_PTHREADS_TRUE=''
-HAVE_PYTHON_FALSE=''
-HAVE_PYTHON_TRUE='#'
+HAVE_PYTHON_FALSE='#'
+HAVE_PYTHON_TRUE=''
 INSTALL_DATA='${INSTALL} -m 644'
 INSTALL_PROGRAM='${INSTALL}'
 INSTALL_SCRIPT='${INSTALL}'
@@ -898,7 +924,7 @@ PATH_SEPARATOR=':'
 PTHREAD_CC='riscv64-unknown-linux-gnu-gcc'
 PTHREAD_CFLAGS='-pthread'
 PTHREAD_LIBS=''
-PYTHON=':'
+PYTHON='/home/shc/miniconda3/bin/python'
 RANLIB='riscv64-unknown-linux-gnu-ranlib'
 SED='/usr/bin/sed'
 SET_MAKE=''
