@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-.PHONY: all opensbi lrzsz nvdla busybox linux
+.PHONY: all opensbi lrzsz nvdla busybox linux toolchain
 
 all: opensbi lrzsz busybox linux nvdla busybox linux
 
@@ -17,3 +17,6 @@ lrzsz:
 
 nvdla:
 	pushd nvdla/sw && ./compile.sh && popd
+
+toolchain:
+	pushd riscv-toolchain-custom && ./compile.sh && popd

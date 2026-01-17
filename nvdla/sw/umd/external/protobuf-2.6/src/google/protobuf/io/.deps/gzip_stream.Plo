@@ -1,5 +1,5 @@
 google/protobuf/io/gzip_stream.lo: google/protobuf/io/gzip_stream.cc \
- /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/stdc-predef.h \
+ /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/stdc-predef.h \
  ../config.h
-/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install/sysroot/usr/include/stdc-predef.h:
+/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/stdc-predef.h:
 ../config.h:

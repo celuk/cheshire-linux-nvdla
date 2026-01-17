@@ -27,7 +27,7 @@ uname -v = #91~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Nov 20 15:20:45 UTC 2
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin
+PATH: /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/../../riscv-toolchain-custom/_install/bin
 PATH: /home/shc/cadence/installs/XCELIUM2403/bin/
 PATH: /home/shc/cadence/installs/XCELIUM2403/tools/bin/64bit/
 PATH: /home/shc/.local/bin
@@ -69,7 +69,7 @@ configure:2734: result: /usr/bin/install -c
 configure:2745: checking whether build environment is sane
 configure:2800: result: yes
 configure:2859: checking for riscv64-unknown-linux-gnu-strip
-configure:2875: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-strip
+configure:2875: found /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/../../riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-strip
 configure:2886: result: riscv64-unknown-linux-gnu-strip
 configure:2951: checking for a thread-safe mkdir -p
 configure:2990: result: /usr/bin/mkdir -p
@@ -85,7 +85,7 @@ configure:3259: result: yes
 configure:3286: checking for style of include used by make
 configure:3314: result: GNU
 configure:3345: checking for riscv64-unknown-linux-gnu-gcc
-configure:3361: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-gcc
+configure:3361: found /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/../../riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc
 configure:3372: result: riscv64-unknown-linux-gnu-gcc
 configure:3641: checking for C compiler version
 configure:3650: riscv64-unknown-linux-gnu-gcc --version >&5
@@ -98,9 +98,9 @@ configure:3661: $? = 0
 configure:3650: riscv64-unknown-linux-gnu-gcc -v >&5
 Using built-in specs.
 COLLECT_GCC=riscv64-unknown-linux-gnu-gcc
-COLLECT_LTO_WRAPPER=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../libexec/gcc/riscv64-unknown-linux-gnu/10.2.0/lto-wrapper
+COLLECT_LTO_WRAPPER=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../libexec/gcc/riscv64-unknown-linux-gnu/10.2.0/lto-wrapper
 Target: riscv64-unknown-linux-gnu
-Configured with: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/../_install --with-sysroot=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/../_install/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++,fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././riscv-gcc --disable-multilib --with-abi=lp64d --with-arch=rv64imafdc --with-tune=rocket 'CFLAGS_FOR_TARGET=-O2   -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2   -mcmodel=medlow'
+Configured with: /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/riscv-gnu-toolchain/../_install --with-sysroot=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/riscv-gnu-toolchain/../_install/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++,fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././riscv-gcc --disable-multilib --with-abi=lp64d --with-arch=rv64imafdc --with-tune=rocket 'CFLAGS_FOR_TARGET=-O2   -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2   -mcmodel=medlow'
 Thread model: posix
 Supported LTO compression algorithms: zlib
 gcc version 10.2.0 (GCC) 
@@ -116,28 +116,28 @@ riscv64-unknown-linux-gnu-gcc: fatal error: no input files
 compilation terminated.
 configure:3661: $? = 1
 configure:3681: checking whether the C compiler works
-configure:3703: riscv64-unknown-linux-gnu-gcc    conftest.c  >&5
+configure:3703: riscv64-unknown-linux-gnu-gcc -DDLA_2_CONFIG   conftest.c  >&5
 configure:3707: $? = 0
 configure:3755: result: yes
 configure:3758: checking for C compiler default output file name
 configure:3760: result: a.out
 configure:3766: checking for suffix of executables
-configure:3773: riscv64-unknown-linux-gnu-gcc -o conftest    conftest.c  >&5
+configure:3773: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG   conftest.c  >&5
 configure:3777: $? = 0
 configure:3799: result: 
 configure:3821: checking whether we are cross compiling
-configure:3829: riscv64-unknown-linux-gnu-gcc -o conftest    conftest.c  >&5
+configure:3829: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG   conftest.c  >&5
 configure:3833: $? = 0
 configure:3840: ./conftest
 ./configure: line 3842: ./conftest: cannot execute binary file: Exec format error
 configure:3844: $? = 126
 configure:3859: result: yes
 configure:3864: checking for suffix of object files
-configure:3886: riscv64-unknown-linux-gnu-gcc -c   conftest.c >&5
+configure:3886: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:3890: $? = 0
 configure:3911: result: o
 configure:3915: checking whether we are using the GNU C compiler
-configure:3934: riscv64-unknown-linux-gnu-gcc -c   conftest.c >&5
+configure:3934: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:3934: $? = 0
 configure:3943: result: yes
 configure:3952: checking whether riscv64-unknown-linux-gnu-gcc accepts -g
@@ -145,7 +145,7 @@ configure:3972: riscv64-unknown-linux-gnu-gcc -c -g  conftest.c >&5
 configure:3972: $? = 0
 configure:4013: result: yes
 configure:4030: checking for riscv64-unknown-linux-gnu-gcc option to accept ISO C89
-configure:4093: riscv64-unknown-linux-gnu-gcc  -c -g -O2  conftest.c >&5
+configure:4093: riscv64-unknown-linux-gnu-gcc  -c -DDLA_2_CONFIG  conftest.c >&5
 configure:4093: $? = 0
 configure:4106: result: none needed
 configure:4131: checking whether riscv64-unknown-linux-gnu-gcc understands -c and -o together
@@ -211,9 +211,9 @@ configure:4774: $? = 0
 configure:4763: riscv64-unknown-linux-gnu-gcc -v >&5
 Using built-in specs.
 COLLECT_GCC=riscv64-unknown-linux-gnu-gcc
-COLLECT_LTO_WRAPPER=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/../libexec/gcc/riscv64-unknown-linux-gnu/10.2.0/lto-wrapper
+COLLECT_LTO_WRAPPER=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../libexec/gcc/riscv64-unknown-linux-gnu/10.2.0/lto-wrapper
 Target: riscv64-unknown-linux-gnu
-Configured with: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/../_install --with-sysroot=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/riscv-gnu-toolchain/../_install/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++,fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././riscv-gcc --disable-multilib --with-abi=lp64d --with-arch=rv64imafdc --with-tune=rocket 'CFLAGS_FOR_TARGET=-O2   -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2   -mcmodel=medlow'
+Configured with: /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/riscv-gnu-toolchain/../_install --with-sysroot=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/riscv-gnu-toolchain/../_install/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++,fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././riscv-gcc --disable-multilib --with-abi=lp64d --with-arch=rv64imafdc --with-tune=rocket 'CFLAGS_FOR_TARGET=-O2   -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2   -mcmodel=medlow'
 Thread model: posix
 Supported LTO compression algorithms: zlib
 gcc version 10.2.0 (GCC) 
@@ -239,10 +239,10 @@ configure:5031: result: yes
 configure:5050: checking dependency style of riscv64-unknown-linux-gnu-gcc
 configure:5161: result: gcc3
 configure:5182: checking for riscv64-unknown-linux-gnu-ar
-configure:5198: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-ar
+configure:5198: found /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/../../riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-ar
 configure:5209: result: riscv64-unknown-linux-gnu-ar
 configure:5279: checking the archiver (riscv64-unknown-linux-gnu-ar) interface
-configure:5295: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:5295: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:5295: $? = 0
 configure:5297: riscv64-unknown-linux-gnu-ar cru libconftest.a conftest.o >&5
 configure:5300: $? = 0
@@ -264,22 +264,15 @@ configure:5855: result: /usr/bin/grep -E
 configure:5860: checking for fgrep
 configure:5922: result: /usr/bin/grep -F
 configure:5957: checking for ld used by riscv64-unknown-linux-gnu-gcc
-configure:6024: result: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld
-configure:6031: checking if the linker (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld) is GNU ld
+configure:6024: result: /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/bin/ld
+configure:6031: checking if the linker (/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/bin/ld) is GNU ld
 configure:6046: result: yes
 configure:6058: checking for BSD- or MS-compatible name lister (nm)
-configure:6112: result: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B
-configure:6242: checking the name lister (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B) interface
-configure:6249: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
-configure:6252: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B "conftest.o"
+configure:6112: result: /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/../../riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-nm -B
+configure:6242: checking the name lister (/home/shc/projects/cheshire-linux-nvdla/nvdla/sw/../../riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-nm -B) interface
+configure:6249: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
+configure:6252: /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/../../riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-nm -B "conftest.o"
 configure:6255: output
-0000000000000019 N .LASF0
-0000000000000000 N .LASF1
-000000000000006d N .LASF2
-000000000000000b N .LASF3
-0000000000000000 N .Ldebug_abbrev0
-0000000000000000 N .Ldebug_info0
-0000000000000000 N .Ldebug_line0
 0000000000000000 B some_variable
 configure:6262: result: BSD nm
 configure:6265: checking whether ln -s works
@@ -290,10 +283,10 @@ configure:6456: checking how to convert x86_64-unknown-linux-gnu file names to r
 configure:6496: result: func_convert_file_noop
 configure:6503: checking how to convert x86_64-unknown-linux-gnu file names to toolchain format
 configure:6523: result: func_convert_file_noop
-configure:6530: checking for /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld option to reload object files
+configure:6530: checking for /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/bin/ld option to reload object files
 configure:6537: result: -r
 configure:6571: checking for riscv64-unknown-linux-gnu-objdump
-configure:6587: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-objdump
+configure:6587: found /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/../../riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-objdump
 configure:6598: result: riscv64-unknown-linux-gnu-objdump
 configure:6670: checking how to recognize dependent libraries
 configure:6870: result: pass_all
@@ -306,7 +299,7 @@ configure:7042: result: printf %s\n
 configure:7058: checking for riscv64-unknown-linux-gnu-ar
 configure:7085: result: riscv64-unknown-linux-gnu-ar
 configure:7166: checking for archiver @FILE support
-configure:7183: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:7183: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:7183: $? = 0
 configure:7186: riscv64-unknown-linux-gnu-ar cru libconftest.a @conftest.lst >&5
 configure:7189: $? = 0
@@ -317,14 +310,14 @@ configure:7209: result: @
 configure:7227: checking for riscv64-unknown-linux-gnu-strip
 configure:7254: result: riscv64-unknown-linux-gnu-strip
 configure:7326: checking for riscv64-unknown-linux-gnu-ranlib
-configure:7342: found /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-ranlib
+configure:7342: found /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/../../riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-ranlib
 configure:7353: result: riscv64-unknown-linux-gnu-ranlib
-configure:7495: checking command to parse /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B output from riscv64-unknown-linux-gnu-gcc object
-configure:7648: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:7495: checking command to parse /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/../../riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-nm -B output from riscv64-unknown-linux-gnu-gcc object
+configure:7648: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:7651: $? = 0
-configure:7655: /media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B conftest.o \| sed -n -e 's/^.*[ ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[ ][ ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
+configure:7655: /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/../../riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-nm -B conftest.o \| sed -n -e 's/^.*[ ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[ ][ ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
 configure:7658: $? = 0
-configure:7724: riscv64-unknown-linux-gnu-gcc -o conftest -g -O2   conftest.c conftstm.o >&5
+configure:7724: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG   conftest.c conftstm.o >&5
 configure:7727: $? = 0
 configure:7765: result: ok
 configure:7812: checking for sysroot
@@ -343,74 +336,74 @@ configure:8285: checking if mt is a manifest tool
 configure:8291: mt '-?'
 configure:8299: result: no
 configure:8972: checking for ANSI C header files
-configure:8992: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:8992: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:8992: $? = 0
 configure:9076: result: yes
 configure:9089: checking for sys/types.h
-configure:9089: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:9089: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:9089: $? = 0
 configure:9089: result: yes
 configure:9089: checking for sys/stat.h
-configure:9089: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:9089: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:9089: $? = 0
 configure:9089: result: yes
 configure:9089: checking for stdlib.h
-configure:9089: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:9089: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:9089: $? = 0
 configure:9089: result: yes
 configure:9089: checking for string.h
-configure:9089: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:9089: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:9089: $? = 0
 configure:9089: result: yes
 configure:9089: checking for memory.h
-configure:9089: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:9089: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:9089: $? = 0
 configure:9089: result: yes
 configure:9089: checking for strings.h
-configure:9089: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:9089: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:9089: $? = 0
 configure:9089: result: yes
 configure:9089: checking for inttypes.h
-configure:9089: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:9089: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:9089: $? = 0
 configure:9089: result: yes
 configure:9089: checking for stdint.h
-configure:9089: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:9089: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:9089: $? = 0
 configure:9089: result: yes
 configure:9089: checking for unistd.h
-configure:9089: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:9089: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:9089: $? = 0
 configure:9089: result: yes
 configure:9103: checking for dlfcn.h
-configure:9103: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:9103: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:9103: $? = 0
 configure:9103: result: yes
 configure:9359: checking for objdir
 configure:9374: result: .libs
 configure:9634: checking if riscv64-unknown-linux-gnu-gcc supports -fno-rtti -fno-exceptions
-configure:9652: riscv64-unknown-linux-gnu-gcc -c -g -O2  -fno-rtti -fno-exceptions conftest.c >&5
+configure:9652: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  -fno-rtti -fno-exceptions conftest.c >&5
 cc1: warning: command-line option '-fno-rtti' is valid for C++/D/ObjC++ but not for C
 configure:9656: $? = 0
 configure:9669: result: no
 configure:10027: checking for riscv64-unknown-linux-gnu-gcc option to produce PIC
 configure:10034: result: -fPIC -DPIC
 configure:10042: checking if riscv64-unknown-linux-gnu-gcc PIC flag -fPIC -DPIC works
-configure:10060: riscv64-unknown-linux-gnu-gcc -c -g -O2  -fPIC -DPIC -DPIC conftest.c >&5
+configure:10060: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  -fPIC -DPIC -DPIC conftest.c >&5
 configure:10064: $? = 0
 configure:10077: result: yes
 configure:10106: checking if riscv64-unknown-linux-gnu-gcc static flag -static works
 configure:10134: result: yes
 configure:10149: checking if riscv64-unknown-linux-gnu-gcc supports -c -o file.o
-configure:10170: riscv64-unknown-linux-gnu-gcc -c -g -O2  -o out/conftest2.o conftest.c >&5
+configure:10170: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  -o out/conftest2.o conftest.c >&5
 configure:10174: $? = 0
 configure:10196: result: yes
 configure:10204: checking if riscv64-unknown-linux-gnu-gcc supports -c -o file.o
 configure:10251: result: yes
-configure:10284: checking whether the riscv64-unknown-linux-gnu-gcc linker (/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld) supports shared libraries
+configure:10284: checking whether the riscv64-unknown-linux-gnu-gcc linker (/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/bin/ld) supports shared libraries
 configure:11543: result: yes
 configure:11783: checking dynamic linker characteristics
-configure:12364: riscv64-unknown-linux-gnu-gcc -o conftest -g -O2   -Wl,-rpath -Wl,/foo conftest.c  >&5
+configure:12364: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG   -Wl,-rpath -Wl,/foo conftest.c  >&5
 configure:12364: $? = 0
 configure:12601: result: GNU/Linux ld.so
 configure:12723: checking how to hardcode library paths into programs
@@ -426,9 +419,9 @@ configure:13373: result: yes
 configure:13410: checking whether ln -s works
 configure:13414: result: yes
 configure:13465: checking size of size_t
-configure:13470: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:13470: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:13470: $? = 0
-configure:13470: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:13470: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:59:12: error: size of array 'test_array' is negative
    59 | static int test_array [1 - 2 * !(((long int) (sizeof (size_t))) <= 0)];
@@ -500,7 +493,7 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:13470: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:13470: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:59:12: error: size of array 'test_array' is negative
    59 | static int test_array [1 - 2 * !(((long int) (sizeof (size_t))) <= 1)];
@@ -572,7 +565,7 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:13470: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:13470: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:59:12: error: size of array 'test_array' is negative
    59 | static int test_array [1 - 2 * !(((long int) (sizeof (size_t))) <= 3)];
@@ -644,7 +637,7 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:13470: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:13470: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:59:12: error: size of array 'test_array' is negative
    59 | static int test_array [1 - 2 * !(((long int) (sizeof (size_t))) <= 7)];
@@ -716,21 +709,21 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:13470: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:13470: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:13470: $? = 0
-configure:13470: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:13470: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:13470: $? = 0
-configure:13470: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:13470: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:13470: $? = 0
-configure:13470: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:13470: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:13470: $? = 0
 configure:13484: result: 8
 configure:13516: checking whether compiler supports pointers to undefined structures
-configure:13529: riscv64-unknown-linux-gnu-gcc -c -g -O2  conftest.c >&5
+configure:13529: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG  conftest.c >&5
 configure:13529: $? = 0
 configure:13530: result: yes
 configure:13550: checking whether __SUNPRO_C is declared
-configure:13550: riscv64-unknown-linux-gnu-gcc -c -O3 -Wall conftest.c >&5
+configure:13550: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG -Wall conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:64:10: error: '__SUNPRO_C' undeclared (first use in this function)
    64 |   (void) __SUNPRO_C;
@@ -812,7 +805,7 @@ configure:13550: result: no
 configure:13566: checking for ANSI C header files
 configure:13670: result: yes
 configure:13681: checking stddef.h usability
-configure:13681: riscv64-unknown-linux-gnu-gcc -c -O3 -Wall conftest.c >&5
+configure:13681: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG -Wall conftest.c >&5
 configure:13681: $? = 0
 configure:13681: result: yes
 configure:13681: checking stddef.h presence
@@ -824,7 +817,7 @@ configure:13681: result: yes
 configure:13681: checking for stdlib.h
 configure:13681: result: yes
 configure:13681: checking locale.h usability
-configure:13681: riscv64-unknown-linux-gnu-gcc -c -O3 -Wall conftest.c >&5
+configure:13681: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG -Wall conftest.c >&5
 configure:13681: $? = 0
 configure:13681: result: yes
 configure:13681: checking locale.h presence
@@ -838,11 +831,11 @@ configure:13681: result: yes
 configure:13691: checking for sys/types.h
 configure:13691: result: yes
 configure:13701: checking for an ANSI C-conforming const
-configure:13767: riscv64-unknown-linux-gnu-gcc -c -O3 -Wall conftest.c >&5
+configure:13767: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG -Wall conftest.c >&5
 configure:13767: $? = 0
 configure:13774: result: yes
 configure:13782: checking whether char is unsigned
-configure:13801: riscv64-unknown-linux-gnu-gcc -c -O3 -Wall conftest.c >&5
+configure:13801: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG -Wall conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:66:12: error: size of array 'test_array' is negative
    66 | static int test_array [1 - 2 * !(((char) -1) < 0)];
@@ -923,13 +916,13 @@ configure: failed program was:
 | }
 configure:13808: result: yes
 configure:13815: checking for inline
-configure:13831: riscv64-unknown-linux-gnu-gcc -c -O3 -Wall conftest.c >&5
+configure:13831: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG -Wall conftest.c >&5
 configure:13831: $? = 0
 configure:13839: result: inline
 configure:13857: checking for size_t
-configure:13857: riscv64-unknown-linux-gnu-gcc -c -O3 -Wall conftest.c >&5
+configure:13857: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG -Wall conftest.c >&5
 configure:13857: $? = 0
-configure:13857: riscv64-unknown-linux-gnu-gcc -c -O3 -Wall conftest.c >&5
+configure:13857: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG -Wall conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:66:21: error: expected expression before ')' token
    66 | if (sizeof ((size_t)))
@@ -1008,9 +1001,9 @@ configure: failed program was:
 | }
 configure:13857: result: yes
 configure:13868: checking for unsigned char
-configure:13868: riscv64-unknown-linux-gnu-gcc -c -O3 -Wall conftest.c >&5
+configure:13868: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG -Wall conftest.c >&5
 configure:13868: $? = 0
-configure:13868: riscv64-unknown-linux-gnu-gcc -c -O3 -Wall conftest.c >&5
+configure:13868: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG -Wall conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:66:28: error: expected expression before ')' token
    66 | if (sizeof ((unsigned char)))
@@ -1089,9 +1082,9 @@ configure: failed program was:
 | }
 configure:13868: result: yes
 configure:13877: checking for unsigned short
-configure:13877: riscv64-unknown-linux-gnu-gcc -c -O3 -Wall conftest.c >&5
+configure:13877: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG -Wall conftest.c >&5
 configure:13877: $? = 0
-configure:13877: riscv64-unknown-linux-gnu-gcc -c -O3 -Wall conftest.c >&5
+configure:13877: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG -Wall conftest.c >&5
 conftest.c: In function 'main':
 conftest.c:67:29: error: expected expression before ')' token
    67 | if (sizeof ((unsigned short)))
@@ -1173,7 +1166,7 @@ configure:13877: result: yes
 configure:13888: checking if right shift is signed
 configure:13891: result: Assuming that right shift is signed on target machine.
 configure:13936: checking for memset
-configure:13936: riscv64-unknown-linux-gnu-gcc -o conftest -O3 -Wall  conftest.c  >&5
+configure:13936: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG -Wall  conftest.c  >&5
 conftest.c:55:6: warning: conflicting types for built-in function 'memset'; expected 'void *(void *, int,  long unsigned int)' [-Wbuiltin-declaration-mismatch]
    55 | char memset ();
       |      ^~~~~~
@@ -1183,7 +1176,7 @@ conftest.c:43:1: note: 'memset' is declared in header '<string.h>'
 configure:13936: $? = 0
 configure:13936: result: yes
 configure:13936: checking for memcpy
-configure:13936: riscv64-unknown-linux-gnu-gcc -o conftest -O3 -Wall  conftest.c  >&5
+configure:13936: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG -Wall  conftest.c  >&5
 conftest.c:56:6: warning: conflicting types for built-in function 'memcpy'; expected 'void *(void *, const void *, long unsigned int)' [-Wbuiltin-declaration-mismatch]
    56 | char memcpy ();
       |      ^~~~~~
@@ -1199,13 +1192,13 @@ configure:14016: result: yes
 configure:14030: checking libjpeg shared library version
 configure:14032: result: 62.2.0
 configure:14068: checking whether the linker supports version scripts
-configure:14088: riscv64-unknown-linux-gnu-gcc -o conftest -O3 -Wall  -Wl,--version-script,conftest.map conftest.c  >&5
+configure:14088: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG -Wall  -Wl,--version-script,conftest.map conftest.c  >&5
 configure:14088: $? = 0
 configure:14090: result: yes (GNU style)
 configure:14123: checking whether to use version script when building libjpeg-turbo
 configure:14125: result: yes
 configure:14139: checking for inline
-configure:14154: riscv64-unknown-linux-gnu-gcc -c -O3 -Wall conftest.c >&5
+configure:14154: riscv64-unknown-linux-gnu-gcc -c -DDLA_2_CONFIG -Wall conftest.c >&5
 configure:14154: $? = 0
 configure:14209: result: inline __attribute__((always_inline))
 configure:14218: checking whether to include arithmetic encoding support
@@ -1274,8 +1267,8 @@ ac_cv_env_CCAS_set=
 ac_cv_env_CCAS_value=
 ac_cv_env_CC_set=
 ac_cv_env_CC_value=
-ac_cv_env_CFLAGS_set=
-ac_cv_env_CFLAGS_value=
+ac_cv_env_CFLAGS_set=set
+ac_cv_env_CFLAGS_value=-DDLA_2_CONFIG
 ac_cv_env_CPPFLAGS_set=
 ac_cv_env_CPPFLAGS_value=
 ac_cv_env_CPP_set=
@@ -1365,8 +1358,8 @@ lt_cv_file_magic_test_file=
 lt_cv_ld_reload_flag=-r
 lt_cv_nm_interface='BSD nm'
 lt_cv_objdir=.libs
-lt_cv_path_LD=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld
-lt_cv_path_NM='/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B'
+lt_cv_path_LD=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/bin/ld
+lt_cv_path_NM='/home/shc/projects/cheshire-linux-nvdla/nvdla/sw/../../riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-nm -B'
 lt_cv_path_mainfest_tool=no
 lt_cv_prog_compiler_c_o=yes
 lt_cv_prog_compiler_pic='-fPIC -DPIC'
@@ -1404,13 +1397,13 @@ AUTOCONF='${SHELL} /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/external
 AUTOHEADER='${SHELL} /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/external/libjpeg-turbo-1.5.3/missing autoheader'
 AUTOMAKE='${SHELL} /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/external/libjpeg-turbo-1.5.3/missing automake-1.15'
 AWK='gawk'
-BUILD='20260111'
+BUILD='20260118'
 CC='riscv64-unknown-linux-gnu-gcc'
 CCAS='riscv64-unknown-linux-gnu-gcc'
 CCASDEPMODE='depmode=gcc3'
-CCASFLAGS='-g -O2'
+CCASFLAGS='-DDLA_2_CONFIG'
 CCDEPMODE='depmode=gcc3'
-CFLAGS='-O3'
+CFLAGS='-DDLA_2_CONFIG'
 CPP='riscv64-unknown-linux-gnu-gcc -E'
 CPPFLAGS='-Wall'
 CROSS_COMPILING_FALSE='#'
@@ -1442,7 +1435,7 @@ JAVA_RPM_CONTENTS_2=''
 JNI_CFLAGS=''
 JPEG_LIB_VERSION='62'
 JPEG_LIB_VERSION_DECIMAL='6.2'
-LD='/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/riscv64-unknown-linux-gnu/bin/ld'
+LD='/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/bin/ld'
 LDFLAGS=''
 LIBOBJS=''
 LIBS=''
@@ -1458,7 +1451,7 @@ MEM_SRCDST_FUNCTIONS='global:  jpeg_mem_dest;  jpeg_mem_src;'
 MKDIR_P='/usr/bin/mkdir -p'
 NAFLAGS=''
 NASM=''
-NM='/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-nm -B'
+NM='/home/shc/projects/cheshire-linux-nvdla/nvdla/sw/../../riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-nm -B'
 NMEDIT=''
 OBJDUMP='riscv64-unknown-linux-gnu-objdump'
 OBJEXT='o'
@@ -1613,80 +1606,6 @@ target_alias=''
 #define INLINE inline __attribute__((always_inline))
 #define C_ARITH_CODING_SUPPORTED 1
 #define D_ARITH_CODING_SUPPORTED 1
-#define BUILD "20260111"
+#define BUILD "20260118"
 
 configure: exit 0
-
-## ---------------------- ##
-## Running config.status. ##
-## ---------------------- ##
-
-This file was extended by libjpeg-turbo config.status 1.5.3, which was
-generated by GNU Autoconf 2.69.  Invocation command line was
-
-  CONFIG_FILES    = 
-  CONFIG_HEADERS  = 
-  CONFIG_LINKS    = 
-  CONFIG_COMMANDS = 
-  $ ./config.status 
-
-on karpuz
-
-config.status:1180: creating pkgscripts/libjpeg-turbo.spec.tmpl
-config.status:1180: creating pkgscripts/makecygwinpkg.tmpl
-config.status:1180: creating pkgscripts/makedpkg.tmpl
-config.status:1180: creating pkgscripts/makemacpkg.tmpl
-config.status:1180: creating pkgscripts/uninstall.tmpl
-config.status:1180: creating pkgscripts/libjpeg.pc
-config.status:1180: creating pkgscripts/libturbojpeg.pc
-config.status:1180: creating tjbenchtest
-config.status:1180: creating libjpeg.map
-config.status:1180: creating Makefile
-config.status:1180: creating simd/Makefile
-config.status:1180: creating java/Makefile
-config.status:1180: creating md5/Makefile
-config.status:1180: creating config.h
-config.status:1361: config.h is unchanged
-config.status:1180: creating jconfig.h
-config.status:1361: jconfig.h is unchanged
-config.status:1180: creating jconfigint.h
-config.status:1361: jconfigint.h is unchanged
-config.status:1409: executing depfiles commands
-config.status:1409: executing libtool commands
-
-## ---------------------- ##
-## Running config.status. ##
-## ---------------------- ##
-
-This file was extended by libjpeg-turbo config.status 1.5.3, which was
-generated by GNU Autoconf 2.69.  Invocation command line was
-
-  CONFIG_FILES    = 
-  CONFIG_HEADERS  = 
-  CONFIG_LINKS    = 
-  CONFIG_COMMANDS = 
-  $ ./config.status 
-
-on karpuz
-
-config.status:1180: creating pkgscripts/libjpeg-turbo.spec.tmpl
-config.status:1180: creating pkgscripts/makecygwinpkg.tmpl
-config.status:1180: creating pkgscripts/makedpkg.tmpl
-config.status:1180: creating pkgscripts/makemacpkg.tmpl
-config.status:1180: creating pkgscripts/uninstall.tmpl
-config.status:1180: creating pkgscripts/libjpeg.pc
-config.status:1180: creating pkgscripts/libturbojpeg.pc
-config.status:1180: creating tjbenchtest
-config.status:1180: creating libjpeg.map
-config.status:1180: creating Makefile
-config.status:1180: creating simd/Makefile
-config.status:1180: creating java/Makefile
-config.status:1180: creating md5/Makefile
-config.status:1180: creating config.h
-config.status:1361: config.h is unchanged
-config.status:1180: creating jconfig.h
-config.status:1361: jconfig.h is unchanged
-config.status:1180: creating jconfigint.h
-config.status:1361: jconfigint.h is unchanged
-config.status:1409: executing depfiles commands
-config.status:1409: executing libtool commands

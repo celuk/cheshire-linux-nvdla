@@ -4,7 +4,7 @@ sudo rm -rf ./_install ./rootfs.cpio.gz;
 make distclean;
 make defconfig;
 sed -i 's/# CONFIG_STATIC is not set/CONFIG_STATIC=y/' .config;
-export CROSS_COMPILE=/media/shc/0EDEBC4906059163/tools/riscv-toolchain-linux/_install2/bin/riscv64-unknown-linux-gnu-;
+export CROSS_COMPILE=../riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-;
 make -j14;
 make install;
 
@@ -59,7 +59,7 @@ echo 'mount -t sysfs none /sys' >> ./etc/init.d/rcS
 echo 'echo "Loading OpenDLA kernel module..."' >> ./etc/init.d/rcS
 echo 'insmod /opendla.ko' >> ./etc/init.d/rcS
 echo 'echo " "' >> ./etc/init.d/rcS
-echo 'echo "##########"' >> ./etc/init.d/rcS
+echo 'echo "                  ##########"' >> ./etc/init.d/rcS
 echo 'echo "               ###    ###     ###"' >> ./etc/init.d/rcS
 echo 'echo "            ### ######### ##########"' >> ./etc/init.d/rcS
 echo 'echo "          ## ########*    *####### ##"' >> ./etc/init.d/rcS

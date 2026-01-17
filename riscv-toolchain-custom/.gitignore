@@ -1,0 +1,5 @@
+_install/
+*/build-*
+*/stamps
+*/install-newlib-nano
+*/src
