@@ -43,7 +43,7 @@ fi
 
 cp "/home/shc/Downloads/fast-math.nvdla" ./_install;
 cp "/home/shc/Downloads/0_8.jpg" ./_install;
-#cp "./logo.txt" ./_install;
+cp "./logo.txt" ./_install;
 
 cd _install;
 mkdir -p dev proc sys etc/init.d;
@@ -58,46 +58,7 @@ echo 'mount -t proc none /proc' >> ./etc/init.d/rcS
 echo 'mount -t sysfs none /sys' >> ./etc/init.d/rcS
 echo 'echo "Loading OpenDLA kernel module..."' >> ./etc/init.d/rcS
 echo 'insmod /opendla.ko' >> ./etc/init.d/rcS
-echo 'echo " "' >> ./etc/init.d/rcS
-echo 'echo "                  ##########"' >> ./etc/init.d/rcS
-echo 'echo "               ###    ###     ###"' >> ./etc/init.d/rcS
-echo 'echo "            ### ######### ##########"' >> ./etc/init.d/rcS
-echo 'echo "          ## ########*    *####### ##"' >> ./etc/init.d/rcS
-echo 'echo "         ##     # ##*      *#*#*     ##"' >> ./etc/init.d/rcS
-echo 'echo "        ##  #  ###            ##  ##  ##"' >> ./etc/init.d/rcS
-echo 'echo "       #      ##     *####      ##     #*"' >> ./etc/init.d/rcS
-echo 'echo "      ## ### ##      ######      ## ### *"' >> ./etc/init.d/rcS
-echo 'echo "      ## ##  #      #######       #  #* ##            ***************  ***** ******** *****"' >> ./etc/init.d/rcS
-echo 'echo "      # ### #*     #### ####      #+*###*#            ** ********* ** ** ******************"' >> ./etc/init.d/rcS
-echo 'echo "      ##### *#   *####   #####    #*### ##            **** ***** ****  ************** * ***"' >> ./etc/init.d/rcS
-echo 'echo "      #####  #  ===+=======+###   # ##  ##            ******++******* ******************************"' >> ./etc/init.d/rcS
-echo 'echo "      ## ### ##  ===========+##  ## **# *             ** ****++****** ************ ************ +**"' >> ./etc/init.d/rcS
-echo 'echo "       ## ###*##               ##  *#  #*             **** **** ***** *****+* **** **+***"' >> ./etc/init.d/rcS
-echo 'echo "        ##   #  ##   ####*#   #* *### ##              **  ******* *** *****++ **********"' >> ./etc/init.d/rcS
-echo 'echo "         ##  ### # #########*  ##*#  ##                *************  *****+*** * ******"' >> ./etc/init.d/rcS
-echo 'echo "           *#   ###*#    ## #*# #  ##                    *********"' >> ./etc/init.d/rcS
-echo 'echo "             ##   ############   ##"' >> ./etc/init.d/rcS
-echo 'echo "                ####        ####"' >> ./etc/init.d/rcS
-echo 'echo " "' >> ./etc/init.d/rcS
-echo 'echo "                                                       --------------------------------------------"' >> ./etc/init.d/rcS
-echo 'echo " "' >> ./etc/init.d/rcS
-echo 'echo "                       #########"' >> ./etc/init.d/rcS
-echo 'echo "                  ######*     #####                 ****     ****   *** ********   ++++ ++++++"' >> ./etc/init.d/rcS
-echo 'echo "           ### ####              ##   #           ***************** ************   +++++++++++"' >> ./etc/init.d/rcS
-echo 'echo "          ##  ## ==          === #  ###         ****** *** **** **  ***  ******    ++++++++++++++++++"' >> ./etc/init.d/rcS
-echo 'echo "         ###     ===    ======   ####           ****       *******  ***   ****     ++++++++++++++++++"' >> ./etc/init.d/rcS
-echo 'echo "         ####                 %####             ****          ***** ***   ****     ++++++++++++++++++++"' >> ./etc/init.d/rcS
-echo 'echo "          ####################%                 ********** *** **** ***   ****     + ++ +++++++ +++++++"' >> ./etc/init.d/rcS
-echo 'echo "              ##########                          ******** ******** ***   ****     ++++++++++++++++++++++"' >> ./etc/init.d/rcS
-echo 'echo " "' >> ./etc/init.d/rcS
-echo 'echo "       ###"' >> ./etc/init.d/rcS
-echo 'echo "       ##### #### #### ##%######### ####"' >> ./etc/init.d/rcS
-echo 'echo "       ####  ####%#### ##### ##  ##%#####"' >> ./etc/init.d/rcS
-echo 'echo "       ##########%#### ####%  ###########"' >> ./etc/init.d/rcS
-echo 'echo "                             %#####"' >> ./etc/init.d/rcS
-echo 'echo " "' >> ./etc/init.d/rcS
-echo 'echo " "' >> ./etc/init.d/rcS
-echo 'echo " "' >> ./etc/init.d/rcS
+echo 'cat logo.txt' >> ./etc/init.d/rcS
 echo 'echo "Starting shell..."' >> ./etc/init.d/rcS
 #echo 'ls -al' >> ./etc/init.d/rcS
 #echo 'exec /bin/sh' >> ./etc/init.d/rcS
