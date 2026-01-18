@@ -135,7 +135,13 @@ void dla_reg_write(void *driver_context, uint32_t addr, uint32_t reg)
 	if (!nvdla_dev)
 		return;
 
-	writel(reg, nvdla_dev->base + addr);
+	//writel(reg, nvdla_dev->base + addr);
+	asm volatile (
+        "regw %0, %1" 
+        : 
+        : "r" (reg), "r" (nvdla_dev->base + addr)
+        : "memory"
+    );
 }
 
 uint32_t dla_reg_read(void *driver_context, uint32_t addr)

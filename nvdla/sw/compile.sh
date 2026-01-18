@@ -46,7 +46,7 @@ find . -name "config.h.in" -exec touch {} +
 if [ ! -f "Makefile" ]; then
     ./configure --host=riscv64-unknown-linux-gnu --disable-shared --enable-static
 else
-    make distclean
+    make clean
 fi
 make -j16 -C src libprotobuf.la
 

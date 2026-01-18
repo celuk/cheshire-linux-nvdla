@@ -31,6 +31,8 @@ static inline unsigned int riscv_insn_length (insn_t insn)
 {
   if ((insn & 0x3) != 0x3) /* RVC.  */
     return 2;
+  if ((insn & 0x7f) == 0x7f) /* Custom regw instruction.  */
+    return 4;
   if ((insn & 0x1f) != 0x1f) /* Base ISA and extensions in 32-bit space.  */
     return 4;
   if ((insn & 0x3f) == 0x1f) /* 48-bit extensions.  */

@@ -23,6 +23,8 @@
 /* Instruction opcode macros.  */
 #define MATCH_SLLI_RV32 0x1013
 #define MASK_SLLI_RV32  0xfe00707f
+#define MATCH_REGW 0x7f
+#define MASK_REGW  0xfe007fff
 #define MATCH_SRLI_RV32 0x5013
 #define MASK_SRLI_RV32  0xfe00707f
 #define MATCH_SRAI_RV32 0x40005013
