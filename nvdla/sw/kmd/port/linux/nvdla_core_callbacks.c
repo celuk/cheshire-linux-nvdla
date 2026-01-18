@@ -127,7 +127,7 @@ int64_t dla_get_time_us(void)
 	return ktime_get_ns() / NSEC_PER_USEC;
 }
 
-#define NVDLA_BASE 0x40000000UL
+//#define NVDLA_BASE 0x40000000UL
 
 void dla_reg_write(void *driver_context, uint32_t addr, uint32_t reg)
 {
@@ -138,14 +138,17 @@ void dla_reg_write(void *driver_context, uint32_t addr, uint32_t reg)
 		return;
 	
 	//writel(reg, nvdla_dev->base + addr);
-	__io_bw();
+
+	//unsigned long phys_addr = NVDLA_BASE + addr;
+	//uint32_t* phys_addr = nvdla_dev->base + addr;
+	//__io_bw();
 	asm volatile (
         "regw %0, %1" 
         : 
-        : "r" (reg), "r" (NVDLA_BASE + addr)
+        : "r" (nvdla_dev->base + addr), "r" (reg)
         : "memory"
     );
-	__io_aw();
+	//__io_aw();
 }
 
 uint32_t dla_reg_read(void *driver_context, uint32_t addr)
