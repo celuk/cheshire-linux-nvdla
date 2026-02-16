@@ -62,7 +62,7 @@
       serial@3002000 {
         compatible = "ns16550a";
         clock-frequency = <50000000>; // 50 MHz
-        current-speed = <115200>;
+        current-speed = <921600>;
         interrupt-parent = <&PLIC0>;
         interrupts = <1>;
         reg = <0x0 0x3002000 0x0 0x1000>;
