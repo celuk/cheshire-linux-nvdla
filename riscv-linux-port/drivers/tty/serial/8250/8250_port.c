@@ -2885,6 +2885,7 @@ serial8250_do_set_termios(struct uart_port *port, struct ktermios *termios,
 	}
 	serial8250_set_mctrl(port, port->mctrl);
 	uart_port_unlock_irqrestore(port, flags);
+
 	serial8250_rpm_put(up);
 
 	/* Don't rewrite B0 */
