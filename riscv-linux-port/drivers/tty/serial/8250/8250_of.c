@@ -60,6 +60,91 @@ static int npcm_setup(struct uart_port *port)
 	return 0;
 }
 
+static int cheshire_startup(struct uart_port *port)
+{
+	struct uart_8250_port *up = up_to_u8250p(port);
+	unsigned long flags;
+	int ret;
+
+	ret = serial8250_do_startup(port);
+	if (ret)
+		return ret;
+
+	/*
+	 * Mask RX-related interrupts during handover to avoid high-baud
+	 * takeover interrupt storms. Runtime paths may re-enable as needed.
+	 */
+	uart_port_lock_irqsave(port, &flags);
+	up->ier &= ~(UART_IER_RLSI | UART_IER_RDI);
+	serial_port_out(port, UART_IER, up->ier);
+	uart_port_unlock_irqrestore(port, flags);
+
+	return 0;
+}
+
+static int cheshire_handle_irq(struct uart_port *port)
+{
+	struct uart_8250_port *up = up_to_u8250p(port);
+	unsigned int iir;
+	int ret;
+
+	serial8250_rpm_get(up);
+
+	iir = serial_port_in(port, UART_IIR);
+	if (iir & UART_IIR_NO_INT) {
+		ret = 0;
+		goto out;
+	}
+
+	/* Drop spurious IRQ causes if their source is currently disabled. */
+	switch (iir & UART_IIR_ID) {
+	case UART_IIR_THRI:
+		if (!(up->ier & UART_IER_THRI)) {
+			serial_port_in(port, UART_LSR);
+			ret = 1;
+			goto out;
+		}
+		break;
+	case UART_IIR_RLSI:
+		if (!(up->ier & UART_IER_RLSI)) {
+			serial_port_in(port, UART_LSR);
+			ret = 1;
+			goto out;
+		}
+		break;
+	case UART_IIR_RDI:
+	case UART_IIR_RX_TIMEOUT:
+		if (!(up->ier & UART_IER_RDI)) {
+			serial_port_in(port, UART_RX);
+			ret = 1;
+			goto out;
+		}
+		break;
+	default:
+		break;
+	}
+
+	ret = serial8250_handle_irq(port, iir);
+out:
+	serial8250_rpm_put(up);
+	return ret;
+}
+
+static int cheshire_setup(struct uart_port *port)
+{
+	port->startup = cheshire_startup;
+	port->handle_irq = cheshire_handle_irq;
+	/*
+	 * Keep IRQ mode, but use conservative 8250 workarounds for fragile
+	 * TX-interrupt behavior often seen at high baud rates on custom UARTs.
+	 */
+	port->flags |= UPF_BUG_THRE;
+	port->flags |= UPF_NO_THRE_TEST;
+	port->quirks |= UPQ_NO_TXEN_TEST;
+	dev_info(port->dev, "Cheshire UART path enabled (IRQ hardening active)\n");
+	return 0;
+}
+
 static inline struct of_serial_info *clk_nb_to_info(struct notifier_block *nb)
 {
 	return container_of(nb, struct of_serial_info, clk_notifier);
@@ -169,6 +254,12 @@ static int of_platform_serial_setup(struct platform_device *ofdev,
 	}
 	if (ret)
 		goto err_pmruntime;
+
+	if (of_device_is_compatible(np, "eth,cheshire-uart")) {
+		ret = cheshire_setup(port);
+		if (ret)
+			goto err_pmruntime;
+	}
 
 	if (IS_REACHABLE(CONFIG_SERIAL_8250_FSL) &&
 	    (of_device_is_compatible(np, "fsl,ns16550") ||
@@ -316,6 +407,7 @@ static SIMPLE_DEV_PM_OPS(of_serial_pm_ops, of_serial_suspend, of_serial_resume);
  * A few common types, add more as needed.
  */
 static const struct of_device_id of_platform_serial_table[] = {
+	{ .compatible = "eth,cheshire-uart", .data = (void *)PORT_16550A, },
 	{ .compatible = "ns8250",   .data = (void *)PORT_8250, },
 	{ .compatible = "ns16450",  .data = (void *)PORT_16450, },
 	{ .compatible = "ns16550a", .data = (void *)PORT_16550A, },
