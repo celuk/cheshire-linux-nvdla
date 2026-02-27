@@ -60,9 +60,9 @@
       compatible = "eth,cheshire-bare-soc", "simple-bus";
       ranges;
       serial@3002000 {
-        compatible = "eth,cheshire-uart", "ns16550a";
+        compatible = "ns16550a";
         clock-frequency = <50000000>; // 50 MHz
-        current-speed = <921600>;
+        current-speed = <115200>;
         interrupt-parent = <&PLIC0>;
         interrupts = <1>;
         reg = <0x0 0x3002000 0x0 0x1000>;

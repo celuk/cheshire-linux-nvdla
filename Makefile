@@ -1,7 +1,6 @@
 SHELL := /bin/bash
 .PHONY: all opensbi lrzsz nvdla busybox linux toolchain
 
-# for fixing this circular dependency, we need to put opendla.ko file in runtime
 all: opensbi lrzsz busybox linux nvdla busybox linux
 
 opensbi:
