@@ -1,99 +1,83 @@
 /dts-v1/;
 
-// /memreserve/ 0x80140000 0x00010000;
-
 / {
-	#address-cells = <2>;
-	#size-cells = <2>;
 
-	compatible = "eth,cheshire-dev";
-  	model = "eth,cheshire";
+  #address-cells = <2>;
+  #size-cells = <2>;
+  compatible = "eth,cheshire-dev";
+  model = "eth,cheshire";
 
-	aliases {
-		serial0 = &hvc;
-	};
+  chosen: chosen {
+    #address-cells = <2>;
+    #size-cells = <2>;
+    ranges;
+    stdout-path = "/soc/serial@3002000:115200";
+  };
 
-	chosen {
-		bootargs = "console=hvc0 earlycon=sbi";
-		stdout-path = "serial0";
-	};
-  // bootargs = "console=hvc0 earlycon=sbi clk_ignore_unused";
+  memory@80000000 {
+    device_type = "memory";
+    reg = <0x0 0x80000000 0x0 0x40000000>;
+  };
 
-	// chosen: chosen {
-    //   #address-cells = <2>;
-    //   #size-cells = <2>;
-    //   ranges;
-    //   stdout-path = "/soc/serial@3002000:115200";
-    // };
-	// bootargs = "console=ttyS0,115200 earlycon=sbi";
-
-	cpus {
-      #address-cells = <1>;
-      #size-cells = <0>;
-      timebase-frequency = <50000000>; // mtime frequency is same with the cpu
-      CPU0: cpu@0 {
-        device_type = "cpu";
-        status = "okay";
-        compatible = "eth,ariane", "riscv";
-        clock-frequency = <50000000>; // 50 MHz
-        riscv,isa = "rv64imafdc";
-        mmu-type = "riscv,sv39";
-        tlb-split;
-        reg = <0>;
-        CPU0_intc: interrupt-controller {
-          #address-cells = <0>;
-          #interrupt-cells = <1>;
-          interrupt-controller;
-          compatible = "riscv,cpu-intc";
-        };
-      };
-    };
-
-	memory@80000000 {
-    	device_type = "memory";
-    	reg = <0x0 0x80000000 0x0 0x0fffffff>;
-  	};
-
-	soc: soc {
-      #address-cells = <2>;
-      #size-cells = <2>;
-      compatible = "eth,cheshire-bare-soc", "simple-bus";
-      ranges;
-      serial@3002000 {
-        compatible = "ns16550a";
-        clock-frequency = <50000000>; // 50 MHz
-        current-speed = <115200>;
-        interrupt-parent = <&PLIC0>;
-        interrupts = <1>;
-        reg = <0x0 0x3002000 0x0 0x1000>;
-        reg-shift = <2>; // regs are spaced on 32 bit boundary
-        reg-io-width = <4>; // only 32-bit access are supported
-      };
-      clint@2040000 {
-        compatible = "riscv,clint0";
-        interrupts-extended = <&CPU0_intc 3 &CPU0_intc 7>;
-        reg-names = "control";
-        reg = <0x0 0x2040000 0x0 0x040000>;
-      };
-      PLIC0: interrupt-controller@4000000 {
-        compatible = "riscv,plic0", "sifive,plic-1.0.0";
+  cpus {
+    #address-cells = <1>;
+    #size-cells = <0>;
+    timebase-frequency = <1000000>; // 1 MHz
+    CPU0: cpu@0 {
+      device_type = "cpu";
+      status = "okay";
+      compatible = "eth,ariane", "riscv";
+      clock-frequency = <50000000>; // 50 MHz
+      riscv,isa = "rv64imafdc";
+      mmu-type = "riscv,sv39";
+      tlb-split;
+      reg = <0>;
+      CPU0_intc: interrupt-controller {
         #address-cells = <0>;
         #interrupt-cells = <1>;
         interrupt-controller;
-        interrupts-extended = <&CPU0_intc 11 &CPU0_intc 9>;
-        riscv,max-priority = <7>;
-        riscv,ndev = <64>;
-        reg = <0x0 0x4000000 0x0 0x4000000>;
+        compatible = "riscv,cpu-intc";
       };
-      nvdla@40000000 {
+    };
+  };
+
+  soc: soc {
+    #address-cells = <2>;
+    #size-cells = <2>;
+    compatible = "eth,cheshire-bare-soc", "simple-bus";
+    ranges;
+    serial@3002000 {
+      compatible = "ns16550a";
+      clock-frequency = <50000000>; // 50 MHz
+      current-speed = <115200>;
+      interrupt-parent = <&PLIC0>;
+      interrupts = <1>;
+      reg = <0x0 0x3002000 0x0 0x1000>;
+      reg-shift = <2>; // regs are spaced on 32 bit boundary
+      reg-io-width = <4>; // only 32-bit access are supported
+    };
+    clint@2040000 {
+      compatible = "riscv,clint0";
+      interrupts-extended = <&CPU0_intc 3 &CPU0_intc 7>;
+      reg-names = "control";
+      reg = <0x0 0x2040000 0x0 0x040000>;
+    };
+    PLIC0: interrupt-controller@4000000 {
+      compatible = "riscv,plic0";
+      #address-cells = <0>;
+      #interrupt-cells = <1>;
+      interrupt-controller;
+      interrupts-extended = <&CPU0_intc 11 &CPU0_intc 9>;
+      riscv,max-priority = <7>;
+      riscv,ndev = <51>;
+      reg = <0x0 0x4000000 0x0 0x4000000>;
+    };
+    nvdla@40000000 {
         compatible = "nvidia,nv_small", "nvidia,nvdla_2", "nvidia,nvdla", "nvidia,nvdla-1";
         reg = <0x0 0x40000000 0x0 0x40000>;
         interrupt-parent = <&PLIC0>;
-        interrupts = <20 4>;
+        interrupts = <20>;
       };
-    };
+  };
 
-	hvc: sbi-hvc {
-		compatible = "riscv,sbi-hvc";
-	};
 };
