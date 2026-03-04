@@ -60,9 +60,11 @@ echo 'echo "Loading OpenDLA kernel module..."' >> ./etc/init.d/rcS
 echo 'insmod /opendla.ko' >> ./etc/init.d/rcS
 echo 'cat logo.txt' >> ./etc/init.d/rcS
 echo 'echo "Starting shell..."' >> ./etc/init.d/rcS
+echo 'echo "rcS: alive" > /dev/ttyS0 2>/dev/null || true' >> ./etc/init.d/rcS
+echo 'cat /proc/interrupts > /dev/kmsg 2>/dev/null || true' >> ./etc/init.d/rcS
 #echo 'ls -al' >> ./etc/init.d/rcS
 #echo 'exec /bin/sh' >> ./etc/init.d/rcS
-echo 'exec setsid cttyhack /bin/sh' >> ./etc/init.d/rcS
+echo 'exec /bin/sh </dev/ttyS0 >/dev/ttyS0 2>&1' >> ./etc/init.d/rcS
 
 chmod +x ./etc/init.d/rcS;
 ln -s ./etc/init.d/rcS ./init;
