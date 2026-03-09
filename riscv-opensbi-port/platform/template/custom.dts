@@ -10,12 +10,12 @@
   	model = "eth,cheshire";
 
 	aliases {
-    serial0 = "/soc/serial@3002000";
+		serial0 = &hvc;
 	};
 
 	chosen {
-    bootargs = "console=ttyS0,115200 earlycon=sbi";
-    stdout-path = "/soc/serial@3002000:115200";
+		bootargs = "console=hvc0 earlycon=sbi";
+		stdout-path = "serial0";
 	};
   // bootargs = "console=hvc0 earlycon=sbi clk_ignore_unused";
 
@@ -30,7 +30,7 @@
 	cpus {
       #address-cells = <1>;
       #size-cells = <0>;
-      timebase-frequency = <1000000>;
+      timebase-frequency = <50000000>; // mtime frequency is same with the cpu
       CPU0: cpu@0 {
         device_type = "cpu";
         status = "okay";
@@ -89,7 +89,7 @@
         compatible = "nvidia,nv_small", "nvidia,nvdla_2", "nvidia,nvdla", "nvidia,nvdla-1";
         reg = <0x0 0x40000000 0x0 0x40000>;
         interrupt-parent = <&PLIC0>;
-		interrupts = <20>;
+        interrupts = <20 4>;
       };
     };
 
