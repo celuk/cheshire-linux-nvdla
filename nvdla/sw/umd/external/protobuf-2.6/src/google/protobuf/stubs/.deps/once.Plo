@@ -8,7 +8,7 @@ google/protobuf/stubs/once.lo: google/protobuf/stubs/once.cc \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/wordsize.h \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/long-double.h \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs.h \
- /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs-lp64.h \
+ /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs-lp64d.h \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/include/c++/10.2.0/stdlib.h \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/include/c++/10.2.0/cstdlib \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/include/c++/10.2.0/riscv64-unknown-linux-gnu/bits/c++config.h \
@@ -167,7 +167,7 @@ google/protobuf/stubs/common.h:
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/wordsize.h:
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/long-double.h:
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs.h:
-/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs-lp64.h:
+/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs-lp64d.h:
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/include/c++/10.2.0/stdlib.h:
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/include/c++/10.2.0/cstdlib:
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/include/c++/10.2.0/riscv64-unknown-linux-gnu/bits/c++config.h:

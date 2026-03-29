@@ -97,7 +97,7 @@ Using built-in specs.
 COLLECT_GCC=riscv64-unknown-linux-gnu-gcc
 COLLECT_LTO_WRAPPER=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../libexec/gcc/riscv64-unknown-linux-gnu/10.2.0/lto-wrapper
 Target: riscv64-unknown-linux-gnu
-Configured with: /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/riscv-gnu-toolchain/../_install --with-sysroot=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/riscv-gnu-toolchain/../_install/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++,fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././riscv-gcc --disable-multilib --with-abi=lp64 --with-arch=rv64imac --with-tune=rocket 'CFLAGS_FOR_TARGET=-O2   -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2   -mcmodel=medlow'
+Configured with: /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/riscv-gnu-toolchain/../_install --with-sysroot=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/riscv-gnu-toolchain/../_install/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++,fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././riscv-gcc --disable-multilib --with-abi=lp64d --with-arch=rv64imafdc --with-tune=rocket 'CFLAGS_FOR_TARGET=-O2   -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2   -mcmodel=medlow'
 Thread model: posix
 Supported LTO compression algorithms: zlib
 gcc version 10.2.0 (GCC) 
@@ -171,7 +171,7 @@ Using built-in specs.
 COLLECT_GCC=riscv64-unknown-linux-gnu-g++
 COLLECT_LTO_WRAPPER=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../libexec/gcc/riscv64-unknown-linux-gnu/10.2.0/lto-wrapper
 Target: riscv64-unknown-linux-gnu
-Configured with: /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/riscv-gnu-toolchain/../_install --with-sysroot=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/riscv-gnu-toolchain/../_install/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++,fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././riscv-gcc --disable-multilib --with-abi=lp64 --with-arch=rv64imac --with-tune=rocket 'CFLAGS_FOR_TARGET=-O2   -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2   -mcmodel=medlow'
+Configured with: /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-linux-gnu --prefix=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/riscv-gnu-toolchain/../_install --with-sysroot=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/riscv-gnu-toolchain/../_install/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++,fortran --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././riscv-gcc --disable-multilib --with-abi=lp64d --with-arch=rv64imafdc --with-tune=rocket 'CFLAGS_FOR_TARGET=-O2   -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2   -mcmodel=medlow'
 Thread model: posix
 Supported LTO compression algorithms: zlib
 gcc version 10.2.0 (GCC) 
@@ -546,7 +546,7 @@ configure: failed program was:
 configure:15402: result: no
 configure:15305: checking whether pthreads work without any flags
 configure:15393: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG    conftest.c   >&5
-/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccFv7pCG.o: in function `main':
+/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccVjO7WV.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `pthread_join'
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x5a): undefined reference to `__pthread_register_cancel'
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x6a): undefined reference to `pthread_create'

@@ -9,7 +9,7 @@ google/protobuf/compiler/parser.lo: google/protobuf/compiler/parser.cc \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/wordsize.h \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/long-double.h \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs.h \
- /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs-lp64.h \
+ /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs-lp64d.h \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0/include/stddef.h \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/types/locale_t.h \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/types/__locale_t.h \
@@ -254,7 +254,7 @@ google/protobuf/stubs/hash.h:
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/wordsize.h:
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/long-double.h:
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs.h:
-/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs-lp64.h:
+/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs-lp64d.h:
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0/include/stddef.h:
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/types/locale_t.h:
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/types/__locale_t.h:

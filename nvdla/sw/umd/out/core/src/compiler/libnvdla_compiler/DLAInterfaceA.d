@@ -9,7 +9,7 @@
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/wordsize.h \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/long-double.h \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs.h \
- /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs-lp64.h \
+ /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs-lp64d.h \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/include/c++/10.2.0/riscv64-unknown-linux-gnu/bits/cpu_defines.h \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0/include/stddef.h \
  include/priv/DLAInterface.h \
