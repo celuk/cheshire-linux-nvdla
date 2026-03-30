@@ -32,7 +32,7 @@
 extern "C" {
 #endif
 
-#if defined __ARM_ARCH || defined __riscv
+#if defined __ARM_ARCH
 
 #define fp16_to_fp32(data) \
     ({                     \

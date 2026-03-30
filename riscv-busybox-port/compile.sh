@@ -41,8 +41,8 @@ else
     echo "Warning: nvdla_runtime not found at ../nvdla/sw/umd/out/apps/runtime/nvdla_runtime/nvdla_runtime"
 fi
 
-#cp "/home/shc/temp/fast-math.nvdla" ./_install;
-#cp "/home/shc/temp/0_8.jpg" ./_install;
+cp "/home/shc/temp/fast-math.nvdla" ./_install;
+cp "/home/shc/temp/0_8.jpg" ./_install;
 cp "/home/shc/temp/default.nvdla" ./_install;
 cp "/home/shc/temp/cat_32.jpg" ./_install;
 cp "./logo.txt" ./_install;

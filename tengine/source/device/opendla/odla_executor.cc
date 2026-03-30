@@ -25,7 +25,12 @@
 #include "odla_executor.hpp"
 #include "odla_define.h"
 #include "priv/Check.h"
+#include <assert.h>
 #include <thread>
+
+#ifndef ASSERT
+#define ASSERT(x) assert(x)
+#endif
 
 void ODLAEngine::odla_input_data_convert(void * dst, const void * src, nvdla::IRuntime::NvDlaTensor tDesc) const{
 #ifdef OPENDLA_DEBUG_DATA

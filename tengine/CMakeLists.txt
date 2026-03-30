@@ -54,6 +54,7 @@ OPTION (TENGINE_BUILD_EXAMPLES              "Build examples"                    
 OPTION (TENGINE_BUILD_DEMO                  "Build demos"                               OFF)
 OPTION (TENGINE_BUILD_TESTS                 "Build tests"                               OFF)
 OPTION (TENGINE_BUILD_CPP_API               "Build C++ API"                             OFF)
+OPTION (TENGINE_BUILD_SHARED                "Build shared tengine-lite library"         ON)
 
 # Tools options
 # Tools

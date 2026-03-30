@@ -33,6 +33,11 @@ UNSET (_DEV_ODLA_LINK_LIBRARIES)
 # 1.  set source root path
 SET(_ODLA_ROOT ${CMAKE_SOURCE_DIR}/source/device/opendla)
 
+IF (NOT DEFINED NVDLA_SW_ROOT)
+	SET (NVDLA_SW_ROOT "${CMAKE_SOURCE_DIR}/../nvdla/sw" CACHE PATH "Path to NVDLA software root")
+ENDIF()
+SET (NVDLA_UMD_ROOT "${NVDLA_SW_ROOT}/umd")
+
 # 2.  add header file path
 LIST (APPEND _DEV_ODLA_HEADER_PATH        ${_ODLA_ROOT})
 LIST (APPEND _DEV_ODLA_HEADER_PATH        ${CMAKE_CURRENT_BINARY_DIR})
@@ -41,6 +46,12 @@ LIST (APPEND _DEV_ODLA_HEADER_PATH        ${CMAKE_SOURCE_DIR}/source/device/open
 LIST (APPEND _DEV_ODLA_HEADER_PATH        ${CMAKE_SOURCE_DIR}/source/device/opendla/include/compiler)
 LIST (APPEND _DEV_ODLA_HEADER_PATH        ${CMAKE_SOURCE_DIR}/source/device/opendla/include/runtime)
 LIST (APPEND _DEV_ODLA_HEADER_PATH        ${CMAKE_SOURCE_DIR}/source/device/opendla/include/external)
+LIST (APPEND _DEV_ODLA_HEADER_PATH        ${NVDLA_UMD_ROOT}/core/include)
+LIST (APPEND _DEV_ODLA_HEADER_PATH        ${NVDLA_UMD_ROOT}/include)
+LIST (APPEND _DEV_ODLA_HEADER_PATH        ${NVDLA_UMD_ROOT}/external/include)
+LIST (APPEND _DEV_ODLA_HEADER_PATH        ${NVDLA_UMD_ROOT}/core/src/common/include)
+LIST (APPEND _DEV_ODLA_HEADER_PATH        ${NVDLA_UMD_ROOT}/core/src/compiler/include)
+LIST (APPEND _DEV_ODLA_HEADER_PATH        ${NVDLA_UMD_ROOT}/core/src/runtime/include)
 
 
 # 3.
@@ -61,6 +72,8 @@ TARGET_SOURCES (${_ODLA_LIB_NAME} PRIVATE ${_ODLA_OPS_SOURCE})
 # 4.  add build options for cpu device
 # 4.1 is a gcc or clang like compiler
 IF (TENGINE_COMPILER_GCC OR TENGINE_COMPILER_CLANG)
+	LIST (APPEND _DEV_ODLA_COMPILER_OPTIONS "-fno-access-control")
+	LIST (APPEND _DEV_ODLA_COMPILER_OPTIONS "-fno-rtti")
 ENDIF()
 
 
@@ -70,9 +83,15 @@ ENDIF()
 
 
 # 5.  add link options
+LIST (APPEND _DEV_ODLA_LINKER_OPTIONS      "-Wl,--allow-multiple-definition")
 
 # 6.  add link libs
 LIST (APPEND _DEV_ODLA_LINK_PATH            ${_ODLA_ROOT}/lib)
+LIST (APPEND _DEV_ODLA_LINK_PATH            ${NVDLA_UMD_ROOT}/out/core/src/compiler/libnvdla_compiler)
+LIST (APPEND _DEV_ODLA_LINK_PATH            ${NVDLA_UMD_ROOT}/out/core/src/runtime/libnvdla_runtime)
+LIST (APPEND _DEV_ODLA_LINK_PATH            ${NVDLA_UMD_ROOT}/core/src/compiler)
+LIST (APPEND _DEV_ODLA_LINK_PATH            ${NVDLA_UMD_ROOT}/apps/compiler)
+LIST (APPEND _DEV_ODLA_LINK_PATH            ${NVDLA_UMD_ROOT}/external)
 LIST (APPEND _DEV_ODLA_LINK_LIBRARIES       "nvdla_compiler" )
 LIST (APPEND _DEV_ODLA_LINK_LIBRARIES       "libprotobuf.a" )
 LIST (APPEND _DEV_ODLA_LINK_LIBRARIES       "pthread")
