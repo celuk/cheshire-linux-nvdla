@@ -137,18 +137,14 @@ void dla_reg_write(void *driver_context, uint32_t addr, uint32_t reg)
 	if (!nvdla_dev)
 		return;
 	
-	//writel(reg, nvdla_dev->base + addr);
+	writel(reg, nvdla_dev->base + addr);
 
-	//unsigned long phys_addr = NVDLA_BASE + addr;
-	//uint32_t* phys_addr = nvdla_dev->base + addr;
-	//__io_bw();
-	asm volatile (
-        "regw %0, %1" 
-        : 
-        : "r" (nvdla_dev->base + addr), "r" (reg)
-        : "memory"
-    );
-	//__io_aw();
+	//asm volatile (
+    //    "regw %0, %1" 
+    //    : 
+    //    : "r" (nvdla_dev->base + addr), "r" (reg)
+    //    : "memory"
+    //);
 }
 
 uint32_t dla_reg_read(void *driver_context, uint32_t addr)

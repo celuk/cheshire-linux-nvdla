@@ -41,6 +41,32 @@ else
     echo "Warning: nvdla_runtime not found at ../nvdla/sw/umd/out/apps/runtime/nvdla_runtime/nvdla_runtime"
 fi
 
+# Copy Tengine OpenDLA example binaries
+if [ -f "../tengine/build-riscv/examples/tm_classification_opendla" ]; then
+    echo "Copying tm_classification_opendla..."
+    cp "../tengine/build-riscv/examples/tm_classification_opendla" ./_install/bin/tm_classification_opendla
+    chmod +x ./_install/bin/tm_classification_opendla
+    echo "Stripping tm_classification_opendla..."
+    "${CROSS_COMPILE}strip" ./_install/bin/tm_classification_opendla
+else
+    echo "Warning: tm_classification_opendla not found at ../tengine/build-riscv/examples/"
+fi
+
+if [ -f "../tengine/build-riscv/examples/tm_yolox_opendla" ]; then
+    echo "Copying tm_yolox_opendla..."
+    cp "../tengine/build-riscv/examples/tm_yolox_opendla" ./_install/bin/tm_yolox_opendla
+    chmod +x ./_install/bin/tm_yolox_opendla
+    echo "Stripping tm_yolox_opendla..."
+    "${CROSS_COMPILE}strip" ./_install/bin/tm_yolox_opendla
+else
+    echo "Warning: tm_yolox_opendla not found at ../tengine/build-riscv/examples/"
+fi
+
+cp "../tengine/models/resnet18-cifar10-nosoftmax-relu_int8.tmfile" ./_install/;
+cp "../tengine/models/yolox_nano_relu_int8.tmfile" ./_install/;
+cp "../tengine/images/person.jpg" ./_install/;
+cp "../tengine/images/cat.jpg" ./_install/;
+
 cp "/home/shc/temp/fast-math.nvdla" ./_install;
 cp "/home/shc/temp/0_8.jpg" ./_install;
 cp "/home/shc/temp/default.nvdla" ./_install;
