@@ -6,6 +6,8 @@ BUILD_DIR="${ROOT_DIR}/build-riscv"
 NVDLA_SW_DIR="${ROOT_DIR}/../nvdla/sw"
 NVDLA_RUNTIME_LIB="${NVDLA_SW_DIR}/umd/out/core/src/runtime/libnvdla_runtime/libnvdla_runtime.a"
 NVDLA_COMPILER_LIB="${NVDLA_SW_DIR}/umd/out/core/src/compiler/libnvdla_compiler/libnvdla_compiler.a"
+OPENCV_INSTALL_DIR="${ROOT_DIR}/../opencv/install"
+OPENCV_DIR="${OPENCV_INSTALL_DIR}/lib/cmake/opencv4"
 
 if [ ! -f "${NVDLA_RUNTIME_LIB}" ] || [ ! -f "${NVDLA_COMPILER_LIB}" ]; then
   echo "NVDLA runtime/compiler libraries not found, building nvdla/sw first..."
@@ -13,6 +15,14 @@ if [ ! -f "${NVDLA_RUNTIME_LIB}" ] || [ ! -f "${NVDLA_COMPILER_LIB}" ]; then
 fi
 
 SYSROOT="$(${TOOLCHAIN_PREFIX}gcc --print-sysroot)"
+OPENCV_CMAKE_ARGS=""
+
+if [ -f "${OPENCV_DIR}/OpenCVConfig.cmake" ]; then
+  OPENCV_CMAKE_ARGS="-DOpenCV_DIR=${OPENCV_DIR} -DCMAKE_PREFIX_PATH=${OPENCV_INSTALL_DIR}"
+  echo "Using OpenCV from ${OPENCV_DIR}"
+else
+  echo "OpenCV cross package not found at ${OPENCV_DIR}; tm_yolox_opendla may be skipped."
+fi
 
 cmake -S "${ROOT_DIR}" -B "${BUILD_DIR}" \
   -DTENGINE_ENABLE_OPENDLA=ON \
@@ -33,11 +43,12 @@ cmake -S "${ROOT_DIR}" -B "${BUILD_DIR}" \
   -DCMAKE_FIND_ROOT_PATH_MODE_PROGRAM=NEVER \
   -DCMAKE_FIND_ROOT_PATH_MODE_LIBRARY=ONLY \
   -DCMAKE_FIND_ROOT_PATH_MODE_INCLUDE=ONLY \
-  -DCMAKE_FIND_ROOT_PATH_MODE_PACKAGE=ONLY
+  -DCMAKE_FIND_ROOT_PATH_MODE_PACKAGE=ONLY \
+  ${OPENCV_CMAKE_ARGS}
 
 cmake --build "${BUILD_DIR}" --target tm_classification_opendla -j"$(nproc)"
 
-if cmake --build "${BUILD_DIR}" --target help | grep -q "tm_yolox_opendla"; then
+if cmake --build "${BUILD_DIR}" --target help | grep "tm_yolox_opendla" >/dev/null; then
   cmake --build "${BUILD_DIR}" --target tm_yolox_opendla -j"$(nproc)"
 else
   echo "Skipping tm_yolox_opendla: target is not generated (OpenCV not found for cross-compile)."

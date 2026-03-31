@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+set -e
+
+ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
+TOOLCHAIN_PREFIX="${ROOT_DIR}/../riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-"
+BUILD_DIR="${ROOT_DIR}/build"
+INSTALL_DIR="${ROOT_DIR}/install"
+
+if [ ! -x "${TOOLCHAIN_PREFIX}gcc" ] || [ ! -x "${TOOLCHAIN_PREFIX}g++" ]; then
+  echo "RISC-V toolchain not found at ${TOOLCHAIN_PREFIX}"
+  exit 1
+fi
+
+SYSROOT="$(${TOOLCHAIN_PREFIX}gcc --print-sysroot)"
+
+mkdir -p "${BUILD_DIR}" "${INSTALL_DIR}"
+
+cmake -S "${ROOT_DIR}" -B "${BUILD_DIR}" \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DCMAKE_INSTALL_PREFIX="${INSTALL_DIR}" \
+  -DCMAKE_SYSTEM_NAME=Linux \
+  -DCMAKE_SYSTEM_PROCESSOR=riscv64 \
+  -DCMAKE_C_COMPILER="${TOOLCHAIN_PREFIX}gcc" \
+  -DCMAKE_CXX_COMPILER="${TOOLCHAIN_PREFIX}g++" \
+  -DCMAKE_SYSROOT="${SYSROOT}" \
+  -DCMAKE_FIND_ROOT_PATH="${SYSROOT}" \
+  -DCMAKE_FIND_ROOT_PATH_MODE_PROGRAM=NEVER \
+  -DCMAKE_FIND_ROOT_PATH_MODE_LIBRARY=ONLY \
+  -DCMAKE_FIND_ROOT_PATH_MODE_INCLUDE=ONLY \
+  -DCMAKE_FIND_ROOT_PATH_MODE_PACKAGE=ONLY \
+  -DCMAKE_C_FLAGS="-march=rv64gc -mabi=lp64d" \
+  -DCMAKE_CXX_FLAGS="-march=rv64gc -mabi=lp64d" \
+  -DBUILD_SHARED_LIBS=OFF \
+  -DBUILD_LIST=core,imgproc,imgcodecs,highgui \
+  -DBUILD_TESTS=OFF \
+  -DBUILD_PERF_TESTS=OFF \
+  -DBUILD_EXAMPLES=OFF \
+  -DBUILD_opencv_apps=OFF \
+  -DBUILD_JAVA=OFF \
+  -DBUILD_opencv_python=OFF \
+  -DBUILD_opencv_python2=OFF \
+  -DBUILD_opencv_python3=OFF \
+  -DWITH_IPP=OFF \
+  -DWITH_TBB=OFF \
+  -DWITH_OPENMP=OFF \
+  -DWITH_GTK=OFF \
+  -DWITH_QT=OFF \
+  -DWITH_FFMPEG=OFF \
+  -DWITH_GSTREAMER=OFF
+
+cmake --build "${BUILD_DIR}" -j"$(nproc)"
+cmake --install "${BUILD_DIR}"
+
+echo "OpenCV build complete."
+echo "Install prefix: ${INSTALL_DIR}"
+echo "OpenCV config: ${INSTALL_DIR}/lib/cmake/opencv4/OpenCVConfig.cmake"

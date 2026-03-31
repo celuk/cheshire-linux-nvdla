@@ -1,0 +1,3106 @@
+3P_LIBRARY_OUTPUT_PATH=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/3rdparty/lib
+ARGC=3
+ARGN=;TOFILE;CMakeVars.txt
+ARGV=;TOFILE;CMakeVars.txt
+ARGV0=
+ARGV1=TOFILE
+ARGV2=CMakeVars.txt
+ATLAS_FOUND=FALSE
+Atlas_BLAS_LIBRARY=Atlas_BLAS_LIBRARY-NOTFOUND
+Atlas_CBLAS_INCLUDE_DIR=Atlas_CBLAS_INCLUDE_DIR-NOTFOUND
+Atlas_CBLAS_LIBRARY=Atlas_CBLAS_LIBRARY-NOTFOUND
+Atlas_CLAPACK_INCLUDE_DIR=Atlas_CLAPACK_INCLUDE_DIR-NOTFOUND
+Atlas_FOUND=FALSE
+Atlas_INCLUDE_SEARCH_PATHS=/usr/include/atlas;/usr/include/atlas-base;/include
+Atlas_LAPACK_LIBRARY=Atlas_LAPACK_LIBRARY-NOTFOUND
+Atlas_LIB_SEARCH_PATHS=/usr/lib/atlas;/usr/lib/atlas-base;/lib
+BLAS_Accelerate_LIBRARY=BLAS_Accelerate_LIBRARY-NOTFOUND
+BLAS_FOUND=FALSE
+BLAS_LIBRARIES=FALSE
+BLAS_SEARCH_LIBS=mkl_intel mkl_intel_thread mkl_core guide; mkl_intel mkl_intel_thread mkl_core  iomp5;mkl_intel_lp64 mkl_intel_thread mkl_core guide; mkl_intel_lp64 mkl_intel_thread mkl_core  iomp5; mkl_intel_lp64 mkl_sequential mkl_core ;mkl;mkl_ia32;mkl_em64t;mkl_rt
+BLAS_WORKS=
+BLAS_acml_LIBRARY=BLAS_acml_LIBRARY-NOTFOUND
+BLAS_acml_mp_LIBRARY=BLAS_acml_mp_LIBRARY-NOTFOUND
+BLAS_armpl_lp64_LIBRARY=BLAS_armpl_lp64_LIBRARY-NOTFOUND
+BLAS_blas_LIBRARY=BLAS_blas_LIBRARY-NOTFOUND
+BLAS_blis_LIBRARY=BLAS_blis_LIBRARY-NOTFOUND
+BLAS_complib_sgimath_LIBRARY=BLAS_complib_sgimath_LIBRARY-NOTFOUND
+BLAS_cxml_LIBRARY=BLAS_cxml_LIBRARY-NOTFOUND
+BLAS_dxml_LIBRARY=BLAS_dxml_LIBRARY-NOTFOUND
+BLAS_eml_LIBRARY=BLAS_eml_LIBRARY-NOTFOUND
+BLAS_essl_LIBRARY=BLAS_essl_LIBRARY-NOTFOUND
+BLAS_fjlapack_LIBRARY=BLAS_fjlapack_LIBRARY-NOTFOUND
+BLAS_flexiblas_LIBRARY=BLAS_flexiblas_LIBRARY-NOTFOUND
+BLAS_goto2_LIBRARY=BLAS_goto2_LIBRARY-NOTFOUND
+BLAS_mkl_END_GROUP=
+BLAS_mkl_LIBRARY=BLAS_mkl_LIBRARY-NOTFOUND
+BLAS_mkl_SEARCH_SYMBOL=sgemm
+BLAS_mkl_START_GROUP=
+BLAS_mkl_em64t_LIBRARY=BLAS_mkl_em64t_LIBRARY-NOTFOUND
+BLAS_mkl_ia32_LIBRARY=BLAS_mkl_ia32_LIBRARY-NOTFOUND
+BLAS_mkl_intel_LIBRARY=BLAS_mkl_intel_LIBRARY-NOTFOUND
+BLAS_mkl_intel_lp64_LIBRARY=BLAS_mkl_intel_lp64_LIBRARY-NOTFOUND
+BLAS_mkl_rt_LIBRARY=BLAS_mkl_rt_LIBRARY-NOTFOUND
+BLAS_openblas_LIBRARY=BLAS_openblas_LIBRARY-NOTFOUND
+BLAS_scs_LIBRARY=BLAS_scs_LIBRARY-NOTFOUND
+BLAS_sgemm_LIBRARY=BLAS_sgemm_LIBRARY-NOTFOUND
+BLAS_sunperf_LIBRARY=BLAS_sunperf_LIBRARY-NOTFOUND
+BLAS_vecLib_LIBRARY=BLAS_vecLib_LIBRARY-NOTFOUND
+BLA_VENDOR=All
+BUILD_CUDA_STUBS=OFF
+BUILD_DOCS=OFF
+BUILD_EXAMPLES=OFF
+BUILD_FAT_JAVA_LIB=OFF
+BUILD_JASPER=OFF
+BUILD_JAVA=OFF
+BUILD_JPEG=OFF
+BUILD_LIST=core,imgproc,imgcodecs
+BUILD_OPENEXR=OFF
+BUILD_PACKAGE=ON
+BUILD_PERF_TESTS=OFF
+BUILD_PNG=OFF
+BUILD_PROTOBUF=ON
+BUILD_SHARED_LIBS=OFF
+BUILD_TBB=OFF
+BUILD_TESTS=OFF
+BUILD_TIFF=OFF
+BUILD_USE_SYMLINKS=OFF
+BUILD_WEBP=OFF
+BUILD_WITH_DEBUG_INFO=OFF
+BUILD_WITH_DYNAMIC_IPP=OFF
+BUILD_ZLIB=OFF
+BUILD_opencv_apps=OFF
+BUILD_opencv_calib3d=ON
+BUILD_opencv_core=ON
+BUILD_opencv_dnn=ON
+BUILD_opencv_features2d=ON
+BUILD_opencv_flann=ON
+BUILD_opencv_gapi=ON
+BUILD_opencv_highgui=ON
+BUILD_opencv_imgcodecs=ON
+BUILD_opencv_imgproc=ON
+BUILD_opencv_java_bindings_generator=ON
+BUILD_opencv_js=OFF
+BUILD_opencv_ml=ON
+BUILD_opencv_objdetect=ON
+BUILD_opencv_photo=ON
+BUILD_opencv_python=OFF
+BUILD_opencv_python2=OFF
+BUILD_opencv_python3=OFF
+BUILD_opencv_python_bindings_generator=ON
+BUILD_opencv_python_tests=ON
+BUILD_opencv_stitching=ON
+BUILD_opencv_video=ON
+BUILD_opencv_videoio=ON
+BUILD_opencv_world=OFF
+CACHED_CPU_BASELINE_FLAGS= -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections 
+CAN_BUILD_ANDROID_PROJECTS=FALSE
+CCACHE_PROGRAM=/usr/bin/ccache
+CHECK_INCLUDE_FILE_VAR=pthread.h
+CLAMDBLAS_INCLUDE_DIR=CLAMDBLAS_INCLUDE_DIR-NOTFOUND
+CLAMDBLAS_ROOT_DIR=CLAMDBLAS_ROOT_DIR-NOTFOUND
+CLAMDFFT_INCLUDE_DIR=CLAMDFFT_INCLUDE_DIR-NOTFOUND
+CLAMDFFT_ROOT_DIR=CLAMDFFT_ROOT_DIR-NOTFOUND
+CMAKE_ADDR2LINE=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-addr2line
+CMAKE_AR=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-ar
+CMAKE_AR=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-ar
+CMAKE_AUTOGEN_ORIGIN_DEPENDS=ON
+CMAKE_AUTOMOC_COMPILER_PREDEFINES=ON
+CMAKE_AUTOMOC_MACRO_NAMES=Q_OBJECT;Q_GADGET;Q_NAMESPACE;Q_NAMESPACE_EXPORT
+CMAKE_AUTOMOC_PATH_PREFIX=OFF
+CMAKE_BASE_NAME=gcc
+CMAKE_BINARY_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv
+CMAKE_BUILD_TOOL=/usr/bin/gmake
+CMAKE_BUILD_TYPE=Release
+CMAKE_C11_COMPILE_FEATURES=c_std_11;c_static_assert
+CMAKE_C11_EXTENSION_COMPILE_OPTION=-std=gnu11
+CMAKE_C11_STANDARD_COMPILE_OPTION=-std=c11
+CMAKE_C11_STANDARD__HAS_FULL_SUPPORT=ON
+CMAKE_C17_COMPILE_FEATURES=c_std_17
+CMAKE_C17_EXTENSION_COMPILE_OPTION=-std=gnu17
+CMAKE_C17_STANDARD_COMPILE_OPTION=-std=c17
+CMAKE_C23_COMPILE_FEATURES=c_std_23
+CMAKE_C23_EXTENSION_COMPILE_OPTION=-std=gnu2x
+CMAKE_C23_STANDARD_COMPILE_OPTION=-std=c2x
+CMAKE_C90_COMPILE_FEATURES=c_std_90;c_function_prototypes
+CMAKE_C90_EXTENSION_COMPILE_OPTION=-std=gnu90
+CMAKE_C90_STANDARD_COMPILE_OPTION=-std=c90
+CMAKE_C90_STANDARD__HAS_FULL_SUPPORT=ON
+CMAKE_C99_COMPILE_FEATURES=c_std_99;c_restrict;c_variadic_macros
+CMAKE_C99_EXTENSION_COMPILE_OPTION=-std=gnu99
+CMAKE_C99_STANDARD_COMPILE_OPTION=-std=c99
+CMAKE_C99_STANDARD__HAS_FULL_SUPPORT=ON
+CMAKE_CFG_INTDIR=.
+CMAKE_COLOR_MAKEFILE=ON
+CMAKE_COMMAND=/usr/bin/cmake
+CMAKE_COMPILER_IS_GNUCC=1
+CMAKE_COMPILER_IS_GNUCXX=1
+CMAKE_COMPILER_SYSROOT=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot/usr
+CMAKE_CONFIGURATION_TYPES=Debug;Release
+CMAKE_CPACK_COMMAND=/usr/bin/cpack
+CMAKE_CROSSCOMPILING=TRUE
+CMAKE_CTEST_COMMAND=/usr/bin/ctest
+CMAKE_CURRENT_BINARY_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv
+CMAKE_CURRENT_FUNCTION=ocv_cmake_dump_vars
+CMAKE_CURRENT_FUNCTION_LIST_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/cmake
+CMAKE_CURRENT_FUNCTION_LIST_FILE=/home/shc/projects/cheshire-linux-nvdla/opencv/cmake/OpenCVUtils.cmake
+CMAKE_CURRENT_FUNCTION_LIST_LINE=8
+CMAKE_CURRENT_LIST_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv
+CMAKE_CURRENT_LIST_FILE=/home/shc/projects/cheshire-linux-nvdla/opencv/CMakeLists.txt
+CMAKE_CURRENT_SOURCE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv
+CMAKE_CXX11_COMPILE_FEATURES=cxx_std_11;cxx_alias_templates;cxx_alignas;cxx_alignof;cxx_attributes;cxx_auto_type;cxx_constexpr;cxx_decltype;cxx_decltype_incomplete_return_types;cxx_default_function_template_args;cxx_defaulted_functions;cxx_defaulted_move_initializers;cxx_delegating_constructors;cxx_deleted_functions;cxx_enum_forward_declarations;cxx_explicit_conversions;cxx_extended_friend_declarations;cxx_extern_templates;cxx_final;cxx_func_identifier;cxx_generalized_initializers;cxx_inheriting_constructors;cxx_inline_namespaces;cxx_lambdas;cxx_local_type_template_args;cxx_long_long_type;cxx_noexcept;cxx_nonstatic_member_init;cxx_nullptr;cxx_override;cxx_range_for;cxx_raw_string_literals;cxx_reference_qualified_functions;cxx_right_angle_brackets;cxx_rvalue_references;cxx_sizeof_member;cxx_static_assert;cxx_strong_enums;cxx_thread_local;cxx_trailing_return_types;cxx_unicode_literals;cxx_uniform_initialization;cxx_unrestricted_unions;cxx_user_literals;cxx_variadic_macros;cxx_variadic_templates
+CMAKE_CXX11_EXTENSION_COMPILE_OPTION=-std=gnu++11
+CMAKE_CXX11_STANDARD_COMPILE_OPTION=-std=c++11
+CMAKE_CXX11_STANDARD__HAS_FULL_SUPPORT=ON
+CMAKE_CXX14_COMPILE_FEATURES=cxx_std_14;cxx_aggregate_default_initializers;cxx_attribute_deprecated;cxx_binary_literals;cxx_contextual_conversions;cxx_decltype_auto;cxx_digit_separators;cxx_generic_lambdas;cxx_lambda_init_captures;cxx_relaxed_constexpr;cxx_return_type_deduction;cxx_variable_templates
+CMAKE_CXX14_EXTENSION_COMPILE_OPTION=-std=gnu++14
+CMAKE_CXX14_STANDARD_COMPILE_OPTION=-std=c++14
+CMAKE_CXX14_STANDARD__HAS_FULL_SUPPORT=ON
+CMAKE_CXX17_COMPILE_FEATURES=cxx_std_17
+CMAKE_CXX17_EXTENSION_COMPILE_OPTION=-std=gnu++17
+CMAKE_CXX17_STANDARD_COMPILE_OPTION=-std=c++17
+CMAKE_CXX20_COMPILE_FEATURES=cxx_std_20
+CMAKE_CXX20_EXTENSION_COMPILE_OPTION=-std=gnu++2a
+CMAKE_CXX20_STANDARD_COMPILE_OPTION=-std=c++2a
+CMAKE_CXX23_COMPILE_FEATURES=
+CMAKE_CXX98_COMPILE_FEATURES=cxx_std_98;cxx_template_template_parameters
+CMAKE_CXX98_EXTENSION_COMPILE_OPTION=-std=gnu++98
+CMAKE_CXX98_STANDARD_COMPILE_OPTION=-std=c++98
+CMAKE_CXX98_STANDARD__HAS_FULL_SUPPORT=ON
+CMAKE_CXX_ABI_COMPILED=TRUE
+CMAKE_CXX_ARCHIVE_APPEND=<CMAKE_AR> q <TARGET> <LINK_FLAGS> <OBJECTS>
+CMAKE_CXX_ARCHIVE_APPEND_IPO="/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc-ar" r <TARGET> <LINK_FLAGS> <OBJECTS>
+CMAKE_CXX_ARCHIVE_CREATE=<CMAKE_AR> qc <TARGET> <LINK_FLAGS> <OBJECTS>
+CMAKE_CXX_ARCHIVE_CREATE_IPO="/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc-ar" cr <TARGET> <LINK_FLAGS> <OBJECTS>
+CMAKE_CXX_ARCHIVE_FINISH=<CMAKE_RANLIB> <TARGET>
+CMAKE_CXX_ARCHIVE_FINISH_IPO="/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc-ranlib" <TARGET>
+CMAKE_CXX_BYTE_ORDER=LITTLE_ENDIAN
+CMAKE_CXX_CL_SHOWINCLUDES_PREFIX=
+CMAKE_CXX_COMPILER=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-g++
+CMAKE_CXX_COMPILER=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-g++
+CMAKE_CXX_COMPILER_ABI=ELF
+CMAKE_CXX_COMPILER_AR=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc-ar
+CMAKE_CXX_COMPILER_AR=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc-ar
+CMAKE_CXX_COMPILER_ARCHITECTURE_ID=
+CMAKE_CXX_COMPILER_ARG1=
+CMAKE_CXX_COMPILER_ENV_VAR=CXX
+CMAKE_CXX_COMPILER_FRONTEND_VARIANT=
+CMAKE_CXX_COMPILER_ID=GNU
+CMAKE_CXX_COMPILER_ID_PLATFORM_CONTENT=#define STRINGIFY_HELPER(X) #X
+#define STRINGIFY(X) STRINGIFY_HELPER(X)
+
+/* Identify known platforms by name.  */
+#if defined(__linux) || defined(__linux__) || defined(linux)
+# define PLATFORM_ID "Linux"
+
+#elif defined(__MSYS__)
+# define PLATFORM_ID "MSYS"
+
+#elif defined(__CYGWIN__)
+# define PLATFORM_ID "Cygwin"
+
+#elif defined(__MINGW32__)
+# define PLATFORM_ID "MinGW"
+
+#elif defined(__APPLE__)
+# define PLATFORM_ID "Darwin"
+
+#elif defined(_WIN32) || defined(__WIN32__) || defined(WIN32)
+# define PLATFORM_ID "Windows"
+
+#elif defined(__FreeBSD__) || defined(__FreeBSD)
+# define PLATFORM_ID "FreeBSD"
+
+#elif defined(__NetBSD__) || defined(__NetBSD)
+# define PLATFORM_ID "NetBSD"
+
+#elif defined(__OpenBSD__) || defined(__OPENBSD)
+# define PLATFORM_ID "OpenBSD"
+
+#elif defined(__sun) || defined(sun)
+# define PLATFORM_ID "SunOS"
+
+#elif defined(_AIX) || defined(__AIX) || defined(__AIX__) || defined(__aix) || defined(__aix__)
+# define PLATFORM_ID "AIX"
+
+#elif defined(__hpux) || defined(__hpux__)
+# define PLATFORM_ID "HP-UX"
+
+#elif defined(__HAIKU__)
+# define PLATFORM_ID "Haiku"
+
+#elif defined(__BeOS) || defined(__BEOS__) || defined(_BEOS)
+# define PLATFORM_ID "BeOS"
+
+#elif defined(__QNX__) || defined(__QNXNTO__)
+# define PLATFORM_ID "QNX"
+
+#elif defined(__tru64) || defined(_tru64) || defined(__TRU64__)
+# define PLATFORM_ID "Tru64"
+
+#elif defined(__riscos) || defined(__riscos__)
+# define PLATFORM_ID "RISCos"
+
+#elif defined(__sinix) || defined(__sinix__) || defined(__SINIX__)
+# define PLATFORM_ID "SINIX"
+
+#elif defined(__UNIX_SV__)
+# define PLATFORM_ID "UNIX_SV"
+
+#elif defined(__bsdos__)
+# define PLATFORM_ID "BSDOS"
+
+#elif defined(_MPRAS) || defined(MPRAS)
+# define PLATFORM_ID "MP-RAS"
+
+#elif defined(__osf) || defined(__osf__)
+# define PLATFORM_ID "OSF1"
+
+#elif defined(_SCO_SV) || defined(SCO_SV) || defined(sco_sv)
+# define PLATFORM_ID "SCO_SV"
+
+#elif defined(__ultrix) || defined(__ultrix__) || defined(_ULTRIX)
+# define PLATFORM_ID "ULTRIX"
+
+#elif defined(__XENIX__) || defined(_XENIX) || defined(XENIX)
+# define PLATFORM_ID "Xenix"
+
+#elif defined(__WATCOMC__)
+# if defined(__LINUX__)
+#  define PLATFORM_ID "Linux"
+
+# elif defined(__DOS__)
+#  define PLATFORM_ID "DOS"
+
+# elif defined(__OS2__)
+#  define PLATFORM_ID "OS2"
+
+# elif defined(__WINDOWS__)
+#  define PLATFORM_ID "Windows3x"
+
+# elif defined(__VXWORKS__)
+#  define PLATFORM_ID "VxWorks"
+
+# else /* unknown platform */
+#  define PLATFORM_ID
+# endif
+
+#elif defined(__INTEGRITY)
+# if defined(INT_178B)
+#  define PLATFORM_ID "Integrity178"
+
+# else /* regular Integrity */
+#  define PLATFORM_ID "Integrity"
+# endif
+
+#else /* unknown platform */
+# define PLATFORM_ID
+
+#endif
+
+/* For windows compilers MSVC and Intel we can determine
+   the architecture of the compiler being used.  This is because
+   the compilers do not have flags that can change the architecture,
+   but rather depend on which compiler is being used
+*/
+#if defined(_WIN32) && defined(_MSC_VER)
+# if defined(_M_IA64)
+#  define ARCHITECTURE_ID "IA64"
+
+# elif defined(_M_ARM64EC)
+#  define ARCHITECTURE_ID "ARM64EC"
+
+# elif defined(_M_X64) || defined(_M_AMD64)
+#  define ARCHITECTURE_ID "x64"
+
+# elif defined(_M_IX86)
+#  define ARCHITECTURE_ID "X86"
+
+# elif defined(_M_ARM64)
+#  define ARCHITECTURE_ID "ARM64"
+
+# elif defined(_M_ARM)
+#  if _M_ARM == 4
+#   define ARCHITECTURE_ID "ARMV4I"
+#  elif _M_ARM == 5
+#   define ARCHITECTURE_ID "ARMV5I"
+#  else
+#   define ARCHITECTURE_ID "ARMV" STRINGIFY(_M_ARM)
+#  endif
+
+# elif defined(_M_MIPS)
+#  define ARCHITECTURE_ID "MIPS"
+
+# elif defined(_M_SH)
+#  define ARCHITECTURE_ID "SHx"
+
+# else /* unknown architecture */
+#  define ARCHITECTURE_ID ""
+# endif
+
+#elif defined(__WATCOMC__)
+# if defined(_M_I86)
+#  define ARCHITECTURE_ID "I86"
+
+# elif defined(_M_IX86)
+#  define ARCHITECTURE_ID "X86"
+
+# else /* unknown architecture */
+#  define ARCHITECTURE_ID ""
+# endif
+
+#elif defined(__IAR_SYSTEMS_ICC__) || defined(__IAR_SYSTEMS_ICC)
+# if defined(__ICCARM__)
+#  define ARCHITECTURE_ID "ARM"
+
+# elif defined(__ICCRX__)
+#  define ARCHITECTURE_ID "RX"
+
+# elif defined(__ICCRH850__)
+#  define ARCHITECTURE_ID "RH850"
+
+# elif defined(__ICCRL78__)
+#  define ARCHITECTURE_ID "RL78"
+
+# elif defined(__ICCRISCV__)
+#  define ARCHITECTURE_ID "RISCV"
+
+# elif defined(__ICCAVR__)
+#  define ARCHITECTURE_ID "AVR"
+
+# elif defined(__ICC430__)
+#  define ARCHITECTURE_ID "MSP430"
+
+# elif defined(__ICCV850__)
+#  define ARCHITECTURE_ID "V850"
+
+# elif defined(__ICC8051__)
+#  define ARCHITECTURE_ID "8051"
+
+# elif defined(__ICCSTM8__)
+#  define ARCHITECTURE_ID "STM8"
+
+# else /* unknown architecture */
+#  define ARCHITECTURE_ID ""
+# endif
+
+#elif defined(__ghs__)
+# if defined(__PPC64__)
+#  define ARCHITECTURE_ID "PPC64"
+
+# elif defined(__ppc__)
+#  define ARCHITECTURE_ID "PPC"
+
+# elif defined(__ARM__)
+#  define ARCHITECTURE_ID "ARM"
+
+# elif defined(__x86_64__)
+#  define ARCHITECTURE_ID "x64"
+
+# elif defined(__i386__)
+#  define ARCHITECTURE_ID "X86"
+
+# else /* unknown architecture */
+#  define ARCHITECTURE_ID ""
+# endif
+
+#elif defined(__TI_COMPILER_VERSION__)
+# if defined(__TI_ARM__)
+#  define ARCHITECTURE_ID "ARM"
+
+# elif defined(__MSP430__)
+#  define ARCHITECTURE_ID "MSP430"
+
+# elif defined(__TMS320C28XX__)
+#  define ARCHITECTURE_ID "TMS320C28x"
+
+# elif defined(__TMS320C6X__) || defined(_TMS320C6X)
+#  define ARCHITECTURE_ID "TMS320C6x"
+
+# else /* unknown architecture */
+#  define ARCHITECTURE_ID ""
+# endif
+
+#else
+#  define ARCHITECTURE_ID
+#endif
+
+/* Convert integer to decimal digit literals.  */
+#define DEC(n)                   \
+  ('0' + (((n) / 10000000)%10)), \
+  ('0' + (((n) / 1000000)%10)),  \
+  ('0' + (((n) / 100000)%10)),   \
+  ('0' + (((n) / 10000)%10)),    \
+  ('0' + (((n) / 1000)%10)),     \
+  ('0' + (((n) / 100)%10)),      \
+  ('0' + (((n) / 10)%10)),       \
+  ('0' +  ((n) % 10))
+
+/* Convert integer to hex digit literals.  */
+#define HEX(n)             \
+  ('0' + ((n)>>28 & 0xF)), \
+  ('0' + ((n)>>24 & 0xF)), \
+  ('0' + ((n)>>20 & 0xF)), \
+  ('0' + ((n)>>16 & 0xF)), \
+  ('0' + ((n)>>12 & 0xF)), \
+  ('0' + ((n)>>8  & 0xF)), \
+  ('0' + ((n)>>4  & 0xF)), \
+  ('0' + ((n)     & 0xF))
+
+/* Construct a string literal encoding the version number. */
+#ifdef COMPILER_VERSION
+char const* info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";
+
+/* Construct a string literal encoding the version number components. */
+#elif defined(COMPILER_VERSION_MAJOR)
+char const info_version[] = {
+  'I', 'N', 'F', 'O', ':',
+  'c','o','m','p','i','l','e','r','_','v','e','r','s','i','o','n','[',
+  COMPILER_VERSION_MAJOR,
+# ifdef COMPILER_VERSION_MINOR
+  '.', COMPILER_VERSION_MINOR,
+#  ifdef COMPILER_VERSION_PATCH
+   '.', COMPILER_VERSION_PATCH,
+#   ifdef COMPILER_VERSION_TWEAK
+    '.', COMPILER_VERSION_TWEAK,
+#   endif
+#  endif
+# endif
+  ']','\0'};
+#endif
+
+/* Construct a string literal encoding the internal version number. */
+#ifdef COMPILER_VERSION_INTERNAL
+char const info_version_internal[] = {
+  'I', 'N', 'F', 'O', ':',
+  'c','o','m','p','i','l','e','r','_','v','e','r','s','i','o','n','_',
+  'i','n','t','e','r','n','a','l','[',
+  COMPILER_VERSION_INTERNAL,']','\0'};
+#elif defined(COMPILER_VERSION_INTERNAL_STR)
+char const* info_version_internal = "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INTERNAL_STR "]";
+#endif
+
+/* Construct a string literal encoding the version number components. */
+#ifdef SIMULATE_VERSION_MAJOR
+char const info_simulate_version[] = {
+  'I', 'N', 'F', 'O', ':',
+  's','i','m','u','l','a','t','e','_','v','e','r','s','i','o','n','[',
+  SIMULATE_VERSION_MAJOR,
+# ifdef SIMULATE_VERSION_MINOR
+  '.', SIMULATE_VERSION_MINOR,
+#  ifdef SIMULATE_VERSION_PATCH
+   '.', SIMULATE_VERSION_PATCH,
+#   ifdef SIMULATE_VERSION_TWEAK
+    '.', SIMULATE_VERSION_TWEAK,
+#   endif
+#  endif
+# endif
+  ']','\0'};
+#endif
+
+/* Construct the string literal in pieces to prevent the source from
+   getting matched.  Store it in a pointer rather than an array
+   because some compilers will just produce instructions to fill the
+   array rather than assigning a pointer to a static array.  */
+char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";
+char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";
+
+CMAKE_CXX_COMPILER_ID_RUN=1
+CMAKE_CXX_COMPILER_ID_TEST_FLAGS=-c;--c++;--ec++;--target=arm-arm-none-eabi -mcpu=cortex-m3;-c -I__does_not_exist__
+CMAKE_CXX_COMPILER_ID_TOOL_MATCH_INDEX=2
+CMAKE_CXX_COMPILER_ID_TOOL_MATCH_REGEX=
+Ld[^
+]*(
+[ 	]+[^
+]*)*
+[ 	]+([^ 	
+]+)[^
+]*-o[^
+]*CompilerIdCXX/(\./)?(CompilerIdCXX.(framework|xctest|build/[^ 	
+]+)/)?CompilerIdCXX[ 	
+\"]
+CMAKE_CXX_COMPILER_ID_VENDORS=IAR
+CMAKE_CXX_COMPILER_ID_VENDOR_REGEX_IAR=IAR .+ Compiler
+CMAKE_CXX_COMPILER_LOADED=1
+CMAKE_CXX_COMPILER_NAMES=c++
+CMAKE_CXX_COMPILER_PREDEFINES_COMMAND=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-g++;-dM;-E;-c;/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+CMAKE_CXX_COMPILER_PRODUCED_FILES=a.out
+CMAKE_CXX_COMPILER_PRODUCED_OUTPUT=
+CMAKE_CXX_COMPILER_RANLIB=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc-ranlib
+CMAKE_CXX_COMPILER_RANLIB=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc-ranlib
+CMAKE_CXX_COMPILER_SYSROOT=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot/usr
+CMAKE_CXX_COMPILER_VERSION=10.2.0
+CMAKE_CXX_COMPILER_VERSION_INTERNAL=
+CMAKE_CXX_COMPILER_WORKS=TRUE
+CMAKE_CXX_COMPILER_WRAPPER=
+CMAKE_CXX_COMPILE_FEATURES=cxx_std_98;cxx_template_template_parameters;cxx_std_11;cxx_alias_templates;cxx_alignas;cxx_alignof;cxx_attributes;cxx_auto_type;cxx_constexpr;cxx_decltype;cxx_decltype_incomplete_return_types;cxx_default_function_template_args;cxx_defaulted_functions;cxx_defaulted_move_initializers;cxx_delegating_constructors;cxx_deleted_functions;cxx_enum_forward_declarations;cxx_explicit_conversions;cxx_extended_friend_declarations;cxx_extern_templates;cxx_final;cxx_func_identifier;cxx_generalized_initializers;cxx_inheriting_constructors;cxx_inline_namespaces;cxx_lambdas;cxx_local_type_template_args;cxx_long_long_type;cxx_noexcept;cxx_nonstatic_member_init;cxx_nullptr;cxx_override;cxx_range_for;cxx_raw_string_literals;cxx_reference_qualified_functions;cxx_right_angle_brackets;cxx_rvalue_references;cxx_sizeof_member;cxx_static_assert;cxx_strong_enums;cxx_thread_local;cxx_trailing_return_types;cxx_unicode_literals;cxx_uniform_initialization;cxx_unrestricted_unions;cxx_user_literals;cxx_variadic_macros;cxx_variadic_templates;cxx_std_14;cxx_aggregate_default_initializers;cxx_attribute_deprecated;cxx_binary_literals;cxx_contextual_conversions;cxx_decltype_auto;cxx_digit_separators;cxx_generic_lambdas;cxx_lambda_init_captures;cxx_relaxed_constexpr;cxx_return_type_deduction;cxx_variable_templates;cxx_std_17;cxx_std_20
+CMAKE_CXX_COMPILE_OBJECT=<CMAKE_CXX_COMPILER> <DEFINES> <INCLUDES> <FLAGS> -o <OBJECT> -c <SOURCE>
+CMAKE_CXX_COMPILE_OPTIONS_CREATE_PCH=-x;c++-header;-include;<PCH_HEADER>
+CMAKE_CXX_COMPILE_OPTIONS_EXPLICIT_LANGUAGE=-x;c++
+CMAKE_CXX_COMPILE_OPTIONS_INVALID_PCH=-Winvalid-pch
+CMAKE_CXX_COMPILE_OPTIONS_IPO=-flto;-fno-fat-lto-objects
+CMAKE_CXX_COMPILE_OPTIONS_PIC=-fPIC
+CMAKE_CXX_COMPILE_OPTIONS_PIE=-fPIE
+CMAKE_CXX_COMPILE_OPTIONS_SYSROOT=--sysroot=
+CMAKE_CXX_COMPILE_OPTIONS_USE_PCH=-include;<PCH_HEADER>
+CMAKE_CXX_COMPILE_OPTIONS_VISIBILITY=-fvisibility=
+CMAKE_CXX_COMPILE_OPTIONS_VISIBILITY_INLINES_HIDDEN=-fvisibility-inlines-hidden
+CMAKE_CXX_CREATE_ASSEMBLY_SOURCE=<CMAKE_CXX_COMPILER> <DEFINES> <INCLUDES> <FLAGS> -S <SOURCE> -o <ASSEMBLY_SOURCE>
+CMAKE_CXX_CREATE_PREPROCESSED_SOURCE=<CMAKE_CXX_COMPILER> <DEFINES> <INCLUDES> <FLAGS> -E <SOURCE> > <PREPROCESSED_SOURCE>
+CMAKE_CXX_CREATE_SHARED_LIBRARY=<CMAKE_CXX_COMPILER> <CMAKE_SHARED_LIBRARY_CXX_FLAGS> <LANGUAGE_COMPILE_FLAGS> <LINK_FLAGS> <CMAKE_SHARED_LIBRARY_CREATE_CXX_FLAGS> <SONAME_FLAG><TARGET_SONAME> -o <TARGET> <OBJECTS> <LINK_LIBRARIES>
+CMAKE_CXX_CREATE_SHARED_MODULE=<CMAKE_CXX_COMPILER> <CMAKE_SHARED_LIBRARY_CXX_FLAGS> <LANGUAGE_COMPILE_FLAGS> <LINK_FLAGS> <CMAKE_SHARED_LIBRARY_CREATE_CXX_FLAGS> <SONAME_FLAG><TARGET_SONAME> -o <TARGET> <OBJECTS> <LINK_LIBRARIES>
+CMAKE_CXX_DEPENDS_USE_COMPILER=TRUE
+CMAKE_CXX_DEPFILE_FORMAT=gcc
+CMAKE_CXX_EXTENSIONS=OFF
+CMAKE_CXX_EXTENSIONS_COMPUTED_DEFAULT=ON
+CMAKE_CXX_EXTENSIONS_DEFAULT=ON
+CMAKE_CXX_FLAGS=-march=rv64gc -mabi=lp64d   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden
+CMAKE_CXX_FLAGS=-march=rv64gc -mabi=lp64d   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden
+CMAKE_CXX_FLAGS_DEBUG=-g  -O0 -DDEBUG -D_DEBUG
+CMAKE_CXX_FLAGS_DEBUG=-g  -O0 -DDEBUG -D_DEBUG
+CMAKE_CXX_FLAGS_DEBUG_INIT= -g
+CMAKE_CXX_FLAGS_INIT=  
+CMAKE_CXX_FLAGS_MINSIZEREL=-Os -DNDEBUG
+CMAKE_CXX_FLAGS_MINSIZEREL_INIT= -Os -DNDEBUG
+CMAKE_CXX_FLAGS_RELEASE=-O3 -DNDEBUG  -DNDEBUG
+CMAKE_CXX_FLAGS_RELEASE=-O3 -DNDEBUG  -DNDEBUG
+CMAKE_CXX_FLAGS_RELEASE_INIT= -O3 -DNDEBUG
+CMAKE_CXX_FLAGS_RELWITHDEBINFO=-O2 -g -DNDEBUG
+CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT= -O2 -g -DNDEBUG
+CMAKE_CXX_IGNORE_EXTENSIONS=inl;h;hpp;HPP;H;o;O;obj;OBJ;def;DEF;rc;RC
+CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/include/c++/10.2.0;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/include/c++/10.2.0/riscv64-unknown-linux-gnu;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/include/c++/10.2.0/backward;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0/include;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0/include-fixed;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/include;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include
+CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/lib/gcc;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/lib;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/lib;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/lib
+CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES=
+CMAKE_CXX_IMPLICIT_LINK_LIBRARIES=atomic;stdc++;m;gcc_s;gcc;c;gcc_s;gcc
+CMAKE_CXX_INFORMATION_LOADED=1
+CMAKE_CXX_LIBRARY_ARCHITECTURE=
+CMAKE_CXX_LINKER_PREFERENCE=30
+CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES=1
+CMAKE_CXX_LINKER_WRAPPER_FLAG=-Wl,
+CMAKE_CXX_LINKER_WRAPPER_FLAG_SEP=,
+CMAKE_CXX_LINK_EXECUTABLE=<CMAKE_CXX_COMPILER> <FLAGS> <CMAKE_CXX_LINK_FLAGS> <LINK_FLAGS> <OBJECTS> -o <TARGET> <LINK_LIBRARIES>
+CMAKE_CXX_LINK_OPTIONS_NO_PIE=-no-pie
+CMAKE_CXX_LINK_OPTIONS_PIE=-fPIE;-pie
+CMAKE_CXX_LINK_WHAT_YOU_USE_FLAG=LINKER:--no-as-needed
+CMAKE_CXX_OUTPUT_EXTENSION=.o
+CMAKE_CXX_PLATFORM_ID=Linux
+CMAKE_CXX_SIMULATE_ID=
+CMAKE_CXX_SIMULATE_VERSION=
+CMAKE_CXX_SIZEOF_DATA_PTR=8
+CMAKE_CXX_SOURCE_FILE_EXTENSIONS=C;M;c++;cc;cpp;cxx;mm;mpp;CPP;ixx;cppm
+CMAKE_CXX_STANDARD=11
+CMAKE_CXX_STANDARD_COMPUTED_DEFAULT=14
+CMAKE_CXX_STANDARD_DEFAULT=14
+CMAKE_CXX_STANDARD_LIBRARIES= -latomic
+CMAKE_CXX_STANDARD_REQUIRED=TRUE
+CMAKE_CXX_VERBOSE_FLAG=-v
+CMAKE_CXX_XCODE_ARCHS=
+CMAKE_C_ABI_COMPILED=TRUE
+CMAKE_C_ARCHIVE_APPEND=<CMAKE_AR> q <TARGET> <LINK_FLAGS> <OBJECTS>
+CMAKE_C_ARCHIVE_APPEND_IPO="/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc-ar" r <TARGET> <LINK_FLAGS> <OBJECTS>
+CMAKE_C_ARCHIVE_CREATE=<CMAKE_AR> qc <TARGET> <LINK_FLAGS> <OBJECTS>
+CMAKE_C_ARCHIVE_CREATE_IPO="/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc-ar" cr <TARGET> <LINK_FLAGS> <OBJECTS>
+CMAKE_C_ARCHIVE_FINISH=<CMAKE_RANLIB> <TARGET>
+CMAKE_C_ARCHIVE_FINISH_IPO="/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc-ranlib" <TARGET>
+CMAKE_C_BYTE_ORDER=LITTLE_ENDIAN
+CMAKE_C_CL_SHOWINCLUDES_PREFIX=
+CMAKE_C_COMPILER=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc
+CMAKE_C_COMPILER=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc
+CMAKE_C_COMPILER_ABI=ELF
+CMAKE_C_COMPILER_AR=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc-ar
+CMAKE_C_COMPILER_AR=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc-ar
+CMAKE_C_COMPILER_ARCHITECTURE_ID=
+CMAKE_C_COMPILER_ARG1=
+CMAKE_C_COMPILER_ENV_VAR=CC
+CMAKE_C_COMPILER_FRONTEND_VARIANT=
+CMAKE_C_COMPILER_ID=GNU
+CMAKE_C_COMPILER_ID_PLATFORM_CONTENT=#define STRINGIFY_HELPER(X) #X
+#define STRINGIFY(X) STRINGIFY_HELPER(X)
+
+/* Identify known platforms by name.  */
+#if defined(__linux) || defined(__linux__) || defined(linux)
+# define PLATFORM_ID "Linux"
+
+#elif defined(__MSYS__)
+# define PLATFORM_ID "MSYS"
+
+#elif defined(__CYGWIN__)
+# define PLATFORM_ID "Cygwin"
+
+#elif defined(__MINGW32__)
+# define PLATFORM_ID "MinGW"
+
+#elif defined(__APPLE__)
+# define PLATFORM_ID "Darwin"
+
+#elif defined(_WIN32) || defined(__WIN32__) || defined(WIN32)
+# define PLATFORM_ID "Windows"
+
+#elif defined(__FreeBSD__) || defined(__FreeBSD)
+# define PLATFORM_ID "FreeBSD"
+
+#elif defined(__NetBSD__) || defined(__NetBSD)
+# define PLATFORM_ID "NetBSD"
+
+#elif defined(__OpenBSD__) || defined(__OPENBSD)
+# define PLATFORM_ID "OpenBSD"
+
+#elif defined(__sun) || defined(sun)
+# define PLATFORM_ID "SunOS"
+
+#elif defined(_AIX) || defined(__AIX) || defined(__AIX__) || defined(__aix) || defined(__aix__)
+# define PLATFORM_ID "AIX"
+
+#elif defined(__hpux) || defined(__hpux__)
+# define PLATFORM_ID "HP-UX"
+
+#elif defined(__HAIKU__)
+# define PLATFORM_ID "Haiku"
+
+#elif defined(__BeOS) || defined(__BEOS__) || defined(_BEOS)
+# define PLATFORM_ID "BeOS"
+
+#elif defined(__QNX__) || defined(__QNXNTO__)
+# define PLATFORM_ID "QNX"
+
+#elif defined(__tru64) || defined(_tru64) || defined(__TRU64__)
+# define PLATFORM_ID "Tru64"
+
+#elif defined(__riscos) || defined(__riscos__)
+# define PLATFORM_ID "RISCos"
+
+#elif defined(__sinix) || defined(__sinix__) || defined(__SINIX__)
+# define PLATFORM_ID "SINIX"
+
+#elif defined(__UNIX_SV__)
+# define PLATFORM_ID "UNIX_SV"
+
+#elif defined(__bsdos__)
+# define PLATFORM_ID "BSDOS"
+
+#elif defined(_MPRAS) || defined(MPRAS)
+# define PLATFORM_ID "MP-RAS"
+
+#elif defined(__osf) || defined(__osf__)
+# define PLATFORM_ID "OSF1"
+
+#elif defined(_SCO_SV) || defined(SCO_SV) || defined(sco_sv)
+# define PLATFORM_ID "SCO_SV"
+
+#elif defined(__ultrix) || defined(__ultrix__) || defined(_ULTRIX)
+# define PLATFORM_ID "ULTRIX"
+
+#elif defined(__XENIX__) || defined(_XENIX) || defined(XENIX)
+# define PLATFORM_ID "Xenix"
+
+#elif defined(__WATCOMC__)
+# if defined(__LINUX__)
+#  define PLATFORM_ID "Linux"
+
+# elif defined(__DOS__)
+#  define PLATFORM_ID "DOS"
+
+# elif defined(__OS2__)
+#  define PLATFORM_ID "OS2"
+
+# elif defined(__WINDOWS__)
+#  define PLATFORM_ID "Windows3x"
+
+# elif defined(__VXWORKS__)
+#  define PLATFORM_ID "VxWorks"
+
+# else /* unknown platform */
+#  define PLATFORM_ID
+# endif
+
+#elif defined(__INTEGRITY)
+# if defined(INT_178B)
+#  define PLATFORM_ID "Integrity178"
+
+# else /* regular Integrity */
+#  define PLATFORM_ID "Integrity"
+# endif
+
+#else /* unknown platform */
+# define PLATFORM_ID
+
+#endif
+
+/* For windows compilers MSVC and Intel we can determine
+   the architecture of the compiler being used.  This is because
+   the compilers do not have flags that can change the architecture,
+   but rather depend on which compiler is being used
+*/
+#if defined(_WIN32) && defined(_MSC_VER)
+# if defined(_M_IA64)
+#  define ARCHITECTURE_ID "IA64"
+
+# elif defined(_M_ARM64EC)
+#  define ARCHITECTURE_ID "ARM64EC"
+
+# elif defined(_M_X64) || defined(_M_AMD64)
+#  define ARCHITECTURE_ID "x64"
+
+# elif defined(_M_IX86)
+#  define ARCHITECTURE_ID "X86"
+
+# elif defined(_M_ARM64)
+#  define ARCHITECTURE_ID "ARM64"
+
+# elif defined(_M_ARM)
+#  if _M_ARM == 4
+#   define ARCHITECTURE_ID "ARMV4I"
+#  elif _M_ARM == 5
+#   define ARCHITECTURE_ID "ARMV5I"
+#  else
+#   define ARCHITECTURE_ID "ARMV" STRINGIFY(_M_ARM)
+#  endif
+
+# elif defined(_M_MIPS)
+#  define ARCHITECTURE_ID "MIPS"
+
+# elif defined(_M_SH)
+#  define ARCHITECTURE_ID "SHx"
+
+# else /* unknown architecture */
+#  define ARCHITECTURE_ID ""
+# endif
+
+#elif defined(__WATCOMC__)
+# if defined(_M_I86)
+#  define ARCHITECTURE_ID "I86"
+
+# elif defined(_M_IX86)
+#  define ARCHITECTURE_ID "X86"
+
+# else /* unknown architecture */
+#  define ARCHITECTURE_ID ""
+# endif
+
+#elif defined(__IAR_SYSTEMS_ICC__) || defined(__IAR_SYSTEMS_ICC)
+# if defined(__ICCARM__)
+#  define ARCHITECTURE_ID "ARM"
+
+# elif defined(__ICCRX__)
+#  define ARCHITECTURE_ID "RX"
+
+# elif defined(__ICCRH850__)
+#  define ARCHITECTURE_ID "RH850"
+
+# elif defined(__ICCRL78__)
+#  define ARCHITECTURE_ID "RL78"
+
+# elif defined(__ICCRISCV__)
+#  define ARCHITECTURE_ID "RISCV"
+
+# elif defined(__ICCAVR__)
+#  define ARCHITECTURE_ID "AVR"
+
+# elif defined(__ICC430__)
+#  define ARCHITECTURE_ID "MSP430"
+
+# elif defined(__ICCV850__)
+#  define ARCHITECTURE_ID "V850"
+
+# elif defined(__ICC8051__)
+#  define ARCHITECTURE_ID "8051"
+
+# elif defined(__ICCSTM8__)
+#  define ARCHITECTURE_ID "STM8"
+
+# else /* unknown architecture */
+#  define ARCHITECTURE_ID ""
+# endif
+
+#elif defined(__ghs__)
+# if defined(__PPC64__)
+#  define ARCHITECTURE_ID "PPC64"
+
+# elif defined(__ppc__)
+#  define ARCHITECTURE_ID "PPC"
+
+# elif defined(__ARM__)
+#  define ARCHITECTURE_ID "ARM"
+
+# elif defined(__x86_64__)
+#  define ARCHITECTURE_ID "x64"
+
+# elif defined(__i386__)
+#  define ARCHITECTURE_ID "X86"
+
+# else /* unknown architecture */
+#  define ARCHITECTURE_ID ""
+# endif
+
+#elif defined(__TI_COMPILER_VERSION__)
+# if defined(__TI_ARM__)
+#  define ARCHITECTURE_ID "ARM"
+
+# elif defined(__MSP430__)
+#  define ARCHITECTURE_ID "MSP430"
+
+# elif defined(__TMS320C28XX__)
+#  define ARCHITECTURE_ID "TMS320C28x"
+
+# elif defined(__TMS320C6X__) || defined(_TMS320C6X)
+#  define ARCHITECTURE_ID "TMS320C6x"
+
+# else /* unknown architecture */
+#  define ARCHITECTURE_ID ""
+# endif
+
+#else
+#  define ARCHITECTURE_ID
+#endif
+
+/* Convert integer to decimal digit literals.  */
+#define DEC(n)                   \
+  ('0' + (((n) / 10000000)%10)), \
+  ('0' + (((n) / 1000000)%10)),  \
+  ('0' + (((n) / 100000)%10)),   \
+  ('0' + (((n) / 10000)%10)),    \
+  ('0' + (((n) / 1000)%10)),     \
+  ('0' + (((n) / 100)%10)),      \
+  ('0' + (((n) / 10)%10)),       \
+  ('0' +  ((n) % 10))
+
+/* Convert integer to hex digit literals.  */
+#define HEX(n)             \
+  ('0' + ((n)>>28 & 0xF)), \
+  ('0' + ((n)>>24 & 0xF)), \
+  ('0' + ((n)>>20 & 0xF)), \
+  ('0' + ((n)>>16 & 0xF)), \
+  ('0' + ((n)>>12 & 0xF)), \
+  ('0' + ((n)>>8  & 0xF)), \
+  ('0' + ((n)>>4  & 0xF)), \
+  ('0' + ((n)     & 0xF))
+
+/* Construct a string literal encoding the version number. */
+#ifdef COMPILER_VERSION
+char const* info_version = "INFO" ":" "compiler_version[" COMPILER_VERSION "]";
+
+/* Construct a string literal encoding the version number components. */
+#elif defined(COMPILER_VERSION_MAJOR)
+char const info_version[] = {
+  'I', 'N', 'F', 'O', ':',
+  'c','o','m','p','i','l','e','r','_','v','e','r','s','i','o','n','[',
+  COMPILER_VERSION_MAJOR,
+# ifdef COMPILER_VERSION_MINOR
+  '.', COMPILER_VERSION_MINOR,
+#  ifdef COMPILER_VERSION_PATCH
+   '.', COMPILER_VERSION_PATCH,
+#   ifdef COMPILER_VERSION_TWEAK
+    '.', COMPILER_VERSION_TWEAK,
+#   endif
+#  endif
+# endif
+  ']','\0'};
+#endif
+
+/* Construct a string literal encoding the internal version number. */
+#ifdef COMPILER_VERSION_INTERNAL
+char const info_version_internal[] = {
+  'I', 'N', 'F', 'O', ':',
+  'c','o','m','p','i','l','e','r','_','v','e','r','s','i','o','n','_',
+  'i','n','t','e','r','n','a','l','[',
+  COMPILER_VERSION_INTERNAL,']','\0'};
+#elif defined(COMPILER_VERSION_INTERNAL_STR)
+char const* info_version_internal = "INFO" ":" "compiler_version_internal[" COMPILER_VERSION_INTERNAL_STR "]";
+#endif
+
+/* Construct a string literal encoding the version number components. */
+#ifdef SIMULATE_VERSION_MAJOR
+char const info_simulate_version[] = {
+  'I', 'N', 'F', 'O', ':',
+  's','i','m','u','l','a','t','e','_','v','e','r','s','i','o','n','[',
+  SIMULATE_VERSION_MAJOR,
+# ifdef SIMULATE_VERSION_MINOR
+  '.', SIMULATE_VERSION_MINOR,
+#  ifdef SIMULATE_VERSION_PATCH
+   '.', SIMULATE_VERSION_PATCH,
+#   ifdef SIMULATE_VERSION_TWEAK
+    '.', SIMULATE_VERSION_TWEAK,
+#   endif
+#  endif
+# endif
+  ']','\0'};
+#endif
+
+/* Construct the string literal in pieces to prevent the source from
+   getting matched.  Store it in a pointer rather than an array
+   because some compilers will just produce instructions to fill the
+   array rather than assigning a pointer to a static array.  */
+char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";
+char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";
+
+CMAKE_C_COMPILER_ID_RUN=1
+CMAKE_C_COMPILER_ID_TEST_FLAGS=-c;-Aa;-D__CLASSIC_C__;--target=arm-arm-none-eabi -mcpu=cortex-m3;-c -I__does_not_exist__
+CMAKE_C_COMPILER_ID_TOOL_MATCH_INDEX=2
+CMAKE_C_COMPILER_ID_TOOL_MATCH_REGEX=
+Ld[^
+]*(
+[ 	]+[^
+]*)*
+[ 	]+([^ 	
+]+)[^
+]*-o[^
+]*CompilerIdC/(\./)?(CompilerIdC.(framework|xctest|build/[^ 	
+]+)/)?CompilerIdC[ 	
+\"]
+CMAKE_C_COMPILER_ID_VENDORS=IAR
+CMAKE_C_COMPILER_ID_VENDOR_REGEX_IAR=IAR .+ Compiler
+CMAKE_C_COMPILER_LOADED=1
+CMAKE_C_COMPILER_NAMES=cc
+CMAKE_C_COMPILER_PREDEFINES_COMMAND=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc;-dM;-E;-c;/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+CMAKE_C_COMPILER_PRODUCED_FILES=a.out
+CMAKE_C_COMPILER_PRODUCED_OUTPUT=
+CMAKE_C_COMPILER_RANLIB=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc-ranlib
+CMAKE_C_COMPILER_RANLIB=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc-ranlib
+CMAKE_C_COMPILER_SYSROOT=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot/usr
+CMAKE_C_COMPILER_VERSION=10.2.0
+CMAKE_C_COMPILER_VERSION_INTERNAL=
+CMAKE_C_COMPILER_WORKS=TRUE
+CMAKE_C_COMPILER_WRAPPER=
+CMAKE_C_COMPILE_FEATURES=c_std_90;c_function_prototypes;c_std_99;c_restrict;c_variadic_macros;c_std_11;c_static_assert;c_std_17;c_std_23
+CMAKE_C_COMPILE_OBJECT=<CMAKE_C_COMPILER> <DEFINES> <INCLUDES> <FLAGS> -o <OBJECT> -c <SOURCE>
+CMAKE_C_COMPILE_OPTIONS_CREATE_PCH=-x;c-header;-include;<PCH_HEADER>
+CMAKE_C_COMPILE_OPTIONS_EXPLICIT_LANGUAGE=-x;c
+CMAKE_C_COMPILE_OPTIONS_INVALID_PCH=-Winvalid-pch
+CMAKE_C_COMPILE_OPTIONS_IPO=-flto;-fno-fat-lto-objects
+CMAKE_C_COMPILE_OPTIONS_PIC=-fPIC
+CMAKE_C_COMPILE_OPTIONS_PIE=-fPIE
+CMAKE_C_COMPILE_OPTIONS_SYSROOT=--sysroot=
+CMAKE_C_COMPILE_OPTIONS_USE_PCH=-include;<PCH_HEADER>
+CMAKE_C_COMPILE_OPTIONS_VISIBILITY=-fvisibility=
+CMAKE_C_CREATE_ASSEMBLY_SOURCE=<CMAKE_C_COMPILER> <DEFINES> <INCLUDES> <FLAGS> -S <SOURCE> -o <ASSEMBLY_SOURCE>
+CMAKE_C_CREATE_PREPROCESSED_SOURCE=<CMAKE_C_COMPILER> <DEFINES> <INCLUDES> <FLAGS> -E <SOURCE> > <PREPROCESSED_SOURCE>
+CMAKE_C_CREATE_SHARED_LIBRARY=<CMAKE_C_COMPILER> <CMAKE_SHARED_LIBRARY_C_FLAGS> <LANGUAGE_COMPILE_FLAGS> <LINK_FLAGS> <CMAKE_SHARED_LIBRARY_CREATE_C_FLAGS> <SONAME_FLAG><TARGET_SONAME> -o <TARGET> <OBJECTS> <LINK_LIBRARIES>
+CMAKE_C_CREATE_SHARED_MODULE=<CMAKE_C_COMPILER> <CMAKE_SHARED_LIBRARY_C_FLAGS> <LANGUAGE_COMPILE_FLAGS> <LINK_FLAGS> <CMAKE_SHARED_LIBRARY_CREATE_C_FLAGS> <SONAME_FLAG><TARGET_SONAME> -o <TARGET> <OBJECTS> <LINK_LIBRARIES>
+CMAKE_C_DEPENDS_USE_COMPILER=TRUE
+CMAKE_C_DEPFILE_FORMAT=gcc
+CMAKE_C_EXTENSIONS_COMPUTED_DEFAULT=ON
+CMAKE_C_EXTENSIONS_DEFAULT=ON
+CMAKE_C_FLAGS=-march=rv64gc -mabi=lp64d   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden
+CMAKE_C_FLAGS=-march=rv64gc -mabi=lp64d   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden
+CMAKE_C_FLAGS_DEBUG=-g  -O0 -DDEBUG -D_DEBUG
+CMAKE_C_FLAGS_DEBUG=-g  -O0 -DDEBUG -D_DEBUG
+CMAKE_C_FLAGS_DEBUG_INIT= -g
+CMAKE_C_FLAGS_INIT=  
+CMAKE_C_FLAGS_MINSIZEREL=-Os -DNDEBUG
+CMAKE_C_FLAGS_MINSIZEREL_INIT= -Os -DNDEBUG
+CMAKE_C_FLAGS_RELEASE=-O3 -DNDEBUG  -DNDEBUG
+CMAKE_C_FLAGS_RELEASE=-O3 -DNDEBUG  -DNDEBUG
+CMAKE_C_FLAGS_RELEASE_INIT= -O3 -DNDEBUG
+CMAKE_C_FLAGS_RELWITHDEBINFO=-O2 -g -DNDEBUG
+CMAKE_C_FLAGS_RELWITHDEBINFO_INIT= -O2 -g -DNDEBUG
+CMAKE_C_IGNORE_EXTENSIONS=h;H;o;O;obj;OBJ;def;DEF;rc;RC
+CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0/include;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0/include-fixed;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/include;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include
+CMAKE_C_IMPLICIT_LINK_DIRECTORIES=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/lib/gcc;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/lib;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/lib;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/lib
+CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES=
+CMAKE_C_IMPLICIT_LINK_LIBRARIES=atomic;gcc;gcc_s;c;gcc;gcc_s
+CMAKE_C_INFORMATION_LOADED=1
+CMAKE_C_LIBRARY_ARCHITECTURE=
+CMAKE_C_LINKER_PREFERENCE=10
+CMAKE_C_LINKER_WRAPPER_FLAG=-Wl,
+CMAKE_C_LINKER_WRAPPER_FLAG_SEP=,
+CMAKE_C_LINK_EXECUTABLE=<CMAKE_C_COMPILER> <FLAGS> <CMAKE_C_LINK_FLAGS> <LINK_FLAGS> <OBJECTS> -o <TARGET> <LINK_LIBRARIES>
+CMAKE_C_LINK_OPTIONS_NO_PIE=-no-pie
+CMAKE_C_LINK_OPTIONS_PIE=-fPIE;-pie
+CMAKE_C_LINK_WHAT_YOU_USE_FLAG=LINKER:--no-as-needed
+CMAKE_C_OUTPUT_EXTENSION=.o
+CMAKE_C_PLATFORM_ID=Linux
+CMAKE_C_SIMULATE_ID=
+CMAKE_C_SIMULATE_VERSION=
+CMAKE_C_SIZEOF_DATA_PTR=8
+CMAKE_C_SOURCE_FILE_EXTENSIONS=c;m
+CMAKE_C_STANDARD_COMPUTED_DEFAULT=17
+CMAKE_C_STANDARD_DEFAULT=17
+CMAKE_C_STANDARD_LIBRARIES= -latomic
+CMAKE_C_VERBOSE_FLAG=-v
+CMAKE_C_XCODE_ARCHS=
+CMAKE_DEPFILE_FLAGS_C=-MD -MT <DEP_TARGET> -MF <DEP_FILE>
+CMAKE_DEPFILE_FLAGS_CXX=-MD -MT <DEP_TARGET> -MF <DEP_FILE>
+CMAKE_DLLTOOL=CMAKE_DLLTOOL-NOTFOUND
+CMAKE_DL_LIBS=dl
+CMAKE_EFFECTIVE_SYSTEM_NAME=Linux
+CMAKE_EXECUTABLE_FORMAT=ELF
+CMAKE_EXECUTABLE_RPATH_LINK_CXX_FLAG=-Wl,-rpath-link,
+CMAKE_EXECUTABLE_RPATH_LINK_C_FLAG=-Wl,-rpath-link,
+CMAKE_EXECUTABLE_RUNTIME_CXX_FLAG=-Wl,-rpath,
+CMAKE_EXECUTABLE_RUNTIME_CXX_FLAG_SEP=:
+CMAKE_EXECUTABLE_RUNTIME_C_FLAG=-Wl,-rpath,
+CMAKE_EXECUTABLE_RUNTIME_C_FLAG_SEP=:
+CMAKE_EXECUTABLE_SUFFIX=
+CMAKE_EXE_EXPORTS_CXX_FLAG=-Wl,--export-dynamic
+CMAKE_EXE_EXPORTS_C_FLAG=-Wl,--export-dynamic
+CMAKE_EXE_LINKER_FLAGS=  -Wl,--gc-sections
+CMAKE_EXE_LINKER_FLAGS=  -Wl,--gc-sections
+CMAKE_EXE_LINKER_FLAGS_DEBUG= 
+CMAKE_EXE_LINKER_FLAGS_DEBUG= 
+CMAKE_EXE_LINKER_FLAGS_INIT=  
+CMAKE_EXE_LINKER_FLAGS_MINSIZEREL=
+CMAKE_EXE_LINKER_FLAGS_RELEASE= 
+CMAKE_EXE_LINKER_FLAGS_RELEASE= 
+CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO=
+CMAKE_EXE_LINK_DYNAMIC_CXX_FLAGS=-Wl,-Bdynamic
+CMAKE_EXE_LINK_DYNAMIC_C_FLAGS=-Wl,-Bdynamic
+CMAKE_EXE_LINK_STATIC_CXX_FLAGS=-Wl,-Bstatic
+CMAKE_EXE_LINK_STATIC_C_FLAGS=-Wl,-Bstatic
+CMAKE_EXPORT_COMPILE_COMMANDS=
+CMAKE_EXTRA_GENERATOR=
+CMAKE_FILES_DIRECTORY=/CMakeFiles
+CMAKE_FIND_LIBRARY_PREFIXES=lib
+CMAKE_FIND_LIBRARY_SUFFIXES=.so;.a
+CMAKE_FIND_ROOT_PATH=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot
+CMAKE_FIND_ROOT_PATH_MODE_INCLUDE=ONLY
+CMAKE_FIND_ROOT_PATH_MODE_LIBRARY=ONLY
+CMAKE_FIND_ROOT_PATH_MODE_PACKAGE=ONLY
+CMAKE_FIND_ROOT_PATH_MODE_PROGRAM=NEVER
+CMAKE_GENERATOR=Unix Makefiles
+CMAKE_GENERATOR_INSTANCE=
+CMAKE_GENERATOR_PLATFORM=
+CMAKE_GENERATOR_TOOLSET=
+CMAKE_HAVE_LIBC_PTHREAD=1
+CMAKE_HAVE_PTHREAD_H=1
+CMAKE_HAVE_THREADS_LIBRARY=1
+CMAKE_HOME_DIRECTORY=/home/shc/projects/cheshire-linux-nvdla/opencv
+CMAKE_HOST_SYSTEM=Linux-6.8.0-106-generic
+CMAKE_HOST_SYSTEM_NAME=Linux
+CMAKE_HOST_SYSTEM_PROCESSOR=x86_64
+CMAKE_HOST_SYSTEM_VERSION=6.8.0-106-generic
+CMAKE_HOST_UNIX=1
+CMAKE_INCLUDE_FLAG_C=-I
+CMAKE_INCLUDE_FLAG_CXX=-I
+CMAKE_INCLUDE_SYSTEM_FLAG_C=-isystem 
+CMAKE_INCLUDE_SYSTEM_FLAG_CXX=-isystem 
+CMAKE_INSTALL_BINDIR=bin
+CMAKE_INSTALL_DATADIR=share
+CMAKE_INSTALL_DATADIR=share
+CMAKE_INSTALL_DATAROOTDIR=share
+CMAKE_INSTALL_DEFAULT_COMPONENT_NAME=Unspecified
+CMAKE_INSTALL_DOCDIR=share/doc/OpenCV
+CMAKE_INSTALL_DOCDIR=share/doc/OpenCV
+CMAKE_INSTALL_FULL_BINDIR=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install/bin
+CMAKE_INSTALL_FULL_DATADIR=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install/share
+CMAKE_INSTALL_FULL_DATAROOTDIR=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install/share
+CMAKE_INSTALL_FULL_DOCDIR=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install/share/doc/OpenCV
+CMAKE_INSTALL_FULL_INCLUDEDIR=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install/include
+CMAKE_INSTALL_FULL_INFODIR=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install/share/info
+CMAKE_INSTALL_FULL_LIBDIR=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install/lib
+CMAKE_INSTALL_FULL_LIBEXECDIR=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install/libexec
+CMAKE_INSTALL_FULL_LOCALEDIR=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install/share/locale
+CMAKE_INSTALL_FULL_LOCALSTATEDIR=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install/var
+CMAKE_INSTALL_FULL_MANDIR=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install/share/man
+CMAKE_INSTALL_FULL_OLDINCLUDEDIR=/usr/include
+CMAKE_INSTALL_FULL_RUNSTATEDIR=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install/var/run
+CMAKE_INSTALL_FULL_SBINDIR=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install/sbin
+CMAKE_INSTALL_FULL_SHAREDSTATEDIR=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install/com
+CMAKE_INSTALL_FULL_SYSCONFDIR=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install/etc
+CMAKE_INSTALL_INCLUDEDIR=include
+CMAKE_INSTALL_INFODIR=share/info
+CMAKE_INSTALL_INFODIR=share/info
+CMAKE_INSTALL_LIBDIR=lib
+CMAKE_INSTALL_LIBEXECDIR=libexec
+CMAKE_INSTALL_LOCALEDIR=share/locale
+CMAKE_INSTALL_LOCALEDIR=share/locale
+CMAKE_INSTALL_LOCALSTATEDIR=var
+CMAKE_INSTALL_MANDIR=share/man
+CMAKE_INSTALL_MANDIR=share/man
+CMAKE_INSTALL_OLDINCLUDEDIR=/usr/include
+CMAKE_INSTALL_PREFIX=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install
+CMAKE_INSTALL_RPATH=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install/lib
+CMAKE_INSTALL_RPATH_USE_LINK_PATH=TRUE
+CMAKE_INSTALL_RUNSTATEDIR=var/run
+CMAKE_INSTALL_RUNSTATEDIR=var/run
+CMAKE_INSTALL_SBINDIR=sbin
+CMAKE_INSTALL_SHAREDSTATEDIR=com
+CMAKE_INSTALL_SO_NO_EXE=1
+CMAKE_INSTALL_SYSCONFDIR=etc
+CMAKE_INTERNAL_PLATFORM_ABI=ELF
+CMAKE_LIBRARY_ARCHITECTURE_REGEX=[a-z0-9_]+(-[a-z0-9_]+)?-linux-gnu[a-z0-9_]*
+CMAKE_LIBRARY_PATH=/lib64;/usr/lib64
+CMAKE_LIBRARY_PATH_FLAG=-L
+CMAKE_LIBRARY_PATH_TERMINATOR=
+CMAKE_LINKER=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-ld
+CMAKE_LINKER=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-ld
+CMAKE_LINK_LIBRARY_FLAG=-l
+CMAKE_LINK_LIBRARY_SUFFIX=
+CMAKE_LINK_WHAT_YOU_USE_CHECK=ldd;-u;-r
+CMAKE_MAJOR_VERSION=3
+CMAKE_MAKE_PROGRAM=/usr/bin/gmake
+CMAKE_MATCH_0=
+CMAKE_MATCH_1=
+CMAKE_MATCH_2=
+CMAKE_MATCH_3=
+CMAKE_MATCH_COUNT=0
+CMAKE_MINIMUM_REQUIRED_VERSION=3.5.1
+CMAKE_MINOR_VERSION=22
+CMAKE_MODULE_LINKER_FLAGS=
+CMAKE_MODULE_LINKER_FLAGS_DEBUG=
+CMAKE_MODULE_LINKER_FLAGS_INIT=  
+CMAKE_MODULE_LINKER_FLAGS_MINSIZEREL=
+CMAKE_MODULE_LINKER_FLAGS_RELEASE=
+CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO=
+CMAKE_MT=
+CMAKE_NM=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-nm
+CMAKE_OBJCOPY=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-objcopy
+CMAKE_OBJDUMP=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-objdump
+CMAKE_PARENT_LIST_FILE=/home/shc/projects/cheshire-linux-nvdla/opencv/CMakeLists.txt
+CMAKE_PATCH_VERSION=1
+CMAKE_PCH_EXTENSION=.gch
+CMAKE_PCH_PROLOGUE=#pragma GCC system_header
+CMAKE_PLATFORM_IMPLICIT_LINK_DIRECTORIES=/lib;/lib32;/lib64;/usr/lib;/usr/lib32;/usr/lib64
+CMAKE_PLATFORM_INFO_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CMakeFiles/3.22.1
+CMAKE_PLATFORM_INFO_INITIALIZED=1
+CMAKE_PLATFORM_USES_PATH_WHEN_NO_SONAME=1
+CMAKE_POSITION_INDEPENDENT_CODE=ON
+CMAKE_PROJECT_DESCRIPTION=
+CMAKE_PROJECT_HOMEPAGE_URL=
+CMAKE_PROJECT_NAME=OpenCV
+CMAKE_RANLIB=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-ranlib
+CMAKE_RANLIB=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-ranlib
+CMAKE_READELF=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-readelf
+CMAKE_ROOT=/usr/share/cmake-3.22
+CMAKE_SHARED_LIBRARY_CREATE_CXX_FLAGS=-shared
+CMAKE_SHARED_LIBRARY_CREATE_C_FLAGS=-shared
+CMAKE_SHARED_LIBRARY_CXX_FLAGS=-fPIC
+CMAKE_SHARED_LIBRARY_C_FLAGS=-fPIC
+CMAKE_SHARED_LIBRARY_LINK_CXX_FLAGS=-rdynamic
+CMAKE_SHARED_LIBRARY_LINK_C_FLAGS=-rdynamic
+CMAKE_SHARED_LIBRARY_LINK_DYNAMIC_CXX_FLAGS=-Wl,-Bdynamic
+CMAKE_SHARED_LIBRARY_LINK_DYNAMIC_C_FLAGS=-Wl,-Bdynamic
+CMAKE_SHARED_LIBRARY_LINK_STATIC_CXX_FLAGS=-Wl,-Bstatic
+CMAKE_SHARED_LIBRARY_LINK_STATIC_C_FLAGS=-Wl,-Bstatic
+CMAKE_SHARED_LIBRARY_PREFIX=lib
+CMAKE_SHARED_LIBRARY_RPATH_LINK_CXX_FLAG=-Wl,-rpath-link,
+CMAKE_SHARED_LIBRARY_RPATH_LINK_C_FLAG=-Wl,-rpath-link,
+CMAKE_SHARED_LIBRARY_RPATH_ORIGIN_TOKEN=$ORIGIN
+CMAKE_SHARED_LIBRARY_RUNTIME_CXX_FLAG=-Wl,-rpath,
+CMAKE_SHARED_LIBRARY_RUNTIME_CXX_FLAG_SEP=:
+CMAKE_SHARED_LIBRARY_RUNTIME_C_FLAG=-Wl,-rpath,
+CMAKE_SHARED_LIBRARY_RUNTIME_C_FLAG_SEP=:
+CMAKE_SHARED_LIBRARY_SONAME_CXX_FLAG=-Wl,-soname,
+CMAKE_SHARED_LIBRARY_SONAME_C_FLAG=-Wl,-soname,
+CMAKE_SHARED_LIBRARY_SUFFIX=.so
+CMAKE_SHARED_LINKER_FLAGS=  -Wl,--gc-sections
+CMAKE_SHARED_LINKER_FLAGS=  -Wl,--gc-sections
+CMAKE_SHARED_LINKER_FLAGS_DEBUG= 
+CMAKE_SHARED_LINKER_FLAGS_DEBUG= 
+CMAKE_SHARED_LINKER_FLAGS_INIT=  
+CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL=
+CMAKE_SHARED_LINKER_FLAGS_RELEASE= 
+CMAKE_SHARED_LINKER_FLAGS_RELEASE= 
+CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO=
+CMAKE_SHARED_MODULE_CREATE_CXX_FLAGS=-shared
+CMAKE_SHARED_MODULE_CREATE_C_FLAGS=-shared
+CMAKE_SHARED_MODULE_CXX_FLAGS=-fPIC
+CMAKE_SHARED_MODULE_C_FLAGS=-fPIC
+CMAKE_SHARED_MODULE_LINK_DYNAMIC_CXX_FLAGS=-Wl,-Bdynamic
+CMAKE_SHARED_MODULE_LINK_DYNAMIC_C_FLAGS=-Wl,-Bdynamic
+CMAKE_SHARED_MODULE_LINK_STATIC_CXX_FLAGS=-Wl,-Bstatic
+CMAKE_SHARED_MODULE_LINK_STATIC_C_FLAGS=-Wl,-Bstatic
+CMAKE_SHARED_MODULE_PREFIX=lib
+CMAKE_SHARED_MODULE_SUFFIX=.so
+CMAKE_SIZEOF_VOID_P=8
+CMAKE_SKIP_INSTALL_RPATH=NO
+CMAKE_SKIP_RPATH=NO
+CMAKE_SOURCE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv
+CMAKE_STATIC_LIBRARY_PREFIX=lib
+CMAKE_STATIC_LIBRARY_SUFFIX=.a
+CMAKE_STATIC_LINKER_FLAGS=
+CMAKE_STATIC_LINKER_FLAGS_DEBUG=
+CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL=
+CMAKE_STATIC_LINKER_FLAGS_RELEASE=
+CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO=
+CMAKE_STRIP=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-strip
+CMAKE_SYSROOT=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot
+CMAKE_SYSTEM=Linux
+CMAKE_SYSTEM_INCLUDE_PATH=/usr/include/X11
+CMAKE_SYSTEM_INFO_FILE=Platform/Linux
+CMAKE_SYSTEM_LIBRARY_PATH=/usr/lib/X11
+CMAKE_SYSTEM_LOADED=1
+CMAKE_SYSTEM_NAME=Linux
+CMAKE_SYSTEM_NAME=Linux
+CMAKE_SYSTEM_PREFIX_PATH=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot/usr;/usr/local;/usr;/;/usr;/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install;/usr/X11R6;/usr/pkg;/opt
+CMAKE_SYSTEM_PROCESSOR=riscv64
+CMAKE_SYSTEM_PROCESSOR=riscv64
+CMAKE_SYSTEM_SPECIFIC_INFORMATION_LOADED=1
+CMAKE_SYSTEM_SPECIFIC_INITIALIZE_LOADED=1
+CMAKE_SYSTEM_VERSION=
+CMAKE_TESTING_ENABLED=1
+CMAKE_THREAD_LIBS_INIT=
+CMAKE_TRY_COMPILE_CONFIGURATION=Release
+CMAKE_TWEAK_VERSION=0
+CMAKE_UNAME=/usr/bin/uname
+CMAKE_USE_PTHREADS_INIT=1
+CMAKE_VERBOSE_MAKEFILE=FALSE
+CMAKE_VERSION=3.22.1
+COMPILER_BASENAME=riscv64-unknown-linux-gnu-g++
+CPACK_BINARY_DEB=OFF
+CPACK_BINARY_FREEBSD=OFF
+CPACK_BINARY_IFW=OFF
+CPACK_BINARY_NSIS=OFF
+CPACK_BINARY_RPM=OFF
+CPACK_BINARY_STGZ=ON
+CPACK_BINARY_TBZ2=OFF
+CPACK_BINARY_TGZ=ON
+CPACK_BINARY_TXZ=OFF
+CPACK_BINARY_TZ=ON
+CPACK_BUILD_SOURCE_DIRS=/home/shc/projects/cheshire-linux-nvdla/opencv;/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv
+CPACK_CMAKE_GENERATOR=Unix Makefiles
+CPACK_COMPONENTS_ALL=dev;libs;licenses;scripts
+CPACK_COMPONENT_DEV_CONFLICTS=libopencv-dev, libopencv-core-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev
+CPACK_COMPONENT_DEV_DEPENDS=libs
+CPACK_COMPONENT_DEV_DESCRIPTION=Development files for Open Source Computer Vision Library
+CPACK_COMPONENT_DEV_DISPLAY_NAME=Development files
+CPACK_COMPONENT_DEV_PROVIDES=libopencv-dev, libopencv-core-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev
+CPACK_COMPONENT_DEV_REPLACES=libopencv-dev, libopencv-core-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev
+CPACK_COMPONENT_DOCS_CONFLICTS=opencv-doc
+CPACK_COMPONENT_DOCS_DEPENDS=libs
+CPACK_COMPONENT_DOCS_DESCRIPTION=Documentation for Open Source Computer Vision Library
+CPACK_COMPONENT_DOCS_DISPLAY_NAME=Documentation
+CPACK_COMPONENT_JAVA_CONFLICTS=libopencv4.0-java, libopencv4.0-jni
+CPACK_COMPONENT_JAVA_DEPENDS=libs
+CPACK_COMPONENT_JAVA_DESCRIPTION=Java bindings for Open Source Computer Vision Library
+CPACK_COMPONENT_JAVA_DISPLAY_NAME=Java bindings
+CPACK_COMPONENT_JAVA_PROVIDES=libopencv4.0-java, libopencv4.0-jni
+CPACK_COMPONENT_JAVA_REPLACES=libopencv4.0-java, libopencv4.0-jni
+CPACK_COMPONENT_LIBS_CONFLICTS=opencv-data, libopencv-core4.0, libopencv-imgcodecs4.0, libopencv-imgproc4.0
+CPACK_COMPONENT_LIBS_DESCRIPTION=Open Computer Vision Library
+CPACK_COMPONENT_LIBS_DISPLAY_NAME=Libraries and data
+CPACK_COMPONENT_LIBS_PROVIDES=opencv-data, libopencv-core4.0, libopencv-imgcodecs4.0, libopencv-imgproc4.0
+CPACK_COMPONENT_LIBS_REPLACES=opencv-data, libopencv-core4.0, libopencv-imgcodecs4.0, libopencv-imgproc4.0
+CPACK_COMPONENT_LIBS_REQUIRED=TRUE
+CPACK_COMPONENT_PYTHON_CONFLICTS=python-opencv
+CPACK_COMPONENT_PYTHON_DEPENDS=libs
+CPACK_COMPONENT_PYTHON_DESCRIPTION=Python bindings for Open Source Computer Vision Library
+CPACK_COMPONENT_PYTHON_DISPLAY_NAME=Python bindings
+CPACK_COMPONENT_PYTHON_PROVIDES=python-opencv
+CPACK_COMPONENT_PYTHON_REPLACES=python-opencv
+CPACK_COMPONENT_SAMPLES_CONFLICTS=opencv-doc
+CPACK_COMPONENT_SAMPLES_DEPENDS=libs
+CPACK_COMPONENT_SAMPLES_DESCRIPTION=Samples for Open Source Computer Vision Library
+CPACK_COMPONENT_SAMPLES_DISPLAY_NAME=Samples
+CPACK_COMPONENT_TESTS_DEPENDS=libs
+CPACK_COMPONENT_TESTS_DESCRIPTION=Accuracy and performance tests for Open Source Computer Vision Library
+CPACK_COMPONENT_TESTS_DISPLAY_NAME=Tests
+CPACK_COMPONENT_UNSPECIFIED_HIDDEN=TRUE
+CPACK_COMPONENT_UNSPECIFIED_REQUIRED=TRUE
+CPACK_DEBIAN_COMPONENT_DEV_NAME=libOpenCV-dev
+CPACK_DEBIAN_COMPONENT_DOCS_NAME=libOpenCV-docs
+CPACK_DEBIAN_COMPONENT_JAVA_NAME=libOpenCV-java
+CPACK_DEBIAN_COMPONENT_LIBS_NAME=libOpenCV
+CPACK_DEBIAN_COMPONENT_PYTHON_NAME=libOpenCV-python
+CPACK_DEBIAN_COMPONENT_SAMPLES_NAME=libOpenCV-samples
+CPACK_DEBIAN_COMPONENT_TESTS_NAME=libOpenCV-tests
+CPACK_DEBIAN_PACKAGE_ARCHITECTURE=riscv64
+CPACK_DEBIAN_PACKAGE_HOMEPAGE=http://opencv.org
+CPACK_DEBIAN_PACKAGE_PRIORITY=optional
+CPACK_DEBIAN_PACKAGE_SECTION=libs
+CPACK_DEBIAN_PACKAGE_SHLIBDEPS=TRUE
+CPACK_DEB_COMPONENT_INSTALL=TRUE
+CPACK_DEFAULT_PACKAGE_DESCRIPTION_FILE=/usr/share/cmake-3.22/Templates/CPack.GenericDescription.txt
+CPACK_DEFAULT_PACKAGE_DESCRIPTION_SUMMARY=OpenCV built using CMake
+CPACK_GENERATOR=TBZ2;TGZ;TXZ;TZ
+CPACK_IGNORE_FILES=/CVS/;/\\.svn/;/\\.bzr/;/\\.hg/;/\\.git/;\\.swp\$;\\.#;/#
+CPACK_INSTALLED_DIRECTORIES=/home/shc/projects/cheshire-linux-nvdla/opencv;/
+CPACK_INSTALL_CMAKE_PROJECTS=
+CPACK_INSTALL_PREFIX=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install
+CPACK_MODULE_PATH=
+CPACK_NSIS_DISPLAY_NAME=OpenCV 4.2.0
+CPACK_NSIS_INSTALLER_ICON_CODE=
+CPACK_NSIS_INSTALLER_MUI_ICON_CODE=
+CPACK_NSIS_INSTALL_ROOT=$PROGRAMFILES
+CPACK_NSIS_PACKAGE_NAME=OpenCV 4.2.0
+CPACK_NSIS_UNINSTALL_NAME=Uninstall
+CPACK_OUTPUT_CONFIG_FILE=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CPackConfig.cmake
+CPACK_PACKAGE_CONTACT=admin@opencv.org
+CPACK_PACKAGE_DEFAULT_LOCATION=/
+CPACK_PACKAGE_DESCRIPTION=OpenCV (Open Source Computer Vision Library) is an open source computer vision
+and machine learning software library. OpenCV was built to provide a common
+infrastructure for computer vision applications and to accelerate the use of
+machine perception in the commercial products. Being a BSD-licensed product,
+OpenCV makes it easy for businesses to utilize and modify the code.
+CPACK_PACKAGE_DESCRIPTION_FILE=/usr/share/cmake-3.22/Templates/CPack.GenericDescription.txt
+CPACK_PACKAGE_DESCRIPTION_SUMMARY=Open Computer Vision Library
+CPACK_PACKAGE_FILE_NAME=OpenCV-4.2.0-riscv64
+CPACK_PACKAGE_INSTALL_DIRECTORY=OpenCV 4.2.0
+CPACK_PACKAGE_INSTALL_REGISTRY_KEY=OpenCV 4.2.0
+CPACK_PACKAGE_NAME=OpenCV
+CPACK_PACKAGE_RELOCATABLE=true
+CPACK_PACKAGE_VENDOR=OpenCV Foundation
+CPACK_PACKAGE_VERSION=4.2.0
+CPACK_PACKAGE_VERSION_MAJOR=4
+CPACK_PACKAGE_VERSION_MINOR=2
+CPACK_PACKAGE_VERSION_PATCH=0
+CPACK_RESOURCE_FILE_LICENSE=/home/shc/projects/cheshire-linux-nvdla/opencv/LICENSE
+CPACK_RESOURCE_FILE_README=/usr/share/cmake-3.22/Templates/CPack.GenericDescription.txt
+CPACK_RESOURCE_FILE_WELCOME=/usr/share/cmake-3.22/Templates/CPack.GenericWelcome.txt
+CPACK_RPM_COMPONENT_INSTALL=TRUE
+CPACK_RPM_PACKAGE_ARCHITECTURE=riscv64
+CPACK_RPM_PACKAGE_DESCRIPTION=OpenCV (Open Source Computer Vision Library) is an open source computer vision
+and machine learning software library. OpenCV was built to provide a common
+infrastructure for computer vision applications and to accelerate the use of
+machine perception in the commercial products. Being a BSD-licensed product,
+OpenCV makes it easy for businesses to utilize and modify the code.
+CPACK_RPM_PACKAGE_LICENSE=BSD
+CPACK_RPM_PACKAGE_SOURCES=ON
+CPACK_RPM_PACKAGE_SUMMARY=Open Computer Vision Library
+CPACK_RPM_PACKAGE_URL=http://opencv.org
+CPACK_SET_DESTDIR=OFF
+CPACK_SOURCE_GENERATOR=TBZ2;TGZ;TXZ;TZ
+CPACK_SOURCE_IGNORE_FILES=/CVS/;/\\.svn/;/\\.bzr/;/\\.hg/;/\\.git/;\\.swp\$;\\.#;/#
+CPACK_SOURCE_INSTALLED_DIRECTORIES=/home/shc/projects/cheshire-linux-nvdla/opencv;/
+CPACK_SOURCE_OUTPUT_CONFIG_FILE=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CPackSourceConfig.cmake
+CPACK_SOURCE_PACKAGE_FILE_NAME=OpenCV-4.2.0-riscv64
+CPACK_SOURCE_RPM=OFF
+CPACK_SOURCE_TBZ2=ON
+CPACK_SOURCE_TGZ=ON
+CPACK_SOURCE_TOPLEVEL_TAG=Linux-Source
+CPACK_SOURCE_TXZ=ON
+CPACK_SOURCE_TZ=ON
+CPACK_SOURCE_ZIP=OFF
+CPACK_STRIP_FILES=
+CPACK_SYSTEM_NAME=Linux
+CPACK_THREADS=1
+CPACK_TOPLEVEL_TAG=Linux-Source
+CPACK_WIX_SIZEOF_VOID_P=8
+CPACK_set_DESTDIR=on
+CPU_ALL_OPTIMIZATIONS=SSE;SSE2;SSE3;SSSE3;SSE4_1;SSE4_2;POPCNT;AVX;FP16;AVX2;FMA3;AVX_512F;AVX512_COMMON;AVX512_KNL;AVX512_KNM;AVX512_SKX;AVX512_CNL;AVX512_CLX;AVX512_ICL;NEON;VFPV3;MSA;VSX;VSX3
+CPU_BASELINE=DETECT
+CPU_BASELINE_DETECT=ON
+CPU_BASELINE_FINAL=
+CPU_BASELINE_FLAGS=
+CPU_DISPATCH=
+CPU_DISPATCH_FINAL=
+CPU_VFPV3_FEATURE_ALIAS=
+CPackComponent_CMake_INCLUDED=1
+CPack_CMake_INCLUDED=1
+CUSTOM_STATUS=protobuf
+CUSTOM_STATUS_protobuf=    Protobuf:;BUILD_PROTOBUF;THEN;build (3.5.1);ELSE; (3.5.1)
+CV_DISABLE_OPTIMIZATION=OFF
+CV_ENABLE_INTRINSICS=ON
+CV_ENABLE_UNROLLED=1
+CV_GCC=1
+CV_TRACE=ON
+C_HAS_inline=1
+DC1394_INCLUDE=DC1394_INCLUDE-NOTFOUND
+DC1394_LIBRARY=DC1394_LIBRARY-NOTFOUND
+ENABLE_BUILD_HARDENING=OFF
+ENABLE_CCACHE=ON
+ENABLE_CONFIG_VERIFICATION=OFF
+ENABLE_COVERAGE=OFF
+ENABLE_FAST_MATH=OFF
+ENABLE_GNU_STL_DEBUG=OFF
+ENABLE_IMPL_COLLECTION=OFF
+ENABLE_INSTRUMENTATION=OFF
+ENABLE_LTO=OFF
+ENABLE_NOISY_WARNINGS=OFF
+ENABLE_OMIT_FRAME_POINTER=ON
+ENABLE_PIC=ON
+ENABLE_PRECOMPILED_HEADERS=OFF
+ENABLE_PROFILING=OFF
+ENABLE_SOLUTION_FOLDERS=OFF
+EXECUTABLE_OUTPUT_PATH=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/bin
+FILE=
+FIND_PACKAGE_MESSAGE_DETAILS_JPEG=[libjpeg-turbo][/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/libjpeg-turbo/src][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp=[/usr/bin/python3][v3.10.12(3.2)]
+FIND_PACKAGE_MESSAGE_DETAILS_Threads=[TRUE][v()]
+GENERATE_ABI_DESCRIPTOR=OFF
+GIT_EXECUTABLE=/usr/bin/git
+GIT_FOUND=TRUE
+GIT_RESULT=0
+GIT_VERSION_STRING=2.34.1
+Git_FOUND=TRUE
+HAVE_ASSERT_H=1
+HAVE_BUILTIN_CTZL=1
+HAVE_CAMV4L2=1
+HAVE_CONCURRENCY=0
+HAVE_CPU_BASELINE_FLAGS=1
+HAVE_CXX11=ON
+HAVE_CXX_ATOMICS_WITHOUT_LIB=1
+HAVE_CXX_FDATA_SECTIONS=1
+HAVE_CXX_FDIAGNOSTICS_SHOW_OPTION=1
+HAVE_CXX_FFUNCTION_SECTIONS=1
+HAVE_CXX_FOMIT_FRAME_POINTER=1
+HAVE_CXX_FSIGNED_CHAR=1
+HAVE_CXX_FVISIBILITY_HIDDEN=1
+HAVE_CXX_FVISIBILITY_INLINES_HIDDEN=1
+HAVE_CXX_PTHREAD=1
+HAVE_CXX_W=1
+HAVE_CXX_WALL=1
+HAVE_CXX_WERROR_ADDRESS=1
+HAVE_CXX_WERROR_FORMAT_SECURITY=1
+HAVE_CXX_WERROR_NON_VIRTUAL_DTOR=1
+HAVE_CXX_WERROR_RETURN_TYPE=1
+HAVE_CXX_WERROR_SEQUENCE_POINT=1
+HAVE_CXX_WFORMAT=1
+HAVE_CXX_WIMPLICIT_FALLTHROUGH_3=1
+HAVE_CXX_WINIT_SELF=1
+HAVE_CXX_WMISSING_DECLARATIONS=1
+HAVE_CXX_WMISSING_PROTOTYPES=1
+HAVE_CXX_WNO_ARRAY_BOUNDS=1
+HAVE_CXX_WNO_CLASS_MEMACCESS=1
+HAVE_CXX_WNO_COMMENT=1
+HAVE_CXX_WNO_DELETE_NON_VIRTUAL_DTOR=1
+HAVE_CXX_WNO_DEPRECATED=1
+HAVE_CXX_WNO_DEPRECATED_DECLARATIONS=1
+HAVE_CXX_WNO_ENUM_COMPARE_SWITCH=
+HAVE_CXX_WNO_EXTRA=1
+HAVE_CXX_WNO_IGNORED_QUALIFIERS=1
+HAVE_CXX_WNO_IMPLICIT_FALLTHROUGH=1
+HAVE_CXX_WNO_INCONSISTENT_MISSING_OVERRIDE=
+HAVE_CXX_WNO_INVALID_OFFSETOF=1
+HAVE_CXX_WNO_MISSING_DECLARATIONS=1
+HAVE_CXX_WNO_MISSING_PROTOTYPES=1
+HAVE_CXX_WNO_SHADOW=1
+HAVE_CXX_WNO_SHORTEN_64_TO_32=
+HAVE_CXX_WNO_SIGN_COMPARE=1
+HAVE_CXX_WNO_SIGN_PROMO=1
+HAVE_CXX_WNO_STRICT_OVERFLOW=1
+HAVE_CXX_WNO_SUGGEST_OVERRIDE=1
+HAVE_CXX_WNO_TAUTOLOGICAL_UNDEFINED_COMPARE=
+HAVE_CXX_WNO_UNDEF=1
+HAVE_CXX_WNO_UNNAMED_TYPE_TEMPLATE_ARGS=
+HAVE_CXX_WNO_UNUSED_CONST_VARIABLE=1
+HAVE_CXX_WNO_UNUSED_FUNCTION=1
+HAVE_CXX_WNO_UNUSED_LOCAL_TYPEDEFS=1
+HAVE_CXX_WNO_UNUSED_PARAMETER=1
+HAVE_CXX_WPOINTER_ARITH=1
+HAVE_CXX_WSHADOW=1
+HAVE_CXX_WSIGN_PROMO=1
+HAVE_CXX_WSTRICT_PROTOTYPES=1
+HAVE_CXX_WSUGGEST_OVERRIDE=1
+HAVE_CXX_WUNDEF=1
+HAVE_CXX_WUNINITIALIZED=1
+HAVE_C_FDATA_SECTIONS=1
+HAVE_C_FDIAGNOSTICS_SHOW_OPTION=1
+HAVE_C_FFUNCTION_SECTIONS=1
+HAVE_C_FOMIT_FRAME_POINTER=1
+HAVE_C_FSIGNED_CHAR=1
+HAVE_C_FVISIBILITY_HIDDEN=1
+HAVE_C_FVISIBILITY_INLINES_HIDDEN=1
+HAVE_C_PTHREAD=1
+HAVE_C_STD_C99=1
+HAVE_C_W=1
+HAVE_C_WALL=1
+HAVE_C_WERROR_ADDRESS=1
+HAVE_C_WERROR_FORMAT_SECURITY=1
+HAVE_C_WERROR_NON_VIRTUAL_DTOR=
+HAVE_C_WERROR_RETURN_TYPE=1
+HAVE_C_WERROR_SEQUENCE_POINT=1
+HAVE_C_WFORMAT=1
+HAVE_C_WIMPLICIT_FALLTHROUGH_3=1
+HAVE_C_WINIT_SELF=1
+HAVE_C_WMISSING_DECLARATIONS=1
+HAVE_C_WMISSING_PROTOTYPES=1
+HAVE_C_WNO_ABSOLUTE_VALUE=1
+HAVE_C_WNO_ATTRIBUTES=1
+HAVE_C_WNO_CAST_ALIGN=1
+HAVE_C_WNO_COMMENT=1
+HAVE_C_WNO_DELETE_NON_VIRTUAL_DTOR=1
+HAVE_C_WNO_IMPLICIT_FALLTHROUGH=1
+HAVE_C_WNO_IMPLICIT_FUNCTION_DECLARATION=1
+HAVE_C_WNO_INT_TO_POINTER_CAST=1
+HAVE_C_WNO_MAYBE_UNINITIALIZED=1
+HAVE_C_WNO_MISLEADING_INDENTATION=1
+HAVE_C_WNO_MISSING_DECLARATIONS=1
+HAVE_C_WNO_MISSING_PROTOTYPES=1
+HAVE_C_WNO_POINTER_COMPARE=1
+HAVE_C_WNO_POINTER_TO_INT_CAST=1
+HAVE_C_WNO_SHADOW=1
+HAVE_C_WNO_SHIFT_NEGATIVE_VALUE=1
+HAVE_C_WNO_SHORTEN_64_TO_32=
+HAVE_C_WNO_SIGN_COMPARE=1
+HAVE_C_WNO_STRICT_OVERFLOW=1
+HAVE_C_WNO_STRICT_PROTOTYPES=1
+HAVE_C_WNO_UNDEF=1
+HAVE_C_WNO_UNINITIALIZED=1
+HAVE_C_WNO_UNNAMED_TYPE_TEMPLATE_ARGS=
+HAVE_C_WNO_UNUSED=1
+HAVE_C_WNO_UNUSED_BUT_SET_PARAMETER=1
+HAVE_C_WNO_UNUSED_BUT_SET_VARIABLE=1
+HAVE_C_WNO_UNUSED_FUNCTION=1
+HAVE_C_WNO_UNUSED_PARAMETER=1
+HAVE_C_WNO_UNUSED_VARIABLE=1
+HAVE_C_WPOINTER_ARITH=1
+HAVE_C_WSHADOW=1
+HAVE_C_WSIGN_PROMO=1
+HAVE_C_WSTRICT_PROTOTYPES=1
+HAVE_C_WSUGGEST_OVERRIDE=1
+HAVE_C_WUNDEF=1
+HAVE_C_WUNINITIALIZED=1
+HAVE_DLFCN_H=1
+HAVE_FCNTL_H=1
+HAVE_FLOOR=1
+HAVE_FSEEKO=1
+HAVE_GCD=0
+HAVE_GETOPT=1
+HAVE_IEEEFP=1
+HAVE_IMGCODEC_HDR=ON
+HAVE_IMGCODEC_PFM=ON
+HAVE_IMGCODEC_PXM=ON
+HAVE_IMGCODEC_SUNRASTER=ON
+HAVE_INTTYPES_H=1
+HAVE_IO_H=
+HAVE_ISASCII=1
+HAVE_JASPER=YES
+HAVE_JPEG=YES
+HAVE_LFIND=1
+HAVE_LIMITS_H=1
+HAVE_LOCALE_H=1
+HAVE_MALLOC_H=1
+HAVE_MEMALIGN=1
+HAVE_MEMMOVE=1
+HAVE_MEMORY_H=1
+HAVE_MEMSET=1
+HAVE_MKL=OFF
+HAVE_MMAP=1
+HAVE_OFF64_T=FALSE
+HAVE_OPENCL=1
+HAVE_OPENCL_STATIC=OFF
+HAVE_PNG=YES
+HAVE_POSIX_MEMALIGN=1
+HAVE_POW=1
+HAVE_PROTOBUF=TRUE
+HAVE_PTHREAD=1
+HAVE_PTHREADS_PF=1
+HAVE_QUIRC=TRUE
+HAVE_SEARCH_H=1
+HAVE_SETMODE=
+HAVE_SIZEOF_PTRDIFF_T=TRUE
+HAVE_SIZEOF_SIGNED_INT=TRUE
+HAVE_SIZEOF_SIGNED_LONG=TRUE
+HAVE_SIZEOF_SIGNED_LONG_LONG=TRUE
+HAVE_SIZEOF_SIGNED_SHORT=TRUE
+HAVE_SIZEOF_SIZE_T=TRUE
+HAVE_SIZEOF_UNSIGNED_CHAR_P=TRUE
+HAVE_SIZEOF_UNSIGNED_INT=TRUE
+HAVE_SIZEOF_UNSIGNED_LONG=TRUE
+HAVE_SIZEOF_UNSIGNED_LONG_LONG=TRUE
+HAVE_SIZEOF_UNSIGNED_SHORT=TRUE
+HAVE_SNPRINTF=1
+HAVE_SQRT=1
+HAVE_STDDEF_H=1
+HAVE_STDINT_H=1
+HAVE_STDLIB_H=1
+HAVE_STRCASECMP=1
+HAVE_STRCHR=1
+HAVE_STRINGS_H=1
+HAVE_STRING_H=1
+HAVE_STRRCHR=1
+HAVE_STRSTR=1
+HAVE_STRTOL=1
+HAVE_STRTOUL=1
+HAVE_STRTOULL=1
+HAVE_SYS_TIME_H=1
+HAVE_SYS_TYPES_H=1
+HAVE_TIFF=YES
+HAVE_UNISTD_H=1
+HAVE_V4L=TRUE
+HAVE_VIDEOIO=
+HAVE_WEBP=1
+HAVE_int16=FALSE
+HAVE_int32=FALSE
+HAVE_int8=FALSE
+HAVE_opencv_calib3d=OFF
+HAVE_opencv_core=ON
+HAVE_opencv_dnn=OFF
+HAVE_opencv_features2d=OFF
+HAVE_opencv_flann=OFF
+HAVE_opencv_gapi=OFF
+HAVE_opencv_highgui=OFF
+HAVE_opencv_imgcodecs=ON
+HAVE_opencv_imgproc=ON
+HAVE_opencv_java=OFF
+HAVE_opencv_java_bindings_generator=OFF
+HAVE_opencv_js=OFF
+HAVE_opencv_ml=OFF
+HAVE_opencv_objdetect=OFF
+HAVE_opencv_photo=OFF
+HAVE_opencv_python2=OFF
+HAVE_opencv_python3=OFF
+HAVE_opencv_python_bindings_generator=OFF
+HAVE_opencv_python_tests=OFF
+HAVE_opencv_stitching=OFF
+HAVE_opencv_ts=OFF
+HAVE_opencv_video=OFF
+HAVE_opencv_videoio=OFF
+HAVE_opencv_world=OFF
+HELP_CPU_BASELINE=Specify list of enabled baseline CPU optimizations
+HELP_CPU_BASELINE_DISABLE=Specify list of forbidden baseline CPU optimizations
+HELP_CPU_BASELINE_REQUIRE=Specify list of required baseline CPU optimizations
+HELP_CPU_DISPATCH=Specify list of dispatched CPU optimizations
+HELP_CPU_DISPATCH_REQUIRE=Specify list of required dispatched CPU optimizations
+HELP_OPENCV_DOWNLOAD_PATH=Cache directory for downloaded files
+HOST_BIG_ENDIAN=OFF
+HOST_FILLORDER=FILLORDER_LSB2MSB
+INSTALL_CREATE_DISTRIB=OFF
+INSTALL_C_EXAMPLES=OFF
+INSTALL_PYTHON_EXAMPLES=OFF
+INSTALL_TESTS=OFF
+IS_CCACHE_WORKS=1
+JASPER_FOUND=FALSE
+JASPER_H=#define	JAS_VERSION "1.900.1"
+JASPER_INCLUDE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/libjasper
+JASPER_LIBRARIES=libjasper
+JASPER_LIBRARY=libjasper
+JASPER_LIBRARY_DEBUG=JASPER_LIBRARY_DEBUG-NOTFOUND
+JASPER_LIBRARY_RELEASE=JASPER_LIBRARY_RELEASE-NOTFOUND
+JASPER_VERSION_MAJOR=1
+JASPER_VERSION_MINOR=900
+JASPER_VERSION_PATCH=1
+JASPER_VERSION_STRING=1.900.1
+JASPER_VERSION_TWEAK=
+JPEG_FOUND=TRUE
+JPEG_INCLUDE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/libjpeg-turbo/src
+JPEG_INCLUDE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/libjpeg-turbo/src
+JPEG_INCLUDE_DIRS=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/libjpeg-turbo/src
+JPEG_LIBRARIES=libjpeg-turbo
+JPEG_LIBRARY=libjpeg-turbo
+JPEG_LIBRARY=libjpeg-turbo
+JPEG_LIBRARY_DEBUG=JPEG_LIBRARY_DEBUG-NOTFOUND
+JPEG_LIBRARY_RELEASE=JPEG_LIBRARY_RELEASE-NOTFOUND
+JPEG_LIB_VERSION=2.0.2-62
+Jasper_FOUND=FALSE
+LAPACK_CBLAS_H=
+LAPACK_FOUND=FALSE
+LAPACK_IMPL=Unknown
+LAPACK_INCLUDE_DIR=
+LAPACK_LAPACKE_H=
+LAPACK_LIBRARIES=
+LIBRARY_OUTPUT_PATH=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/lib
+LOOKED_FOR=Atlas_CBLAS_INCLUDE_DIR;Atlas_CLAPACK_INCLUDE_DIR;Atlas_CBLAS_LIBRARY;Atlas_BLAS_LIBRARY;Atlas_LAPACK_LIBRARY
+MIN_VER_CMAKE=3.5.1
+MIN_VER_CUDA=6.5
+MIN_VER_CUDNN=7.5
+MIN_VER_GTK=2.18.0
+MIN_VER_PYTHON2=2.7
+MIN_VER_PYTHON3=3.2
+MIN_VER_ZLIB=1.2.3
+MKL_INCLUDE_DIRS=MKL_ROOT_DIR-NOTFOUND/include
+MKL_ROOT_DIR=MKL_ROOT_DIR-NOTFOUND
+MKL_WITH_OPENMP=OFF
+MKL_WITH_TBB=OFF
+MSVC_CXX_ARCHITECTURE_ID=
+MSVC_C_ARCHITECTURE_ID=
+M_LIBRARY=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot/usr/lib/libm.so
+NEED_SYS_TYPES_H=1
+OCV_COMPILER_FAIL_REGEX=argument '.*' is not valid;command line option .* is valid for .* but not for C\+\+;command line option .* is valid for .* but not for C;unrecognized .*option;unknown .*option;ignoring unknown option;warning D9002;option .*not supported;[Uu]nknown option;[Ww]arning: [Oo]ption;command option .* is not recognized;not supported in this configuration, ignored;File with unknown suffix passed to linker;WARNING: unknown flag:
+OCV_DOWNLOAD_ADE_HASH_3rdparty_ade_v0_1_1f_zip=b624b995ec9c439cbc2e9e6ee940d3a2
+OFF64_T=
+OPENCL_FOUND=ON
+OPENCL_INCLUDE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/include/opencl/1.2
+OPENCL_INCLUDE_DIRS=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/include/opencl/1.2
+OPENCL_LIBRARY=
+OPENCV_3P_LIB_INSTALL_PATH=lib/opencv4/3rdparty
+OPENCV_BIN_INSTALL_PATH=bin
+OPENCV_BUILD_INFO_FILE=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/version_string.tmp
+OPENCV_CMAKE_SYSTEM_FILE=/home/shc/projects/cheshire-linux-nvdla/opencv/cmake/platforms/OpenCV-Linux.cmake
+OPENCV_COMPILER_IS_CCACHE=1
+OPENCV_COMPILER_STR=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-g++  (ver 10.2.0)
+OPENCV_CONFIG_FILE_INCLUDE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv
+OPENCV_CONFIG_INSTALL_PATH=lib/cmake/opencv4
+OPENCV_CPU_BASELINE_DEFINITIONS_CONFIGMAKE=
+#define CV_CPU_BASELINE_FEATURES 0 \
+
+OPENCV_CPU_CONTROL_DEFINITIONS_CONFIGMAKE=// AUTOGENERATED, DO NOT EDIT
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_SSE
+#  define CV_TRY_SSE 1
+#  define CV_CPU_FORCE_SSE 1
+#  define CV_CPU_HAS_SUPPORT_SSE 1
+#  define CV_CPU_CALL_SSE(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_SSE_(fn, args) return (opt_SSE::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_SSE
+#  define CV_TRY_SSE 1
+#  define CV_CPU_FORCE_SSE 0
+#  define CV_CPU_HAS_SUPPORT_SSE (cv::checkHardwareSupport(CV_CPU_SSE))
+#  define CV_CPU_CALL_SSE(fn, args) if (CV_CPU_HAS_SUPPORT_SSE) return (opt_SSE::fn args)
+#  define CV_CPU_CALL_SSE_(fn, args) if (CV_CPU_HAS_SUPPORT_SSE) return (opt_SSE::fn args)
+#else
+#  define CV_TRY_SSE 0
+#  define CV_CPU_FORCE_SSE 0
+#  define CV_CPU_HAS_SUPPORT_SSE 0
+#  define CV_CPU_CALL_SSE(fn, args)
+#  define CV_CPU_CALL_SSE_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_SSE(fn, args, mode, ...)  CV_CPU_CALL_SSE(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_SSE2
+#  define CV_TRY_SSE2 1
+#  define CV_CPU_FORCE_SSE2 1
+#  define CV_CPU_HAS_SUPPORT_SSE2 1
+#  define CV_CPU_CALL_SSE2(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_SSE2_(fn, args) return (opt_SSE2::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_SSE2
+#  define CV_TRY_SSE2 1
+#  define CV_CPU_FORCE_SSE2 0
+#  define CV_CPU_HAS_SUPPORT_SSE2 (cv::checkHardwareSupport(CV_CPU_SSE2))
+#  define CV_CPU_CALL_SSE2(fn, args) if (CV_CPU_HAS_SUPPORT_SSE2) return (opt_SSE2::fn args)
+#  define CV_CPU_CALL_SSE2_(fn, args) if (CV_CPU_HAS_SUPPORT_SSE2) return (opt_SSE2::fn args)
+#else
+#  define CV_TRY_SSE2 0
+#  define CV_CPU_FORCE_SSE2 0
+#  define CV_CPU_HAS_SUPPORT_SSE2 0
+#  define CV_CPU_CALL_SSE2(fn, args)
+#  define CV_CPU_CALL_SSE2_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_SSE2(fn, args, mode, ...)  CV_CPU_CALL_SSE2(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_SSE3
+#  define CV_TRY_SSE3 1
+#  define CV_CPU_FORCE_SSE3 1
+#  define CV_CPU_HAS_SUPPORT_SSE3 1
+#  define CV_CPU_CALL_SSE3(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_SSE3_(fn, args) return (opt_SSE3::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_SSE3
+#  define CV_TRY_SSE3 1
+#  define CV_CPU_FORCE_SSE3 0
+#  define CV_CPU_HAS_SUPPORT_SSE3 (cv::checkHardwareSupport(CV_CPU_SSE3))
+#  define CV_CPU_CALL_SSE3(fn, args) if (CV_CPU_HAS_SUPPORT_SSE3) return (opt_SSE3::fn args)
+#  define CV_CPU_CALL_SSE3_(fn, args) if (CV_CPU_HAS_SUPPORT_SSE3) return (opt_SSE3::fn args)
+#else
+#  define CV_TRY_SSE3 0
+#  define CV_CPU_FORCE_SSE3 0
+#  define CV_CPU_HAS_SUPPORT_SSE3 0
+#  define CV_CPU_CALL_SSE3(fn, args)
+#  define CV_CPU_CALL_SSE3_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_SSE3(fn, args, mode, ...)  CV_CPU_CALL_SSE3(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_SSSE3
+#  define CV_TRY_SSSE3 1
+#  define CV_CPU_FORCE_SSSE3 1
+#  define CV_CPU_HAS_SUPPORT_SSSE3 1
+#  define CV_CPU_CALL_SSSE3(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_SSSE3_(fn, args) return (opt_SSSE3::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_SSSE3
+#  define CV_TRY_SSSE3 1
+#  define CV_CPU_FORCE_SSSE3 0
+#  define CV_CPU_HAS_SUPPORT_SSSE3 (cv::checkHardwareSupport(CV_CPU_SSSE3))
+#  define CV_CPU_CALL_SSSE3(fn, args) if (CV_CPU_HAS_SUPPORT_SSSE3) return (opt_SSSE3::fn args)
+#  define CV_CPU_CALL_SSSE3_(fn, args) if (CV_CPU_HAS_SUPPORT_SSSE3) return (opt_SSSE3::fn args)
+#else
+#  define CV_TRY_SSSE3 0
+#  define CV_CPU_FORCE_SSSE3 0
+#  define CV_CPU_HAS_SUPPORT_SSSE3 0
+#  define CV_CPU_CALL_SSSE3(fn, args)
+#  define CV_CPU_CALL_SSSE3_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_SSSE3(fn, args, mode, ...)  CV_CPU_CALL_SSSE3(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_SSE4_1
+#  define CV_TRY_SSE4_1 1
+#  define CV_CPU_FORCE_SSE4_1 1
+#  define CV_CPU_HAS_SUPPORT_SSE4_1 1
+#  define CV_CPU_CALL_SSE4_1(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_SSE4_1_(fn, args) return (opt_SSE4_1::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_SSE4_1
+#  define CV_TRY_SSE4_1 1
+#  define CV_CPU_FORCE_SSE4_1 0
+#  define CV_CPU_HAS_SUPPORT_SSE4_1 (cv::checkHardwareSupport(CV_CPU_SSE4_1))
+#  define CV_CPU_CALL_SSE4_1(fn, args) if (CV_CPU_HAS_SUPPORT_SSE4_1) return (opt_SSE4_1::fn args)
+#  define CV_CPU_CALL_SSE4_1_(fn, args) if (CV_CPU_HAS_SUPPORT_SSE4_1) return (opt_SSE4_1::fn args)
+#else
+#  define CV_TRY_SSE4_1 0
+#  define CV_CPU_FORCE_SSE4_1 0
+#  define CV_CPU_HAS_SUPPORT_SSE4_1 0
+#  define CV_CPU_CALL_SSE4_1(fn, args)
+#  define CV_CPU_CALL_SSE4_1_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_SSE4_1(fn, args, mode, ...)  CV_CPU_CALL_SSE4_1(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_SSE4_2
+#  define CV_TRY_SSE4_2 1
+#  define CV_CPU_FORCE_SSE4_2 1
+#  define CV_CPU_HAS_SUPPORT_SSE4_2 1
+#  define CV_CPU_CALL_SSE4_2(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_SSE4_2_(fn, args) return (opt_SSE4_2::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_SSE4_2
+#  define CV_TRY_SSE4_2 1
+#  define CV_CPU_FORCE_SSE4_2 0
+#  define CV_CPU_HAS_SUPPORT_SSE4_2 (cv::checkHardwareSupport(CV_CPU_SSE4_2))
+#  define CV_CPU_CALL_SSE4_2(fn, args) if (CV_CPU_HAS_SUPPORT_SSE4_2) return (opt_SSE4_2::fn args)
+#  define CV_CPU_CALL_SSE4_2_(fn, args) if (CV_CPU_HAS_SUPPORT_SSE4_2) return (opt_SSE4_2::fn args)
+#else
+#  define CV_TRY_SSE4_2 0
+#  define CV_CPU_FORCE_SSE4_2 0
+#  define CV_CPU_HAS_SUPPORT_SSE4_2 0
+#  define CV_CPU_CALL_SSE4_2(fn, args)
+#  define CV_CPU_CALL_SSE4_2_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_SSE4_2(fn, args, mode, ...)  CV_CPU_CALL_SSE4_2(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_POPCNT
+#  define CV_TRY_POPCNT 1
+#  define CV_CPU_FORCE_POPCNT 1
+#  define CV_CPU_HAS_SUPPORT_POPCNT 1
+#  define CV_CPU_CALL_POPCNT(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_POPCNT_(fn, args) return (opt_POPCNT::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_POPCNT
+#  define CV_TRY_POPCNT 1
+#  define CV_CPU_FORCE_POPCNT 0
+#  define CV_CPU_HAS_SUPPORT_POPCNT (cv::checkHardwareSupport(CV_CPU_POPCNT))
+#  define CV_CPU_CALL_POPCNT(fn, args) if (CV_CPU_HAS_SUPPORT_POPCNT) return (opt_POPCNT::fn args)
+#  define CV_CPU_CALL_POPCNT_(fn, args) if (CV_CPU_HAS_SUPPORT_POPCNT) return (opt_POPCNT::fn args)
+#else
+#  define CV_TRY_POPCNT 0
+#  define CV_CPU_FORCE_POPCNT 0
+#  define CV_CPU_HAS_SUPPORT_POPCNT 0
+#  define CV_CPU_CALL_POPCNT(fn, args)
+#  define CV_CPU_CALL_POPCNT_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_POPCNT(fn, args, mode, ...)  CV_CPU_CALL_POPCNT(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_AVX
+#  define CV_TRY_AVX 1
+#  define CV_CPU_FORCE_AVX 1
+#  define CV_CPU_HAS_SUPPORT_AVX 1
+#  define CV_CPU_CALL_AVX(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_AVX_(fn, args) return (opt_AVX::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_AVX
+#  define CV_TRY_AVX 1
+#  define CV_CPU_FORCE_AVX 0
+#  define CV_CPU_HAS_SUPPORT_AVX (cv::checkHardwareSupport(CV_CPU_AVX))
+#  define CV_CPU_CALL_AVX(fn, args) if (CV_CPU_HAS_SUPPORT_AVX) return (opt_AVX::fn args)
+#  define CV_CPU_CALL_AVX_(fn, args) if (CV_CPU_HAS_SUPPORT_AVX) return (opt_AVX::fn args)
+#else
+#  define CV_TRY_AVX 0
+#  define CV_CPU_FORCE_AVX 0
+#  define CV_CPU_HAS_SUPPORT_AVX 0
+#  define CV_CPU_CALL_AVX(fn, args)
+#  define CV_CPU_CALL_AVX_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_AVX(fn, args, mode, ...)  CV_CPU_CALL_AVX(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_FP16
+#  define CV_TRY_FP16 1
+#  define CV_CPU_FORCE_FP16 1
+#  define CV_CPU_HAS_SUPPORT_FP16 1
+#  define CV_CPU_CALL_FP16(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_FP16_(fn, args) return (opt_FP16::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_FP16
+#  define CV_TRY_FP16 1
+#  define CV_CPU_FORCE_FP16 0
+#  define CV_CPU_HAS_SUPPORT_FP16 (cv::checkHardwareSupport(CV_CPU_FP16))
+#  define CV_CPU_CALL_FP16(fn, args) if (CV_CPU_HAS_SUPPORT_FP16) return (opt_FP16::fn args)
+#  define CV_CPU_CALL_FP16_(fn, args) if (CV_CPU_HAS_SUPPORT_FP16) return (opt_FP16::fn args)
+#else
+#  define CV_TRY_FP16 0
+#  define CV_CPU_FORCE_FP16 0
+#  define CV_CPU_HAS_SUPPORT_FP16 0
+#  define CV_CPU_CALL_FP16(fn, args)
+#  define CV_CPU_CALL_FP16_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_FP16(fn, args, mode, ...)  CV_CPU_CALL_FP16(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_AVX2
+#  define CV_TRY_AVX2 1
+#  define CV_CPU_FORCE_AVX2 1
+#  define CV_CPU_HAS_SUPPORT_AVX2 1
+#  define CV_CPU_CALL_AVX2(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_AVX2_(fn, args) return (opt_AVX2::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_AVX2
+#  define CV_TRY_AVX2 1
+#  define CV_CPU_FORCE_AVX2 0
+#  define CV_CPU_HAS_SUPPORT_AVX2 (cv::checkHardwareSupport(CV_CPU_AVX2))
+#  define CV_CPU_CALL_AVX2(fn, args) if (CV_CPU_HAS_SUPPORT_AVX2) return (opt_AVX2::fn args)
+#  define CV_CPU_CALL_AVX2_(fn, args) if (CV_CPU_HAS_SUPPORT_AVX2) return (opt_AVX2::fn args)
+#else
+#  define CV_TRY_AVX2 0
+#  define CV_CPU_FORCE_AVX2 0
+#  define CV_CPU_HAS_SUPPORT_AVX2 0
+#  define CV_CPU_CALL_AVX2(fn, args)
+#  define CV_CPU_CALL_AVX2_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_AVX2(fn, args, mode, ...)  CV_CPU_CALL_AVX2(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_FMA3
+#  define CV_TRY_FMA3 1
+#  define CV_CPU_FORCE_FMA3 1
+#  define CV_CPU_HAS_SUPPORT_FMA3 1
+#  define CV_CPU_CALL_FMA3(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_FMA3_(fn, args) return (opt_FMA3::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_FMA3
+#  define CV_TRY_FMA3 1
+#  define CV_CPU_FORCE_FMA3 0
+#  define CV_CPU_HAS_SUPPORT_FMA3 (cv::checkHardwareSupport(CV_CPU_FMA3))
+#  define CV_CPU_CALL_FMA3(fn, args) if (CV_CPU_HAS_SUPPORT_FMA3) return (opt_FMA3::fn args)
+#  define CV_CPU_CALL_FMA3_(fn, args) if (CV_CPU_HAS_SUPPORT_FMA3) return (opt_FMA3::fn args)
+#else
+#  define CV_TRY_FMA3 0
+#  define CV_CPU_FORCE_FMA3 0
+#  define CV_CPU_HAS_SUPPORT_FMA3 0
+#  define CV_CPU_CALL_FMA3(fn, args)
+#  define CV_CPU_CALL_FMA3_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_FMA3(fn, args, mode, ...)  CV_CPU_CALL_FMA3(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_AVX_512F
+#  define CV_TRY_AVX_512F 1
+#  define CV_CPU_FORCE_AVX_512F 1
+#  define CV_CPU_HAS_SUPPORT_AVX_512F 1
+#  define CV_CPU_CALL_AVX_512F(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_AVX_512F_(fn, args) return (opt_AVX_512F::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_AVX_512F
+#  define CV_TRY_AVX_512F 1
+#  define CV_CPU_FORCE_AVX_512F 0
+#  define CV_CPU_HAS_SUPPORT_AVX_512F (cv::checkHardwareSupport(CV_CPU_AVX_512F))
+#  define CV_CPU_CALL_AVX_512F(fn, args) if (CV_CPU_HAS_SUPPORT_AVX_512F) return (opt_AVX_512F::fn args)
+#  define CV_CPU_CALL_AVX_512F_(fn, args) if (CV_CPU_HAS_SUPPORT_AVX_512F) return (opt_AVX_512F::fn args)
+#else
+#  define CV_TRY_AVX_512F 0
+#  define CV_CPU_FORCE_AVX_512F 0
+#  define CV_CPU_HAS_SUPPORT_AVX_512F 0
+#  define CV_CPU_CALL_AVX_512F(fn, args)
+#  define CV_CPU_CALL_AVX_512F_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_AVX_512F(fn, args, mode, ...)  CV_CPU_CALL_AVX_512F(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_AVX512_COMMON
+#  define CV_TRY_AVX512_COMMON 1
+#  define CV_CPU_FORCE_AVX512_COMMON 1
+#  define CV_CPU_HAS_SUPPORT_AVX512_COMMON 1
+#  define CV_CPU_CALL_AVX512_COMMON(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_AVX512_COMMON_(fn, args) return (opt_AVX512_COMMON::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_AVX512_COMMON
+#  define CV_TRY_AVX512_COMMON 1
+#  define CV_CPU_FORCE_AVX512_COMMON 0
+#  define CV_CPU_HAS_SUPPORT_AVX512_COMMON (cv::checkHardwareSupport(CV_CPU_AVX512_COMMON))
+#  define CV_CPU_CALL_AVX512_COMMON(fn, args) if (CV_CPU_HAS_SUPPORT_AVX512_COMMON) return (opt_AVX512_COMMON::fn args)
+#  define CV_CPU_CALL_AVX512_COMMON_(fn, args) if (CV_CPU_HAS_SUPPORT_AVX512_COMMON) return (opt_AVX512_COMMON::fn args)
+#else
+#  define CV_TRY_AVX512_COMMON 0
+#  define CV_CPU_FORCE_AVX512_COMMON 0
+#  define CV_CPU_HAS_SUPPORT_AVX512_COMMON 0
+#  define CV_CPU_CALL_AVX512_COMMON(fn, args)
+#  define CV_CPU_CALL_AVX512_COMMON_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_AVX512_COMMON(fn, args, mode, ...)  CV_CPU_CALL_AVX512_COMMON(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_AVX512_KNL
+#  define CV_TRY_AVX512_KNL 1
+#  define CV_CPU_FORCE_AVX512_KNL 1
+#  define CV_CPU_HAS_SUPPORT_AVX512_KNL 1
+#  define CV_CPU_CALL_AVX512_KNL(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_AVX512_KNL_(fn, args) return (opt_AVX512_KNL::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_AVX512_KNL
+#  define CV_TRY_AVX512_KNL 1
+#  define CV_CPU_FORCE_AVX512_KNL 0
+#  define CV_CPU_HAS_SUPPORT_AVX512_KNL (cv::checkHardwareSupport(CV_CPU_AVX512_KNL))
+#  define CV_CPU_CALL_AVX512_KNL(fn, args) if (CV_CPU_HAS_SUPPORT_AVX512_KNL) return (opt_AVX512_KNL::fn args)
+#  define CV_CPU_CALL_AVX512_KNL_(fn, args) if (CV_CPU_HAS_SUPPORT_AVX512_KNL) return (opt_AVX512_KNL::fn args)
+#else
+#  define CV_TRY_AVX512_KNL 0
+#  define CV_CPU_FORCE_AVX512_KNL 0
+#  define CV_CPU_HAS_SUPPORT_AVX512_KNL 0
+#  define CV_CPU_CALL_AVX512_KNL(fn, args)
+#  define CV_CPU_CALL_AVX512_KNL_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_AVX512_KNL(fn, args, mode, ...)  CV_CPU_CALL_AVX512_KNL(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_AVX512_KNM
+#  define CV_TRY_AVX512_KNM 1
+#  define CV_CPU_FORCE_AVX512_KNM 1
+#  define CV_CPU_HAS_SUPPORT_AVX512_KNM 1
+#  define CV_CPU_CALL_AVX512_KNM(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_AVX512_KNM_(fn, args) return (opt_AVX512_KNM::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_AVX512_KNM
+#  define CV_TRY_AVX512_KNM 1
+#  define CV_CPU_FORCE_AVX512_KNM 0
+#  define CV_CPU_HAS_SUPPORT_AVX512_KNM (cv::checkHardwareSupport(CV_CPU_AVX512_KNM))
+#  define CV_CPU_CALL_AVX512_KNM(fn, args) if (CV_CPU_HAS_SUPPORT_AVX512_KNM) return (opt_AVX512_KNM::fn args)
+#  define CV_CPU_CALL_AVX512_KNM_(fn, args) if (CV_CPU_HAS_SUPPORT_AVX512_KNM) return (opt_AVX512_KNM::fn args)
+#else
+#  define CV_TRY_AVX512_KNM 0
+#  define CV_CPU_FORCE_AVX512_KNM 0
+#  define CV_CPU_HAS_SUPPORT_AVX512_KNM 0
+#  define CV_CPU_CALL_AVX512_KNM(fn, args)
+#  define CV_CPU_CALL_AVX512_KNM_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_AVX512_KNM(fn, args, mode, ...)  CV_CPU_CALL_AVX512_KNM(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_AVX512_SKX
+#  define CV_TRY_AVX512_SKX 1
+#  define CV_CPU_FORCE_AVX512_SKX 1
+#  define CV_CPU_HAS_SUPPORT_AVX512_SKX 1
+#  define CV_CPU_CALL_AVX512_SKX(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_AVX512_SKX_(fn, args) return (opt_AVX512_SKX::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_AVX512_SKX
+#  define CV_TRY_AVX512_SKX 1
+#  define CV_CPU_FORCE_AVX512_SKX 0
+#  define CV_CPU_HAS_SUPPORT_AVX512_SKX (cv::checkHardwareSupport(CV_CPU_AVX512_SKX))
+#  define CV_CPU_CALL_AVX512_SKX(fn, args) if (CV_CPU_HAS_SUPPORT_AVX512_SKX) return (opt_AVX512_SKX::fn args)
+#  define CV_CPU_CALL_AVX512_SKX_(fn, args) if (CV_CPU_HAS_SUPPORT_AVX512_SKX) return (opt_AVX512_SKX::fn args)
+#else
+#  define CV_TRY_AVX512_SKX 0
+#  define CV_CPU_FORCE_AVX512_SKX 0
+#  define CV_CPU_HAS_SUPPORT_AVX512_SKX 0
+#  define CV_CPU_CALL_AVX512_SKX(fn, args)
+#  define CV_CPU_CALL_AVX512_SKX_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_AVX512_SKX(fn, args, mode, ...)  CV_CPU_CALL_AVX512_SKX(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_AVX512_CNL
+#  define CV_TRY_AVX512_CNL 1
+#  define CV_CPU_FORCE_AVX512_CNL 1
+#  define CV_CPU_HAS_SUPPORT_AVX512_CNL 1
+#  define CV_CPU_CALL_AVX512_CNL(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_AVX512_CNL_(fn, args) return (opt_AVX512_CNL::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_AVX512_CNL
+#  define CV_TRY_AVX512_CNL 1
+#  define CV_CPU_FORCE_AVX512_CNL 0
+#  define CV_CPU_HAS_SUPPORT_AVX512_CNL (cv::checkHardwareSupport(CV_CPU_AVX512_CNL))
+#  define CV_CPU_CALL_AVX512_CNL(fn, args) if (CV_CPU_HAS_SUPPORT_AVX512_CNL) return (opt_AVX512_CNL::fn args)
+#  define CV_CPU_CALL_AVX512_CNL_(fn, args) if (CV_CPU_HAS_SUPPORT_AVX512_CNL) return (opt_AVX512_CNL::fn args)
+#else
+#  define CV_TRY_AVX512_CNL 0
+#  define CV_CPU_FORCE_AVX512_CNL 0
+#  define CV_CPU_HAS_SUPPORT_AVX512_CNL 0
+#  define CV_CPU_CALL_AVX512_CNL(fn, args)
+#  define CV_CPU_CALL_AVX512_CNL_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_AVX512_CNL(fn, args, mode, ...)  CV_CPU_CALL_AVX512_CNL(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_AVX512_CLX
+#  define CV_TRY_AVX512_CLX 1
+#  define CV_CPU_FORCE_AVX512_CLX 1
+#  define CV_CPU_HAS_SUPPORT_AVX512_CLX 1
+#  define CV_CPU_CALL_AVX512_CLX(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_AVX512_CLX_(fn, args) return (opt_AVX512_CLX::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_AVX512_CLX
+#  define CV_TRY_AVX512_CLX 1
+#  define CV_CPU_FORCE_AVX512_CLX 0
+#  define CV_CPU_HAS_SUPPORT_AVX512_CLX (cv::checkHardwareSupport(CV_CPU_AVX512_CLX))
+#  define CV_CPU_CALL_AVX512_CLX(fn, args) if (CV_CPU_HAS_SUPPORT_AVX512_CLX) return (opt_AVX512_CLX::fn args)
+#  define CV_CPU_CALL_AVX512_CLX_(fn, args) if (CV_CPU_HAS_SUPPORT_AVX512_CLX) return (opt_AVX512_CLX::fn args)
+#else
+#  define CV_TRY_AVX512_CLX 0
+#  define CV_CPU_FORCE_AVX512_CLX 0
+#  define CV_CPU_HAS_SUPPORT_AVX512_CLX 0
+#  define CV_CPU_CALL_AVX512_CLX(fn, args)
+#  define CV_CPU_CALL_AVX512_CLX_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_AVX512_CLX(fn, args, mode, ...)  CV_CPU_CALL_AVX512_CLX(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_AVX512_ICL
+#  define CV_TRY_AVX512_ICL 1
+#  define CV_CPU_FORCE_AVX512_ICL 1
+#  define CV_CPU_HAS_SUPPORT_AVX512_ICL 1
+#  define CV_CPU_CALL_AVX512_ICL(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_AVX512_ICL_(fn, args) return (opt_AVX512_ICL::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_AVX512_ICL
+#  define CV_TRY_AVX512_ICL 1
+#  define CV_CPU_FORCE_AVX512_ICL 0
+#  define CV_CPU_HAS_SUPPORT_AVX512_ICL (cv::checkHardwareSupport(CV_CPU_AVX512_ICL))
+#  define CV_CPU_CALL_AVX512_ICL(fn, args) if (CV_CPU_HAS_SUPPORT_AVX512_ICL) return (opt_AVX512_ICL::fn args)
+#  define CV_CPU_CALL_AVX512_ICL_(fn, args) if (CV_CPU_HAS_SUPPORT_AVX512_ICL) return (opt_AVX512_ICL::fn args)
+#else
+#  define CV_TRY_AVX512_ICL 0
+#  define CV_CPU_FORCE_AVX512_ICL 0
+#  define CV_CPU_HAS_SUPPORT_AVX512_ICL 0
+#  define CV_CPU_CALL_AVX512_ICL(fn, args)
+#  define CV_CPU_CALL_AVX512_ICL_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_AVX512_ICL(fn, args, mode, ...)  CV_CPU_CALL_AVX512_ICL(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_NEON
+#  define CV_TRY_NEON 1
+#  define CV_CPU_FORCE_NEON 1
+#  define CV_CPU_HAS_SUPPORT_NEON 1
+#  define CV_CPU_CALL_NEON(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_NEON_(fn, args) return (opt_NEON::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_NEON
+#  define CV_TRY_NEON 1
+#  define CV_CPU_FORCE_NEON 0
+#  define CV_CPU_HAS_SUPPORT_NEON (cv::checkHardwareSupport(CV_CPU_NEON))
+#  define CV_CPU_CALL_NEON(fn, args) if (CV_CPU_HAS_SUPPORT_NEON) return (opt_NEON::fn args)
+#  define CV_CPU_CALL_NEON_(fn, args) if (CV_CPU_HAS_SUPPORT_NEON) return (opt_NEON::fn args)
+#else
+#  define CV_TRY_NEON 0
+#  define CV_CPU_FORCE_NEON 0
+#  define CV_CPU_HAS_SUPPORT_NEON 0
+#  define CV_CPU_CALL_NEON(fn, args)
+#  define CV_CPU_CALL_NEON_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_NEON(fn, args, mode, ...)  CV_CPU_CALL_NEON(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_MSA
+#  define CV_TRY_MSA 1
+#  define CV_CPU_FORCE_MSA 1
+#  define CV_CPU_HAS_SUPPORT_MSA 1
+#  define CV_CPU_CALL_MSA(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_MSA_(fn, args) return (opt_MSA::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_MSA
+#  define CV_TRY_MSA 1
+#  define CV_CPU_FORCE_MSA 0
+#  define CV_CPU_HAS_SUPPORT_MSA (cv::checkHardwareSupport(CV_CPU_MSA))
+#  define CV_CPU_CALL_MSA(fn, args) if (CV_CPU_HAS_SUPPORT_MSA) return (opt_MSA::fn args)
+#  define CV_CPU_CALL_MSA_(fn, args) if (CV_CPU_HAS_SUPPORT_MSA) return (opt_MSA::fn args)
+#else
+#  define CV_TRY_MSA 0
+#  define CV_CPU_FORCE_MSA 0
+#  define CV_CPU_HAS_SUPPORT_MSA 0
+#  define CV_CPU_CALL_MSA(fn, args)
+#  define CV_CPU_CALL_MSA_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_MSA(fn, args, mode, ...)  CV_CPU_CALL_MSA(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_VSX
+#  define CV_TRY_VSX 1
+#  define CV_CPU_FORCE_VSX 1
+#  define CV_CPU_HAS_SUPPORT_VSX 1
+#  define CV_CPU_CALL_VSX(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_VSX_(fn, args) return (opt_VSX::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_VSX
+#  define CV_TRY_VSX 1
+#  define CV_CPU_FORCE_VSX 0
+#  define CV_CPU_HAS_SUPPORT_VSX (cv::checkHardwareSupport(CV_CPU_VSX))
+#  define CV_CPU_CALL_VSX(fn, args) if (CV_CPU_HAS_SUPPORT_VSX) return (opt_VSX::fn args)
+#  define CV_CPU_CALL_VSX_(fn, args) if (CV_CPU_HAS_SUPPORT_VSX) return (opt_VSX::fn args)
+#else
+#  define CV_TRY_VSX 0
+#  define CV_CPU_FORCE_VSX 0
+#  define CV_CPU_HAS_SUPPORT_VSX 0
+#  define CV_CPU_CALL_VSX(fn, args)
+#  define CV_CPU_CALL_VSX_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_VSX(fn, args, mode, ...)  CV_CPU_CALL_VSX(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#if !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_COMPILE_VSX3
+#  define CV_TRY_VSX3 1
+#  define CV_CPU_FORCE_VSX3 1
+#  define CV_CPU_HAS_SUPPORT_VSX3 1
+#  define CV_CPU_CALL_VSX3(fn, args) return (cpu_baseline::fn args)
+#  define CV_CPU_CALL_VSX3_(fn, args) return (opt_VSX3::fn args)
+#elif !defined CV_DISABLE_OPTIMIZATION && defined CV_ENABLE_INTRINSICS && defined CV_CPU_DISPATCH_COMPILE_VSX3
+#  define CV_TRY_VSX3 1
+#  define CV_CPU_FORCE_VSX3 0
+#  define CV_CPU_HAS_SUPPORT_VSX3 (cv::checkHardwareSupport(CV_CPU_VSX3))
+#  define CV_CPU_CALL_VSX3(fn, args) if (CV_CPU_HAS_SUPPORT_VSX3) return (opt_VSX3::fn args)
+#  define CV_CPU_CALL_VSX3_(fn, args) if (CV_CPU_HAS_SUPPORT_VSX3) return (opt_VSX3::fn args)
+#else
+#  define CV_TRY_VSX3 0
+#  define CV_CPU_FORCE_VSX3 0
+#  define CV_CPU_HAS_SUPPORT_VSX3 0
+#  define CV_CPU_CALL_VSX3(fn, args)
+#  define CV_CPU_CALL_VSX3_(fn, args)
+#endif
+#define __CV_CPU_DISPATCH_CHAIN_VSX3(fn, args, mode, ...)  CV_CPU_CALL_VSX3(fn, args); __CV_EXPAND(__CV_CPU_DISPATCH_CHAIN_ ## mode(fn, args, __VA_ARGS__))
+
+#define CV_CPU_CALL_BASELINE(fn, args) return (cpu_baseline::fn args)
+#define __CV_CPU_DISPATCH_CHAIN_BASELINE(fn, args, mode, ...)  CV_CPU_CALL_BASELINE(fn, args) /* last in sequence */
+
+OPENCV_CPU_DISPATCH_DEFINITIONS_CONFIGMAKE=
+
+
+#define CV_CPU_DISPATCH_FEATURES 0 \
+
+OPENCV_DEBUG_POSTFIX=
+OPENCV_DEPHELPER=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CMakeFiles/dephelper
+OPENCV_DLLVERSION=
+OPENCV_DOC_INSTALL_PATH=share/doc/opencv4
+OPENCV_DOWNLOAD_LOG=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CMakeDownloadLog.txt
+OPENCV_DOWNLOAD_PARAMS=INACTIVITY_TIMEOUT;60;TIMEOUT;600
+OPENCV_DOWNLOAD_PATH=/home/shc/projects/cheshire-linux-nvdla/opencv/.cache
+OPENCV_DOWNLOAD_TRIES_LIST=1
+OPENCV_DOWNLOAD_WITH_CURL=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/download_with_curl.sh
+OPENCV_DOWNLOAD_WITH_WGET=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/download_with_wget.sh
+OPENCV_DUMP_HOOKS_FLOW=OFF
+OPENCV_ENABLE_MEMALIGN=ON
+OPENCV_ENABLE_MEMORY_SANITIZER=OFF
+OPENCV_ENABLE_NONFREE=OFF
+OPENCV_EXTRA_CXX_FLAGS= -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden
+OPENCV_EXTRA_C_FLAGS= -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden
+OPENCV_EXTRA_EXE_LINKER_FLAGS= -Wl,--gc-sections
+OPENCV_EXTRA_FLAGS_DEBUG= -O0 -DDEBUG -D_DEBUG
+OPENCV_EXTRA_FLAGS_RELEASE= -DNDEBUG
+OPENCV_EXTRA_MODULES_PATH=
+OPENCV_EXTRA_SHARED_LINKER_FLAGS= -Wl,--gc-sections
+OPENCV_FORCE_3RDPARTY_BUILD=OFF
+OPENCV_GENERATE_PKGCONFIG=OFF
+OPENCV_GENERATE_SETUPVARS=ON
+OPENCV_INCLUDE_INSTALL_PATH=include/opencv4
+OPENCV_INITIAL_PASS=OFF
+OPENCV_JAR_INSTALL_PATH=share/java/opencv4
+OPENCV_JNI_BIN_INSTALL_PATH=share/java/opencv4
+OPENCV_JNI_INSTALL_PATH=share/java/opencv4
+OPENCV_LIBVERSION=4.2.0
+OPENCV_LIB_ARCHIVE_INSTALL_PATH=lib
+OPENCV_LIB_INSTALL_PATH=lib
+OPENCV_LIB_RUNTIME_DIR_RELATIVE_CMAKECONFIG=../lib
+OPENCV_LICENSES_INSTALL_PATH=share/licenses/opencv4
+OPENCV_LICENSE_FILE=/home/shc/projects/cheshire-linux-nvdla/opencv/LICENSE
+OPENCV_LINKER_LIBS=dl;m;pthread;rt
+OPENCV_MATHJAX_RELPATH=https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0
+OPENCV_MODULES_BUILD=opencv_core;opencv_imgproc;opencv_imgcodecs
+OPENCV_MODULES_BUILD_ST=core;imgcodecs;imgproc
+OPENCV_MODULES_CONFIGCMAKE=opencv_core;opencv_imgcodecs;opencv_imgproc
+OPENCV_MODULES_DISABLED_AUTO=opencv_calib3d;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_java_bindings_generator;opencv_ml;opencv_objdetect;opencv_photo;opencv_python_bindings_generator;opencv_python_tests;opencv_stitching;opencv_video;opencv_videoio
+OPENCV_MODULES_DISABLED_AUTO_ST=calib3d;dnn;features2d;flann;gapi;highgui;java_bindings_generator;ml;objdetect;photo;python_bindings_generator;python_tests;stitching;video;videoio
+OPENCV_MODULES_DISABLED_FORCE=opencv_java;opencv_js;opencv_python2;opencv_python3;opencv_ts
+OPENCV_MODULES_DISABLED_FORCE_ST=java;js;python2;python3;ts
+OPENCV_MODULES_DISABLED_USER=opencv_world
+OPENCV_MODULES_DISABLED_USER_ST=world
+OPENCV_MODULES_EXTRA=java_bindings_generator;python2;python3;python_bindings_generator;python_tests
+OPENCV_MODULES_MAIN=core;imgproc;imgcodecs;videoio;highgui;video;calib3d;features2d;objdetect;dnn;ml;flann;photo;stitching;gapi;java;js;ts;world
+OPENCV_MODULES_PUBLIC=opencv_core;opencv_imgcodecs;opencv_imgproc
+OPENCV_MODULE_DEFINITIONS_CONFIGMAKE=#define HAVE_OPENCV_CORE
+#define HAVE_OPENCV_IMGCODECS
+#define HAVE_OPENCV_IMGPROC
+
+
+OPENCV_MODULE_opencv_calib3d_CLASS=PUBLIC
+OPENCV_MODULE_opencv_calib3d_DESCRIPTION=Camera Calibration and 3D Reconstruction
+OPENCV_MODULE_opencv_calib3d_IS_PART_OF_WORLD=ON
+OPENCV_MODULE_opencv_calib3d_LABEL=Main;opencv_calib3d
+OPENCV_MODULE_opencv_calib3d_LINK_DEPS=
+OPENCV_MODULE_opencv_calib3d_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/calib3d
+OPENCV_MODULE_opencv_calib3d_OPT_DEPS=
+OPENCV_MODULE_opencv_calib3d_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_calib3d_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_calib3d_REQ_DEPS=opencv_imgproc;opencv_features2d;opencv_flann
+OPENCV_MODULE_opencv_calib3d_WRAPPERS=java;js;python_bindings_generator;python2;python3
+OPENCV_MODULE_opencv_core_BINARY_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/modules/core
+OPENCV_MODULE_opencv_core_CLASS=PUBLIC
+OPENCV_MODULE_opencv_core_DEPS=
+OPENCV_MODULE_opencv_core_DEPS_EXT=
+OPENCV_MODULE_opencv_core_DEPS_TO_LINK=
+OPENCV_MODULE_opencv_core_DESCRIPTION=The Core Functionality
+OPENCV_MODULE_opencv_core_HEADERS=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opencl/ocl_defs.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opencl/opencl_info.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opencl/opencl_svm.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_clamdblas.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_clamdfft.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_core.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_core_wrappers.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_gl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_gl_wrappers.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opencl/runtime/opencl_clamdblas.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opencl/runtime/opencl_clamdfft.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opencl/runtime/opencl_core.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opencl/runtime/opencl_core_wrappers.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opencl/runtime/opencl_gl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opencl/runtime/opencl_gl_wrappers.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opencl/runtime/opencl_svm_20.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opencl/runtime/opencl_svm_definitions.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opencl/runtime/opencl_svm_hsa_extension.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/block.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/border_interpolate.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/color.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/common.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/datamov_utils.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/dynamic_smem.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/emulation.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/filters.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/funcattrib.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/functional.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/limits.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/reduce.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/saturate_cast.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/scan.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/simd_functions.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/transform.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/type_traits.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/utility.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/vec_distance.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/vec_math.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/vec_traits.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/warp.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/warp_reduce.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/warp_shuffle.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/detail/color_detail.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/detail/reduce.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/detail/reduce_key_val.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/detail/transform_detail.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/detail/type_traits_detail.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda/detail/vec_distance_detail.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/affine.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/async.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/base.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/bindings_utils.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/bufferpool.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/check.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/core.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/core_c.h;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda.inl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda_stream_accessor.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cuda_types.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cv_cpu_dispatch.h;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cv_cpu_helper.h;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cvdef.h;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cvstd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/cvstd_wrapper.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/directx.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/eigen.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/fast_math.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/hal/hal.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/hal/interface.h;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/hal/intrin.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/hal/intrin_avx.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/hal/intrin_avx512.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/hal/intrin_cpp.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/hal/intrin_forward.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/hal/intrin_msa.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/hal/intrin_neon.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/hal/intrin_sse.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/hal/intrin_sse_em.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/hal/intrin_vsx.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/hal/intrin_wasm.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/hal/msa_macros.h;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/hal/simd_utils.impl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/mat.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/mat.inl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/matx.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/neon_utils.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/ocl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/ocl_genbase.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/opengl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/operations.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/optim.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/ovx.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/persistence.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/private.cuda.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/private.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/saturate.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/simd_intrinsics.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/softfloat.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/sse_utils.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/traits.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/types.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/types_c.h;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/utility.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/utils/allocator_stats.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/utils/allocator_stats.impl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/utils/configuration.private.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/utils/filesystem.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/utils/filesystem.private.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/utils/instrumentation.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/utils/lock.private.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/utils/logger.defines.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/utils/logger.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/utils/logtag.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/utils/tls.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/utils/trace.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/utils/trace.private.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/va_intel.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/version.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/vsx_utils.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/detail/async_promise.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/detail/exception_ptr.hpp
+OPENCV_MODULE_opencv_core_IS_PART_OF_WORLD=ON
+OPENCV_MODULE_opencv_core_LABEL=Main;opencv_core
+OPENCV_MODULE_opencv_core_LINK_DEPS=
+OPENCV_MODULE_opencv_core_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core
+OPENCV_MODULE_opencv_core_OPT_DEPS=opencv_cudev
+OPENCV_MODULE_opencv_core_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_core_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_core_REQ_DEPS=
+OPENCV_MODULE_opencv_core_SOURCES=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/modules/core/version_string.inc;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/algorithm.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/alloc.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/arithm.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/arithm.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/array.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/async.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/batch_distance.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/bindings_utils.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/channels.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/check.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/command_line_parser.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/conjugate_gradient.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/convert.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/convert_c.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/convert_scale.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/copy.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/count_non_zero.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/cuda_gpu_mat.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/cuda_host_mem.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/cuda_info.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/cuda_stream.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/datastructs.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/directx.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/downhill_simplex.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/dxt.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/gl_core_3_1.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/glob.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/hal_internal.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/kmeans.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/lapack.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/lda.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/logger.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/lpsolver.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/lut.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/mathfuncs.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/mathfuncs_core.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/matmul.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/matrix.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/matrix_c.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/matrix_decomp.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/matrix_expressions.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/matrix_iterator.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/matrix_operations.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/matrix_sparse.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/matrix_wrap.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/mean.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/merge.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/minmax.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/norm.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/ocl.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/runtime/opencl_clamdblas.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/runtime/opencl_clamdfft.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/runtime/opencl_core.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opengl.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/out.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/ovx.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/parallel.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/parallel_impl.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/pca.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/persistence.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/persistence_json.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/persistence_types.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/persistence_xml.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/persistence_yml.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/rand.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/softfloat.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/split.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/stat.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/stat_c.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/stl.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/sum.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/system.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/tables.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/trace.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/types.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/umatrix.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/utils/datafile.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/utils/filesystem.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/utils/logtagconfigparser.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/utils/logtagmanager.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/utils/samples.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/va_intel.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/arithm.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/convert.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/copymakeborder.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/copyset.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/cvtclr_dx.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/fft.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/flip.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/gemm.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/halfconvert.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/inrange.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/intel_gemm.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/lut.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/meanstddev.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/minmaxloc.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/mixchannels.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/mulspectrums.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/normalize.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/reduce.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/reduce2.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/repeat.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/set_identity.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/split_merge.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/transpose.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/modules/core/opencl_kernels_core.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/modules/core/opencl_kernels_core.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/arithm.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/arithm_ipp.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/bufferpool.impl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/convert.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/convert.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/convert_scale.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/count_non_zero.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/directx.inc.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/gl_core_3_1.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/hal_internal.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/hal_replacement.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/intel_gpu_gemm.inl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/mathfuncs.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/mathfuncs_core.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/matmul.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/mean.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/merge.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/ocl_deprecated.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_clamdblas_impl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_clamdfft_impl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_core_impl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_core_static_impl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_gl_impl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/runtime/autogenerated/opencl_gl_static_impl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/opencl/runtime/runtime_common.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/parallel_impl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/persistence.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/precomp.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/split.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/stat.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/stat.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/sum.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/umatrix.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/utils/logtagconfig.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/utils/logtagconfigparser.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/src/utils/logtagmanager.hpp
+OPENCV_MODULE_opencv_core_WRAPPERS=java;js;python_bindings_generator;python2;python3
+OPENCV_MODULE_opencv_dnn_CLASS=PUBLIC
+OPENCV_MODULE_opencv_dnn_DESCRIPTION=Deep neural network module. It allows to load models from different frameworks and to make forward pass
+OPENCV_MODULE_opencv_dnn_IS_PART_OF_WORLD=ON
+OPENCV_MODULE_opencv_dnn_LABEL=Main;opencv_dnn
+OPENCV_MODULE_opencv_dnn_LINK_DEPS=
+OPENCV_MODULE_opencv_dnn_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/dnn
+OPENCV_MODULE_opencv_dnn_OPT_DEPS=
+OPENCV_MODULE_opencv_dnn_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_dnn_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_dnn_REQ_DEPS=opencv_core;opencv_imgproc
+OPENCV_MODULE_opencv_dnn_WRAPPERS=java;js;python_bindings_generator;python2;python3
+OPENCV_MODULE_opencv_features2d_CLASS=PUBLIC
+OPENCV_MODULE_opencv_features2d_DESCRIPTION=2D Features Framework
+OPENCV_MODULE_opencv_features2d_IS_PART_OF_WORLD=ON
+OPENCV_MODULE_opencv_features2d_LABEL=Main;opencv_features2d
+OPENCV_MODULE_opencv_features2d_LINK_DEPS=
+OPENCV_MODULE_opencv_features2d_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/features2d
+OPENCV_MODULE_opencv_features2d_OPT_DEPS=opencv_flann
+OPENCV_MODULE_opencv_features2d_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_features2d_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_features2d_REQ_DEPS=opencv_imgproc
+OPENCV_MODULE_opencv_features2d_WRAPPERS=java;js;python_bindings_generator;python2;python3
+OPENCV_MODULE_opencv_flann_CLASS=PUBLIC
+OPENCV_MODULE_opencv_flann_DESCRIPTION=Clustering and Search in Multi-Dimensional Spaces
+OPENCV_MODULE_opencv_flann_IS_PART_OF_WORLD=ON
+OPENCV_MODULE_opencv_flann_LABEL=Main;opencv_flann
+OPENCV_MODULE_opencv_flann_LINK_DEPS=
+OPENCV_MODULE_opencv_flann_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/flann
+OPENCV_MODULE_opencv_flann_OPT_DEPS=
+OPENCV_MODULE_opencv_flann_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_flann_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_flann_REQ_DEPS=opencv_core
+OPENCV_MODULE_opencv_flann_WRAPPERS=python_bindings_generator;python2;python3
+OPENCV_MODULE_opencv_gapi_CLASS=PUBLIC
+OPENCV_MODULE_opencv_gapi_DESCRIPTION=OpenCV G-API Core Module
+OPENCV_MODULE_opencv_gapi_IS_PART_OF_WORLD=ON
+OPENCV_MODULE_opencv_gapi_LABEL=Main;opencv_gapi
+OPENCV_MODULE_opencv_gapi_LINK_DEPS=
+OPENCV_MODULE_opencv_gapi_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/gapi
+OPENCV_MODULE_opencv_gapi_OPT_DEPS=
+OPENCV_MODULE_opencv_gapi_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_gapi_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_gapi_REQ_DEPS=opencv_imgproc
+OPENCV_MODULE_opencv_gapi_WRAPPERS=
+OPENCV_MODULE_opencv_highgui_CLASS=PUBLIC
+OPENCV_MODULE_opencv_highgui_DESCRIPTION=High-level GUI
+OPENCV_MODULE_opencv_highgui_IS_PART_OF_WORLD=ON
+OPENCV_MODULE_opencv_highgui_LABEL=Main;opencv_highgui
+OPENCV_MODULE_opencv_highgui_LINK_DEPS=
+OPENCV_MODULE_opencv_highgui_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/highgui
+OPENCV_MODULE_opencv_highgui_OPT_DEPS=opencv_videoio
+OPENCV_MODULE_opencv_highgui_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_highgui_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_highgui_REQ_DEPS=opencv_imgproc;opencv_imgcodecs
+OPENCV_MODULE_opencv_highgui_WRAPPERS=java;python_bindings_generator;python2;python3
+OPENCV_MODULE_opencv_imgcodecs_BINARY_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/modules/imgcodecs
+OPENCV_MODULE_opencv_imgcodecs_CLASS=PUBLIC
+OPENCV_MODULE_opencv_imgcodecs_DEPS=opencv_core;opencv_imgproc
+OPENCV_MODULE_opencv_imgcodecs_DEPS_EXT=
+OPENCV_MODULE_opencv_imgcodecs_DEPS_TO_LINK=opencv_core;opencv_imgproc
+OPENCV_MODULE_opencv_imgcodecs_DESCRIPTION=Image I/O
+OPENCV_MODULE_opencv_imgcodecs_HEADERS=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/include/opencv2/imgcodecs.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/include/opencv2/imgcodecs/imgcodecs.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/include/opencv2/imgcodecs/imgcodecs_c.h;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/include/opencv2/imgcodecs/ios.h;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/include/opencv2/imgcodecs/legacy/constants_c.h
+OPENCV_MODULE_opencv_imgcodecs_IS_PART_OF_WORLD=ON
+OPENCV_MODULE_opencv_imgcodecs_LABEL=Main;opencv_imgcodecs
+OPENCV_MODULE_opencv_imgcodecs_LINK_DEPS=;zlib;libjpeg-turbo;libwebp;libpng;libtiff;libjasper
+OPENCV_MODULE_opencv_imgcodecs_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs
+OPENCV_MODULE_opencv_imgcodecs_OPT_DEPS=
+OPENCV_MODULE_opencv_imgcodecs_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_imgcodecs_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_imgcodecs_REQ_DEPS=opencv_imgproc
+OPENCV_MODULE_opencv_imgcodecs_SOURCES=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/loadsave.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/utils.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/precomp.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/utils.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_base.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_bmp.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_exr.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_gdal.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_gdcm.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_hdr.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_jpeg.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_jpeg2000.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_pam.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_pfm.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_png.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_pxm.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_sunras.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_tiff.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_webp.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/bitstrm.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/rgbe.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/exif.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_base.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_bmp.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_exr.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_gdal.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_gdcm.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_hdr.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_jpeg.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_jpeg2000.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_pam.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_pfm.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_png.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_pxm.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_sunras.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_tiff.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmt_webp.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/grfmts.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/bitstrm.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/rgbe.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs/src/exif.hpp
+OPENCV_MODULE_opencv_imgcodecs_WRAPPERS=java;python_bindings_generator;python2;python3
+OPENCV_MODULE_opencv_imgproc_BINARY_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/modules/imgproc
+OPENCV_MODULE_opencv_imgproc_CLASS=PUBLIC
+OPENCV_MODULE_opencv_imgproc_DEPS=opencv_core
+OPENCV_MODULE_opencv_imgproc_DEPS_EXT=
+OPENCV_MODULE_opencv_imgproc_DEPS_TO_LINK=opencv_core
+OPENCV_MODULE_opencv_imgproc_DESCRIPTION=Image Processing
+OPENCV_MODULE_opencv_imgproc_HEADERS=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/include/opencv2/imgproc.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/include/opencv2/imgproc/hal/hal.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/include/opencv2/imgproc/hal/interface.h;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/include/opencv2/imgproc/imgproc.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/include/opencv2/imgproc/imgproc_c.h;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/include/opencv2/imgproc/types_c.h;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/include/opencv2/imgproc/detail/gcgraph.hpp
+OPENCV_MODULE_opencv_imgproc_IS_PART_OF_WORLD=ON
+OPENCV_MODULE_opencv_imgproc_LABEL=Main;opencv_imgproc
+OPENCV_MODULE_opencv_imgproc_LINK_DEPS=
+OPENCV_MODULE_opencv_imgproc_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc
+OPENCV_MODULE_opencv_imgproc_OPT_DEPS=
+OPENCV_MODULE_opencv_imgproc_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_imgproc_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_imgproc_REQ_DEPS=opencv_core
+OPENCV_MODULE_opencv_imgproc_SOURCES=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/accum.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/accum.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/approx.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/bilateral_filter.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/blend.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/box_filter.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/canny.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/clahe.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/color.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/color_hsv.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/color_lab.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/color_rgb.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/color_yuv.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/colormap.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/connectedcomponents.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/contours.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/convhull.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/corner.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/cornersubpix.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/demosaicing.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/deriv.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/distransform.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/drawing.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/emd.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/featureselect.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/filter.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/floodfill.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/gabor.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/generalized_hough.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/geometry.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/grabcut.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/hershey_fonts.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/histogram.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/hough.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/imgwarp.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/intersection.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/linefit.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/lsd.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/main.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/matchcontours.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/median_blur.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/min_enclosing_triangle.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/moments.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/morph.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/phasecorr.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/pyramids.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/resize.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/rotcalipers.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/samplers.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/segmentation.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/shapedescr.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/smooth.dispatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/spatialgradient.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/subdivision2d.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/sumpixels.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/tables.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/templmatch.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/thresh.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/utils.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/accumulate.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/bilateral.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/blend_linear.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/boxFilter.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/boxFilter3x3.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/calc_back_project.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/canny.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/clahe.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/color_hsv.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/color_lab.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/color_rgb.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/color_yuv.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/corner.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/covardata.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/filter2D.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/filter2DSmall.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/filterSepCol.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/filterSepRow.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/filterSep_singlePass.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/filterSmall.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/gaussianBlur3x3.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/gaussianBlur5x5.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/gftt.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/histogram.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/hough_lines.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/integral_sum.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/laplacian3.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/laplacian5.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/linearPolar.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/logPolar.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/match_template.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/medianFilter.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/moments.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/morph.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/morph3x3.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/precornerdetect.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/pyr_down.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/pyr_up.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/pyramid_up.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/remap.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/resize.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/sepFilter3x3.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/threshold.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/warp_affine.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/warp_perspective.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/opencl/warp_transform.cl;/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/modules/imgproc/opencl_kernels_imgproc.cpp;/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/modules/imgproc/opencl_kernels_imgproc.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/_geom.h;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/accum.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/bilateral_filter.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/box_filter.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/color.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/color.simd_helpers.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/color_hsv.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/color_rgb.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/color_yuv.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/corner.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/filter.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/filter.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/filterengine.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/fixedpoint.inl.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/hal_replacement.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/imgwarp.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/median_blur.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/morph.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/precomp.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/resize.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/smooth.simd.hpp;/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc/src/sumpixels.hpp
+OPENCV_MODULE_opencv_imgproc_WRAPPERS=java;js;python_bindings_generator;python2;python3
+OPENCV_MODULE_opencv_java_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/java
+OPENCV_MODULE_opencv_java_OPT_DEPS=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_video;opencv_videoio
+OPENCV_MODULE_opencv_java_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_java_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_java_REQ_DEPS=
+OPENCV_MODULE_opencv_java_WRAPPERS=
+OPENCV_MODULE_opencv_java_bindings_generator_CLASS=INTERNAL
+OPENCV_MODULE_opencv_java_bindings_generator_DESCRIPTION=The java_bindings_generator OpenCV module
+OPENCV_MODULE_opencv_java_bindings_generator_IS_PART_OF_WORLD=OFF
+OPENCV_MODULE_opencv_java_bindings_generator_LABEL=Main;opencv_java_bindings_generator
+OPENCV_MODULE_opencv_java_bindings_generator_LINK_DEPS=
+OPENCV_MODULE_opencv_java_bindings_generator_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/java/generator
+OPENCV_MODULE_opencv_java_bindings_generator_OPT_DEPS=
+OPENCV_MODULE_opencv_java_bindings_generator_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_java_bindings_generator_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_java_bindings_generator_REQ_DEPS=
+OPENCV_MODULE_opencv_java_bindings_generator_WRAPPERS=
+OPENCV_MODULE_opencv_js_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/js
+OPENCV_MODULE_opencv_js_OPT_DEPS=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_imgproc;opencv_objdetect;opencv_photo;opencv_video
+OPENCV_MODULE_opencv_js_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_js_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_js_REQ_DEPS=
+OPENCV_MODULE_opencv_js_WRAPPERS=
+OPENCV_MODULE_opencv_ml_CLASS=PUBLIC
+OPENCV_MODULE_opencv_ml_DESCRIPTION=Machine Learning
+OPENCV_MODULE_opencv_ml_IS_PART_OF_WORLD=ON
+OPENCV_MODULE_opencv_ml_LABEL=Main;opencv_ml
+OPENCV_MODULE_opencv_ml_LINK_DEPS=
+OPENCV_MODULE_opencv_ml_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/ml
+OPENCV_MODULE_opencv_ml_OPT_DEPS=
+OPENCV_MODULE_opencv_ml_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_ml_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_ml_REQ_DEPS=opencv_core
+OPENCV_MODULE_opencv_ml_WRAPPERS=java;python_bindings_generator;python2;python3
+OPENCV_MODULE_opencv_objdetect_CLASS=PUBLIC
+OPENCV_MODULE_opencv_objdetect_DESCRIPTION=Object Detection
+OPENCV_MODULE_opencv_objdetect_IS_PART_OF_WORLD=ON
+OPENCV_MODULE_opencv_objdetect_LABEL=Main;opencv_objdetect
+OPENCV_MODULE_opencv_objdetect_LINK_DEPS=
+OPENCV_MODULE_opencv_objdetect_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/objdetect
+OPENCV_MODULE_opencv_objdetect_OPT_DEPS=
+OPENCV_MODULE_opencv_objdetect_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_objdetect_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_objdetect_REQ_DEPS=opencv_core;opencv_imgproc;opencv_calib3d
+OPENCV_MODULE_opencv_objdetect_WRAPPERS=java;js;python_bindings_generator;python2;python3
+OPENCV_MODULE_opencv_photo_CLASS=PUBLIC
+OPENCV_MODULE_opencv_photo_DESCRIPTION=Computational Photography
+OPENCV_MODULE_opencv_photo_IS_PART_OF_WORLD=ON
+OPENCV_MODULE_opencv_photo_LABEL=Main;opencv_photo
+OPENCV_MODULE_opencv_photo_LINK_DEPS=
+OPENCV_MODULE_opencv_photo_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/photo
+OPENCV_MODULE_opencv_photo_OPT_DEPS=opencv_cudaarithm;opencv_cudaimgproc
+OPENCV_MODULE_opencv_photo_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_photo_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_photo_REQ_DEPS=opencv_imgproc
+OPENCV_MODULE_opencv_photo_WRAPPERS=java;js;python_bindings_generator;python2;python3
+OPENCV_MODULE_opencv_python2_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/python/python2
+OPENCV_MODULE_opencv_python2_OPT_DEPS=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio
+OPENCV_MODULE_opencv_python2_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_python2_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_python2_REQ_DEPS=
+OPENCV_MODULE_opencv_python2_WRAPPERS=
+OPENCV_MODULE_opencv_python3_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/python/python3
+OPENCV_MODULE_opencv_python3_OPT_DEPS=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio
+OPENCV_MODULE_opencv_python3_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_python3_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_python3_REQ_DEPS=
+OPENCV_MODULE_opencv_python3_WRAPPERS=
+OPENCV_MODULE_opencv_python_bindings_generator_CLASS=INTERNAL
+OPENCV_MODULE_opencv_python_bindings_generator_DESCRIPTION=The python_bindings_generator OpenCV module
+OPENCV_MODULE_opencv_python_bindings_generator_IS_PART_OF_WORLD=OFF
+OPENCV_MODULE_opencv_python_bindings_generator_LABEL=Main;opencv_python_bindings_generator
+OPENCV_MODULE_opencv_python_bindings_generator_LINK_DEPS=
+OPENCV_MODULE_opencv_python_bindings_generator_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/python/bindings
+OPENCV_MODULE_opencv_python_bindings_generator_OPT_DEPS=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio
+OPENCV_MODULE_opencv_python_bindings_generator_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_python_bindings_generator_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_python_bindings_generator_REQ_DEPS=
+OPENCV_MODULE_opencv_python_bindings_generator_WRAPPERS=
+OPENCV_MODULE_opencv_python_tests_CLASS=INTERNAL
+OPENCV_MODULE_opencv_python_tests_DESCRIPTION=The python_tests OpenCV module
+OPENCV_MODULE_opencv_python_tests_IS_PART_OF_WORLD=OFF
+OPENCV_MODULE_opencv_python_tests_LABEL=Main;opencv_python_tests
+OPENCV_MODULE_opencv_python_tests_LINK_DEPS=
+OPENCV_MODULE_opencv_python_tests_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/python/test
+OPENCV_MODULE_opencv_python_tests_OPT_DEPS=
+OPENCV_MODULE_opencv_python_tests_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_python_tests_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_python_tests_REQ_DEPS=
+OPENCV_MODULE_opencv_python_tests_WRAPPERS=
+OPENCV_MODULE_opencv_stitching_CLASS=PUBLIC
+OPENCV_MODULE_opencv_stitching_DESCRIPTION=Images stitching
+OPENCV_MODULE_opencv_stitching_IS_PART_OF_WORLD=ON
+OPENCV_MODULE_opencv_stitching_LABEL=Main;opencv_stitching
+OPENCV_MODULE_opencv_stitching_LINK_DEPS=
+OPENCV_MODULE_opencv_stitching_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/stitching
+OPENCV_MODULE_opencv_stitching_OPT_DEPS=opencv_cudaarithm;opencv_cudawarping;opencv_cudafeatures2d;opencv_cudalegacy;opencv_cudaimgproc;opencv_xfeatures2d
+OPENCV_MODULE_opencv_stitching_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_stitching_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_stitching_REQ_DEPS=opencv_imgproc;opencv_features2d;opencv_calib3d;opencv_flann
+OPENCV_MODULE_opencv_stitching_WRAPPERS=python_bindings_generator;python2;python3
+OPENCV_MODULE_opencv_ts_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/ts
+OPENCV_MODULE_opencv_video_CLASS=PUBLIC
+OPENCV_MODULE_opencv_video_DESCRIPTION=Video Analysis
+OPENCV_MODULE_opencv_video_IS_PART_OF_WORLD=ON
+OPENCV_MODULE_opencv_video_LABEL=Main;opencv_video
+OPENCV_MODULE_opencv_video_LINK_DEPS=
+OPENCV_MODULE_opencv_video_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/video
+OPENCV_MODULE_opencv_video_OPT_DEPS=opencv_calib3d
+OPENCV_MODULE_opencv_video_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_video_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_video_REQ_DEPS=opencv_imgproc
+OPENCV_MODULE_opencv_video_WRAPPERS=java;js;python_bindings_generator;python2;python3
+OPENCV_MODULE_opencv_videoio_CLASS=PUBLIC
+OPENCV_MODULE_opencv_videoio_DESCRIPTION=The videoio OpenCV module
+OPENCV_MODULE_opencv_videoio_IS_PART_OF_WORLD=ON
+OPENCV_MODULE_opencv_videoio_LABEL=Main;opencv_videoio
+OPENCV_MODULE_opencv_videoio_LINK_DEPS=
+OPENCV_MODULE_opencv_videoio_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/videoio
+OPENCV_MODULE_opencv_videoio_OPT_DEPS=
+OPENCV_MODULE_opencv_videoio_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_videoio_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_videoio_REQ_DEPS=opencv_imgproc;opencv_imgcodecs
+OPENCV_MODULE_opencv_videoio_WRAPPERS=java;python_bindings_generator;python2;python3
+OPENCV_MODULE_opencv_world_CLASS=PUBLIC
+OPENCV_MODULE_opencv_world_DESCRIPTION=All OpenCV modules
+OPENCV_MODULE_opencv_world_IS_PART_OF_WORLD=OFF
+OPENCV_MODULE_opencv_world_LABEL=Main;opencv_world
+OPENCV_MODULE_opencv_world_LINK_DEPS=
+OPENCV_MODULE_opencv_world_LOCATION=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/world
+OPENCV_MODULE_opencv_world_OPT_DEPS=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_gapi;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_stitching;opencv_video;opencv_videoio
+OPENCV_MODULE_opencv_world_PRIVATE_OPT_DEPS=
+OPENCV_MODULE_opencv_world_PRIVATE_REQ_DEPS=
+OPENCV_MODULE_opencv_world_REQ_DEPS=opencv_core
+OPENCV_MODULE_opencv_world_WRAPPERS=
+OPENCV_MOD_LIST=opencv_core;opencv_imgcodecs;opencv_imgproc
+OPENCV_OTHER_INSTALL_PATH=share/opencv4
+OPENCV_PACKAGE_ARCH_SUFFIX=riscv64
+OPENCV_PYTHON3_VERSION=OFF
+OPENCV_PYTHON_DIR_RELATIVE_CMAKECONFIG=python_loader_is_not_installed
+OPENCV_SAMPLES_BIN_INSTALL_PATH=bin
+OPENCV_SAMPLES_SRC_INSTALL_PATH=share/opencv4/samples
+OPENCV_SCRIPT_EXTENSION=.sh
+OPENCV_SETUPVARS_FILENAME=setup_vars_opencv4.sh
+OPENCV_SETUPVARS_INSTALL_PATH=bin
+OPENCV_SETUPVARS_TEMPLATE=setup_vars_linux.sh.in
+OPENCV_SOVERSION=4.2
+OPENCV_SUPPRESS_DEPRECATIONS=1
+OPENCV_TEST_DATA_INSTALL_PATH=share/opencv4/testdata
+OPENCV_TEST_INSTALL_PATH=bin
+OPENCV_TIMESTAMP=2026-03-31T00:02:24Z
+OPENCV_TRACE=1
+OPENCV_VCSVERSION=4.2.0
+OPENCV_VERIFICATIONS=WITH_1394;WITH_AVFOUNDATION;WITH_CAP_IOS;WITH_CPUFEATURES;WITH_VTK;WITH_CUDA;WITH_CUFFT;WITH_CUBLAS;WITH_CUDNN;WITH_NVCUVID;WITH_EIGEN;WITH_FFMPEG;WITH_GSTREAMER;WITH_GTK;WITH_GTK_2_X;WITH_IPP;WITH_HALIDE;WITH_VULKAN;WITH_INF_ENGINE;WITH_NGRAPH;WITH_JASPER;WITH_JPEG;WITH_WEBP;WITH_OPENEXR;WITH_OPENGL;WITH_OPENVX;WITH_OPENNI;WITH_OPENNI2;WITH_PNG;WITH_GDCM;WITH_PVAPI;WITH_ARAVIS;WITH_QT;WITH_WIN32UI;WITH_TBB;WITH_HPX;WITH_OPENMP;WITH_PTHREADS_PF;WITH_TIFF;WITH_V4L;WITH_DSHOW;WITH_MSMF;WITH_MSMF_DXVA;WITH_XIMEA;WITH_XINE;WITH_CLP;WITH_OPENCL;WITH_OPENCL_SVM;WITH_OPENCLAMDFFT;WITH_OPENCLAMDBLAS;WITH_DIRECTX;WITH_OPENCL_D3D11_NV;WITH_LIBREALSENSE;WITH_VA;WITH_VA_INTEL;WITH_MFX;WITH_GDAL;WITH_GPHOTO2;WITH_LAPACK;WITH_ITT;WITH_PROTOBUF;WITH_IMGCODEC_HDR;WITH_IMGCODEC_SUNRASTER;WITH_IMGCODEC_PXM;WITH_IMGCODEC_PFM;WITH_QUIRC;WITH_ANDROID_MEDIANDK
+OPENCV_VERIFY_WITH_1394=HAVE_DC1394_2
+OPENCV_VERIFY_WITH_ANDROID_MEDIANDK=HAVE_ANDROID_MEDIANDK
+OPENCV_VERIFY_WITH_ARAVIS=HAVE_ARAVIS_API
+OPENCV_VERIFY_WITH_AVFOUNDATION=HAVE_AVFOUNDATION
+OPENCV_VERIFY_WITH_CAP_IOS=HAVE_CAP_IOS
+OPENCV_VERIFY_WITH_CLP=HAVE_CLP
+OPENCV_VERIFY_WITH_CPUFEATURES=HAVE_CPUFEATURES
+OPENCV_VERIFY_WITH_CUBLAS=HAVE_CUBLAS
+OPENCV_VERIFY_WITH_CUDA=HAVE_CUDA
+OPENCV_VERIFY_WITH_CUDNN=HAVE_CUDNN
+OPENCV_VERIFY_WITH_CUFFT=HAVE_CUFFT
+OPENCV_VERIFY_WITH_DIRECTX=HAVE_DIRECTX
+OPENCV_VERIFY_WITH_DSHOW=HAVE_DSHOW
+OPENCV_VERIFY_WITH_EIGEN=HAVE_EIGEN
+OPENCV_VERIFY_WITH_FFMPEG=HAVE_FFMPEG
+OPENCV_VERIFY_WITH_GDAL=HAVE_GDAL
+OPENCV_VERIFY_WITH_GDCM=HAVE_GDCM
+OPENCV_VERIFY_WITH_GPHOTO2=HAVE_GPHOTO2
+OPENCV_VERIFY_WITH_GSTREAMER=HAVE_GSTREAMER;AND;GSTREAMER_VERSION;VERSION_GREATER;0.99
+OPENCV_VERIFY_WITH_GTK=HAVE_GTK
+OPENCV_VERIFY_WITH_GTK_2_X=HAVE_GTK;AND;NOT;HAVE_GTK3
+OPENCV_VERIFY_WITH_HALIDE=HAVE_HALIDE
+OPENCV_VERIFY_WITH_HPX=HAVE_HPX
+OPENCV_VERIFY_WITH_IMGCODEC_HDR=HAVE_IMGCODEC_HDR
+OPENCV_VERIFY_WITH_IMGCODEC_PFM=HAVE_IMGCODEC_PFM
+OPENCV_VERIFY_WITH_IMGCODEC_PXM=HAVE_IMGCODEC_PXM
+OPENCV_VERIFY_WITH_IMGCODEC_SUNRASTER=HAVE_IMGCODEC_SUNRASTER
+OPENCV_VERIFY_WITH_INF_ENGINE=INF_ENGINE_TARGET
+OPENCV_VERIFY_WITH_IPP=HAVE_IPP
+OPENCV_VERIFY_WITH_ITT=HAVE_ITT
+OPENCV_VERIFY_WITH_JASPER=HAVE_JASPER
+OPENCV_VERIFY_WITH_JPEG=HAVE_JPEG
+OPENCV_VERIFY_WITH_LAPACK=HAVE_LAPACK
+OPENCV_VERIFY_WITH_LIBREALSENSE=HAVE_LIBREALSENSE
+OPENCV_VERIFY_WITH_MFX=HAVE_MFX
+OPENCV_VERIFY_WITH_MSMF=HAVE_MSMF
+OPENCV_VERIFY_WITH_MSMF_DXVA=HAVE_MSMF_DXVA
+OPENCV_VERIFY_WITH_NGRAPH=TARGET;ngraph::ngraph
+OPENCV_VERIFY_WITH_NVCUVID=HAVE_NVCUVID
+OPENCV_VERIFY_WITH_OPENCL=HAVE_OPENCL
+OPENCV_VERIFY_WITH_OPENCLAMDBLAS=HAVE_CLAMDBLAS
+OPENCV_VERIFY_WITH_OPENCLAMDFFT=HAVE_CLAMDFFT
+OPENCV_VERIFY_WITH_OPENCL_D3D11_NV=HAVE_OPENCL_D3D11_NV
+OPENCV_VERIFY_WITH_OPENCL_SVM=HAVE_OPENCL_SVM
+OPENCV_VERIFY_WITH_OPENEXR=HAVE_OPENEXR
+OPENCV_VERIFY_WITH_OPENGL=HAVE_OPENGL
+OPENCV_VERIFY_WITH_OPENMP=HAVE_OPENMP
+OPENCV_VERIFY_WITH_OPENNI=HAVE_OPENNI
+OPENCV_VERIFY_WITH_OPENNI2=HAVE_OPENNI2
+OPENCV_VERIFY_WITH_OPENVX=HAVE_OPENVX
+OPENCV_VERIFY_WITH_PNG=HAVE_PNG
+OPENCV_VERIFY_WITH_PROTOBUF=HAVE_PROTOBUF
+OPENCV_VERIFY_WITH_PTHREADS_PF=HAVE_PTHREADS_PF
+OPENCV_VERIFY_WITH_PVAPI=HAVE_PVAPI
+OPENCV_VERIFY_WITH_QT=HAVE_QT
+OPENCV_VERIFY_WITH_QUIRC=HAVE_QUIRC
+OPENCV_VERIFY_WITH_TBB=HAVE_TBB
+OPENCV_VERIFY_WITH_TIFF=HAVE_TIFF
+OPENCV_VERIFY_WITH_V4L=HAVE_CAMV4L;OR;HAVE_CAMV4L2;OR;HAVE_VIDEOIO
+OPENCV_VERIFY_WITH_VA=HAVE_VA
+OPENCV_VERIFY_WITH_VA_INTEL=HAVE_VA_INTEL
+OPENCV_VERIFY_WITH_VTK=HAVE_VTK
+OPENCV_VERIFY_WITH_VULKAN=HAVE_VULKAN
+OPENCV_VERIFY_WITH_WEBP=HAVE_WEBP
+OPENCV_VERIFY_WITH_WIN32UI=HAVE_WIN32UI
+OPENCV_VERIFY_WITH_XIMEA=HAVE_XIMEA
+OPENCV_VERIFY_WITH_XINE=HAVE_XINE
+OPENCV_VERSION=4.2.0
+OPENCV_VERSION_FILE=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core/include/opencv2/core/version.hpp
+OPENCV_VERSION_MAJOR=4
+OPENCV_VERSION_MINOR=2
+OPENCV_VERSION_PARTS=#define CV_VERSION_MAJOR    4;#define CV_VERSION_MINOR    2;#define CV_VERSION_REVISION 0;#define CV_VERSION_STATUS   ""
+OPENCV_VERSION_PATCH=0
+OPENCV_VERSION_PLAIN=4.2.0
+OPENCV_VERSION_STATUS=
+OPENCV_VS_VER_COMMENTS_STR=http://opencv.org/
+OPENCV_VS_VER_FILEVERSION_QUAD=4,2,0,0
+OPENCV_VS_VER_FILEVERSION_STR=4.2.0
+OPENCV_VS_VER_PRODUCTNAME_STR=OpenCV library
+OPENCV_VS_VER_PRODUCTVERSION_QUAD=4,2,0,0
+OPENCV_VS_VER_PRODUCTVERSION_STR=4.2.0
+OPENCV_WARNINGS_ARE_ERRORS=OFF
+OPENCV_WORLD_MODULES=
+OPT=
+OUTPUT=Change Dir: /home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_be262/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_be262.dir/build.make CMakeFiles/cmTC_be262.dir/build
+gmake[1]: Entering directory '/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_be262.dir/CheckIncludeFile.c.o
+/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc --sysroot=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot   -march=rv64gc -mabi=lp64d   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG -fPIE -o CMakeFiles/cmTC_be262.dir/CheckIncludeFile.c.o -c /home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+cc1: warning: command-line option '-Wsign-promo' is valid for C++/ObjC++ but not for C
+cc1: warning: command-line option '-Wsuggest-override' is valid for C++/ObjC++ but not for C
+cc1: warning: command-line option '-Wno-delete-non-virtual-dtor' is valid for C++/ObjC++ but not for C
+cc1: warning: command-line option '-fvisibility-inlines-hidden' is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_be262
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be262.dir/link.txt --verbose=1
+/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc --sysroot=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot -march=rv64gc -mabi=lp64d   -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -Wl,--gc-sections  CMakeFiles/cmTC_be262.dir/CheckIncludeFile.c.o -o cmTC_be262   -latomic 
+gmake[1]: Leaving directory '/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CMakeFiles/CMakeTmp'
+
+
+OUTPUT_LINES=Change Dir: /home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CMakeFiles/CMakeTmp;;Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_353f6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_353f6.dir/build.make CMakeFiles/cmTC_353f6.dir/build;gmake[1]: Entering directory '/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CMakeFiles/CMakeTmp';Building C object CMakeFiles/cmTC_353f6.dir/src.c.o;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc --sysroot=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot   -march=rv64gc -mabi=lp64d  -O3 -DNDEBUG -fPIE    -fsigned-char -W -Wall -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden  -fvisibility-inlines-hidden -o CMakeFiles/cmTC_353f6.dir/src.c.o -c /home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CMakeFiles/CMakeTmp/src.c;cc1: warning: command-line option '-Wsign-promo' is valid for C++/ObjC++ but not for C;cc1: warning: command-line option '-Wsuggest-override' is valid for C++/ObjC++ but not for C;cc1: warning: command-line option '-Wno-delete-non-virtual-dtor' is valid for C++/ObjC++ but not for C;cc1: warning: command-line option '-fvisibility-inlines-hidden' is valid for C++/ObjC++ but not for C;/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CMakeFiles/CMakeTmp/src.c:1: warning: ignoring '#pragma  ' [-Wunknown-pragmas];    1 | #pragma;      | ;Linking C executable cmTC_353f6;/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_353f6.dir/link.txt --verbose=1;/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-gcc --sysroot=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot -march=rv64gc -mabi=lp64d  -O3 -DNDEBUG CMakeFiles/cmTC_353f6.dir/src.c.o -o cmTC_353f6   -latomic ;gmake[1]: Leaving directory '/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CMakeFiles/CMakeTmp';;
+OpenBLAS=
+OpenBLAS_FOUND=OFF
+OpenBLAS_INCLUDE_DIR=OpenBLAS_INCLUDE_DIR-NOTFOUND
+OpenBLAS_LIB=OpenBLAS_LIB-NOTFOUND
+OpenCVModules_TARGETS=zlib;libjpeg-turbo;libtiff;libwebp;libjasper;libpng;libprotobuf;quirc;ade;opencv_core;opencv_imgproc;opencv_imgcodecs
+OpenCV_BINARY_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv
+OpenCV_DESCRIPTION=
+OpenCV_HAL=OpenCV_HAL
+OpenCV_HAL_CONSIDERED_CONFIGS=
+OpenCV_HAL_CONSIDERED_VERSIONS=
+OpenCV_HAL_DIR=OpenCV_HAL_DIR-NOTFOUND
+OpenCV_HAL_FOUND=0
+OpenCV_HOMEPAGE_URL=
+OpenCV_INCLUDE_DIRS_CONFIGCMAKE="${OpenCV_INSTALL_PATH}/include/opencv4"
+OpenCV_INSTALL_PATH_RELATIVE_CONFIGCMAKE=../../../
+OpenCV_IS_TOP_LEVEL=ON
+OpenCV_SOURCE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv
+OpenCV_STATIC=ON
+OpenCV_USE_MANGLED_PATHS_CONFIGCMAKE=FALSE
+Open_BLAS_INCLUDE_SEARCH_PATHS=/include;/opt/OpenBLAS/include;/usr/local/include/openblas;/usr/include/openblas;/usr/local/include/openblas-base;/usr/include/openblas-base;/usr/local/include;/usr/include
+Open_BLAS_LIB_SEARCH_PATHS=cd;/lib;/lib;/opt/OpenBLAS/lib;/usr/local/lib64;/usr/local/lib;/lib/openblas-base;/lib64/;/lib/;/usr/lib/openblas-base;/usr/lib64;/usr/lib
+PCHSupport_FOUND=TRUE
+PNG_DEFINITIONS=
+PNG_FOUND=FALSE
+PNG_INCLUDE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/libpng
+PNG_LIBPNG_VER_MAJOR=1
+PNG_LIBPNG_VER_MINOR=6
+PNG_LIBPNG_VER_RELEASE=37
+PNG_LIBRARIES=libpng
+PNG_LIBRARY=libpng
+PNG_VERSION=1.6.37
+PNG_VERSION_LINES=#define PNG_LIBPNG_VER_MAJOR   1;#define PNG_LIBPNG_VER_MINOR   6;#define PNG_LIBPNG_VER_RELEASE 37
+PRESET_CMAKE_SYSTEM_NAME=TRUE
+PROJECT_BINARY_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv
+PROJECT_DESCRIPTION=
+PROJECT_HOMEPAGE_URL=
+PROJECT_IS_TOP_LEVEL=ON
+PROJECT_NAME=OpenCV
+PROJECT_SOURCE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv
+PROTOBUF_UPDATE_FILES=OFF
+PTHREAD_C_CXX_TEST_SOURCE=#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+PYTHON2INTERP_FOUND=TRUE
+PYTHON2LIBS_FOUND=
+PYTHON2LIBS_VERSION_STRING=
+PYTHON2_DEBUG_LIBRARIES=
+PYTHON2_EXECUTABLE=/usr/bin/python2.7
+PYTHON2_INCLUDE_DIR=
+PYTHON2_INCLUDE_DIR2=
+PYTHON2_INCLUDE_PATH=
+PYTHON2_LIBRARIES=
+PYTHON2_LIBRARY=
+PYTHON2_LIBRARY_DEBUG=
+PYTHON2_NUMPY_INCLUDE_DIRS=
+PYTHON2_NUMPY_VERSION=
+PYTHON2_PACKAGES_PATH=lib/python2.7/dist-packages
+PYTHON2_VERSION_MAJOR=2
+PYTHON2_VERSION_MINOR=7
+PYTHON2_VERSION_STRING=2.7.18
+PYTHON3INTERP_FOUND=TRUE
+PYTHON3LIBS_FOUND=
+PYTHON3LIBS_VERSION_STRING=
+PYTHON3_DEBUG_LIBRARIES=
+PYTHON3_EXECUTABLE=/usr/bin/python3
+PYTHON3_INCLUDE_DIR=
+PYTHON3_INCLUDE_DIR2=
+PYTHON3_INCLUDE_PATH=
+PYTHON3_LIBRARIES=
+PYTHON3_LIBRARY=
+PYTHON3_LIBRARY_DEBUG=
+PYTHON3_NUMPY_INCLUDE_DIRS=
+PYTHON3_NUMPY_VERSION=
+PYTHON3_PACKAGES_PATH=lib/python3.10/dist-packages
+PYTHON3_VERSION_MAJOR=3
+PYTHON3_VERSION_MINOR=10
+PYTHON3_VERSION_STRING=3.10.12
+PYTHON_DEFAULT_AVAILABLE=TRUE
+PYTHON_DEFAULT_EXECUTABLE=/usr/bin/python2.7
+Protobuf_VERSION=3.5.1
+RUN_CONFIGURE=ON
+SIZEOF_PTRDIFF_T=8
+SIZEOF_SIGNED_INT=4
+SIZEOF_SIGNED_LONG=8
+SIZEOF_SIGNED_LONG_LONG=8
+SIZEOF_SIGNED_SHORT=2
+SIZEOF_SIZE_T=8
+SIZEOF_UNSIGNED_CHAR_P=8
+SIZEOF_UNSIGNED_INT=4
+SIZEOF_UNSIGNED_LONG=8
+SIZEOF_UNSIGNED_LONG_LONG=8
+SIZEOF_UNSIGNED_SHORT=2
+STD_OPENCV_DEV=libopencv-dev;libopencv-core-dev;libopencv-imgcodecs-dev;libopencv-imgproc-dev
+STD_OPENCV_LIBS=opencv-data;libopencv-core4.0;libopencv-imgcodecs4.0;libopencv-imgproc4.0
+THREADS_FOUND=TRUE
+TIFF_BIGTIFF_VERSION=
+TIFF_FOUND=FALSE
+TIFF_INCLUDE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/libtiff;/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/3rdparty/libtiff
+TIFF_LIBRARIES=libtiff
+TIFF_LIBRARY=libtiff
+TIFF_LIBRARY_DEBUG=TIFF_LIBRARY_DEBUG-NOTFOUND
+TIFF_LIBRARY_RELEASE=TIFF_LIBRARY_RELEASE-NOTFOUND
+TIFF_VERSION=42
+TIFF_VERSION_BIG=43
+TIFF_VERSION_CLASSIC=42
+TIFF_VERSION_LINES=#define TIFF_VERSION_CLASSIC 42;#define TIFF_VERSION_BIG 43
+TIFF_VERSION_STRING=4.0.10
+TRY_OUT=Change Dir: /home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4921c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4921c.dir/build.make CMakeFiles/cmTC_4921c.dir/build
+gmake[1]: Entering directory '/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4921c.dir/opencl.cpp.o
+/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-g++ --sysroot=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot  -I/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/include/opencl/1.2 -march=rv64gc -mabi=lp64d   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG -fPIE -std=c++11 -o CMakeFiles/cmTC_4921c.dir/opencl.cpp.o -c /home/shc/projects/cheshire-linux-nvdla/opencv/cmake/checks/opencl.cpp
+cc1plus: warning: command-line option '-Wmissing-prototypes' is valid for C/ObjC but not for C++
+cc1plus: warning: command-line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+/home/shc/projects/cheshire-linux-nvdla/opencv/cmake/checks/opencl.cpp:6:2: error: #error OpenCL is valid
+    6 | #error OpenCL is valid
+      |  ^~~~~
+gmake[1]: *** [CMakeFiles/cmTC_4921c.dir/build.make:78: CMakeFiles/cmTC_4921c.dir/opencl.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_4921c/fast] Error 2
+
+
+Threads_FOUND=TRUE
+UNIX=1
+USE_IPPICV=FALSE
+USE_IPPIW=FALSE
+USE_WIN32_FILEIO=FALSE
+VIDEOIO_ENABLE_PLUGINS=ON
+VIDEOIO_ENABLE_STRICT_PLUGIN_CHECK=ON
+VIDEOIO_PLUGIN_LIST=
+WEBP_ENCODER_ABI_VERSION=0x020e
+WEBP_INCLUDE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/libwebp/src
+WEBP_INCLUDE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/libwebp/src
+WEBP_LIBRARIES=libwebp
+WEBP_LIBRARY=libwebp
+WEBP_VERSION=encoder: 0x020e
+WITH_1394=ON
+WITH_ADE=ON
+WITH_ARAVIS=OFF
+WITH_ARITH_DEC=ON
+WITH_ARITH_ENC=ON
+WITH_CLP=OFF
+WITH_CUDA=OFF
+WITH_EIGEN=OFF
+WITH_FFMPEG=OFF
+WITH_FREETYPE=OFF
+WITH_GDAL=OFF
+WITH_GDCM=OFF
+WITH_GPHOTO2=OFF
+WITH_GSTREAMER=OFF
+WITH_GTK=OFF
+WITH_GTK_2_X=OFF
+WITH_HALIDE=OFF
+WITH_HPX=OFF
+WITH_IMGCODEC_HDR=ON
+WITH_IMGCODEC_PFM=ON
+WITH_IMGCODEC_PXM=ON
+WITH_IMGCODEC_SUNRASTER=ON
+WITH_INF_ENGINE=OFF
+WITH_IPP=OFF
+WITH_ITT=ON
+WITH_JASPER=ON
+WITH_JPEG=ON
+WITH_LAPACK=ON
+WITH_LIBREALSENSE=OFF
+WITH_MFX=OFF
+WITH_NGRAPH=OFF
+WITH_OPENCL=ON
+WITH_OPENCLAMDBLAS=ON
+WITH_OPENCLAMDFFT=ON
+WITH_OPENCL_SVM=OFF
+WITH_OPENEXR=OFF
+WITH_OPENGL=OFF
+WITH_OPENMP=OFF
+WITH_OPENNI=OFF
+WITH_OPENNI2=OFF
+WITH_OPENVX=OFF
+WITH_PLAIDML=OFF
+WITH_PNG=ON
+WITH_PROTOBUF=ON
+WITH_PTHREADS_PF=ON
+WITH_PVAPI=OFF
+WITH_QT=OFF
+WITH_QUIRC=ON
+WITH_TBB=OFF
+WITH_TIFF=ON
+WITH_V4L=ON
+WITH_VA=OFF
+WITH_VA_INTEL=OFF
+WITH_VULKAN=OFF
+WITH_WEBP=ON
+WITH_XIMEA=OFF
+WITH_XINE=OFF
+WORDS_BIGENDIAN=0
+ZLIB_FOUND=FALSE
+ZLIB_H=#define ZLIB_VERSION "1.2.11"
+ZLIB_INCLUDE_DIR=ZLIB_INCLUDE_DIR-NOTFOUND
+ZLIB_INCLUDE_DIRS=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/zlib;/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/3rdparty/zlib
+ZLIB_LIBRARIES=zlib
+ZLIB_LIBRARY=zlib
+ZLIB_LIBRARY_DEBUG=ZLIB_LIBRARY_DEBUG-NOTFOUND
+ZLIB_LIBRARY_RELEASE=ZLIB_LIBRARY_RELEASE-NOTFOUND
+ZLIB_VERSION_MAJOR=1
+ZLIB_VERSION_MINOR=2
+ZLIB_VERSION_PATCH=11
+ZLIB_VERSION_STRING=1.2.11
+ZLIB_VERSION_TWEAK=
+Z_HAVE_UNISTD_H=1
+_CMAKE_CUDA_IMPLICIT_INCLUDE_DIRECTORIES_INIT=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot/usr/include
+_CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES_INIT=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot/usr/include
+_CMAKE_CXX_IPO_MAY_BE_SUPPORTED_BY_COMPILER=YES
+_CMAKE_CXX_IPO_SUPPORTED_BY_CMAKE=YES
+_CMAKE_CXX_PIE_MAY_BE_SUPPORTED_BY_LINKER=YES
+_CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES_INIT=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot/usr/include
+_CMAKE_C_IPO_MAY_BE_SUPPORTED_BY_COMPILER=YES
+_CMAKE_C_IPO_SUPPORTED_BY_CMAKE=YES
+_CMAKE_C_PIE_MAY_BE_SUPPORTED_BY_LINKER=YES
+_CMAKE_INSTALL_DIR=/usr
+_CMAKE_TOOLCHAIN_LOCATION=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin
+_CMAKE_TOOLCHAIN_PREFIX=riscv64-unknown-linux-gnu-
+_CMAKE_USER_CXX_COMPILER_PATH=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin
+_CMAKE_USER_C_COMPILER_PATH=/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin
+_CPACK_OTHER_VARIABLES_=
+set(CPACK_BINARY_DEB "OFF")
+set(CPACK_BINARY_FREEBSD "OFF")
+set(CPACK_BINARY_IFW "OFF")
+set(CPACK_BINARY_NSIS "OFF")
+set(CPACK_BINARY_RPM "OFF")
+set(CPACK_BINARY_STGZ "ON")
+set(CPACK_BINARY_TBZ2 "OFF")
+set(CPACK_BINARY_TGZ "ON")
+set(CPACK_BINARY_TXZ "OFF")
+set(CPACK_BINARY_TZ "ON")
+set(CPACK_BUILD_SOURCE_DIRS "/home/shc/projects/cheshire-linux-nvdla/opencv;/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv")
+set(CPACK_CMAKE_GENERATOR "Unix Makefiles")
+set(CPACK_COMPONENTS_ALL "dev;libs;licenses;scripts")
+set(CPACK_COMPONENT_DEV_CONFLICTS "libopencv-dev, libopencv-core-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev")
+set(CPACK_COMPONENT_DEV_DEPENDS "libs")
+set(CPACK_COMPONENT_DEV_DESCRIPTION "Development files for Open Source Computer Vision Library")
+set(CPACK_COMPONENT_DEV_DISPLAY_NAME "Development files")
+set(CPACK_COMPONENT_DEV_PROVIDES "libopencv-dev, libopencv-core-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev")
+set(CPACK_COMPONENT_DEV_REPLACES "libopencv-dev, libopencv-core-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev")
+set(CPACK_COMPONENT_DOCS_CONFLICTS "opencv-doc")
+set(CPACK_COMPONENT_DOCS_DEPENDS "libs")
+set(CPACK_COMPONENT_DOCS_DESCRIPTION "Documentation for Open Source Computer Vision Library")
+set(CPACK_COMPONENT_DOCS_DISPLAY_NAME "Documentation")
+set(CPACK_COMPONENT_JAVA_CONFLICTS "libopencv4.0-java, libopencv4.0-jni")
+set(CPACK_COMPONENT_JAVA_DEPENDS "libs")
+set(CPACK_COMPONENT_JAVA_DESCRIPTION "Java bindings for Open Source Computer Vision Library")
+set(CPACK_COMPONENT_JAVA_DISPLAY_NAME "Java bindings")
+set(CPACK_COMPONENT_JAVA_PROVIDES "libopencv4.0-java, libopencv4.0-jni")
+set(CPACK_COMPONENT_JAVA_REPLACES "libopencv4.0-java, libopencv4.0-jni")
+set(CPACK_COMPONENT_LIBS_CONFLICTS "opencv-data, libopencv-core4.0, libopencv-imgcodecs4.0, libopencv-imgproc4.0")
+set(CPACK_COMPONENT_LIBS_DESCRIPTION "Open Computer Vision Library")
+set(CPACK_COMPONENT_LIBS_DISPLAY_NAME "Libraries and data")
+set(CPACK_COMPONENT_LIBS_PROVIDES "opencv-data, libopencv-core4.0, libopencv-imgcodecs4.0, libopencv-imgproc4.0")
+set(CPACK_COMPONENT_LIBS_REPLACES "opencv-data, libopencv-core4.0, libopencv-imgcodecs4.0, libopencv-imgproc4.0")
+set(CPACK_COMPONENT_LIBS_REQUIRED "TRUE")
+set(CPACK_COMPONENT_PYTHON_CONFLICTS "python-opencv")
+set(CPACK_COMPONENT_PYTHON_DEPENDS "libs")
+set(CPACK_COMPONENT_PYTHON_DESCRIPTION "Python bindings for Open Source Computer Vision Library")
+set(CPACK_COMPONENT_PYTHON_DISPLAY_NAME "Python bindings")
+set(CPACK_COMPONENT_PYTHON_PROVIDES "python-opencv")
+set(CPACK_COMPONENT_PYTHON_REPLACES "python-opencv")
+set(CPACK_COMPONENT_SAMPLES_CONFLICTS "opencv-doc")
+set(CPACK_COMPONENT_SAMPLES_DEPENDS "libs")
+set(CPACK_COMPONENT_SAMPLES_DESCRIPTION "Samples for Open Source Computer Vision Library")
+set(CPACK_COMPONENT_SAMPLES_DISPLAY_NAME "Samples")
+set(CPACK_COMPONENT_TESTS_DEPENDS "libs")
+set(CPACK_COMPONENT_TESTS_DESCRIPTION "Accuracy and performance tests for Open Source Computer Vision Library")
+set(CPACK_COMPONENT_TESTS_DISPLAY_NAME "Tests")
+set(CPACK_COMPONENT_UNSPECIFIED_HIDDEN "TRUE")
+set(CPACK_COMPONENT_UNSPECIFIED_REQUIRED "TRUE")
+set(CPACK_DEBIAN_COMPONENT_DEV_NAME "libOpenCV-dev")
+set(CPACK_DEBIAN_COMPONENT_DOCS_NAME "libOpenCV-docs")
+set(CPACK_DEBIAN_COMPONENT_JAVA_NAME "libOpenCV-java")
+set(CPACK_DEBIAN_COMPONENT_LIBS_NAME "libOpenCV")
+set(CPACK_DEBIAN_COMPONENT_PYTHON_NAME "libOpenCV-python")
+set(CPACK_DEBIAN_COMPONENT_SAMPLES_NAME "libOpenCV-samples")
+set(CPACK_DEBIAN_COMPONENT_TESTS_NAME "libOpenCV-tests")
+set(CPACK_DEBIAN_PACKAGE_ARCHITECTURE "riscv64")
+set(CPACK_DEBIAN_PACKAGE_HOMEPAGE "http://opencv.org")
+set(CPACK_DEBIAN_PACKAGE_PRIORITY "optional")
+set(CPACK_DEBIAN_PACKAGE_SECTION "libs")
+set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS "TRUE")
+set(CPACK_DEB_COMPONENT_INSTALL "TRUE")
+set(CPACK_DEFAULT_PACKAGE_DESCRIPTION_FILE "/usr/share/cmake-3.22/Templates/CPack.GenericDescription.txt")
+set(CPACK_DEFAULT_PACKAGE_DESCRIPTION_SUMMARY "OpenCV built using CMake")
+set(CPACK_GENERATOR "TBZ2;TGZ;TXZ;TZ")
+set(CPACK_IGNORE_FILES "/CVS/;/\\.svn/;/\\.bzr/;/\\.hg/;/\\.git/;\\.swp\$;\\.#;/#")
+set(CPACK_INSTALLED_DIRECTORIES "/home/shc/projects/cheshire-linux-nvdla/opencv;/")
+set(CPACK_INSTALL_CMAKE_PROJECTS "")
+set(CPACK_INSTALL_PREFIX "/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install")
+set(CPACK_MODULE_PATH "")
+set(CPACK_NSIS_DISPLAY_NAME "OpenCV 4.2.0")
+set(CPACK_NSIS_INSTALLER_ICON_CODE "")
+set(CPACK_NSIS_INSTALLER_MUI_ICON_CODE "")
+set(CPACK_NSIS_INSTALL_ROOT "$PROGRAMFILES")
+set(CPACK_NSIS_PACKAGE_NAME "OpenCV 4.2.0")
+set(CPACK_NSIS_UNINSTALL_NAME "Uninstall")
+set(CPACK_OUTPUT_CONFIG_FILE "/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CPackConfig.cmake")
+set(CPACK_PACKAGE_CONTACT "admin@opencv.org")
+set(CPACK_PACKAGE_DEFAULT_LOCATION "/")
+set(CPACK_PACKAGE_DESCRIPTION "OpenCV (Open Source Computer Vision Library) is an open source computer vision
+and machine learning software library. OpenCV was built to provide a common
+infrastructure for computer vision applications and to accelerate the use of
+machine perception in the commercial products. Being a BSD-licensed product,
+OpenCV makes it easy for businesses to utilize and modify the code.")
+set(CPACK_PACKAGE_DESCRIPTION_FILE "/usr/share/cmake-3.22/Templates/CPack.GenericDescription.txt")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Open Computer Vision Library")
+set(CPACK_PACKAGE_FILE_NAME "OpenCV-4.2.0-riscv64")
+set(CPACK_PACKAGE_INSTALL_DIRECTORY "OpenCV 4.2.0")
+set(CPACK_PACKAGE_INSTALL_REGISTRY_KEY "OpenCV 4.2.0")
+set(CPACK_PACKAGE_NAME "OpenCV")
+set(CPACK_PACKAGE_RELOCATABLE "true")
+set(CPACK_PACKAGE_VENDOR "OpenCV Foundation")
+set(CPACK_PACKAGE_VERSION "4.2.0")
+set(CPACK_PACKAGE_VERSION_MAJOR "4")
+set(CPACK_PACKAGE_VERSION_MINOR "2")
+set(CPACK_PACKAGE_VERSION_PATCH "0")
+set(CPACK_RESOURCE_FILE_LICENSE "/home/shc/projects/cheshire-linux-nvdla/opencv/LICENSE")
+set(CPACK_RESOURCE_FILE_README "/usr/share/cmake-3.22/Templates/CPack.GenericDescription.txt")
+set(CPACK_RESOURCE_FILE_WELCOME "/usr/share/cmake-3.22/Templates/CPack.GenericWelcome.txt")
+set(CPACK_RPM_COMPONENT_INSTALL "TRUE")
+set(CPACK_RPM_PACKAGE_ARCHITECTURE "riscv64")
+set(CPACK_RPM_PACKAGE_DESCRIPTION "OpenCV (Open Source Computer Vision Library) is an open source computer vision
+and machine learning software library. OpenCV was built to provide a common
+infrastructure for computer vision applications and to accelerate the use of
+machine perception in the commercial products. Being a BSD-licensed product,
+OpenCV makes it easy for businesses to utilize and modify the code.")
+set(CPACK_RPM_PACKAGE_LICENSE "BSD")
+set(CPACK_RPM_PACKAGE_SOURCES "ON")
+set(CPACK_RPM_PACKAGE_SUMMARY "Open Computer Vision Library")
+set(CPACK_RPM_PACKAGE_URL "http://opencv.org")
+set(CPACK_SET_DESTDIR "OFF")
+set(CPACK_SOURCE_GENERATOR "TBZ2;TGZ;TXZ;TZ")
+set(CPACK_SOURCE_IGNORE_FILES "/CVS/;/\\.svn/;/\\.bzr/;/\\.hg/;/\\.git/;\\.swp\$;\\.#;/#")
+set(CPACK_SOURCE_INSTALLED_DIRECTORIES "/home/shc/projects/cheshire-linux-nvdla/opencv;/")
+set(CPACK_SOURCE_OUTPUT_CONFIG_FILE "/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CPackSourceConfig.cmake")
+set(CPACK_SOURCE_PACKAGE_FILE_NAME "OpenCV-4.2.0-riscv64")
+set(CPACK_SOURCE_RPM "OFF")
+set(CPACK_SOURCE_TBZ2 "ON")
+set(CPACK_SOURCE_TGZ "ON")
+set(CPACK_SOURCE_TOPLEVEL_TAG "Linux-Source")
+set(CPACK_SOURCE_TXZ "ON")
+set(CPACK_SOURCE_TZ "ON")
+set(CPACK_SOURCE_ZIP "OFF")
+set(CPACK_STRIP_FILES "")
+set(CPACK_SYSTEM_NAME "Linux")
+set(CPACK_THREADS "1")
+set(CPACK_TOPLEVEL_TAG "Linux-Source")
+set(CPACK_WIX_SIZEOF_VOID_P "8")
+set(CPACK_set_DESTDIR "on")
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX=/home/shc/projects/cheshire-linux-nvdla/opencv-riscv-install
+_INCLUDED_FILE=/usr/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake
+_INCLUDED_SYSTEM_INFO_FILE=/usr/share/cmake-3.22/Modules/Platform/Linux.cmake
+_IN_TC=0
+_LIBDIR_DEFAULT=lib
+_PCH_define_prefix=-D
+_PCH_include_prefix=-I
+_PCH_isystem_prefix=-isystem
+_POS=0
+_SET_CMAKE_CXX_COMPILER_ARCHITECTURE_ID=
+_SET_CMAKE_CXX_COMPILER_SYSROOT=set(CMAKE_CXX_COMPILER_SYSROOT "/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot/usr")
+set(CMAKE_COMPILER_SYSROOT "/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot/usr")
+_SET_CMAKE_C_COMPILER_ARCHITECTURE_ID=
+_SET_CMAKE_C_COMPILER_SYSROOT=set(CMAKE_C_COMPILER_SYSROOT "/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot/usr")
+set(CMAKE_COMPILER_SYSROOT "/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../sysroot/usr")
+_ZLIB_SEARCHES=_ZLIB_SEARCH_NORMAL
+_ZLIB_SEARCH_NORMAL=PATHS;[HKEY_LOCAL_MACHINE\SOFTWARE\GnuWin32\Zlib;InstallPath];/zlib;/zlib
+_fname=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/CMakeFiles/CMakeTmp/src.c
+_isMultiConfig=0
+_lang=C
+_libname=libjasper
+_line=
+_output=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/3rdparty/lib
+_output_name=libjasper
+_regex=
+_rev_deps=opencv_imgproc;$<LINK_ONLY:rt>;$<LINK_ONLY:pthread>;$<LINK_ONLY:m>;$<LINK_ONLY:dl>;opencv_core;$<LINK_ONLY:opencv_core>
+_type=STATIC_LIBRARY
+_var=
+_varname=HAVE_C_FVISIBILITY_INLINES_HIDDEN
+apps_status=-
+arg=
+ccitt=ON
+compatible_MESSAGE_NEVER=MESSAGE_NEVER
+cpack_input_file=/usr/share/cmake-3.22/Templates/CPackConfig.cmake.in
+cpack_source_input_file=/usr/share/cmake-3.22/Templates/CPackConfig.cmake.in
+dep=
+deps=$<LINK_ONLY:opencv_core>;opencv_core;$<LINK_ONLY:dl>;$<LINK_ONLY:m>;$<LINK_ONLY:pthread>;$<LINK_ONLY:rt>
+deps_3rdparty=zlib;libjpeg-turbo;libwebp;libpng;libtiff;libjasper
+deps_extra=dl;m;pthread;rt
+deps_modules=opencv_imgcodecs;opencv_imgproc;opencv_core
+dir=
+docs_status=NO
+extension=
+hal=
+int16=
+int32=
+int8=
+item=
+lang=
+libjasper_BINARY_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/3rdparty/libjasper
+libjasper_IS_TOP_LEVEL=OFF
+libjasper_SOURCE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/libjasper
+libjpeg-turbo_BINARY_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/3rdparty/libjpeg-turbo
+libjpeg-turbo_IS_TOP_LEVEL=OFF
+libjpeg-turbo_SOURCE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/libjpeg-turbo
+libpng_BINARY_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/3rdparty/libpng
+libpng_IS_TOP_LEVEL=OFF
+libpng_LIB_DEPENDS=general;zlib;
+libpng_SOURCE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/libpng
+libprotobuf_BINARY_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/3rdparty/protobuf
+libprotobuf_IS_TOP_LEVEL=OFF
+libprotobuf_SOURCE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/protobuf
+libtiff_BINARY_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/3rdparty/libtiff
+libtiff_IS_TOP_LEVEL=OFF
+libtiff_LIB_DEPENDS=general;zlib;
+libtiff_SOURCE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/libtiff
+libwebp_BINARY_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/3rdparty/libwebp
+libwebp_IS_TOP_LEVEL=OFF
+libwebp_SOURCE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/libwebp
+logluv=ON
+lst=
+lzw=ON
+m=
+mdi=ON
+mkl_root_paths=
+module=
+name=
+next=ON
+old-jpeg=OFF
+opencl_features=no extra features
+opencv_core_BINARY_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/modules/core
+opencv_core_IS_TOP_LEVEL=OFF
+opencv_core_LIB_DEPENDS=general;dl;general;m;general;pthread;general;rt;general;zlib;
+opencv_core_SOURCE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/core
+opencv_imgcodecs_BINARY_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/modules/imgcodecs
+opencv_imgcodecs_IS_TOP_LEVEL=OFF
+opencv_imgcodecs_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;general;zlib;general;libjpeg-turbo;general;libwebp;general;libpng;general;libtiff;general;libjasper;
+opencv_imgcodecs_SOURCE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgcodecs
+opencv_imgproc_BINARY_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/modules/imgproc
+opencv_imgproc_IS_TOP_LEVEL=OFF
+opencv_imgproc_LIB_DEPENDS=general;opencv_core;general;dl;general;m;general;pthread;general;rt;
+opencv_imgproc_SOURCE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/modules/imgproc
+packbits=ON
+parallel_status=pthreads
+quirc_BINARY_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/3rdparty/quirc
+quirc_IS_TOP_LEVEL=OFF
+quirc_SOURCE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/quirc
+s=
+search=
+the_module=
+thunder=ON
+trace_status=built-in
+type=
+v4l_status=linux/videodev2.h
+val=0
+var=
+vars_regex=PNG_LIBPNG_VER_MAJOR|PNG_LIBPNG_VER_MINOR|PNG_LIBPNG_VER_RELEASE
+zlib_BINARY_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/build-riscv/3rdparty/zlib
+zlib_IS_TOP_LEVEL=OFF
+zlib_SOURCE_DIR=/home/shc/projects/cheshire-linux-nvdla/opencv/3rdparty/zlib
