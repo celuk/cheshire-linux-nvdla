@@ -546,7 +546,7 @@ configure: failed program was:
 configure:15402: result: no
 configure:15305: checking whether pthreads work without any flags
 configure:15393: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG    conftest.c   >&5
-/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/cccBGVR2.o: in function `main':
+/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccz4GGKh.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `pthread_join'
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x5a): undefined reference to `__pthread_register_cancel'
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x6a): undefined reference to `pthread_create'
