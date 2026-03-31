@@ -1,6 +1,7 @@
 /dts-v1/;
 
-// /memreserve/ 0x80140000 0x00010000;
+// keep off device tree itself from linux space
+/memreserve/ 0x80140000 0x00010000;
 
 / {
 	#address-cells = <2>;
@@ -51,7 +52,7 @@
 
 	memory@80000000 {
     	device_type = "memory";
-    	reg = <0x0 0x80000000 0x0 0x0fffffff>;
+      	reg = <0x0 0x80000000 0x0 0x80000000>; // 2GB memory
   	};
 
 	soc: soc {

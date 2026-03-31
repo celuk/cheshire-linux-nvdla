@@ -66,6 +66,7 @@ cp "../tengine/models/resnet18-cifar10-nosoftmax-relu_int8.tmfile" ./_install/;
 cp "../tengine/models/yolox_nano_relu_int8.tmfile" ./_install/;
 cp "../tengine/images/person.jpg" ./_install/;
 cp "../tengine/images/cat.jpg" ./_install/;
+cp "../tengine/images/dog.jpg" ./_install/;
 
 cp "/home/shc/temp/fast-math.nvdla" ./_install;
 cp "/home/shc/temp/0_8.jpg" ./_install;
