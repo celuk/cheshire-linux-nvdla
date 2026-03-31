@@ -29,6 +29,7 @@ cmake -S "${ROOT_DIR}" -B "${BUILD_DIR}" \
   -DTENGINE_ENABLE_RISCV_LP64DV_OPT=OFF \
   -DTENGINE_BUILD_SHARED=OFF \
   -DTENGINE_OPENMP=OFF \
+  -DTENGINE_ONLINE_REPORT=OFF \
   -DNVDLA_SW_ROOT="${NVDLA_SW_DIR}" \
   -DCMAKE_EXE_LINKER_FLAGS="-static -static-libgcc -static-libstdc++ -Wl,--gc-sections" \
   -DCMAKE_BUILD_TYPE=Release \

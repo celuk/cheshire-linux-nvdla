@@ -44,6 +44,7 @@ cmake -S "${ROOT_DIR}" -B "${BUILD_DIR}" \
   -DBUILD_opencv_python2=OFF \
   -DBUILD_opencv_python3=OFF \
   -DWITH_IPP=OFF \
+  -DWITH_OPENCL=OFF \
   -DWITH_TBB=OFF \
   -DWITH_OPENMP=OFF \
   -DWITH_GTK=OFF \
