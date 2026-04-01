@@ -257,7 +257,8 @@ void show_usage()
 {
     fprintf(
         stderr,
-        "[Usage]:  [-h]\n    [-m model_file] [-i image_file] [-r repeat_count] [-t thread_count]\n");
+        "[Usage]:  [-h]\n    [-m model_file] [-i image_file] [-g img_h,img_w] [-r loop_count] [-t thread_count]\n"
+        " example usage: tm_yolox_opendla -m yolox_nano_relu_int8.tmfile -i dog.jpg -g 320,320 -r 1 -t 1\n");
 }
 
 void get_input_data_focus_int8(const char* image_file, int8_t* input_data, int letterbox_rows, int letterbox_cols, const float* mean,
@@ -359,12 +360,13 @@ int main(int argc, char* argv[])
     // allow none square letterbox, set default letterbox size
     int letterbox_rows = 416;
     int letterbox_cols = 416;
+    float img_hw[2] = {0.f};
 
     int repeat_count = 1;
     int num_thread = 1;
 
     int res;
-    while ((res = getopt(argc, argv, "m:i:r:t:h:")) != -1)
+    while ((res = getopt(argc, argv, "m:i:r:t:g:h")) != -1)
     {
         switch (res)
         {
@@ -379,6 +381,11 @@ int main(int argc, char* argv[])
             break;
         case 't':
             num_thread = std::strtoul(optarg, nullptr, 10);
+            break;
+        case 'g':
+            split(img_hw, optarg, ",");
+            letterbox_rows = (int)img_hw[0];
+            letterbox_cols = (int)img_hw[1];
             break;
         case 'h':
             show_usage();
@@ -400,6 +407,12 @@ int main(int argc, char* argv[])
     {
         fprintf(stderr, "Error: Image file not specified!\n");
         show_usage();
+        return -1;
+    }
+
+    if (letterbox_rows <= 0 || letterbox_cols <= 0)
+    {
+        fprintf(stderr, "Error: invalid -g value, expected img_h,img_w (example: -g 320,320)\n");
         return -1;
     }
 
