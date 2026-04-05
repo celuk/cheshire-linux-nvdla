@@ -34,7 +34,6 @@
 #include "utility/sys_port.h"
 #include "utility/vector.h"
 #include "utility/log.h"
-#include "pooling_param.h"
 
 #include <string.h>
 
@@ -119,42 +118,6 @@ int node_in_list(const struct graph* ir_graph, struct vector* ops_list, const ui
     return -1;
 }
 
-static int node_blocked_by_device_constraints(const struct graph* ir_graph, const uint16_t node_id)
-{
-    if (NULL == ir_graph || NULL == ir_graph->attribute || NULL == ir_graph->attribute->context ||
-        NULL == ir_graph->attribute->context->device)
-    {
-        return 0;
-    }
-
-    struct device* dev = ir_graph->attribute->context->device;
-    if (0 != strcmp(dev->name, "OPENDLA"))
-    {
-        return 0;
-    }
-
-    const ir_node_t* ir_node = ir_graph->node_list[node_id];
-    if (NULL == ir_node || ir_node->op.type != OP_POOL)
-    {
-        return 0;
-    }
-
-    const struct pool_param* param = (const struct pool_param*)ir_node->op.param_mem;
-    if (NULL == param)
-    {
-        return 0;
-    }
-
-    if (param->kernel_h > 8 || param->kernel_w > 8)
-    {
-        TLOG_INFO("Split policy: force OP_POOL node %u to CPU for OPENDLA (kernel=%dx%d > 8x8).\n", node_id,
-                  param->kernel_h, param->kernel_w);
-        return 1;
-    }
-
-    return 0;
-}
-
 struct vector* get_graph_blocked_nodes(const struct graph* ir_graph, struct vector* blocked_ops, struct vector* allowed_precision)
 {
     struct vector* blocked_nodes_list = create_vector(sizeof(uint16_t), NULL);
@@ -163,8 +126,7 @@ struct vector* get_graph_blocked_nodes(const struct graph* ir_graph, struct vect
     {
         int is_blocked_op = node_in_list(ir_graph, blocked_ops, i);
         int is_allowed_precision = node_in_precision(ir_graph, i, allowed_precision);
-        int is_blocked_by_device = node_blocked_by_device_constraints(ir_graph, i);
-        if (0 == is_blocked_op || 0 != is_allowed_precision || 0 != is_blocked_by_device)
+        if (0 == is_blocked_op || 0 != is_allowed_precision)
         {
             push_vector_data(blocked_nodes_list, &i);
             continue;
