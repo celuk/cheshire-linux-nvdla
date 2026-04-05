@@ -59,3 +59,9 @@ if cmake --build "${BUILD_DIR}" --target help | grep "tm_yolox_opendla" >/dev/nu
 else
   echo "Skipping tm_yolox_opendla: target is not generated (OpenCV not found for cross-compile)."
 fi
+
+if cmake --build "${BUILD_DIR}" --target help | grep "tm_yolov3_tiny_opendla" >/dev/null; then
+  cmake --build "${BUILD_DIR}" --target tm_yolov3_tiny_opendla -j"$(nproc)"
+else
+  echo "Skipping tm_yolov3_tiny_opendla: target is not generated (OpenCV not found for cross-compile)."
+fi

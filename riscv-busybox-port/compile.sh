@@ -62,6 +62,16 @@ else
     echo "Warning: tm_yolox_opendla not found at ../tengine/build-riscv/examples/"
 fi
 
+if [ -f "../tengine/build-riscv/examples/tm_yolov3_tiny_opendla" ]; then
+    echo "Copying tm_yolov3_tiny_opendla..."
+    cp "../tengine/build-riscv/examples/tm_yolov3_tiny_opendla" ./_install/bin/tm_yolov3_tiny_opendla
+    chmod +x ./_install/bin/tm_yolov3_tiny_opendla
+    echo "Stripping tm_yolov3_tiny_opendla..."
+    "${CROSS_COMPILE}strip" ./_install/bin/tm_yolov3_tiny_opendla
+else
+    echo "Warning: tm_yolov3_tiny_opendla not found at ../tengine/build-riscv/examples/"
+fi
+
 cp "../tengine/models/resnet18-cifar10-nosoftmax-relu_int8.tmfile" ./_install/;
 cp "../tengine/models/yolox_nano_relu_int8.tmfile" ./_install/;
 cp "../tengine/images/person.jpg" ./_install/;
