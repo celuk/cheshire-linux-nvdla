@@ -30,6 +30,7 @@ uname -v = #106~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar  6 08:44:59 UTC
 PATH: /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/../../riscv-toolchain-custom/_install/bin
 PATH: /home/shc/cadence/installs/XCELIUM2403/bin/
 PATH: /home/shc/cadence/installs/XCELIUM2403/tools/bin/64bit/
+PATH: /home/shc/.local/node/bin
 PATH: /home/shc/.local/bin
 PATH: /tools/Xilinx/Vivado/2022.2/bin
 PATH: /home/shc/.config/Code/User/globalStorage/github.copilot-chat/debugCommand
@@ -546,7 +547,7 @@ configure: failed program was:
 configure:15402: result: no
 configure:15305: checking whether pthreads work without any flags
 configure:15393: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG    conftest.c   >&5
-/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccjaCPQS.o: in function `main':
+/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccROhYZ5.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `pthread_join'
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x5a): undefined reference to `__pthread_register_cancel'
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x6a): undefined reference to `pthread_create'
