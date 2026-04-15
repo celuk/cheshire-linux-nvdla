@@ -1,7 +1,7 @@
 SHELL := /bin/bash
 .PHONY: all opensbi lrzsz opencv tengine nvdla busybox linux toolchain
 
-all: opensbi lrzsz opencv tengine busybox linux nvdla busybox linux
+all: opensbi lrzsz busybox linux nvdla busybox linux
 
 opensbi:
 	pushd riscv-opensbi-port && ./compile.sh && popd
