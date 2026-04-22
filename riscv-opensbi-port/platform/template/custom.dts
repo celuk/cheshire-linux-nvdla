@@ -15,7 +15,7 @@
 	};
 
 	chosen {
-		bootargs = "console=hvc0 earlycon=sbi";
+		bootargs = "console=hvc0 earlycon=sbi cma=256M";
 		stdout-path = "serial0";
 	};
   // bootargs = "console=hvc0 earlycon=sbi clk_ignore_unused";
