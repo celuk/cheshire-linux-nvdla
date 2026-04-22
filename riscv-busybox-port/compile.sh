@@ -78,10 +78,14 @@ fi
 #cp "../tengine/images/cat.jpg" ./_install/;
 #cp "../tengine/images/dog.jpg" ./_install/;
 
-cp "/home/shc/temp/fast-math.nvdla" ./_install;
-cp "/home/shc/temp/0_8.jpg" ./_install;
-cp "/home/shc/temp/default.nvdla" ./_install;
-cp "/home/shc/temp/cat_32.jpg" ./_install;
+cp "../nvdla/loadables/lenet/lenet-fast-math.nvdla" ./_install;
+cp "../nvdla/loadables/resnet18/resnet18-default.nvdla" ./_install;
+cp "../nvdla/loadables/resnet50/resnet50-default.nvdla" ./_install;
+
+cp "../nvdla/loadables/lenet/images/0_8.jpg" ./_install;
+cp "../nvdla/loadables/resnet18/images/cat_32.jpg" ./_install;
+cp "../nvdla/loadables/resnet50/images/331_hare.jpg" ./_install;
+
 cp "./logo.txt" ./_install;
 
 cd _install;
@@ -102,8 +106,9 @@ echo 'echo "Starting shell..."' >> ./etc/init.d/rcS
 #echo 'ls -al' >> ./etc/init.d/rcS
 #echo 'exec /bin/sh' >> ./etc/init.d/rcS
 
-echo './nvdla_runtime --image 0_8.jpg --loadable fast-math.nvdla' >> ./etc/init.d/rcS
-echo './nvdla_runtime --image cat_32.jpg --loadable default.nvdla' >> ./etc/init.d/rcS
+echo './nvdla_runtime --image 0_8.jpg --loadable lenet-fast-math.nvdla' >> ./etc/init.d/rcS
+echo './nvdla_runtime --image cat_32.jpg --loadable resnet18-default.nvdla' >> ./etc/init.d/rcS
+echo './nvdla_runtime --image 331_hare.jpg --loadable resnet50-default.nvdla' >> ./etc/init.d/rcS
 
 echo 'exec setsid cttyhack /bin/sh' >> ./etc/init.d/rcS
 
