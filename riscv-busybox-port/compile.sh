@@ -101,7 +101,7 @@ echo 'mount -t devtmpfs devtmpfs /dev' >> ./etc/init.d/rcS
 echo 'mount -t proc none /proc' >> ./etc/init.d/rcS
 echo 'mount -t sysfs none /sys' >> ./etc/init.d/rcS
 echo 'echo "Loading OpenDLA kernel module..."' >> ./etc/init.d/rcS
-echo 'insmod /opendla.ko' >> ./etc/init.d/rcS
+echo 'insmod ./opendla.ko' >> ./etc/init.d/rcS
 echo 'cat logo.txt' >> ./etc/init.d/rcS
 echo 'echo "Starting shell..."' >> ./etc/init.d/rcS
 #echo 'ls -al' >> ./etc/init.d/rcS
