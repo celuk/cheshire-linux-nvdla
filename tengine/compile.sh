@@ -9,6 +9,11 @@ NVDLA_COMPILER_LIB="${NVDLA_SW_DIR}/umd/out/core/src/compiler/libnvdla_compiler/
 OPENCV_INSTALL_DIR="${ROOT_DIR}/../opencv/install"
 OPENCV_DIR="${OPENCV_INSTALL_DIR}/lib/cmake/opencv4"
 
+if [ -d "${BUILD_DIR}" ]; then
+    find "${BUILD_DIR}" -name "tm_*_opendla" -delete 2>/dev/null || true
+    echo "Removed stale tengine NVDLA binaries - they will relink on next 'make tengine'."
+fi
+
 if [ ! -f "${NVDLA_RUNTIME_LIB}" ] || [ ! -f "${NVDLA_COMPILER_LIB}" ]; then
   echo "NVDLA runtime/compiler libraries not found, building nvdla/sw first..."
   "${NVDLA_SW_DIR}/compile.sh"
