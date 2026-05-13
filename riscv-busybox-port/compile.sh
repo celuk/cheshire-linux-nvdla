@@ -107,9 +107,10 @@ echo 'echo "Starting shell..."' >> ./etc/init.d/rcS
 #echo 'ls -al' >> ./etc/init.d/rcS
 #echo 'exec /bin/sh' >> ./etc/init.d/rcS
 
-echo 'nvdla_runtime --image 0_8.jpg --loadable lenet-fast-math.nvdla --rawdump' >> ./etc/init.d/rcS
-echo 'nvdla_runtime --image cat_32.jpg --loadable cifar-default.nvdla --rawdump' >> ./etc/init.d/rcS
-echo 'nvdla_runtime --image 331_hare.jpg --loadable imagenet-default.nvdla --rawdump' >> ./etc/init.d/rcS
+#echo 'nvdla_runtime --image 0_8.jpg --loadable lenet-fast-math.nvdla --rawdump' >> ./etc/init.d/rcS
+#echo 'nvdla_runtime --image cat_32.jpg --loadable cifar-default.nvdla --rawdump' >> ./etc/init.d/rcS
+#echo 'nvdla_runtime --image 331_hare.jpg --loadable imagenet-default.nvdla --rawdump' >> ./etc/init.d/rcS
+
 #echo 'nvdla_runtime --image 742_printer.jpg --loadable imagenet-default.nvdla --rawdump' >> ./etc/init.d/rcS
 
 echo 'exec setsid cttyhack /bin/sh' >> ./etc/init.d/rcS
