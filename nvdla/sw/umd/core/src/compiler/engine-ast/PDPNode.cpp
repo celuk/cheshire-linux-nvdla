@@ -339,7 +339,7 @@ NvDlaError engine_ast::PDPNode::pdpHWSplitWidth()
 {
     NvDlaError e = NvDlaSuccess;
 
-    engine_ast::PDPEngineParams::hwSplitWidthInfo splitWInfo;
+    engine_ast::PDPEngineParams::hwSplitWidthInfo splitWInfo = {};
 
     surface::TensorSurfaceDesc *srcTSD     = graph()->nodeInputTensorSurface(this, 0, supportedInSurfCategories());
     surface::TensorSurfaceDesc *dstTSD     = graph()->nodeOutputTensorSurface(this, 0, supportedOutSurfCategories());
