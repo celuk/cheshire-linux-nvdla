@@ -35,30 +35,9 @@
 #include "utility/vector.h"
 #include "utility/log.h"
 
-#include "operator/op.h"
-#include "pooling_param.h"
-
 #include <string.h>
 
 #define MODEL_COMPLEX_COUNT 3
-
-/*
- * nv_small PDP hardware has a 9-entry rtlOverlapLines table (indices 0-8).
- * ceil(kernel_h / stride_h) must be <= 8 or calculateMaxWidth() reads out of
- * bounds, producing garbage maxFlyingWidth and crashing the compiler.
- * Block any pool that would exceed this limit so it falls back to CPU.
- */
-static int pool_exceeds_nvdla_pdp_hw_limit(const struct graph* ir_graph, uint16_t node_id)
-{
-    const ir_node_t* ir_node = ir_graph->node_list[node_id];
-    if (ir_node->op.type != OP_POOL)
-        return 0;
-    const struct pool_param* param = (const struct pool_param*)ir_node->op.param_mem;
-    /* ceil(k/s) > 8  <=>  k > 8*s  (integer arithmetic) */
-    if (param->kernel_h > 8 * param->stride_h || param->kernel_w > 8 * param->stride_w)
-        return 1;
-    return 0;
-}
 
 int check_sub_info(struct graph* ir_graph)
 {
@@ -147,8 +126,7 @@ struct vector* get_graph_blocked_nodes(const struct graph* ir_graph, struct vect
     {
         int is_blocked_op = node_in_list(ir_graph, blocked_ops, i);
         int is_allowed_precision = node_in_precision(ir_graph, i, allowed_precision);
-        int is_blocked_by_hw = pool_exceeds_nvdla_pdp_hw_limit(ir_graph, i);
-        if (0 == is_blocked_op || 0 != is_allowed_precision || 0 != is_blocked_by_hw)
+        if (0 == is_blocked_op || 0 != is_allowed_precision)
         {
             push_vector_data(blocked_nodes_list, &i);
             continue;

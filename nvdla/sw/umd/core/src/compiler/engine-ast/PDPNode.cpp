@@ -225,6 +225,10 @@ NvU16 engine_ast::PDPNode::calculateMaxWidth
     const NvU16 rtlOverlapLines[9] = {1, 1, 2, 4, 4, 8, 8, 8, 8};
 
     NvU16 logicalOverlapLines = (NvU16) ceil(float(poolingKernelHeight)/float(poolingStrideY));
+    // The table only covers indices 0-8; the hardware line-buffer requirement
+    // plateaus at 8 for logicalOverlapLines >= 5, so clamp rather than OOB-read.
+    if (logicalOverlapLines >= (NvU16)(sizeof(rtlOverlapLines)/sizeof(rtlOverlapLines[0])))
+        logicalOverlapLines = (NvU16)(sizeof(rtlOverlapLines)/sizeof(rtlOverlapLines[0])) - 1;
     NvU32 atom_k_size         = graph()->target_config()->atomicKSize();
     NvU16 kernelPerGroup      = pdpPrecision.v() == surface::SurfacePrecisionEnum::NVDLA_PRECISION_INT8 ? atom_k_size : atom_k_size / 2;
     NvU16 bitsPerElement      = pdpPrecision.v() == surface::SurfacePrecisionEnum::NVDLA_PRECISION_INT8 ? 14 : 28;
