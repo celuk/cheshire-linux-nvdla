@@ -546,6 +546,7 @@ int ODLAEngine::Build(struct subgraph* subgraph)
             } else {
                 newEdge = t2e->second;
             }
+
             this->graph->appendNodeToEdge(newEdge, edgeSide, odla_node);
 
             if(isInput){

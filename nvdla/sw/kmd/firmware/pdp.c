@@ -67,22 +67,16 @@ static const uint8_t map_pool_kernel[] = {
 	FIELD_ENUM(PDP_D_POOLING_KERNEL_CFG_0, KERNEL_WIDTH, KERNEL_WIDTH_6),
 	FIELD_ENUM(PDP_D_POOLING_KERNEL_CFG_0, KERNEL_WIDTH, KERNEL_WIDTH_7),
 	FIELD_ENUM(PDP_D_POOLING_KERNEL_CFG_0, KERNEL_WIDTH, KERNEL_WIDTH_8),
-	0x8, /* kernel 9  - KERNEL_WIDTH field is 4 bits (0xf mask), supports 0x0-0xF */
-	0x9, /* kernel 10 */
-	0xa, /* kernel 11 */
-	0xb, /* kernel 12 */
-	0xc, /* kernel 13 */
 };
 
 /* The reciprocal of kernel width: 1/1, 1/2, 1/3, ... */
-static const uint32_t recip_kernel_size[2][13] = {
+static const uint32_t recip_kernel_size[2][8] = {
 	/*
-	 * INT8/16 (Q16 fixed-point: value = round(65536/k))
-	 * 1/1     1/2     1/3     1/4     1/5     1/6     1/7     1/8     1/9     1/10    1/11    1/12    1/13
+	 * INT8/16
+	 * 1      1/2     1/3     1/4     1/5     1/6     1/7     1/8
 	 */
-	{0x10000, 0x8000, 0x5555, 0x4000, 0x3333, 0x2aaa, 0x2492, 0x2000, 0x1c72, 0x199a, 0x1746, 0x1555, 0x13b1},
-	/* FP16 (NVDLA bias-31 half-precision: value = round((mantissa+1)*2^(exp-31))) */
-	{0x7c00, 0x7800, 0x7555,  0x7400, 0x7266, 0x7155, 0x7092, 0x7000, 0x6f1c, 0x6e66, 0x6dd1, 0x6d55, 0x6cec},
+	{0x10000, 0x8000, 0x5555, 0x4000, 0x3333, 0x2aaa, 0x2492, 0x2000},
+	{0x7c00, 0x7800, 0x7555,  0x7400, 0x7266, 0x7155, 0x7092, 0x7000},
 };
 
 #if STAT_ENABLE
