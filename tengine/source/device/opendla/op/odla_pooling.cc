@@ -41,6 +41,15 @@ nvdla::priv::canonical_ast::Node * ODLAEngine::AddPoolingNode(struct node* ir_no
     struct tensor* input_tensor = get_ir_graph_tensor(ir_graph, ir_node->input_tensors[0]);
     struct tensor* output_tensor = get_ir_graph_tensor(ir_graph, ir_node->output_tensors[0]);
 
+    int num_chain = 1;
+    if (param->pool_method == 0 && param->kernel_h > 8
+        && param->kernel_h == param->kernel_w
+        && param->stride_h == 1 && param->stride_w == 1
+        && (param->kernel_h - 1) % 4 == 0)
+    {
+        num_chain = (param->kernel_h - 1) / 4;
+    }
+
     // Init Node
     if (param->pool_method == 0)
     {
@@ -66,10 +75,19 @@ nvdla::priv::canonical_ast::Node * ODLAEngine::AddPoolingNode(struct node* ir_no
             }
         }
     }
+
     nvdla::Dims2 topLeftPadding(param->pad_h0, param->pad_w0);
     nvdla::Dims2 bottomRightPadding(param->pad_h1, param->pad_w1);
     nvdla::Dims2 kernel(param->kernel_h,param->kernel_w);
     nvdla::Dims2 stride(param->stride_h,param->stride_w);
+
+    if (num_chain > 1)
+    {
+        topLeftPadding = nvdla::Dims2(2, 2);
+        bottomRightPadding = nvdla::Dims2(2, 2);
+        kernel = nvdla::Dims2(5, 5);
+        stride = nvdla::Dims2(1, 1);
+    }
 
     poolingNode->params().setPoolType(pooltype);
     poolingNode->params().setTopLeftPadding(topLeftPadding);
@@ -81,6 +99,48 @@ nvdla::priv::canonical_ast::Node * ODLAEngine::AddPoolingNode(struct node* ir_no
     nvdla::priv::canonical_ast::NodeFactory::s_pool_priv.insert(
         std::pair<nvdla::priv::canonical_ast::Node*, nvdla::priv::canonical_ast::PoolingNode*>(Node, poolingNode)
     );
+
+    nvdla::priv::canonical_ast::Node* chainHead = Node;
+    for (int i = 1; i < num_chain; i++)
+    {
+        auto* stageNode = new nvdla::priv::canonical_ast::PoolingNode();
+        stageNode->params().setPoolType(pooltype);
+        stageNode->params().setTopLeftPadding(topLeftPadding);
+        stageNode->params().setBottomRightPadding(bottomRightPadding);
+        stageNode->params().setKernelDims(kernel);
+        stageNode->params().setStride(stride);
+
+        nvdla::priv::canonical_ast::NodeFactory::s_pool_priv.insert(
+            std::pair<nvdla::priv::canonical_ast::Node*, nvdla::priv::canonical_ast::PoolingNode*>(stageNode, stageNode)
+        );
+
+        stageNode->setGraph(this->graph);
+        this->graph->insertNode(stageNode);
+        stageNode->setId(this->graph->nextNodeId());
+        std::string stageName = std::string(ir_node->name) + "_dla5x5_" + std::to_string(i);
+        stageNode->setName(stageName);
+
+        auto* interTensor = this->odla_tensor_map[input_tensor->index]->clone();
+        interTensor->setNetwork(NULL);
+        interTensor->setTensorType(nvdla::TensorType::kIO);
+        auto* interEdge = new nvdla::priv::canonical_ast::Edge();
+        interEdge->setGraph(this->graph);
+        interEdge->setId(this->graph->nextEdgeId());
+        interEdge->setOriginalTensor(interTensor);
+        this->graph->insertEdge(interEdge);
+
+        this->graph->appendNodeToEdge(interEdge, nvdla::priv::ast::EdgeSideEnum::FIRST, stageNode);
+        this->graph->appendNodeToEdge(interEdge, nvdla::priv::ast::EdgeSideEnum::SECOND, chainHead);
+        stageNode->markOutputEdge(interEdge);
+        chainHead->markInputEdge(interEdge);
+
+        chainHead = stageNode;
+    }
+
+    if (num_chain > 1)
+    {
+        this->odla_pool_chain_head[Node] = chainHead;
+    }
 
     return Node;
 }

@@ -124,6 +124,7 @@ private:
     dict_irt2odlat odla_tensor_map;
     dict_odlan2irtn odla_node_map;
     dict_odlat2edge odla_edge_map;
+    std::map<nvdla::priv::canonical_ast::Node*, nvdla::priv::canonical_ast::Node*> odla_pool_chain_head;
     void odla_input_data_convert(void* dst, const void* src, nvdla::IRuntime::NvDlaTensor tDesc) const;
     void odla_output_data_convert(void* dst, const void* src, nvdla::IRuntime::NvDlaTensor tDesc) const;
 };

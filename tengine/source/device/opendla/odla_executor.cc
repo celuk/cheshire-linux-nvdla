@@ -547,20 +547,27 @@ int ODLAEngine::Build(struct subgraph* subgraph)
                 newEdge = t2e->second;
             }
 
-            this->graph->appendNodeToEdge(newEdge, edgeSide, odla_node);
+            auto wireNode = odla_node;
+            if (isInput)
+            {
+                auto chainIt = this->odla_pool_chain_head.find(odla_node);
+                if (chainIt != this->odla_pool_chain_head.end())
+                    wireNode = chainIt->second;
+            }
+            this->graph->appendNodeToEdge(newEdge, edgeSide, wireNode);
 
             if(isInput){
                 for ( size_t inputIdx = 0; inputIdx < subgraph->input_num; ++inputIdx)
                 {
                     if ( odla_tensor == graphInputs[inputIdx])
                     {
-                        inputEdges[inputIdx] = newEdge; //把当前edge加入graph的input_edges列表当中
+                        inputEdges[inputIdx] = newEdge;
                         newTensor = originTensor2canTensor[odla_tensor];
                         newTensor->setTensorType(nvdla::TensorType::kNW_INPUT);
                         break;
                     }
                 }
-                odla_node->markInputEdge(newEdge); //告诉当前node，你的这个edge是一个网络inputedge
+                wireNode->markInputEdge(newEdge);
             }else{
                 for ( size_t outputIdx = 0; outputIdx < subgraph->output_num; outputIdx++)
                 {
