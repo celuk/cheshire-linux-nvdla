@@ -515,6 +515,77 @@ int main(int argc, char* argv[])
     for (int i = 0; i < output_size; i++)
         p8_data[i] = ((float)output_i8[i] - (float)output_zero_point) * output_scale;
 
+    /* diagnostic: dump output tensor stats */
+    {
+        int dims[4] = {0};
+        int dim_num = get_tensor_shape(p8_output, dims, 4);
+        fprintf(stderr, "[DIAG] output dims(%d):", dim_num);
+        for (int d = 0; d < dim_num; d++) fprintf(stderr, " %d", dims[d]);
+        fprintf(stderr, "\n");
+        fprintf(stderr, "[DIAG] output_size=%d  output_scale=%g  output_zero_point=%d\n",
+                output_size, output_scale, output_zero_point);
+
+        int nz = 0;
+        float fmin = 1e30f, fmax = -1e30f;
+        int8_t i8min = 127, i8max = -128;
+        for (int i = 0; i < output_size; i++) {
+            if (output_i8[i] != 0) nz++;
+            if (output_i8[i] < i8min) i8min = output_i8[i];
+            if (output_i8[i] > i8max) i8max = output_i8[i];
+            if (p8_data[i] < fmin) fmin = p8_data[i];
+            if (p8_data[i] > fmax) fmax = p8_data[i];
+        }
+        fprintf(stderr, "[DIAG] int8: nonzero=%d/%d  min=%d  max=%d\n",
+                nz, output_size, (int)i8min, (int)i8max);
+        fprintf(stderr, "[DIAG] float: min=%g  max=%g\n", fmin, fmax);
+        fprintf(stderr, "[DIAG] raw int8[0..19]:");
+        for (int i = 0; i < 20 && i < output_size; i++)
+            fprintf(stderr, " %d", (int)output_i8[i]);
+        fprintf(stderr, "\n");
+
+        int num_feat = 85;
+        int num_anchors = output_size / num_feat;
+        fprintf(stderr, "[DIAG] num_anchors=%d num_feat=%d\n", num_anchors, num_feat);
+
+        // Check layout A: row-major [3549, 85] — demo expects this
+        float best_obj_A = 0.f;
+        int best_idx_A = -1;
+        for (int a = 0; a < num_anchors; a++) {
+            float obj = p8_data[a * num_feat + 4];
+            if (obj > best_obj_A) { best_obj_A = obj; best_idx_A = a; }
+        }
+        fprintf(stderr, "[DIAG] layout[3549,85]: best objectness=%g at anchor %d\n",
+                best_obj_A, best_idx_A);
+
+        // Check layout B: NCHW [85, 3549] — NVDLA might produce this
+        float best_obj_B = 0.f;
+        int best_idx_B = -1;
+        for (int a = 0; a < num_anchors; a++) {
+            float obj = p8_data[4 * num_anchors + a];
+            if (obj > best_obj_B) { best_obj_B = obj; best_idx_B = a; }
+        }
+        fprintf(stderr, "[DIAG] layout[85,3549]: best objectness=%g at anchor %d\n",
+                best_obj_B, best_idx_B);
+        if (best_idx_B >= 0) {
+            float best_cls = 0.f;
+            int best_cls_idx = -1;
+            for (int c = 0; c < 80; c++) {
+                float s = p8_data[(5 + c) * num_anchors + best_idx_B];
+                if (s > best_cls) { best_cls = s; best_cls_idx = c; }
+            }
+            fprintf(stderr, "[DIAG] layout[85,3549]: best_obj*best_cls=%g (class=%d)\n",
+                    best_obj_B * best_cls, best_cls_idx);
+        }
+
+        // dump a few objectness values from both layouts
+        fprintf(stderr, "[DIAG] obj[3549,85] first 10:");
+        for (int a = 0; a < 10; a++) fprintf(stderr, " %.3f", p8_data[a*num_feat+4]);
+        fprintf(stderr, "\n");
+        fprintf(stderr, "[DIAG] obj[85,3549] first 10:");
+        for (int a = 0; a < 10; a++) fprintf(stderr, " %.3f", p8_data[4*num_anchors+a]);
+        fprintf(stderr, "\n");
+    }
+
     /* postprocess */
     const float prob_threshold = 0.3f;
     const float nms_threshold = 0.65f;

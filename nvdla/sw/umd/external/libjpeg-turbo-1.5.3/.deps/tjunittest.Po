@@ -7,7 +7,7 @@ tjunittest.o: tjunittest.c \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/wordsize.h \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/long-double.h \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs.h \
- /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs-lp64d.h \
+ /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs-lp64.h \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0/include/stddef.h \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0/include/stdarg.h \
  /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/types.h \
@@ -67,7 +67,7 @@ tjunittest.o: tjunittest.c \
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/wordsize.h:
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/long-double.h:
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs.h:
-/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs-lp64d.h:
+/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/gnu/stubs-lp64.h:
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0/include/stddef.h:
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0/include/stdarg.h:
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/types.h:
