@@ -28,7 +28,6 @@ uname -v = #110~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar 27 12:43:08 UTC
 /bin/universe          = unknown
 
 PATH: /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/../../riscv-toolchain-custom/_install/bin
-PATH: /home/shc/miniconda3/condabin
 PATH: /home/shc/cadence/installs/XCELIUM2403/bin/
 PATH: /home/shc/cadence/installs/XCELIUM2403/tools/bin/64bit/
 PATH: /home/shc/.local/node/bin
@@ -36,6 +35,13 @@ PATH: /home/shc/.local/bin
 PATH: /tools/Xilinx/Vivado/2022.2/bin
 PATH: /home/shc/.config/Code/User/globalStorage/github.copilot-chat/debugCommand
 PATH: /home/shc/.config/Code/User/globalStorage/github.copilot-chat/copilotCli
+PATH: /home/shc/.local/bin
+PATH: /home/shc/miniconda3/condabin
+PATH: /home/shc/cadence/installs/XCELIUM2403/bin/
+PATH: /home/shc/cadence/installs/XCELIUM2403/tools/bin/64bit/
+PATH: /home/shc/.local/node/bin
+PATH: /home/shc/.local/bin
+PATH: /tools/Xilinx/Vivado/2022.2/bin
 PATH: /home/shc/.local/bin
 PATH: /home/shc/.nix-profile/bin
 PATH: /nix/var/nix/profiles/default/bin
@@ -49,6 +55,9 @@ PATH: /usr/games
 PATH: /usr/local/games
 PATH: /snap/bin
 PATH: /snap/bin
+PATH: /home/shc/.cache/scalacli/local-repo/bin/scala-cli
+PATH: /home/shc/miniconda3/bin
+PATH: /home/shc/.cargo/bin
 PATH: /home/shc/.cache/scalacli/local-repo/bin/scala-cli
 PATH: /home/shc/miniconda3/bin
 PATH: /home/shc/.cargo/bin
@@ -840,7 +849,7 @@ configure: failed program was:
 configure:16339: result: no
 configure:16242: checking whether pthreads work without any flags
 configure:16330: riscv64-unknown-linux-gnu-gcc -o conftest -DDLA_2_CONFIG    conftest.c   >&5
-/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccYfkgug.o: in function `main':
+/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/ccWd155a.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `pthread_join'
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x5a): undefined reference to `__pthread_register_cancel'
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x6a): undefined reference to `pthread_create'
@@ -1084,7 +1093,7 @@ configure:16531: $? = 0
 configure:16538: result: yes
 configure:16626: checking whether what we have so far is sufficient with -nostdlib
 configure:16644: riscv64-unknown-linux-gnu-gcc -o conftest -nostdlib -shared -fPIC -Wl,-z,defs -DDLA_2_CONFIG -pthread   conftest.c   -lc >&5
-/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/cchoJgh1.o: in function `main':
+/home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: /tmp/cchL9QO9.o: in function `main':
 conftest.c:(.text+0xe): undefined reference to `pthread_join'
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x58): undefined reference to `__pthread_register_cancel'
 /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/bin/../lib/gcc/riscv64-unknown-linux-gnu/10.2.0/../../../../riscv64-unknown-linux-gnu/bin/ld: conftest.c:(.text+0x64): undefined reference to `pthread_create'
