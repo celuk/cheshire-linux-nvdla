@@ -471,13 +471,13 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest/build-aux/missing aclocal-1.14
+ACLOCAL = ${SHELL} /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest/build-aux/missing aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
 AR = riscv64-unknown-linux-gnu-ar
-AUTOCONF = ${SHELL} /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest/build-aux/missing automake-1.14
+AUTOCONF = ${SHELL} /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest/build-aux/missing automake-1.14
 AWK = gawk
 CC = riscv64-unknown-linux-gnu-gcc
 CCDEPMODE = depmode=gcc3
@@ -506,7 +506,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LD = /home/shc/projects/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/bin/ld
+LD = /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/riscv64-unknown-linux-gnu/bin/ld
 LDFLAGS = 
 LIBOBJS = 
 LIBS = 
@@ -514,10 +514,10 @@ LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIPO = 
 LN_S = ln -s
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest/build-aux/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /usr/bin/mkdir -p
-NM = /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/../../riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-nm -B
+NM = /home/shc/cheshire-linux-nvdla/nvdla/sw/../../riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-nm -B
 NMEDIT = 
 OBJDUMP = riscv64-unknown-linux-gnu-objdump
 OBJEXT = o
@@ -534,17 +534,17 @@ PATH_SEPARATOR = :
 PTHREAD_CC = riscv64-unknown-linux-gnu-gcc
 PTHREAD_CFLAGS = -pthread
 PTHREAD_LIBS = 
-PYTHON = /home/shc/miniconda3/bin/python
+PYTHON = :
 RANLIB = riscv64-unknown-linux-gnu-ranlib
 SED = /usr/bin/sed
 SET_MAKE = 
 SHELL = /bin/sh
 STRIP = riscv64-unknown-linux-gnu-strip
 VERSION = 1.5.0
-abs_builddir = /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest
-abs_srcdir = /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest
-abs_top_builddir = /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest
-abs_top_srcdir = /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest
+abs_builddir = /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest
+abs_srcdir = /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest
+abs_top_builddir = /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest
+abs_top_srcdir = /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest
 ac_ct_AR = 
 ac_ct_CC = 
 ac_ct_CXX = 
@@ -575,7 +575,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/shc/projects/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest/build-aux/install-sh
+install_sh = ${SHELL} /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/protobuf-2.6/gtest/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -712,11 +712,11 @@ m4data_DATA = m4/gtest.m4
 # We define the global AM_CPPFLAGS as everything we compile includes from these
 # directories.
 AM_CPPFLAGS = -I$(srcdir) -I$(srcdir)/include
-#AM_CXXFLAGS = -DGTEST_HAS_PTHREAD=0
+AM_CXXFLAGS = -DGTEST_HAS_PTHREAD=0
 
 # Modifies compiler and linker flags for pthreads compatibility.
-AM_CXXFLAGS = -pthread -DGTEST_HAS_PTHREAD=1
-AM_LIBS = 
+#AM_CXXFLAGS = -pthread -DGTEST_HAS_PTHREAD=1
+#AM_LIBS = 
 
 # Build rules for libraries.
 lib_LTLIBRARIES = lib/libgtest.la lib/libgtest_main.la

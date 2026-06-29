@@ -16,7 +16,8 @@ export CFLAGS="-DDLA_2_CONFIG"
 export CXXFLAGS="-DDLA_2_CONFIG"
 
 cd "$SCRIPT_DIR/kmd"
-make clean
+# clean must target the RISC-V KDIR too, else it falls back to the host kernel.
+make KDIR=$KDIR ARCH=$ARCH CROSS_COMPILE=$CROSS_COMPILE clean
 make KDIR=$KDIR ARCH=$ARCH CROSS_COMPILE=$CROSS_COMPILE CFLAGS+="-DDLA_2_CONFIG" CXXFLAGS+="-DDLA_2_CONFIG" -j$(nproc)
 
 cd "$SCRIPT_DIR"
@@ -29,11 +30,14 @@ fi
 
 cd "$SCRIPT_DIR/umd/external/libjpeg-turbo-1.5.3"
 
-if [ ! -f "Makefile" ]; then
-    ./configure --host=riscv64-unknown-linux-gnu --disable-shared --enable-static
-else
-    make clean
-fi
+# Refresh autotools mtimes so maintainer-mode doesn't rerun aclocal/automake
+# via a stale 'missing' path; reconfigure to fix the committed abs_top_srcdir.
+find . -name "aclocal.m4" -exec touch {} +
+find . -name "configure" -exec touch {} +
+find . -name "Makefile.in" -exec touch {} +
+find . -name "config.h.in" -exec touch {} +
+
+./configure --host=riscv64-unknown-linux-gnu --disable-shared --enable-static
 make -j$(nproc)
 cp .libs/libjpeg.a "$SCRIPT_DIR/umd/external/libjpeg.a"
 

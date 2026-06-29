@@ -8,6 +8,8 @@
 *.s
 Kbuild
 Config.in
+# top-level Config.in is source (subdir ones are generated from Config.src)
+!/Config.in
 
 #
 # Never ignore these

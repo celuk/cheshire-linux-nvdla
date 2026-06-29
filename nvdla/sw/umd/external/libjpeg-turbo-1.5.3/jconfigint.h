@@ -1,6 +1,6 @@
 /* jconfigint.h.  Generated from jconfigint.h.in by configure.  */
 /* libjpeg-turbo build number */
-#define BUILD "20260118"
+#define BUILD "20260629"
 
 /* Compiler's inline keyword */
 /* #undef inline */

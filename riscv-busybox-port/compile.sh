@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo rm -rf ./_install ./rootfs.cpio.gz;
+rm -rf ./_install ./rootfs.cpio ./rootfs.cpio.gz;
 make distclean;
 make defconfig;
 sed -i 's/# CONFIG_STATIC is not set/CONFIG_STATIC=y/' .config;
@@ -91,10 +91,7 @@ cp "./logo.txt" ./_install;
 
 cd _install;
 mkdir -p dev proc sys etc/init.d;
-sudo rm -rf dev/console dev/null;
-sudo mknod dev/console c 5 1;
-sudo mknod dev/null c 1 3;
-#sudo mknod dev/ttyS0 c 4 64;
+# /dev/console and /dev/null are added at cpio-pack time without root (see below).
 
 echo '#!/bin/sh' > ./etc/init.d/rcS
 echo 'mount -t devtmpfs devtmpfs /dev' >> ./etc/init.d/rcS
@@ -116,6 +113,13 @@ echo 'echo "Starting shell..."' >> ./etc/init.d/rcS
 echo 'exec setsid cttyhack /bin/sh' >> ./etc/init.d/rcS
 
 chmod +x ./etc/init.d/rcS;
-ln -s ./etc/init.d/rcS ./init;
-# find . | cpio -H newc -o --owner root:root | gzip > ../rootfs.cpio.gz;
-find . | cpio -H newc -o --owner root:root > ../rootfs.cpio;
+ln -sf ./etc/init.d/rcS ./init;
+cd ..;
+
+# Pack rootfs.cpio without root: the kernel's gen_init_cpio fabricates the
+# device nodes from a text spec, so no sudo/mknod is needed.
+BB="$(pwd)";
+LINUX="$BB/../riscv-linux-port";
+[ -x "$LINUX/usr/gen_init_cpio" ] || cc -O2 -o "$LINUX/usr/gen_init_cpio" "$LINUX/usr/gen_init_cpio.c";
+printf 'nod /dev/console 0600 0 0 c 5 1\nnod /dev/null 0666 0 0 c 1 3\n' > "$BB/devnodes.list";
+( cd "$LINUX" && sh usr/gen_initramfs.sh -u 0 -g 0 -o "$BB/rootfs.cpio" "$BB/_install" "$BB/devnodes.list" );

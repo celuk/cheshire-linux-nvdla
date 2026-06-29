@@ -10,8 +10,6 @@
 *.flt
 *.gmo
 *.info
-# sysroff.info is hand-written binutils SOURCE (input to sysinfo), not a
-# generated doc — must not be ignored or the build breaks on missing sysroff.h
 !sysroff.info
 *.la
 *.lo

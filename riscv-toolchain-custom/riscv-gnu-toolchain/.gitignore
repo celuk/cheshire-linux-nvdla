@@ -2,10 +2,7 @@ autom4te.cache
 build
 config.log
 config.status
-# Anchored to the toolchain root: this is the configure-generated top-level
-# Makefile. WITHOUT the leading slash this pattern matched recursively and
-# stripped every hand-written source Makefile in subtrees (e.g. all of glibc's),
-# breaking the build with "No rule to make target 'all'".
+# Anchored: only the generated top-level Makefile, not glibc's source Makefiles.
 /Makefile
 .DS_Store
 !/regression/Makefile
