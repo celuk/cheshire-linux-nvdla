@@ -5,7 +5,7 @@ make distclean;
 make defconfig;
 sed -i 's/# CONFIG_STATIC is not set/CONFIG_STATIC=y/' .config;
 export CROSS_COMPILE=../riscv-toolchain-custom/_install/bin/riscv64-unknown-linux-gnu-;
-make -j14;
+make -j$(nproc);
 make install;
 
 # Copy lrzsz binaries if they exist

@@ -17,7 +17,7 @@ export CXXFLAGS="-DDLA_2_CONFIG"
 
 cd "$SCRIPT_DIR/kmd"
 make clean
-make KDIR=$KDIR ARCH=$ARCH CROSS_COMPILE=$CROSS_COMPILE CFLAGS+="-DDLA_2_CONFIG" CXXFLAGS+="-DDLA_2_CONFIG" -j16
+make KDIR=$KDIR ARCH=$ARCH CROSS_COMPILE=$CROSS_COMPILE CFLAGS+="-DDLA_2_CONFIG" CXXFLAGS+="-DDLA_2_CONFIG" -j$(nproc)
 
 cd "$SCRIPT_DIR"
 if [ ! -d "umd/external/libjpeg-turbo-1.5.3" ]; then
@@ -34,7 +34,7 @@ if [ ! -f "Makefile" ]; then
 else
     make clean
 fi
-make -j16
+make -j$(nproc)
 cp .libs/libjpeg.a "$SCRIPT_DIR/umd/external/libjpeg.a"
 
 cd "$SCRIPT_DIR/umd/external/protobuf-2.6"
@@ -48,7 +48,7 @@ if [ ! -f "Makefile" ]; then
 else
     make clean
 fi
-make -j16 -C src libprotobuf.la
+make -j$(nproc) -C src libprotobuf.la
 
 cp src/.libs/libprotobuf.a "$SCRIPT_DIR/umd/core/src/compiler/libprotobuf.a"
 cp src/.libs/libprotobuf.a "$SCRIPT_DIR/umd/apps/compiler/libprotobuf.a"
@@ -57,4 +57,4 @@ cd "$SCRIPT_DIR/umd"
 make clean
 rm -rf out/
 
-make TOP=$TOP -j16 compiler runtime CFLAGS+="-DDLA_2_CONFIG" CXXFLAGS+="-DDLA_2_CONFIG"
+make TOP=$TOP -j$(nproc) compiler runtime CFLAGS+="-DDLA_2_CONFIG" CXXFLAGS+="-DDLA_2_CONFIG"

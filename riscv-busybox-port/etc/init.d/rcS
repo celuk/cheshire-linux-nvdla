@@ -3,9 +3,7 @@ mount -t devtmpfs devtmpfs /dev
 mount -t proc none /proc
 mount -t sysfs none /sys
 echo "Loading OpenDLA kernel module..."
-insmod /opendla.ko
-echo " "
-echo logo.txt
-echo " "
+insmod ./opendla.ko
+cat logo.txt
 echo "Starting shell..."
 exec setsid cttyhack /bin/sh
