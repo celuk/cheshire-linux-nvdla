@@ -20,26 +20,26 @@ else
     echo "Warning: lrzsz binaries not found at ../lrzsz/"
 fi
 
-# Copy opendla.ko
-if [ -f "../nvdla/sw/kmd/port/linux/opendla.ko" ]; then
-    echo "Copying opendla.ko..."
-    cp "../nvdla/sw/kmd/port/linux/opendla.ko" ./_install/opendla.ko
-    echo "Stripping opendla.ko..."
-    "${CROSS_COMPILE}strip" --strip-debug ./_install/opendla.ko
-else
-    echo "Warning: opendla.ko not found at ../nvdla/sw/kmd/port/linux/"
-fi
-
-# Copy nvdla_runtime
-if [ -f "../nvdla/sw/umd/out/apps/runtime/nvdla_runtime/nvdla_runtime" ]; then
-    echo "Copying nvdla_runtime..."
-    cp "../nvdla/sw/umd/out/apps/runtime/nvdla_runtime/nvdla_runtime" ./_install/bin/nvdla_runtime
-    chmod +x ./_install/bin/nvdla_runtime
-    echo "Stripping nvdla_runtime..."
-    "${CROSS_COMPILE}strip" ./_install/bin/nvdla_runtime
-else
-    echo "Warning: nvdla_runtime not found at ../nvdla/sw/umd/out/apps/runtime/nvdla_runtime/nvdla_runtime"
-fi
+## Copy opendla.ko
+#if [ -f "../nvdla/sw/kmd/port/linux/opendla.ko" ]; then
+#    echo "Copying opendla.ko..."
+#    cp "../nvdla/sw/kmd/port/linux/opendla.ko" ./_install/opendla.ko
+#    echo "Stripping opendla.ko..."
+#    "${CROSS_COMPILE}strip" --strip-debug ./_install/opendla.ko
+#else
+#    echo "Warning: opendla.ko not found at ../nvdla/sw/kmd/port/linux/"
+#fi
+#
+## Copy nvdla_runtime
+#if [ -f "../nvdla/sw/umd/out/apps/runtime/nvdla_runtime/nvdla_runtime" ]; then
+#    echo "Copying nvdla_runtime..."
+#    cp "../nvdla/sw/umd/out/apps/runtime/nvdla_runtime/nvdla_runtime" ./_install/bin/nvdla_runtime
+#    chmod +x ./_install/bin/nvdla_runtime
+#    echo "Stripping nvdla_runtime..."
+#    "${CROSS_COMPILE}strip" ./_install/bin/nvdla_runtime
+#else
+#    echo "Warning: nvdla_runtime not found at ../nvdla/sw/umd/out/apps/runtime/nvdla_runtime/nvdla_runtime"
+#fi
 
 ## Copy Tengine OpenDLA example binaries
 #if [ -f "../tengine/build-riscv/examples/tm_classification_opendla" ]; then
@@ -51,16 +51,16 @@ fi
 #else
 #    echo "Warning: tm_classification_opendla not found at ../tengine/build-riscv/examples/"
 #fi
-#
-if [ -f "../tengine/build-riscv/examples/tm_yolox_opendla" ]; then
-    echo "Copying tm_yolox_opendla..."
-    cp "../tengine/build-riscv/examples/tm_yolox_opendla" ./_install/bin/tm_yolox_opendla
-    chmod +x ./_install/bin/tm_yolox_opendla
-    echo "Stripping tm_yolox_opendla..."
-    "${CROSS_COMPILE}strip" ./_install/bin/tm_yolox_opendla
-else
-    echo "Warning: tm_yolox_opendla not found at ../tengine/build-riscv/examples/"
-fi
+##
+#if [ -f "../tengine/build-riscv/examples/tm_yolox_opendla" ]; then
+#    echo "Copying tm_yolox_opendla..."
+#    cp "../tengine/build-riscv/examples/tm_yolox_opendla" ./_install/bin/tm_yolox_opendla
+#    chmod +x ./_install/bin/tm_yolox_opendla
+#    echo "Stripping tm_yolox_opendla..."
+#    "${CROSS_COMPILE}strip" ./_install/bin/tm_yolox_opendla
+#else
+#    echo "Warning: tm_yolox_opendla not found at ../tengine/build-riscv/examples/"
+#fi
 #
 #if [ -f "../tengine/build-riscv/examples/tm_yolov3_tiny_opendla" ]; then
 #    echo "Copying tm_yolov3_tiny_opendla..."
@@ -72,20 +72,20 @@ fi
 #    echo "Warning: tm_yolov3_tiny_opendla not found at ../tengine/build-riscv/examples/"
 #fi
 
-#cp "../tengine/models/resnet18-cifar10-nosoftmax-relu_int8.tmfile" ./_install/;
-cp "../tengine/models/yolox_nano_relu_int8.tmfile" ./_install/;
-cp "../tengine/images/person.jpg" ./_install/;
-cp "../tengine/images/cat.jpg" ./_install/;
-cp "../tengine/images/dog.jpg" ./_install/;
-
-cp "../nvdla/loadables/lenet/lenet-fast-math.nvdla" ./_install;
-cp "../nvdla/loadables/resnet18-cifar10/cifar-default.nvdla" ./_install;
-cp "../nvdla/loadables/resnet18-imagenet2012/imagenet-default.nvdla" ./_install;
-
-cp "../nvdla/loadables/lenet/images/0_8.jpg" ./_install;
-cp "../nvdla/loadables/resnet18-cifar10/images/cat_32.jpg" ./_install;
-cp "../nvdla/loadables/resnet18-imagenet2012/images/331_hare.jpg" ./_install;
-#cp "../nvdla/loadables/resnet18-imagenet2012/images/742_printer.jpg" ./_install;
+##cp "../tengine/models/resnet18-cifar10-nosoftmax-relu_int8.tmfile" ./_install/;
+#cp "../tengine/models/yolox_nano_relu_int8.tmfile" ./_install/;
+#cp "../tengine/images/person.jpg" ./_install/;
+#cp "../tengine/images/cat.jpg" ./_install/;
+#cp "../tengine/images/dog.jpg" ./_install/;
+#
+#cp "../nvdla/loadables/lenet/lenet-fast-math.nvdla" ./_install;
+#cp "../nvdla/loadables/resnet18-cifar10/cifar-default.nvdla" ./_install;
+#cp "../nvdla/loadables/resnet18-imagenet2012/imagenet-default.nvdla" ./_install;
+#
+#cp "../nvdla/loadables/lenet/images/0_8.jpg" ./_install;
+#cp "../nvdla/loadables/resnet18-cifar10/images/cat_32.jpg" ./_install;
+#cp "../nvdla/loadables/resnet18-imagenet2012/images/331_hare.jpg" ./_install;
+##cp "../nvdla/loadables/resnet18-imagenet2012/images/742_printer.jpg" ./_install;
 
 cp "./logo.txt" ./_install;
 
@@ -97,8 +97,8 @@ echo '#!/bin/sh' > ./etc/init.d/rcS
 echo 'mount -t devtmpfs devtmpfs /dev' >> ./etc/init.d/rcS
 echo 'mount -t proc none /proc' >> ./etc/init.d/rcS
 echo 'mount -t sysfs none /sys' >> ./etc/init.d/rcS
-echo 'echo "Loading OpenDLA kernel module..."' >> ./etc/init.d/rcS
-echo 'insmod ./opendla.ko' >> ./etc/init.d/rcS
+#echo 'echo "Loading OpenDLA kernel module..."' >> ./etc/init.d/rcS
+#echo 'insmod ./opendla.ko' >> ./etc/init.d/rcS
 echo 'cat logo.txt' >> ./etc/init.d/rcS
 echo 'echo "Starting shell..."' >> ./etc/init.d/rcS
 #echo 'ls -al' >> ./etc/init.d/rcS
