@@ -87,6 +87,25 @@ fi
 #cp "../nvdla/loadables/resnet18-imagenet2012/images/331_hare.jpg" ./_install;
 ##cp "../nvdla/loadables/resnet18-imagenet2012/images/742_printer.jpg" ./_install;
 
+cp "../mibench/automotive/basicmath/basicmath_small" ./_install;
+"${CROSS_COMPILE}strip" ./_install/basicmath_small;
+cp "../mibench/automotive/basicmath/runme_small.sh" ./_install;
+
+cp "../mibench/network/dijkstra/dijkstra_small" ./_install;
+"${CROSS_COMPILE}strip" ./_install/dijkstra_small;
+cp "../mibench/network/dijkstra/input.dat" ./_install;
+
+cp "../mibench/office/stringsearch/search_small" ./_install;
+"${CROSS_COMPILE}strip" ./_install/search_small;
+
+#cp "../mibench/security/rijndael/rijndael" ./_install;
+#"${CROSS_COMPILE}strip" ./_install/rijndael;
+#cp "../mibench/security/rijndael/input_small.asc" ./_install;
+
+cp "../mibench/security/sha/sha" ./_install;
+"${CROSS_COMPILE}strip" ./_install/sha;
+cp "../mibench/security/sha/input_small.asc" ./_install;
+
 cp "./logo.txt" ./_install;
 
 cd _install;
@@ -109,6 +128,12 @@ echo 'echo "Starting shell..."' >> ./etc/init.d/rcS
 #echo 'nvdla_runtime --image 331_hare.jpg --loadable imagenet-default.nvdla --rawdump' >> ./etc/init.d/rcS
 
 #echo 'nvdla_runtime --image 742_printer.jpg --loadable imagenet-default.nvdla --rawdump' >> ./etc/init.d/rcS
+
+echo 'time ./basicmath_small > output_small1.txt' >> ./etc/init.d/rcS
+echo 'time ./dijkstra_small input.dat > output_small2.dat' >> ./etc/init.d/rcS
+echo 'time ./search_small > output_small3.txt' >> ./etc/init.d/rcS
+#echo 'time ./rijndael input_small.asc output_small.enc e 1234567890abcdeffedcba09876543211234567890abcdeffedcba0987654321 && time ./rijndael output_small.enc output_small.dec d 1234567890abcdeffedcba09876543211234567890abcdeffedcba0987654321' >> ./etc/init.d/rcS
+echo 'time ./sha input_small.asc > output_small5.txt' >> ./etc/init.d/rcS
 
 echo 'exec setsid cttyhack /bin/sh' >> ./etc/init.d/rcS
 
