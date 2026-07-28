@@ -42,11 +42,11 @@
         This means it'll be fast on a wide range of processors.
 */
 
-void usqrt(unsigned long x, struct int_sqrt *q)
+void usqrt(unsigned int x, struct int_sqrt *q)
 {
-      unsigned long a = 0L;                   /* accumulator      */
-      unsigned long r = 0L;                   /* remainder        */
-      unsigned long e = 0L;                   /* trial product    */
+      unsigned int a = 0L;                    /* accumulator      */
+      unsigned int r = 0L;                    /* remainder        */
+      unsigned int e = 0L;                    /* trial product    */
 
       int i;
 
