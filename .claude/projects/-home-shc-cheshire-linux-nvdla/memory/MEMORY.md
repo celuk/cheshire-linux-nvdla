@@ -1,1 +1,0 @@
-- [Toolchain embedded: gitignore stripped sources](toolchain-embedded-gitignore-stripped-sources.md) — why `make toolchain` breaks with "No rule to make target X" and how to fix (embedded, not submodule)
