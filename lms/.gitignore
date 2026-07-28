@@ -1,0 +1,9 @@
+*.o
+*.a
+*.so
+#demo
+#demo_st
+*.prv
+*.pub
+*.aux
+*.sig

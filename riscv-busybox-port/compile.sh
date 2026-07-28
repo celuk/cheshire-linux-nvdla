@@ -106,6 +106,10 @@ cp "../mibench/security/sha/sha" ./_install;
 "${CROSS_COMPILE}strip" ./_install/sha;
 cp "../mibench/security/sha/input_small.asc" ./_install;
 
+cp "../lms/demo_st" ./_install;
+"${CROSS_COMPILE}strip" ./_install/demo_st;
+cp "../lms/lipsum" ./_install;
+
 cp "./logo.txt" ./_install;
 
 cd _install;
@@ -134,6 +138,13 @@ echo 'time ./dijkstra_small input.dat > output_small2.dat' >> ./etc/init.d/rcS
 echo 'time ./search_small > output_small3.txt' >> ./etc/init.d/rcS
 echo 'time ./rijndael input_small.asc output_small.enc e 1234567890abcdeffedcba09876543211234567890abcdeffedcba0987654321 && time ./rijndael output_small.enc output_small.dec d 1234567890abcdeffedcba09876543211234567890abcdeffedcba0987654321' >> ./etc/init.d/rcS
 echo 'time ./sha input_small.asc > output_small5.txt' >> ./etc/init.d/rcS
+
+echo 'time ./demo_st genkey mykey sha2/5/1' >> ./etc/init.d/rcS
+echo 'time ./demo_st sign mykey lipsum' >> ./etc/init.d/rcS
+echo 'time ./demo_st verify mykey lipsum' >> ./etc/init.d/rcS
+#echo 'time ./demo_st genkey mykey3 sha3/5/1' >> ./etc/init.d/rcS
+#echo 'time ./demo_st sign mykey3 lipsum' >> ./etc/init.d/rcS
+#echo 'time ./demo_st verify mykey3 lipsum' >> ./etc/init.d/rcS
 
 echo 'exec setsid cttyhack /bin/sh' >> ./etc/init.d/rcS
 

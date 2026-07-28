@@ -1,10 +1,13 @@
 SHELL := /bin/bash
-.PHONY: all mibench wonvdla opensbi lrzsz opencv tengine nvdla busybox linux toolchain
+.PHONY: all mibench lms wonvdla opensbi lrzsz opencv tengine nvdla busybox linux toolchain
 
 all: opensbi lrzsz busybox linux nvdla busybox linux
 
 mibench:
 	pushd mibench && ./compile.sh && popd
+
+lms:
+	pushd lms && ./compile.sh && popd
 
 wonvdla: opensbi lrzsz busybox linux
 
