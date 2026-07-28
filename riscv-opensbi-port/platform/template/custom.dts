@@ -15,7 +15,7 @@
 	};
 
 	chosen {
-		bootargs = "console=hvc0 earlycon=sbi";
+		bootargs = "console=hvc0 earlycon=sbi cma=64M";
 		stdout-path = "serial0";
 	};
   // bootargs = "console=hvc0 earlycon=sbi clk_ignore_unused";
@@ -85,6 +85,12 @@
         riscv,max-priority = <7>;
         riscv,ndev = <58>;
         reg = <0x0 0x4000000 0x0 0x4000000>;
+      };
+      nvdla@40000000 {
+        compatible = "nvidia,nv_small", "nvidia,nvdla_2", "nvidia,nvdla", "nvidia,nvdla-1";
+        reg = <0x0 0x40000000 0x0 0x40000>;
+        interrupt-parent = <&PLIC0>;
+        interrupts = <20>;
       };
     };
 

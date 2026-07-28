@@ -131,7 +131,7 @@ AUTOCONF = ${SHELL} /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/libjpeg
 AUTOHEADER = ${SHELL} /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/libjpeg-turbo-1.5.3/missing autoheader
 AUTOMAKE = ${SHELL} /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/libjpeg-turbo-1.5.3/missing automake-1.15
 AWK = gawk
-BUILD = 20260629
+BUILD = 20260728
 CC = riscv64-unknown-linux-gnu-gcc
 CCAS = riscv64-unknown-linux-gnu-gcc
 CCASDEPMODE = depmode=gcc3

@@ -20,26 +20,26 @@ else
     echo "Warning: lrzsz binaries not found at ../lrzsz/"
 fi
 
-## Copy opendla.ko
-#if [ -f "../nvdla/sw/kmd/port/linux/opendla.ko" ]; then
-#    echo "Copying opendla.ko..."
-#    cp "../nvdla/sw/kmd/port/linux/opendla.ko" ./_install/opendla.ko
-#    echo "Stripping opendla.ko..."
-#    "${CROSS_COMPILE}strip" --strip-debug ./_install/opendla.ko
-#else
-#    echo "Warning: opendla.ko not found at ../nvdla/sw/kmd/port/linux/"
-#fi
-#
-## Copy nvdla_runtime
-#if [ -f "../nvdla/sw/umd/out/apps/runtime/nvdla_runtime/nvdla_runtime" ]; then
-#    echo "Copying nvdla_runtime..."
-#    cp "../nvdla/sw/umd/out/apps/runtime/nvdla_runtime/nvdla_runtime" ./_install/bin/nvdla_runtime
-#    chmod +x ./_install/bin/nvdla_runtime
-#    echo "Stripping nvdla_runtime..."
-#    "${CROSS_COMPILE}strip" ./_install/bin/nvdla_runtime
-#else
-#    echo "Warning: nvdla_runtime not found at ../nvdla/sw/umd/out/apps/runtime/nvdla_runtime/nvdla_runtime"
-#fi
+# Copy opendla.ko
+if [ -f "../nvdla/sw/kmd/port/linux/opendla.ko" ]; then
+    echo "Copying opendla.ko..."
+    cp "../nvdla/sw/kmd/port/linux/opendla.ko" ./_install/opendla.ko
+    echo "Stripping opendla.ko..."
+    "${CROSS_COMPILE}strip" --strip-debug ./_install/opendla.ko
+else
+    echo "Warning: opendla.ko not found at ../nvdla/sw/kmd/port/linux/"
+fi
+
+# Copy nvdla_runtime
+if [ -f "../nvdla/sw/umd/out/apps/runtime/nvdla_runtime/nvdla_runtime" ]; then
+    echo "Copying nvdla_runtime..."
+    cp "../nvdla/sw/umd/out/apps/runtime/nvdla_runtime/nvdla_runtime" ./_install/bin/nvdla_runtime
+    chmod +x ./_install/bin/nvdla_runtime
+    echo "Stripping nvdla_runtime..."
+    "${CROSS_COMPILE}strip" ./_install/bin/nvdla_runtime
+else
+    echo "Warning: nvdla_runtime not found at ../nvdla/sw/umd/out/apps/runtime/nvdla_runtime/nvdla_runtime"
+fi
 
 ## Copy Tengine OpenDLA example binaries
 #if [ -f "../tengine/build-riscv/examples/tm_classification_opendla" ]; then
@@ -72,43 +72,43 @@ fi
 #    echo "Warning: tm_yolov3_tiny_opendla not found at ../tengine/build-riscv/examples/"
 #fi
 
-##cp "../tengine/models/resnet18-cifar10-nosoftmax-relu_int8.tmfile" ./_install/;
-#cp "../tengine/models/yolox_nano_relu_int8.tmfile" ./_install/;
-#cp "../tengine/images/person.jpg" ./_install/;
-#cp "../tengine/images/cat.jpg" ./_install/;
-#cp "../tengine/images/dog.jpg" ./_install/;
-#
-#cp "../nvdla/loadables/lenet/lenet-fast-math.nvdla" ./_install;
-#cp "../nvdla/loadables/resnet18-cifar10/cifar-default.nvdla" ./_install;
-#cp "../nvdla/loadables/resnet18-imagenet2012/imagenet-default.nvdla" ./_install;
-#
-#cp "../nvdla/loadables/lenet/images/0_8.jpg" ./_install;
-#cp "../nvdla/loadables/resnet18-cifar10/images/cat_32.jpg" ./_install;
-#cp "../nvdla/loadables/resnet18-imagenet2012/images/331_hare.jpg" ./_install;
-##cp "../nvdla/loadables/resnet18-imagenet2012/images/742_printer.jpg" ./_install;
+#cp "../tengine/models/resnet18-cifar10-nosoftmax-relu_int8.tmfile" ./_install/;
+cp "../tengine/models/yolox_nano_relu_int8.tmfile" ./_install/;
+cp "../tengine/images/person.jpg" ./_install/;
+cp "../tengine/images/cat.jpg" ./_install/;
+cp "../tengine/images/dog.jpg" ./_install/;
 
-cp "../mibench/automotive/basicmath/basicmath_small" ./_install;
-"${CROSS_COMPILE}strip" ./_install/basicmath_small;
-cp "../mibench/automotive/basicmath/runme_small.sh" ./_install;
+cp "../nvdla/loadables/lenet/lenet-fast-math.nvdla" ./_install;
+cp "../nvdla/loadables/resnet18-cifar10/cifar-default.nvdla" ./_install;
+cp "../nvdla/loadables/resnet18-imagenet2012/imagenet-default.nvdla" ./_install;
 
-cp "../mibench/network/dijkstra/dijkstra_small" ./_install;
-"${CROSS_COMPILE}strip" ./_install/dijkstra_small;
-cp "../mibench/network/dijkstra/input.dat" ./_install;
+cp "../nvdla/loadables/lenet/images/0_8.jpg" ./_install;
+cp "../nvdla/loadables/resnet18-cifar10/images/cat_32.jpg" ./_install;
+cp "../nvdla/loadables/resnet18-imagenet2012/images/331_hare.jpg" ./_install;
+#cp "../nvdla/loadables/resnet18-imagenet2012/images/742_printer.jpg" ./_install;
 
-cp "../mibench/office/stringsearch/search_small" ./_install;
-"${CROSS_COMPILE}strip" ./_install/search_small;
-
-cp "../mibench/security/rijndael/rijndael" ./_install;
-"${CROSS_COMPILE}strip" ./_install/rijndael;
-#cp "../mibench/security/rijndael/input_small.asc" ./_install;
-
-cp "../mibench/security/sha/sha" ./_install;
-"${CROSS_COMPILE}strip" ./_install/sha;
-cp "../mibench/security/sha/input_small.asc" ./_install;
-
-cp "../lms/demo_st" ./_install;
-"${CROSS_COMPILE}strip" ./_install/demo_st;
-cp "../lms/lipsum" ./_install;
+##cp "../mibench/automotive/basicmath/basicmath_small" ./_install;
+##"${CROSS_COMPILE}strip" ./_install/basicmath_small;
+##cp "../mibench/automotive/basicmath/runme_small.sh" ./_install;
+##
+##cp "../mibench/network/dijkstra/dijkstra_small" ./_install;
+##"${CROSS_COMPILE}strip" ./_install/dijkstra_small;
+##cp "../mibench/network/dijkstra/input.dat" ./_install;
+##
+##cp "../mibench/office/stringsearch/search_small" ./_install;
+##"${CROSS_COMPILE}strip" ./_install/search_small;
+##
+##cp "../mibench/security/rijndael/rijndael" ./_install;
+##"${CROSS_COMPILE}strip" ./_install/rijndael;
+###cp "../mibench/security/rijndael/input_small.asc" ./_install;
+##
+##cp "../mibench/security/sha/sha" ./_install;
+##"${CROSS_COMPILE}strip" ./_install/sha;
+##cp "../mibench/security/sha/input_small.asc" ./_install;
+##
+##cp "../lms/demo_st" ./_install;
+##"${CROSS_COMPILE}strip" ./_install/demo_st;
+##cp "../lms/lipsum" ./_install;
 
 cp "./logo.txt" ./_install;
 
@@ -120,8 +120,8 @@ echo '#!/bin/sh' > ./etc/init.d/rcS
 echo 'mount -t devtmpfs devtmpfs /dev' >> ./etc/init.d/rcS
 echo 'mount -t proc none /proc' >> ./etc/init.d/rcS
 echo 'mount -t sysfs none /sys' >> ./etc/init.d/rcS
-#echo 'echo "Loading OpenDLA kernel module..."' >> ./etc/init.d/rcS
-#echo 'insmod ./opendla.ko' >> ./etc/init.d/rcS
+echo 'echo "Loading OpenDLA kernel module..."' >> ./etc/init.d/rcS
+echo 'insmod ./opendla.ko' >> ./etc/init.d/rcS
 echo 'cat logo.txt' >> ./etc/init.d/rcS
 echo 'echo "Starting shell..."' >> ./etc/init.d/rcS
 #echo 'ls -al' >> ./etc/init.d/rcS
@@ -133,18 +133,18 @@ echo 'echo "Starting shell..."' >> ./etc/init.d/rcS
 
 #echo 'nvdla_runtime --image 742_printer.jpg --loadable imagenet-default.nvdla --rawdump' >> ./etc/init.d/rcS
 
-echo 'time ./basicmath_small > output_small1.txt' >> ./etc/init.d/rcS
-echo 'time ./dijkstra_small input.dat > output_small2.dat' >> ./etc/init.d/rcS
-echo 'time ./search_small > output_small3.txt' >> ./etc/init.d/rcS
-echo 'time ./rijndael input_small.asc output_small.enc e 1234567890abcdeffedcba09876543211234567890abcdeffedcba0987654321 && time ./rijndael output_small.enc output_small.dec d 1234567890abcdeffedcba09876543211234567890abcdeffedcba0987654321' >> ./etc/init.d/rcS
-echo 'time ./sha input_small.asc > output_small5.txt' >> ./etc/init.d/rcS
-
-echo 'time ./demo_st genkey mykey sha2/5/1' >> ./etc/init.d/rcS
-echo 'time ./demo_st sign mykey lipsum' >> ./etc/init.d/rcS
-echo 'time ./demo_st verify mykey lipsum' >> ./etc/init.d/rcS
-#echo 'time ./demo_st genkey mykey3 sha3/5/1' >> ./etc/init.d/rcS
-#echo 'time ./demo_st sign mykey3 lipsum' >> ./etc/init.d/rcS
-#echo 'time ./demo_st verify mykey3 lipsum' >> ./etc/init.d/rcS
+##echo 'time ./basicmath_small > output_small1.txt' >> ./etc/init.d/rcS
+##echo 'time ./dijkstra_small input.dat > output_small2.dat' >> ./etc/init.d/rcS
+##echo 'time ./search_small > output_small3.txt' >> ./etc/init.d/rcS
+##echo 'time ./rijndael input_small.asc output_small.enc e 1234567890abcdeffedcba09876543211234567890abcdeffedcba0987654321 && time ./rijndael output_small.enc output_small.dec d 1234567890abcdeffedcba09876543211234567890abcdeffedcba0987654321' >> ./etc/init.d/rcS
+##echo 'time ./sha input_small.asc > output_small5.txt' >> ./etc/init.d/rcS
+##
+##echo 'time ./demo_st genkey mykey sha2/5/1' >> ./etc/init.d/rcS
+##echo 'time ./demo_st sign mykey lipsum' >> ./etc/init.d/rcS
+##echo 'time ./demo_st verify mykey lipsum' >> ./etc/init.d/rcS
+###echo 'time ./demo_st genkey mykey3 sha3/5/1' >> ./etc/init.d/rcS
+###echo 'time ./demo_st sign mykey3 lipsum' >> ./etc/init.d/rcS
+###echo 'time ./demo_st verify mykey3 lipsum' >> ./etc/init.d/rcS
 
 echo 'exec setsid cttyhack /bin/sh' >> ./etc/init.d/rcS
 

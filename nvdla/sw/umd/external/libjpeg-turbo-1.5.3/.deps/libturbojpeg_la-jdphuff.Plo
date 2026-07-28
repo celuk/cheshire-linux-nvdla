@@ -38,7 +38,6 @@ libturbojpeg_la-jdphuff.lo: jdphuff.c \
  /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/thread-shared-types.h \
  /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/pthreadtypes-arch.h \
  /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/alloca.h \
- /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/stdlib-bsearch.h \
  /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/stdlib-float.h \
  /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/stdio.h \
  /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0/include/stdarg.h \
@@ -50,7 +49,6 @@ libturbojpeg_la-jdphuff.lo: jdphuff.c \
  /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/types/struct_FILE.h \
  /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/stdio_lim.h \
  /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/sys_errlist.h \
- /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/stdio.h \
  /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/string.h \
  /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/types/locale_t.h \
  /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/types/__locale_t.h \
@@ -96,7 +94,6 @@ jconfig.h:
 /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/thread-shared-types.h:
 /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/pthreadtypes-arch.h:
 /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/alloca.h:
-/home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/stdlib-bsearch.h:
 /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/stdlib-float.h:
 /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/stdio.h:
 /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/lib/gcc/riscv64-unknown-linux-gnu/10.2.0/include/stdarg.h:
@@ -108,7 +105,6 @@ jconfig.h:
 /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/types/struct_FILE.h:
 /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/stdio_lim.h:
 /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/sys_errlist.h:
-/home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/stdio.h:
 /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/string.h:
 /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/types/locale_t.h:
 /home/shc/cheshire-linux-nvdla/riscv-toolchain-custom/_install/sysroot/usr/include/bits/types/__locale_t.h:

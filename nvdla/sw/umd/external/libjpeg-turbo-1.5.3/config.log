@@ -43,8 +43,6 @@ PATH: /usr/local/games
 PATH: /usr/lib/wsl/lib
 PATH: /mnt/c/Users/2640084/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand
 PATH: /mnt/c/Users/2640084/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli
-PATH: /mnt/c/Users/2640084/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand
-PATH: /mnt/c/Users/2640084/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli
 PATH: /mnt/c/WINDOWS/system32
 PATH: /mnt/c/WINDOWS
 PATH: /mnt/c/WINDOWS/System32/Wbem
@@ -1400,7 +1398,7 @@ AUTOCONF='${SHELL} /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/libjpeg-
 AUTOHEADER='${SHELL} /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/libjpeg-turbo-1.5.3/missing autoheader'
 AUTOMAKE='${SHELL} /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/libjpeg-turbo-1.5.3/missing automake-1.15'
 AWK='gawk'
-BUILD='20260629'
+BUILD='20260728'
 CC='riscv64-unknown-linux-gnu-gcc'
 CCAS='riscv64-unknown-linux-gnu-gcc'
 CCASDEPMODE='depmode=gcc3'
@@ -1609,6 +1607,6 @@ target_alias=''
 #define INLINE inline __attribute__((always_inline))
 #define C_ARITH_CODING_SUPPORTED 1
 #define D_ARITH_CODING_SUPPORTED 1
-#define BUILD "20260629"
+#define BUILD "20260728"
 
 configure: exit 0
