@@ -1245,11 +1245,9 @@ config.status:1180: creating simd/Makefile
 config.status:1180: creating java/Makefile
 config.status:1180: creating md5/Makefile
 config.status:1180: creating config.h
-config.status:1361: config.h is unchanged
 config.status:1180: creating jconfig.h
 config.status:1361: jconfig.h is unchanged
 config.status:1180: creating jconfigint.h
-config.status:1361: jconfigint.h is unchanged
 config.status:1409: executing depfiles commands
 config.status:1409: executing libtool commands
 
@@ -1398,7 +1396,7 @@ AUTOCONF='${SHELL} /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/libjpeg-
 AUTOHEADER='${SHELL} /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/libjpeg-turbo-1.5.3/missing autoheader'
 AUTOMAKE='${SHELL} /home/shc/cheshire-linux-nvdla/nvdla/sw/umd/external/libjpeg-turbo-1.5.3/missing automake-1.15'
 AWK='gawk'
-BUILD='20260729'
+BUILD='20260731'
 CC='riscv64-unknown-linux-gnu-gcc'
 CCAS='riscv64-unknown-linux-gnu-gcc'
 CCASDEPMODE='depmode=gcc3'
@@ -1607,6 +1605,6 @@ target_alias=''
 #define INLINE inline __attribute__((always_inline))
 #define C_ARITH_CODING_SUPPORTED 1
 #define D_ARITH_CODING_SUPPORTED 1
-#define BUILD "20260729"
+#define BUILD "20260731"
 
 configure: exit 0
