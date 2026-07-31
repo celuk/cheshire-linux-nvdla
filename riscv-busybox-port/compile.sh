@@ -20,15 +20,6 @@ else
     echo "Warning: lrzsz binaries not found at ../lrzsz/"
 fi
 
-# Copy misalign64
-if [ -f "../misalign64/misalign64" ]; then
-    echo "Copying misalign64..."
-    cp "../misalign64/misalign64" ./_install/bin/misalign64
-    chmod +x ./_install/bin/misalign64
-else
-    echo "Warning: misalign64 not found at ../misalign64/ (run: make misalign64)"
-fi
-
 # Copy opendla.ko
 if [ -f "../nvdla/sw/kmd/port/linux/opendla.ko" ]; then
     echo "Copying opendla.ko..."

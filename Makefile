@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-.PHONY: all mibench lms misalign64 wonvdla opensbi lrzsz opencv tengine nvdla busybox linux toolchain
+.PHONY: all mibench lms wonvdla opensbi lrzsz opencv tengine nvdla busybox linux toolchain
 
 all: opensbi lrzsz busybox linux nvdla busybox linux
 
@@ -8,9 +8,6 @@ mibench:
 
 lms:
 	pushd lms && ./compile.sh && popd
-
-misalign64:
-	pushd misalign64 && ./compile.sh && popd
 
 wonvdla: opensbi lrzsz busybox linux
 
